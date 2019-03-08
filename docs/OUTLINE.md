@@ -91,8 +91,8 @@
 ---
 
 **Conteúdo:**
-- [HTML Guide](./html-guide/html/)
-  - [Sintaxe do HTML](https://ifpb.github.io/html-guide/html/)
+- [HTML Guide](https://ifpb.github.io/lm/html-guide/html/)
+  - [Sintaxe do HTML](https://ifpb.github.io/lm/html-guide/html/)
     - Conceitos básicos: Tags, atributos, entidades e comentários
     - Estrutura básica
       - Cabeçalho: Título da página e encoding (UTF-8)
@@ -108,7 +108,7 @@
 * Quais são as marcações básicas de texto do HTML?
 
 **Exercício:**
-* [Crie sua Primeira Página Web](https://ifpb.github.io/html-exercises/html/hello-world-html/)
+* [Crie sua Primeira Página Web](https://ifpb.github.io/lm/html-exercises/html/hello-world-html/)
 
 ## \# 04 - Sintaxe e Estruturas do HTML (22/03/2019)
 ---
