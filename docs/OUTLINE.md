@@ -37,10 +37,10 @@
 [\# 35 - Avaliação III de HTML e CSS (23/08/2019)](#-35---avaliação-iii-de-html-e-css-23082019)<br>
 [\# 36 - Componentes da Web (24/08/2019)](#-36---componentes-da-web-24082019)<br>
 [\# 37 - XML & DTD (26/08/2019)](#-37---xml--dtd-26082019)<br>
-[\# 38 - XML & DTD (30/08/2019)](#-38—xml--dtd-30082019)<br>
+[\# 38 - XML & DTD (30/08/2019)](#-38---xml--dtd-30082019)<br>
 [\# 39 - Apresentação de Projetos (31/08/2019)](#-39---apresentação-de-projetos-31082019)<br>
-[\# 40 - Apresentação de Projetos (02/09/2019)](#-38---apresentação-de-projetos-02092019)<br>
-[\# 41 - Prova Final (06/09/2019)](#-39---apresentação-de-projetos-06092019)<br>
+[\# 40 - Apresentação de Projetos (02/09/2019)](#-40---apresentação-de-projetos-02092019)<br>
+[\# 41 - Prova Final (06/09/2019)](#-41---prova—final-06092019)<br>
 
 ## \# 01 - Apresentação do curso (11/03/2019)
 ---
