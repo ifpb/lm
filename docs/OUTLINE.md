@@ -91,7 +91,7 @@
 ---
 
 **Conteúdo:**
-- [HTML Guide](https://ifpb.github.io/html-guide/html/)
+- [HTML Guide](./html-guide/html/)
   - [Sintaxe do HTML](https://ifpb.github.io/html-guide/html/)
     - Conceitos básicos: Tags, atributos, entidades e comentários
     - Estrutura básica
