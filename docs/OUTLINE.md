@@ -2,43 +2,45 @@
 
 [\# 01 - Apresentação do curso (11/03/2019)](#-01---apresentação-do-curso-11032019)<br>
 [\# 02 - Apresentação da Disciplina & Linguagem de Marcação (15/03/2019)](#-02---apresentação-da-disciplina--linguagem-de-marcação-15032019)<br>
-[\# 03 - Primeiros passos com HTML (03/09/2018)](#-03---primeiros-passos-com-html-03092018)<br>
-[\# 04 - Sintaxe e Estruturas do HTML (10/09/2018)](#-04---sintaxe-e-estruturas-do-html-10092018)<br>
-[\# 05 - Analisando uma página (14/09/2018)](#-05---analisando-uma-página-14092018)<br>
-[\# 06 - Criando a página da disciplina com imagens (17/09/2018)](#-06---criando-a-página-da-disciplina-com-imagens-17092018)<br>
-[\# 07 - Criando um currículo em HTML (21/09/2018)](#-07---criando-um-currículo-em-html-21092018)<br>
-[\# 08 - Linguagem de Estilo e o CSS (24/09/2018)](#-08---linguagem-de-estilo-e-o-css-24092018)<br>
-[\# 09 - Primeiros Passos com CSS (25/09/2018)](#-09---primeiros-passos-com-css-25092018)<br>
-[\# 10 - Primeiros Passos com CSS (28/09/2018)](#-10---primeiros-passos-com-css-28092018)<br>
-[\# 11 - Estilizando Texto (01/10/2018)](#-11---estilizando-texto-01102018)<br>
-[\# 12 - Estilizando Texto (08/10/2018)](#-12---estilizando-texto-08102018)<br>
-[\# 13 - Web Fonts e Ícones (15/10/2018)](#-13---web-fonts-e-ícones-15102018)<br>
-[\# 14 - Cascata no CSS (16/10/2018)](#-14---cascata-no-css-16102018)<br>
-[\# 15 - Box Model (19/10/2018)](#-15---box-model-19102018)<br>
-[\# 16 - Estilizando Tabelas (22/10/2018)](#-16---estilizando-tabelas-22102018)<br>
-[\# 17 - Curriculum Viate com Layout Básico (29/10/2018)](#-17---curriculum-viate-com-layout-básico-29102018)<br>
-[\# 18 - Simulado I de HTML e CSS (05/11/2018)](#-18---simulado-i-de-html-e-css-05112018)<br>
-[\# 19 - Avaliação I de HTML e CSS (09/11/2018)](#-19---avaliação-i-de-html-e-css-09112018)<br>
-[\# 20 - Recursos da Web, Publicando seu site e Apresentação do Projeto (12/11/2018)](#-20---recursos-da-web-publicando-seu-site-e-apresentação-do-projeto-12112018)<br>
-[\# 21 - Background (16/11/2018)](#-21---background-16112018)<br>
-[\# 22 - Apresentação das propostas de Projetos (19/11/2018)](#-22---apresentação-das-propostas-de-projetos-19112018)<br>
-[\# 23 - Flexible Box Layout - Flexbox (23/11/2018)](#-23---flexible-box-layout---flexbox-23112018)<br>
-[\# 24 - Flexible Box Layout - Flexbox (26/11/2018)](#-24---flexible-box-layout---flexbox-26112018)<br>
-[\# 25 - CSS Grid (30/11/2018)](#-25---css-grid-30112018)<br>
-[\# 26 - CSS Grid (03/12/2018)](#-26---css-grid-03122018)<br>
-[\# 27 - Design Responsivo (07/12/2018)](#-27---design-responsivo-07122018)<br>
-[\# 28 - Design Responsivo (10/12/2018)](#-28---design-responsivo-10122018)<br>
-[\# 29 - Simulado II de HTML e CSS (14/12/2018)](#-29---simulado-ii-de-html-e-css-14122018)<br>
-[\# 30 - Avaliação II de HTML e CSS (17/12/2018)](#-30---avaliação-ii-de-html-e-css-17122018)<br>
-[\# 31 - Formulário (21/01/2019)](#-31---formulário-21012019)<br>
-[\# 32 - Posicionamento de Elementos (25/01/2019)](#-32---posicionamento-de-elementos-25012019)<br>
-[\# 33 - Animação com CSS (28/01/2019)](#-33---animação-com-css-28012019)<br>
-[\# 34 - Simulado III de HTML e CSS (01/02/2019)](#-34---simulado-iii-de-html-e-css-01022019)<br>
-[\# 35 - Avaliação III de HTML e CSS (04/02/2019)](#-35---avaliação-iii-de-html-e-css-04022019)<br>
-[\# 36 - Componentes da Web (08/02/2019)](#-36---componentes-da-web-08022019)<br>
-[\# 37 - XML & DTD (11/02/2019)](#-37---xml--dtd-11022019)<br>
-[\# 38 - Apresentação de Projetos (15/02/2019)](#-38---apresentação-de-projetos-15022019)<br>
-[\# 39 - Apresentação de Projetos (18/02/2019)](#-39---apresentação-de-projetos-18022019)<br>
+[\# 03 - Primeiros passos com HTML (18/03/2019)](#-03---primeiros-passos-com-html-18032019)<br>
+[\# 04 - Sintaxe e Estruturas do HTML (22/03/2019)](#-04---sintaxe-e-estruturas-do-html-22032019)<br>
+[\# 05 - Analisando uma página (25/03/2019)](#-05---analisando-uma-página-25032019)<br>
+[\# 06 - Criando a página da disciplina com imagens (29/03/2019)](#-06---criando-a-página-da-disciplina-com-imagens-29032019)<br>
+[\# 07 - Criando um currículo em HTML (01/04/2019)](#-07---criando-um-currículo-em-html-01042019)<br>
+[\# 08 - Linguagem de Estilo e o CSS (05/04/2019)](#-08---linguagem-de-estilo-e-o-css-05042019)<br>
+[\# 09 - Primeiros Passos com CSS (08/04/2019)](#-09---primeiros-passos-com-css-08042019)<br>
+[\# 10 - Primeiros Passos com CSS (12/04/2019)](#-10---primeiros-passos-com-css-12042019)<br>
+[\# 11 - Estilizando Texto (15/04/2019)](#-11---estilizando-texto-15042019)<br>
+[\# 12 - Estilizando Texto (22/04/2019)](#-12---estilizando-texto-22042019)<br>
+[\# 13 - Web Fonts e Ícones (26/04/2019)](#-13---web-fonts-e-ícones-26042019)<br>
+[\# 14 - Cascata no CSS (29/04/2019)](#-14---cascata-no-css-2904019)<br>
+[\# 15 - Box Model (03/05/2019)](#-15---box-model-03052019)<br>
+[\# 16 - Estilizando Tabelas (06/05/2019)](#-16---estilizando-tabelas-06052019)<br>
+[\# 17 - Curriculum Vitae com Layout Básico (10/05/2019)](#-17---curriculum-viate-com-layout-básico-10052019)<br>
+[\# 18 - Simulado I de HTML e CSS (13/05/2019)](#-18---simulado-i-de-html-e-css-13052019)<br>
+[\# 19 - Avaliação I de HTML e CSS (17/05/2019)](#-19---avaliação-i-de-html-e-css-17052019)<br>
+[\# 20 - Recursos da Web, Publicando seu site e Apresentação do Projeto (20/05/2019)](#-20---recursos-da-web-publicando-seu-site-e-apresentação-do-projeto-20052019)<br>
+[\# 21 - Background (24/05/2019)](#-21---background-24052019)<br>
+[\# 22 - Apresentação das propostas de Projetos (27/05/2019)](#-22---apresentação-das-propostas-de-projetos-27052019)<br>
+[\# 23 - Flexible Box Layout - Flexbox (31/05/2019)](#-23---flexible-box-layout---flexbox-31052019)<br>
+[\# 24 - Flexible Box Layout - Flexbox (03/06/2019)](#-24---flexible-box-layout---flexbox-03062019)<br>
+[\# 25 - CSS Grid (07/06/2019)](#-25---css-grid-07062019)<br>
+[\# 26 - CSS Grid (10/06/2019)](#-26---css-grid-10062019)<br>
+[\# 27 - Design Responsivo (14/06/2019)](#-27---design-responsivo-14062019)<br>
+[\# 28 - Design Responsivo (17/06/2019)](#-28---design-responsivo-17062019)<br>
+[\# 29 - Simulado II de HTML e CSS (28/06/2019)](#-29---simulado-ii-de-html-e-css-28062019)<br>
+[\# 30 - Avaliação II de HTML e CSS (09/08/2019)](#-30---avaliação-ii-de-html-e-css-09082019)<br>
+[\# 31 - Formulário (12/08/2019)](#-31---formulário-12082019)<br>
+[\# 32 - Posicionamento de Elementos (16/08/2019)](#-32---posicionamento-de-elementos-16082019)<br>
+[\# 33 - Animação com CSS (17/08/2019)](#-33---animação-com-css-17082019)<br>
+[\# 34 - Simulado III de HTML e CSS (19/08/2019)](#-34---simulado-iii-de-html-e-css-19082019)<br>
+[\# 35 - Avaliação III de HTML e CSS (23/08/2019)](#-35---avaliação-iii-de-html-e-css-23082019)<br>
+[\# 36 - Componentes da Web (24/08/2019)](#-36---componentes-da-web-24082019)<br>
+[\# 37 - XML & DTD (26/08/2019)](#-37---xml--dtd-26082019)<br>
+[\# 38 - XML & DTD (30/08/2019)](#-38—xml--dtd-30082019)<br>
+[\# 39 - Apresentação de Projetos (31/08/2019)](#-39---apresentação-de-projetos-31082019)<br>
+[\# 40 - Apresentação de Projetos (02/09/2019)](#-38---apresentação-de-projetos-02092019)<br>
+[\# 41 - Prova Final (06/09/2019)](#-39---apresentação-de-projetos-06092019)<br>
 
 ## \# 01 - Apresentação do curso (11/03/2019)
 ---
