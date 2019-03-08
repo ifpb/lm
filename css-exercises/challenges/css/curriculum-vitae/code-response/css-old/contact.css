@@ -1,0 +1,16 @@
+.contact {
+  margin-top: 13px;
+  margin-left: 20px;
+  display: flex;
+}
+
+.contact .icon {
+  margin-right: 15px;
+  text-align: center;
+}
+
+.contact .text {
+  width: 69%;
+  padding-top: 4px;
+  padding-right: 10%
+}

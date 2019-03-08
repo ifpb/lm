@@ -1,0 +1,224 @@
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(../font/Open-Sans.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 900;
+  src: local('Roboto Black'), local('Roboto-Black'), url(../font/Roboto-Black.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+.icon.pricetags {
+  background-image: url(../img/pricetags.png);
+}
+
+.icon.ios-calendar {
+  background-image: url(../img/ios-calendar.png);
+}
+
+.icon.person {
+  background-image: url(../img/person.png);
+}
+
+.white-text {
+  color: #fff;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+}
+
+/* HEADER */
+.header-cine {
+  min-height: 400px;
+  text-align: center;
+  background-color: #1565C0;
+  background-image: url(../img/cine_bangue.jpg);
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
+
+.header-cine h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 5em;
+  margin: 0;
+}
+
+.header-cine p {
+  font-size: 2em;
+  font-style: italic;
+}
+
+/* MOVIES */
+#movies {
+  margin: 80px auto;
+}
+
+#movies .season-info {
+  grid-column: 1 / 3;
+  border-left: 10px solid #01579B;
+  padding: 10px;
+  margin-left: 1%;
+}
+
+#movies .movie {
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  height: 190px;
+  padding: 1%;
+  box-sizing: border-box;
+  margin: 5px auto;
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+#movies .movie .cover {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-clip: border-box;
+  border: 3px solid transparent;
+  width: 100px;
+  height: 150px;
+  margin: 1%;
+  transition: background 1s;
+  will-change: background;
+  display: block;
+}
+
+#movies .movie .cover:before {
+  content: "";
+  width: 0%;
+  transition: width .5s;
+}
+
+#movies .movie .cover:hover {
+  background-blend-mode: overlay;
+  background-color: #0288D1;
+}
+
+#movies .movie .cover:hover:before {
+  content: "►"; /* &#9658; */
+  font-size: 2em;
+  border-radius: 50%;
+  color: #fff;
+  vertical-align: middle;
+  line-height: 150px;
+  text-align: center;
+  float: left;
+  width: 100%;
+}
+
+#movies .movie .data>*{
+  margin-left: 5px;
+}
+
+#movies .movie .name {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.4em;
+  margin: 0 5px;
+}
+
+#movies .movie .info {
+  font-size: .9em;
+  color: #999;
+}
+
+#movies .movie .genre {
+  color: #666;
+  border: 2px solid #666;
+  border-radius: 3px;
+  padding: 1px 3px;
+  margin: 10px 5px 10px 0;
+  font-size: .8em;
+  display: inline-block;
+}
+
+#movies .movie .schedule {
+  display: inline-block;
+  width: 100px;
+}
+
+#movies .movie .schedule b {
+  font-family: 'Roboto', sans-serif;
+}
+
+#movies .movie .schedule span{
+  display: block;
+}
+
+/* INFO */
+#info {
+  text-align: center;
+  font-size: 1.3em;
+  background-image: url(../img/movie.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #2196F3;
+  background-repeat: no-repeat;
+  background-blend-mode: soft-light;
+  line-height: 1.7em;
+  padding: 30px 0;
+}
+
+#info .icon {
+  display: inline-block;
+  font-size: 8em;
+  height: 100px;
+  width: 100px;
+  background-size: cover;
+  margin: 20px;
+}
+
+/* FOOTER */
+footer {
+  color: #1565C0;
+  background-color: #E3F2FD;
+  line-height: 2.0em;
+  padding: 40px 15% 0;
+  font-size: .8em;
+}
+
+footer .footer-content {
+  display: grid;
+  grid-template-columns: 2fr repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+footer .footer-content .menu {
+  list-style: none;
+  padding: 0;
+}
+
+footer .footer-content .menu a {
+  text-decoration: none;
+  color: #1565C0;
+}
+
+footer .footer-content .menu a:hover {
+  text-decoration: underline;
+}
+
+footer section h1 {
+  font-family: 'Roboto', sans-serif;
+}
+
+footer .copyright {
+  display: block;
+  border-top: 1px solid rgba(21, 101, 192, 0.22);
+  text-align: center;
+  margin-top: 50px;
+  line-height: 50px;
+  height: 50px;
+  vertical-align: middle;
+}

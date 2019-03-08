@@ -1,0 +1,13 @@
+.container {
+  padding: 30px 0;
+}
+
+.row:first-of-type {
+  margin: 30px 0;
+}
+
+img.card-img-top {
+  width: 300px;
+  height: 300px;
+  margin: 10px auto;
+}

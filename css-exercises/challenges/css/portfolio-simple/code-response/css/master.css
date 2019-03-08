@@ -1,0 +1,92 @@
+@font-face {
+  src: url(font/Lora-Regular.ttf);
+  font-family: 'Lora', serif;
+}
+
+html {
+  font-family: 'Lora', serif;
+}
+
+body {
+  margin: 0px;
+}
+
+/* Header */
+
+header {
+  background-image: linear-gradient(135deg, rgba(30, 33, 33, .70) 1%, rgba(32, 32, 32, .14) 98%), url(../img/desk.jpg);
+  background-size: auto, cover;
+  background-position: 0px, 0px -150px;
+  background-attachment: fixed;
+  height: 70vh;
+  min-height: 250px;
+  min-width: 440px;
+}
+
+header p,
+header h1 {
+  text-align: center;
+  color: rgb(236, 236, 226);
+}
+
+header h1 {
+  font-family: 'Audiowide', cursive;
+  padding-top: 35vh;
+  margin: 0px;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+header p {
+  font-size: 1.3em;
+}
+
+/* Main */
+
+main {
+  padding: 100px 0px;
+  width: 960px;
+  margin: auto;
+  color: #333;
+}
+
+main section {
+  vertical-align: top;
+  width: 30%;
+  display: inline-block;
+  text-align: center;
+  margin: 20px 1%;
+}
+
+main section p {
+  color: #aaa;
+  text-align: left;
+}
+
+/* footer */
+
+footer {
+  height: 25vh;
+  background-color: rgb(236, 236, 226);
+}
+
+footer section#social {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+footer section#social a {
+  margin: 15px;
+  color: #555;
+}
+
+footer section#copyright {
+  text-align: center;
+  color: #555;
+}
+
+footer section#copyright i.fa-heart {
+  color: #f00;
+}

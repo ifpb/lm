@@ -1,0 +1,50 @@
+.title {
+  right: 25px;
+  padding-left: 20px;
+  padding-top: 20px;
+  bottom: 25px
+}
+
+.title h2 {
+  text-transform: uppercase;
+  display: block;
+  font-size: 1.17em;
+  color: #fff;
+  color: rgba(0, 0, 0, .7);
+  padding-top: 0;
+  margin-top: 0;
+  letter-spacing: 10px;
+  font-weight: 400
+}
+
+.title div {
+  margin-top: -5px;
+  margin-top: 0;
+  margin: 0;
+  padding: 0;
+  line-height: 15pt;
+  font-weight: 300;
+  letter-spacing: 2px;
+  color: #fff;
+  color: #16151c;
+  color: rgba(63, 61, 60, .71);
+  display: block;
+  font-size: .67em;
+  padding-top: 0
+}
+
+.section-headline,
+.title div {
+  font-weight: 500;
+  letter-spacing: 3px;
+  font-size: 10pt;
+  text-transform: uppercase;
+  opacity: .8
+}
+
+.section-headline {
+  margin-left: 20px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  color: #3f3d3c
+}

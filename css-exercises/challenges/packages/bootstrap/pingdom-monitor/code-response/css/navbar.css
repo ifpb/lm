@@ -1,0 +1,81 @@
+.navbar {
+  background-color: #57c5a5;
+  box-shadow: 0 2px 1px 0 rgba(0, 0, 0, 0.12), 0 2px 20px 0 rgba(0, 0, 0, 0.08);
+}
+
+.navbar .brand-name {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+.navbar .brand-name a {
+  font-size: 22px;
+  line-height: 46px;
+  vertical-align: middle;
+}
+
+.navbar .brand-name a:hover {
+  text-decoration: none;
+}
+
+.navbar.only-icons .brand-name a {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .navbar .brand-name a {
+    display: none;
+  }
+}
+
+.navbar .navbar-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navbar form {
+  position: relative;
+}
+
+.navbar form a {
+  position: absolute;
+  top: 2px;
+  left: 150px;
+}
+
+.navbar form .form-control {
+  border: none;
+  font-size: 13px;
+  color: #ffffff;
+  padding-left: 20px;
+  padding-right: 40px;
+  background-color: rgba(235, 239, 242, 0.25) !important;
+  box-shadow: none;
+  border-radius: 30px;
+  height: 30px;
+  font-weight: 600;
+  width: 180px;
+}
+
+.navbar input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: normal;
+}
+
+.navbar input:-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar input::-moz-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar input:-ms-input-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.navbar a {
+  color: #ebeff2;
+}

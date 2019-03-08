@@ -1,0 +1,87 @@
+body {
+    font-family: 'Open Sans', sans-serif;
+    min-height: 95vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .row {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 25px;
+  }
+
+  .card {
+    width: 150px;                 /* Set width of cards */
+    display: flex;                /* Children use Flexbox */
+    flex-direction: column;       /* Rotate Axis */
+    border: 1px solid #80DEEA;    /* Set up Border */
+    border-radius: 4px;           /* Slightly Curve edges */
+    overflow: hidden;             /* Fixes the corners */
+    margin: 5px;                  /* Add space between cards */
+  }
+
+  .card-header {
+    color: #0097A7;
+    text-align: center;
+    font-size: 12px;
+    font-weight: 600;
+    border-bottom: 1px solid #80DEEA;
+    background-color: #E0F7FA;
+    padding: 5px 10px;
+  }
+
+  .card-main {
+    display: flex;              /* Children use Flexbox */
+    flex-direction: column;     /* Rotate Axis to Vertical */
+    justify-content: center;    /* Group Children in Center */
+    align-items: center;        /* Group Children in Center (on cross axis) */
+    padding: 15px 0;            /* Add padding to the top/bottom */
+  }
+
+  .material-icons {
+    font-size: 36px;
+    color: #0097A7;
+    margin-bottom: 5px;
+  }
+
+  .main-description {
+    color: #0097A7;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  /* IDs for additional colors*/
+  /* Colors from Google Material Design: https://material.io/guidelines/style/color.html*/
+
+  .or-border {
+    border-color: #FFE082;
+  }
+
+  .or-header {
+    background-color: #FFF8E1;
+    border-color: #FFE082;
+    color: #FFA000;
+  }
+
+  .or-color {
+    color: #FFA000;
+  }
+
+  .red-border {
+    border-color: #EF9A9A;
+  }
+
+  .red-header {
+    background-color: #FFEBEE;
+    border-color: #EF9A9A;
+    color: #D32F2F;
+  }
+
+  .red-color {
+    color: #D32F2F;
+  }

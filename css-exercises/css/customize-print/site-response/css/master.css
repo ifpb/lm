@@ -1,0 +1,16 @@
+@import url(text.css);
+
+body {
+  font-family: arial, sans-serif;
+  color: #616161;
+}
+
+@media all and (min-width: 800px) {
+  div {
+    columns: 2;
+  }
+}
+
+p {
+  line-height: 24px;
+}

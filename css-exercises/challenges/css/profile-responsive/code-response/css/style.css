@@ -1,0 +1,239 @@
+
+body, h1, h2, p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Generic */
+body > main {
+  background-color: #4ac5b1;
+  display: grid;
+  grid-template-areas:
+    "cover"
+    "profile"
+    "education"
+    "objective"
+    "skill"
+    "contact";
+}
+
+@media all and (min-width: 1000px) {
+  body > main {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "cover education"
+      "profile education"
+      "objective skill"
+      "contact skill";
+    justify-content: center;
+  }
+}
+
+/*Curriculum Info*/
+.curriculum-info {
+  padding: 20px 40px;
+}
+
+@media all and (min-width: 700px) {
+  .curriculum-info {
+    padding: 20px 20% 40px;
+  }
+}
+
+@media all and (min-width: 1000px) {
+  .colored-section.curriculum-info, .colored-section.cover {
+    padding: 20px 40px 40px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+  }
+
+  .curriculum-info>*, .cover>*:not(img) {
+    width: 450px;
+  }
+
+  .white-section.curriculum-info {
+    padding: 20px 0 40px 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .colored-section.cover {
+    padding: 40px 40px 40px 0px;
+  }
+
+  .white-section.education {
+    padding: 40px 0 40px 40px;
+  }
+}
+
+.colored-section {
+  color: #f7f7f7;
+}
+
+.white-section {
+  background-color: #f7f7f7;
+}
+
+.curriculum-info a {
+  text-decoration: none;
+  transition: all .4s;
+}
+
+.curriculum-info.colored-section a {
+  color: #f7f7f7;
+}
+
+.curriculum-info.colored-section a:hover {
+  text-decoration: underline;
+}
+
+.curriculum-info > header {
+  padding: 20px 0;
+}
+
+.curriculum-info header h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.curriculum-info header .material-icons {
+  font-size: 1.2em;
+  vertical-align: middle;
+  border-radius: 10px 0 10px 0;
+  padding: 4px;
+  background: #f7f7f7;
+  color: #4ac5b1;
+}
+
+.curriculum-info.white-section header {
+  color: #4ac5b1;
+}
+
+.curriculum-info.white-section header .material-icons {
+  color: #f7f7f7;
+  background-color: #4ac5b1;
+}
+
+/* Cover */
+.cover {
+  grid-area: cover;
+  text-align: center;
+  padding: 60px 0 0;
+}
+
+
+@media all and (min-width: 1000px) {
+  .cover img {
+    margin: 20px calc(calc(450px - 278px)/2);
+  }
+}
+
+.cover h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.cover h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/* Objective */
+.objective {
+  grid-area: objective;
+}
+
+/* Profile */
+.profile {
+  grid-area: profile;
+}
+.profile p {
+  margin: 1em 0;
+}
+
+/* Contact */
+.contact-me {
+  grid-area: contact;
+}
+
+@media all and (min-width: 1000px) {
+  .colored-section.contact-me {
+    padding: 20px 40px 100px 0;;
+  }
+}
+
+.contact-me main {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-gap: 0px 10px;
+}
+
+/* Education */
+.education {
+  padding-top: 40px;
+  grid-area: education;
+}
+
+.education section {
+  display: grid;
+  grid-template-areas:
+    "degree"
+    "place"
+    "date"
+    "description";
+  margin: 20px 0;
+}
+
+.education section .date {
+  grid-area: date;
+  padding: 10px 0;
+  color: #636363;
+}
+
+.education section h1 {
+  grid-area: degree;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.education section h2 {
+  grid-area: place;
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #636363;
+}
+
+.education section p {
+  grid-area: description;
+  color: #636363;
+}
+
+/* Professional Skill */
+.skill {
+  grid-area: skill;
+}
+
+.skill main section {
+  display: grid;
+  grid-template-columns: 112px 1fr;
+  margin: 5px 0;
+}
+
+.skill .skill-name {
+  text-transform: uppercase;
+}
+
+.skill .skill-bar-value .skill-bar{
+  background-color: #a6a5a5;
+}
+
+.skill .skill-bar-value .skill-bar .skill-value {
+  background-color: #49c5b1;
+  height: 1em;
+}

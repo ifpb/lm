@@ -1,7 +1,7 @@
 # Roteiro das Aulas
 
-[\# 01 - Apresentação do curso (27/08/2018)](#-01---apresentação-do-curso-27082018)<br>
-[\# 02 - Apresentação da Disciplina & Linguagem de Marcação (31/08/2018)](#-02---apresentação-da-disciplina--linguagem-de-marcação-31082018)<br>
+[\# 01 - Apresentação do curso (11/03/2019)](#-01---apresentação-do-curso-11032019)<br>
+[\# 02 - Apresentação da Disciplina & Linguagem de Marcação (15/03/2019)](#-02---apresentação-da-disciplina--linguagem-de-marcação-15032019)<br>
 [\# 03 - Primeiros passos com HTML (03/09/2018)](#-03---primeiros-passos-com-html-03092018)<br>
 [\# 04 - Sintaxe e Estruturas do HTML (10/09/2018)](#-04---sintaxe-e-estruturas-do-html-10092018)<br>
 [\# 05 - Analisando uma página (14/09/2018)](#-05---analisando-uma-página-14092018)<br>
@@ -40,12 +40,12 @@
 [\# 38 - Apresentação de Projetos (15/02/2019)](#-38---apresentação-de-projetos-15022019)<br>
 [\# 39 - Apresentação de Projetos (18/02/2019)](#-39---apresentação-de-projetos-18022019)<br>
 
-## \# 01 - Apresentação do curso (27/08/2018)
+## \# 01 - Apresentação do curso (11/03/2019)
 ---
 
 > Apresentação do CSTSI.
 
-## \# 02 - Apresentação da Disciplina & Linguagem de Marcação (31/08/2018)
+## \# 02 - Apresentação da Disciplina & Linguagem de Marcação (15/03/2019)
 ---
 
 ### Apresentação da Disciplina
@@ -62,7 +62,7 @@
 * Qual o nome e utilidade das tecnologias você irá aprendar nesta disciplina?
 
 **Exercício:**
-* Analise o [site da discplina](https://ifpb.github.io/lm/) e se inscrever no channel `#lm20181` do [slack do ifpb](https://ifpb.slack.com).
+* Analise o [site da discplina](https://ifpb.github.io/lm/).
 * Configure seu computador com essas [ferramentas](TOOLS.md).
 * Veja os [projetos](https://ifpb.github.io/projects/) já realizados nesta disciplina.
 

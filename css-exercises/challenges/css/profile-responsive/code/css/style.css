@@ -1,0 +1,163 @@
+
+body, h1, h2, p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* Generic */
+
+body > main {
+  background-color: #4ac5b1;
+  display: grid;
+  grid-template-areas:
+    "cover"
+    "profile"
+    "education"
+    "objective"
+    "skill"
+    "contact";
+}
+
+/*Curriculum Info*/
+
+.curriculum-info {
+  padding: 20px 40px;
+}
+
+.colored-section {
+  color: #f7f7f7;
+}
+
+.white-section {
+  background-color: #f7f7f7;
+}
+
+.curriculum-info a {
+  text-decoration: none;
+  transition: all .4s;
+}
+
+.curriculum-info.colored-section a {
+  color: #f7f7f7;
+}
+
+.curriculum-info.colored-section a:hover {
+  text-decoration: underline;
+}
+
+.curriculum-info header {
+  padding: 20px 0;
+}
+
+.curriculum-info header h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.curriculum-info header .material-icons {
+  font-size: 1.2em;
+  vertical-align: middle;
+  border-radius: 10px 0 10px 0;
+  padding: 4px;
+  background: #f7f7f7;
+  color: #4ac5b1;
+}
+
+.curriculum-info.white-section header {
+  color: #4ac5b1;
+}
+
+.curriculum-info.white-section header .material-icons {
+  color: #f7f7f7;
+  background-color: #4ac5b1;
+}
+
+/* Cover */
+.cover {
+  grid-area: cover;
+  text-align: center;
+  padding: 60px 0 0;
+}
+
+.cover h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.cover h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/* Objective */
+.objective {
+  grid-area: objective;
+}
+
+/* Profile */
+.profile {
+  grid-area: profile;
+}
+.profile p {
+  margin: 1em 0;
+}
+
+/* Contact */
+.contact-me {
+  grid-area: contact;
+}
+
+/* Education */
+.education {
+  grid-area: education;
+  padding-top: 40px;
+}
+
+.education section {
+  margin: 20px 0;
+}
+
+.education section .date {
+  padding: 10px 0;
+  color: #636363;
+}
+
+.education section h1 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.education section h2 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #636363;
+}
+
+.education section p {
+  color: #636363;
+}
+
+/* Professional Skill */
+.skill {
+  grid-area: skill;
+}
+
+.skill main section {
+  margin: 5px 0;
+}
+.skill .skill-name {
+  text-transform: uppercase;
+}
+
+.skill .skill-bar-value .skill-bar{
+  background-color: #a6a5a5;
+}
+
+.skill .skill-bar-value .skill-bar .skill-value {
+  background-color: #49c5b1;
+  height: 1em;
+}

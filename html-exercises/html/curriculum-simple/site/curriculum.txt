@@ -1,0 +1,40 @@
+Elon Musk
+
+  Nascimento: 01/01/1970
+  Email: elon@email.com
+  Telefone: (83) 99999-9999
+
+  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reprehenderit fugiat, recusandae placeat quas et provident veniam impedit, commodi minus dignissimos, repellendus quaerat sint adipisci aut, debitis. Architecto minima, harum!
+
+Endereço
+  Rua
+  Av. 1º de Maio, 720
+  Cidade
+  João Pessoa, PB
+  Bairro
+  Jaguaribe
+
+Experiência
+  SpaceX
+  CEO e CTO
+  2016 - Atual
+  http://www.spacex.com/
+  Tesla
+  CEO
+  2014 - Atual
+  https://www.tesla.com/
+
+Competências
+  JavaScript
+  CSS
+  HTML
+  XML
+
+Formação Acadêmica
+  Instituto Federal de Educação, Ciência e Tecnologia da Paraiba
+  Mestrado Profissional em Informática
+  2016-Atual
+  Instituto Federal de Educação, Ciência e Tecnologia da Paraiba
+  Curso Superior em Tecnologia em Sistemas para Internet
+  2010-2013
+  http://www.ifpb.edu.br/

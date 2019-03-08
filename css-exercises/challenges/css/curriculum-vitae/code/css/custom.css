@@ -1,0 +1,15 @@
+@import url(fonts.css);
+@import url(text.css);
+
+@import url(general.css);
+
+@import url(layout.css);
+
+/* contact */
+@import url(contact.css);
+
+/* skills */
+@import url(skills.css);
+
+/* experience & education*/
+@import url(block.css);

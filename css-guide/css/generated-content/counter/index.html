@@ -1,0 +1,33 @@
+<!-- https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Lists_and_Counters/Using_CSS_counters -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    body {
+      counter-reset: paragraph;
+    }
+
+    p::before {
+      counter-increment: paragraph;
+      content: "P"counter(paragraph)". ";
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga sequi animi delectus nobis temporibus. Nihil, repellat ratione repudiandae, sint maiores molestiae dolores dolorum esse, consectetur nobis quod quis laborum dicta?</p>
+  <p>Minima dolore, maxime beatae officia facere nobis perferendis id optio tempora. Officia quia repellendus, tempore mollitia pariatur vitae, repellat corporis voluptatum a saepe, delectus aut nostrum atque libero ipsum consectetur?</p>
+  <p>Veritatis laudantium consectetur necessitatibus. Assumenda dolore quas at harum nisi reiciendis, quae ut quia iusto odio dolorem cumque, consectetur eum enim consequuntur perspiciatis nostrum autem temporibus soluta debitis earum adipisci!</p>
+  <p>Deserunt vitae harum quia nemo dolor totam sit nostrum inventore ullam a. Corporis, tempore, dolores. Omnis quasi velit illum esse, atque consectetur, inventore dolores saepe obcaecati unde vitae temporibus nostrum?</p>
+  <p>Deserunt numquam corporis cupiditate quisquam culpa illum porro iusto fugit fuga temporibus ut, hic nesciunt voluptatum laborum laudantium ex, voluptas. Temporibus laborum quia exercitationem cum repellat. Quod laborum, obcaecati optio!</p>
+  <p>Deserunt voluptates ullam, eveniet accusantium, aliquam nesciunt unde quidem atque cupiditate animi nemo velit itaque minus non totam facilis quia dignissimos inventore iste obcaecati pariatur earum tenetur, mollitia reiciendis! Rem!</p>
+  <p>Earum fuga minus, consequatur in fugit porro dolore reprehenderit commodi voluptates labore sint, eveniet libero at incidunt, nostrum dolor omnis eum autem iure. Alias minus odit esse modi! Impedit, voluptates?</p>
+  <p>Recusandae minima molestias incidunt blanditiis veritatis vel doloremque eveniet adipisci, pariatur illum dolor iure cumque dolorem ratione id consectetur alias laboriosam voluptatum voluptatem similique quia, ipsum, maiores. Obcaecati eveniet, nobis.</p>
+  <p>Vel officia eum eos pariatur porro rerum, voluptates, obcaecati. Nihil, suscipit. Rerum quia ab accusamus sapiente accusantium vitae nobis quae aspernatur qui sint ipsam, reiciendis dignissimos natus sequi eveniet voluptatum.</p>
+  <p>Veritatis obcaecati aut, aliquid suscipit, provident molestiae vitae ratione tempore officia sunt ducimus nostrum similique pariatur numquam dolor, perferendis cupiditate dicta cum illum. Facilis ex perferendis ut aperiam voluptatum dolorum!</p>
+</body>
+</html>

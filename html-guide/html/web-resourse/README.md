@@ -1,0 +1,173 @@
+# Web Resourses
+
+* [Google Maps](#google-maps)
+* [Youtube](#youtube)
+* [Google Drive](#google-drive)
+* [Facebook](#facebook)
+
+## Google Maps
+---
+
+### Static Map
+
+```html
+<img
+  width="600"
+  src="https://maps.googleapis.com/maps/api/staticmap?center=ifpb+av+primeiro+de+maio&zoom=16&scale=1&size=600x300&maptype=roadmap&format=png&visual_refresh=true"
+  alt="Google Map of ifpb av primeiro de maio">
+```
+
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem">
+  <img src="assets/ifpbstaticmap.png" alt="IFPB Address">
+</div>
+
+Reference: 
+* [Static Map Maker - Google Maps](https://staticmapmaker.com/google/)
+
+### Dynamic Map
+
+```html
+<iframe 
+  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.4582707790096!2d-34.87499884397443!3d-7.135649594847398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB!5e0!3m2!1sen!2sbr!4v1521749915692" 
+  width="600"
+  height="450"
+  frameborder="0"
+  style="border:0" 
+  allowfullscreen>
+</iframe>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1979.4582707790096!2d-34.87499884397443!3d-7.135649594847398!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7ace810852ae4f1%3A0xaf5445223401f2bb!2sIFPB!5e0!3m2!1sen!2sbr!4v1521749915692" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+</div>
+
+## Youtube
+---
+
+```html
+<iframe 
+  width="560" 
+  height="315" 
+  src="https://www.youtube.com/embed/guvsH5OFizE" 
+  frameborder="0" 
+  allow="autoplay; encrypted-media" 
+  allowfullscreen>
+</iframe>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem">
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/guvsH5OFizE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+</div>
+
+References:
+* [Subscribe](https://developers.google.com/youtube/subscribe/)
+
+## Google Drive
+---
+
+```html
+<iframe 
+  src="https://docs.google.com/forms/d/e/1FAIpQLSdARkzPZ2ng5vwSNuQqrtD2J8OjNyH-5YvxijusdMYMxgni7Q/viewform?embedded=true" 
+  width="600"
+  height="1000"
+  frameborder="0"
+  marginheight="0"
+  marginwidth="0">
+    Loading...
+  </iframe>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem">
+  <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSdARkzPZ2ng5vwSNuQqrtD2J8OjNyH-5YvxijusdMYMxgni7Q/viewform?embedded=true" width="600" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>
+
+## Facebook
+---
+
+[Share Button](https://developers.facebook.com/docs/plugins/share-button)
+
+```html
+<iframe 
+  src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.ifpb.edu.br%2F&layout=button_count&size=small&mobile_iframe=true&width=118&height=20&appId" 
+  width="118" 
+  height="20" 
+  style="border:none;overflow:hidden" 
+  scrolling="no" 
+  frameborder="0" 
+  allowTransparency="true">
+</iframe>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem">
+  <iframe src="https://www.facebook.com/plugins/share_button.php?href=https%3A%2F%2Fwww.ifpb.edu.br%2F&layout=button_count&size=small&mobile_iframe=true&width=118&height=20&appId" width="118" height="20" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+[Like Button](https://developers.facebook.com/docs/plugins/like-button)
+
+```html
+<iframe 
+  src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ifpb.edu.br%2F&width=450&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId" 
+  width="450" 
+  height="80" 
+  style="border:none;overflow:hidden" 
+  scrolling="no" 
+  frameborder="0" 
+  allowTransparency="true">
+</iframe>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem">
+  <iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.ifpb.edu.br%2F&width=450&layout=standard&action=like&size=large&show_faces=true&share=true&height=80&appId" width="450" height="80" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+[Facebook Pages](https://developers.facebook.com/docs/plugins/page-plugin)
+
+```html
+<iframe 
+  src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fifpb.si%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" 
+  width="340" 
+  height="500" 
+  style="border:none;overflow:hidden" 
+  scrolling="no" 
+  frameborder="0" 
+  allowTransparency="true">
+</iframe>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem">
+  <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fifpb.si%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=false&appId" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+</div>
+
+### References
+* [Facebook - Social Plugins](https://developers.facebook.com/docs/plugins)
+
+<!-- TODO
+## Twitter
+---
+
+Reference
+  - [Twitter for Websites](https://dev.twitter.com/web/overview) 
+-->
+
+## References
+---
+
+- [Providers \| Embedly](http://embed.ly/providers)
+- [Popular embeds on Medium – Medium Support](https://help.medium.com/hc/en-us/articles/217847128-Popular-embeds-on-Medium)
+- Web Resourses
+  - [Integrações com serviços Web \| Desenvolvimento Web com HTML, CSS e JavaScript](https://www.caelum.com.br/apostila-html-css-javascript/integracoes-com-servicos-web/)
+  - [Apêndice - Mais integrações com serviços Web \| Desenvolvimento Web com HTML, CSS e JavaScript](https://www.caelum.com.br/apostila-html-css-javascript/apendice-mais-integracoes-com-servicos-web/#para-saber-mais-google)

@@ -1,0 +1,24 @@
+
+.skill .progress {
+  height: 2px;
+  position: relative;
+  width: 90%;
+  border-radius: 2px;
+  overflow: visible;
+}
+
+.skill .progress .determinate {
+  /* background-color: #78909c; */
+  position: absolute;
+  top: 0;
+  bottom: 0
+}
+
+.skill .progress .determinate .fa {
+  font-size: 13px;
+  position: absolute;
+  top: -4px;
+  right: -2px;
+  margin-left: 50%;
+  color: #fff
+}

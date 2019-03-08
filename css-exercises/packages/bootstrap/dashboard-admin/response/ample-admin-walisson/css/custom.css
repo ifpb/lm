@@ -1,0 +1,137 @@
+body {
+    font-family: Rubik, sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    font-weight: 300;
+    color: #313131;
+    background-color: #f2f2f2;
+}
+
+.white-box {
+    background-color: #fff;
+    padding: 25px;
+    margin-bottom: 30px;
+}
+
+.white-box .box-title {
+    margin: 0 0 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+h3 {
+    line-height: 30px;
+}
+
+h4 {
+    line-height: 22px;
+}
+
+.bg-title {
+    background: #fff;
+    overflow: hidden;
+    padding: 15px 10px 9px;
+    margin-bottom: 25px;
+    margin-left: -25.5px;
+    margin-right: -25.5px;
+}
+
+.bg-title h4 {
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+.text-success {
+    color: #7ace4c;
+}
+
+.analytics-info .list-inline li span {
+    font-size: 24px;
+}
+
+.grafico {
+    font-size: 24px;
+    display: inline-block;
+    width: 67px;
+    height: 30px;
+    vertical-align: top;
+}
+
+.two-part li {
+    width: 48.8%;
+}
+
+.list-inline>li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.analytics-info .list-inline li {
+    vertical-align: middle;
+}
+
+.analytics-info .list-inline li i {
+    font-size: 20px;
+}
+
+ul {
+    margin-top: 0;
+}
+
+.ti-arrow-up:before {
+    content: "\e627";
+}
+
+:before {
+    box-sizing: border-box;
+}
+
+.text-purple {
+    color: #707cd2;
+}
+
+.text-info {
+    color: #41b3f9;
+}
+
+.text-danger {
+    color: #f33155;
+}
+
+.top-left-part {
+    background: #fff;
+}
+
+.left-area {
+    display: block;
+    float: right;
+    background-color: #fff;
+}
+
+.breadcrumb {
+    float: right;
+    background: 0 0;
+    border-radius: 4px;
+    color: #555;
+}
+
+.breadcrumb:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.waves-effect {
+    position: relative;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    -webkit-tap-highlight-color: transparent;
+}

@@ -1,0 +1,189 @@
+/*
+colors: https://coolors.co/333333-969696-aaaaaa-d3d3d3-dddddd
+        https://coolors.co/969696-aaaaaa-d3d3d3-dddddd-ebebeb
+  #333
+  #969696
+  #aaa
+  #d3d3d3
+  #ddd
+  #ebebeb
+  #fff
+*/
+
+@font-face {
+  font-family: 'Domine';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/Domine-Regular.ttf');
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 135%;
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 940px;
+  margin: auto;
+  padding: 20px 0px;
+}
+.float-right {
+  float: right;
+}
+
+/* header */
+body>header {
+  border-bottom: 1px solid #ddd;
+  background-color: #333;
+}
+body>header>.wrapper {
+  padding: 30px 0px;
+}
+body>header>.wrapper>a {
+  font-family: Domine, sans-serif;
+  color: #ebebeb;
+  font-size: 25px;
+  line-height: 100%;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+body>header nav,
+body>header ul {
+  display: inline;
+}
+body>header ul {
+  padding-left: 10px;
+  list-style: none;
+}
+body>header ul li {
+  vertical-align: top;
+  display: inline-block;
+  padding: 3px 10px;
+}
+body>header ul li a {
+  font-family: Domine, sans-serif;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #969696;
+  transition: color 200ms ease;
+}
+body>header ul li a.active,
+body>header ul li a:hover {
+  color: #ebebeb;
+}
+
+/* main */
+body>main.wrapper {
+  margin: 40px auto;
+}
+body>main article {
+  margin: 0px 0px 40px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #d3d3d3;
+}
+body>main article a.post-title-link {
+  display: block;
+  text-decoration: none;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: Domine, sans-serif;
+  color: #333;
+  transition: color 200ms ease;
+}
+body>main article a.post-title-link:hover {
+  color: #aaa;
+}
+body>main article div.post-detail {
+  margin: 20px 0px 16px;
+  color: #969696;
+  font-size: 12px;
+  line-height: 125%;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+body>main article div.post-detail a {
+  color: #969696;
+  text-decoration: none;
+}
+body>main article p.post-summary {
+  margin: 0px;
+  margin-bottom: 14px;
+  line-height: 144%;
+  font-weight: 100;
+}
+body>main article a.button-round {
+  padding: 5px 12px;
+  border-radius: 20px;
+  background-color: #fff;
+  font-size: 14px;
+  font-weight: 100;
+  text-decoration: none;
+  cursor: pointer;
+  color: #333;
+  border: 1px solid #d3d3d3;
+  transition: border 200ms ease, color 200ms ease;
+}
+body>main article a.button-round:hover {
+  border: 1px solid #333;
+}
+body>main .pagination {
+  text-align: center;
+}
+body>main .pagination .button {
+  padding: 11px 20px;
+  border-radius: 3px;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-decoration: none;
+  box-shadow: 0 0 0 1px #ddd;
+  transition: box-shadow 200ms ease;
+}
+body>main .pagination .button:hover {
+  box-shadow: 0 0 0 1px #333;
+}
+
+/* footer */
+body>footer {
+  background-color: #333;
+}
+body>footer nav.social,
+body>footer nav.social ul {
+  display: inline;
+}
+body>footer nav.social ul li {
+  margin: 0px;
+  display: inline-block;
+}
+body>footer nav.social ul li img {
+  opacity: 0.41;
+  transition: opacity 200ms ease;
+}
+body>footer nav.social ul li img:hover {
+  opacity: 0.8;
+}
+body>footer a{
+  margin-right: 22px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #969696;
+  transition: color 200ms ease;
+}
+body>footer a.active,
+body>footer a:hover {
+  color: #ebebeb;
+}

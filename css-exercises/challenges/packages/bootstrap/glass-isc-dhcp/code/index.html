@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Glass | ISC DCHP Server Interface</title>
+  <link href="css/bootstrap.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar fixed-top flex-md-nowrap p-0 shadow-sm">
+    <a class="navbar-brand col-sm-3 col-md-2 mr-0" href="#">Glass | ISC DCHP Server Interface</a>
+  </nav>
+
+  <div class="container-fluid">
+    <div class="row">
+      <nav class="col-md-2 d-none d-md-block bg-light sidebar">
+        <div class="sidebar-sticky">
+          <h6 class="sidebar-heading d-flex justify-content-between align-items-center px-3 mt-4 mb-1 text-muted">
+            <span>Glass Navigation</span>
+          </h6>
+          <ul class="nav flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">
+                <span data-feather="home"></span>
+                Home
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="bar-chart-2"></span>
+                Statistics
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="layers"></span>
+                Leases
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <span data-feather="archive"></span>
+                Logs
+              </a>
+            </li>
+          </ul>
+
+          <!-- 
+            TODO Component 1 
+
+            ADMIN
+            DHCP Config (icon: edit-2)
+            DHCP Config Snapshots (icon: download-cloud)
+            Start/Stop/Restart (icon: rotate-cw)
+            
+            SETTINGS
+            Glass Settings (icon: sliders)
+            Glass Alerts (icon: send)
+            
+          -->
+        </div>
+      </nav>
+
+      <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4">
+        <!-- 
+          TODO Component 2
+
+          (icon: alert-circle)
+          Leases Per Second / Minute
+          0/0
+
+          (icon: pie-chart)
+          Total Leases
+          14
+
+          (icon: cpu)
+          CPU
+          0%
+
+          (icon: server)
+          SERVER
+          dhcp
+        -->
+
+        <!--  
+          TODO Component 3
+
+          Shared Networks
+          Location      Used     Size Free Utilization
+          10.0.40.0/24  9(4.71%) 191  182  25%
+          10.0.20.0/24  4(4.4%)  91   87   20%
+          10.0.10.0/24  1(0.65%) 155  154  10%
+          10.0.30.0/24  0(0%)    91   91    0%
+
+        -->
+        
+        <!--  
+          TODO Component 4
+
+          Subnets
+          Subnet Location IP Range                 Used     Size Free Utilization
+          10.0.40.0/24    10.0.40.0 - 10.0.40.200  9(4.71%) 191  182  25%
+          10.0.20.0/24    10.0.20.0 - 10.0.20.100  4(4.4%)  91   87   20%
+          10.0.10.0/24    10.0.10.0 - 10.0.10.254  1(0.65%) 155  154  10%
+          10.0.30.0/24    10.0.30.0 - 10.0.30.100  0(0%)    91   91    0%
+
+        -->
+        
+      </main>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="js/jquery-3.3.1.slim.min.js"></script>
+  <script src="js/vendor/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <!-- Icons -->
+  <script src="js/feather.js"></script>
+  <script>
+    feather.replace()
+  </script>
+</body>
+</html>

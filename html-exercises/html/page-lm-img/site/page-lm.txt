@@ -1,0 +1,74 @@
+LM
+Logo LM
+A disciplina de Linguagem de Marcação do Curso Superior de Tecnologia em Sistemas para Internet do IFPB tem como objetivo apresentar ao aluno conceitos sobre desenvolvimento Web Front-end. Sua carga horária apresenta um total de 50 horas aula e será ministrada pelo professor Luiz Carlos Chaves e Edemberg Rocha. Para as aulas serão utilizadas exposições e atividades práticas, além de avaliações individuais e em grupo.
+
+Conteúdo
+Dentre os principais temas que serão abordados na disciplina pode-se listar:
+Estrutura da Web
+  Função do cliente e servidor HTTP
+  Componentes para construir um sistema Web
+HTML
+  Hypertexto
+  Tag, atributo, Entidades
+  Estrutura do HTML
+CSS
+  Folha de estilo
+  Herança e cascata
+  Seletores, propriedades, funções, media query, at-rules
+  Definiação de layouts e estilos
+  Animações
+  Extenções de CSS
+XML
+  Definição
+  Estrutura
+  Validação
+Além disso, é possível visualizar os detalhes do roteiro das aulas, das ferramentas utilizadas e de alguns links úteis.
+https://github.com/ifpb/lm/blob/master/docs/OUTLINE.md
+https://github.com/ifpb/lm/blob/master/docs/TOOLS.md
+https://github.com/ifpb/lm/blob/master/docs/RESOURCES.md
+
+Avaliações
+A nota final será computado através da média ponderada das avaliações e poderá ser adicionada atividades extras.
+Provas Prática
+  Avaliação I: HTML & CSS;
+  Avaliação II: HTML & CSS;
+Trabalho
+  Projeto: A especificação do projeto.
+  Blog: A especificação do blog.
+https://github.com/ifpb/lm/blob/master/exams/projeto.md
+https://github.com/ifpb/lm/blob/master/exams/blog.md
+
+Comunicação
+  Toda a comunicação será realizada usando o Slack Status
+  https://ifpb.herokuapp.com/
+  https://camo.githubusercontent.com/c8b0243c08a8cd912babcd7bf9ac9e60fa4ab0df/68747470733a2f2f696670622e6865726f6b756170702e636f6d2f62616467652e737667
+
+Bibliografia
+  Bibliografia Básica
+    CSS e HTML
+      https://novatec.com.br/livros/csshtml/
+      img/books/css-e-html.jpeg
+    CSS3
+      https://novatec.com.br/livros/css3/
+      img/books/css3.jpeg
+    android com html css
+      https://novatec.com.br/livros/aplicativos-android-com-html-css/
+      img/books/android-com-html-css.jpg
+  Bibliografia Complementar
+    Apostila Caelum
+      https://www.caelum.com.br/apostila-html-css-javascript/
+      img/books/caelum.png
+    Learn code HTML CSS
+      https://learn.shayhowe.com/advanced-html-css/
+      img/books/learn-code-html-css.png
+    HTML Reference
+      https://developer.mozilla.org/en-US/docs/Web/HTML/Reference
+      img/books/mdn.png
+    CSS Reference
+      https://developer.mozilla.org/en-US/docs/Web/CSS/Reference
+      img/books/mdn.png
+    Aprendendo XML
+      http://shop.oreilly.com/product/9780596004200.do
+      img/books/xml.jpg
+E para completar ainda mais a listagem existe estes exemplares como outros indicações.
+https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md

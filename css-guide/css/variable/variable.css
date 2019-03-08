@@ -1,0 +1,22 @@
+:root {
+  --gray-base:       #000;
+  --gray-darker:     #222;
+  --gray-dark:       #333;
+  --gray:            #555;
+  --gray-light:      #777;
+  --gray-lighter:    #eee;
+
+  --brand-primary:   #337ab7;
+  --brand-success:   #5cb85c;
+  --brand-info:      #5bc0de;
+  --brand-warning:   #f0ad4e;
+  --brand-danger:    #d9534f;
+
+  --body-bg:         #fff;
+  --text-color:      var(--gray-dark);
+  --link-color:      var(--brand-primary);
+
+  --font-size-base:  14px;
+  --font-size-large: calc(var(--font-size-base) * 1.25); // ~18px
+  --font-size-small: calc(var(--font-size-base) * 0.85); // ~12px
+}

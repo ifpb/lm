@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+
+  <title>Hello, world!</title>
+</head>
+
+<body>
+  <main class="container">
+    <h1 style="color: #606c71">Contato</h1>
+    <form action="sucesso.html" method="post">
+      <div class="form-row">
+        <div class="col">
+          <label for="nome">Nome</label>
+          <input type="text" class="form-control" id="nome" name="nome" required>
+        </div>
+        <div class="col">
+          <label for="sobrenome">Sobrenome</label>
+          <input type="text" class="form-control" id="sobrenome" name="sobrenome" required>
+        </div>
+      </div>
+      <div class="form-group">
+        Sexo
+        <div>
+          <input type="radio" name="sexo" id="masculino" value="m" checked>
+          <label for="masculino">Masculino</label>
+          <input type="radio" name="sexo" id="feminino" value="f">
+          <label for="feminino">Feminino</label>
+        </div>
+      </div>
+      <div class="form-group">
+        <label for="curso">Curso</label>
+        <select name="curso" class="form-control" id="curso">
+          <option value="" selected>escolha um curso</option>
+          <option value="TSI">Sistemas para Internet</option>
+          <option value="RC">Redes de Computadores</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="text" class="form-control" id="email" name="email">
+      </div>
+      <div class="form-group">
+        <label for="titulo">Título</label>
+        <input type="text" class="form-control" id="titulo" name="titulo">
+      </div>
+      <div class="form-group">
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" class="form-control" name="mensagem"></textarea>
+      </div>
+      <input type="submit" value="Enviar">
+    </form>
+  </main>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

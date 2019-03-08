@@ -1,0 +1,144 @@
+body, h1, h2, p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.left-side-out {
+  width: 50%;
+  float: left;
+  background-color: #4ac5b1;
+}
+
+.left-side-in {
+  width: 480px;
+  float: right;
+  color: #f7f7f7;
+  margin-right: 20px;
+  padding: 50px 0;
+}
+
+.right-side-out {
+  width: 50%;
+  float: right;
+}
+
+.right-side-in {
+  width: 480px;
+  float: left;
+  margin-left: 20px;
+  padding: 50px 0;
+}
+
+
+.curriculum-info {
+  margin: 40px 0;
+}
+
+.left-side-in a {
+  color: #f7f7f7;
+  text-decoration: none;
+}
+
+.left-side-in a:hover {
+  text-decoration: underline;
+}
+
+.curriculum-info>h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.right-side-in .curriculum-info>h1 {
+  color: #49c5b1;
+}
+
+.curriculum-info h1 .material-icons {
+  font-size: 1.2em;
+  vertical-align: middle;
+  border-radius: 10px 0 10px 0;
+  padding: 4px;
+}
+
+.left-side-in .curriculum-info h1 .material-icons {
+  background: #f7f7f7;
+  color: #4ac5b1;
+}
+
+.right-side-in .curriculum-info h1 .material-icons {
+  background: #49c5b1;
+  color: #fff;
+}
+
+/* Cover */
+.cover {
+  width: 278px;
+  margin: 40px auto;
+  text-align: center;
+}
+
+.cover h1 {
+  font-size: 2.5em;
+  font-weight: 300;
+}
+
+.cover h2 {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+/* Education */
+.education {
+  margin-top: 40px;
+}
+
+.education table td {
+  vertical-align: top;
+  padding-bottom: 20px;
+}
+
+.education table .date {
+  color: #636363;
+  text-align: center;
+}
+
+.education table h1 {
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.education table h2 {
+  font-size: 1.1em;
+  font-weight: 600;
+  color: #636363;
+}
+
+.education table p {
+  color: #636363;
+}
+
+/* Professional Skill */
+.skill table {
+  width: 100%;
+}
+
+.skill .skill-name {
+  width: 25%;
+  text-transform: uppercase;
+}
+
+.skill .skill-bar-value {
+  width: 75%;
+}
+.skill .skill-bar-value .skill-bar{
+  background-color: #a6a5a5;
+}
+
+.skill .skill-bar-value .skill-bar .skill-value {
+  background-color: #49c5b1;
+  height: 1em;
+}

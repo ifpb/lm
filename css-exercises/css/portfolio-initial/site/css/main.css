@@ -1,0 +1,101 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Montserrat Regular'), local('Montserrat-Regular'), url(../fonts/Montserrat-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Montserrat Bold'), local('Montserrat-Bold'), url(../fonts/Montserrat-Bold.ttf) format('truetype');
+}
+
+body {
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0px;
+}
+
+/* Header */
+header {
+  background-image: url(../img/header-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 100vh;
+  min-height: 400px;
+}
+
+header .intro-text p, header .intro-text h1 {
+  color: #ecece2;
+}
+
+header .intro-text h1 {
+  margin: 0px;
+  font-size: 3em;
+  text-transform: uppercase;
+}
+
+header .intro-text p {
+  font-size: 2em;
+  font-style: italic;
+}
+
+header .intro-text .btn-intro {
+  color: #fff;
+  background-color: #fed136;
+  border-color: #fed136;
+  border-radius: 3px;
+  font-size: 1.5em;
+  padding: 20px 40px;
+  line-height: 1.42857143;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* Main */
+main {
+  color: #333;
+}
+
+main .service .circle-icon {
+  background-color: #fed136;
+  color: #fff;
+}
+
+main .service-description  h1 {
+  font-size: 3em;
+}
+
+main .service-description  p {
+  color: #777;
+  font-style: italic;
+}
+
+main .service p {
+  color: #777;
+  font-size: 14px;
+  line-height: 1.75;
+}
+
+/* footer */
+footer {
+  background-color: #ecece2;
+}
+
+footer section.social a {
+  color: #555;
+  text-decoration: none;
+}
+footer section.copyright {
+  color: #555;
+  background-color: #c7c7af;
+}
+
+footer section.copyright i.fa-heart {
+  color: #f00;
+}

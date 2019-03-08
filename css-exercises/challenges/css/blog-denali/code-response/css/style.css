@@ -1,0 +1,207 @@
+/*
+colors: https://coolors.co/f0f0f0-c7c7c7-333333-888888-aaaaaa
+  #f0f0f0
+  #c7c7c7
+  #333
+  #888
+  #aaa
+  #fff
+*/
+
+@font-face {
+  font-family: Lato, sans-serif;
+  src: url(../font/Lato-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Lato, sans-serif;
+  background: #f0f0f0;
+  margin: 0px;
+  color: #333;
+  font-size: 14px;
+}
+.wrapper {
+  width: 940px;
+  margin: auto;
+}
+.white-wrapper {
+  padding: 20px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .06);
+}
+.row {
+  display: inline-block;
+  vertical-align: top;
+}
+.list-links-block,
+.list-links-inline {
+  list-style: none;
+  padding: 0px;
+}
+.list-links-inline li {
+  display: inline-block;
+}
+.grey-rule {
+  width: 90px;
+  height: 1px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  background-color: #c7c7c7;
+}
+
+/* header */
+body>header {
+  background: #fff;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, .06);
+}
+body>header div.wrapper h1 {
+  font-size: 24px;
+  margin: 25px 0px;
+}
+body>header div.wrapper h1 a {
+  text-decoration: none;
+  color: #333;
+}
+body>header div.wrapper nav {
+  float: right;
+  margin-top: 20px;
+  margin-right: 0.5%;
+}
+body>header div.wrapper nav ul li {
+  margin-left: 20px;
+}
+body>header div.wrapper nav ul li a {
+  text-decoration: none;
+  color: #aaa;
+}
+body>header div.wrapper nav ul li a:hover,
+body>header div.wrapper nav ul li a.active {
+  color: #333;
+}
+
+/* main */
+body>main{
+  padding-top: 30px;
+  padding-bottom: 50px;
+}
+
+/* blog-info */
+body>main>section.blog-info{
+  width: 24%;
+  background-color: #fff;
+}
+body>main>section.blog-info div.blog-description {
+  text-align: center;
+}
+body>main>section.blog-info div.blog-description img{
+  border-radius: 50%;
+  width: 70%;
+}
+body>main>section.blog-info div.blog-description p{
+  margin-bottom: 20px;
+  line-height: 145%;
+  text-align: left;
+}
+body>main>section.blog-info div.featured-posts ul li {
+  margin-top: 10px;
+}
+body>main>section.blog-info div.featured-posts ul li a {
+  text-decoration: none;
+  color: #aaa;
+}
+body>main>section.blog-info div.featured-posts ul li a:hover {
+  color: #333;
+}
+body>main>section.blog-info div.social ul li {
+  width: 14%;
+  opacity: 0.36;
+  transition: opacity 200ms ease;
+}
+body>main>section.blog-info div.social ul li:hover {
+  opacity: 1;
+}
+
+/* articles */
+body>main>section.posts-list{
+  width: 75.5%;
+}
+body>main>section.posts-list article {
+  background-color: #fff;
+  margin: 0px 0px 30px 30px;
+}
+body>main>section.posts-list article a {
+  text-decoration: none;
+}
+body>main>section.posts-list article div.post-cover {
+  width: 30%;
+}
+body>main>section.posts-list article div.post-cover img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  padding: 0px;
+  opacity: 0.9;
+  transition: opacity 200ms ease;
+}
+body>main>section.posts-list article div.post-cover img:hover {
+  opacity: 0.6;
+}
+body>main>section.posts-list article div.post-info {
+  width: 67%;
+  padding: 0px 15px;
+  color: #aaa;
+}
+body>main>section.posts-list article div.post-title h1 {
+  margin: 0px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #333;
+}
+body>main>section.posts-list article div.post-detail,
+body>main>section.posts-list article div.post-summary {
+  margin-top: 10px;
+}
+body>main>section.posts-list article div.post-detail {
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+body>main>section.posts-list article div.post-detail a {
+  color: #aaa;
+  transition: color 200ms ease;
+}
+body>main>section.posts-list article div.post-detail a:hover {
+  color: #333;
+}
+body>main>section.posts-list article div.post-summary a {
+  text-decoration: underline;
+  color: #aaa;
+  transition: color 200ms ease;
+}
+body>main>section.posts-list article div.post-summary a:hover {
+  color: #333;
+}
+body>main>section.posts-list article div.post-summary p {
+  display: inline;
+  line-height: 22px;
+}
+
+/* pagination */
+body>main>section.posts-list div.pagination a {
+  padding: 11px 20px;
+  margin-left: 30px;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+  text-align: center;
+  text-decoration: none;
+  background-color: #888;
+  transition: background-color 200ms ease;
+}
+body>main>section.posts-list div.pagination a:hover {
+  background-color: #333;
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro|Material+Icons">
+</head>
+<body>
+  <header>
+    <span>vm-debian8-part - 192.168.0.1</span>
+    <i class="material-icons">cached</i>
+  </header>
+  <main>
+    <div class="row">
+      <div class="col-left">
+        <section class="panel system">
+          <header>System<i class="material-icons">cached</i></header>
+          <!-- TODO system
+            Hostname         vm-debian8-part
+            OS               Debian GNU/Linux 8.1 (jessie)
+            Kernel version   3.16.0-4-amd64
+            Uptime           1 day, 2 hour
+            Last boot        2017-06-09 10:10:10
+            Current user(s)  2
+          -->
+        </section>
+
+        <section class="panel network">
+          <header>Network Usage<i class="material-icons">cached</i></header>
+          <!-- TODO network
+            Interface  IP            Receive    Transmit
+            eth0       192.168.0.1   500.00 MB  19.00 MB
+            lo         127.0.0.1     10 Kb      10 Kb
+          -->
+        </section>
+      </div>
+
+      <div class="col-right">
+        <section class="panel memory">
+          <header>Memory<i class="material-icons">cached</i></header>
+          <!-- TODO memory
+            Used %   16%
+            Used     80.28 MB
+            Free     414.17 MB
+            Total    494.45 MB
+          -->
+        </section>
+
+        <section class="panel service">
+          <header>Services Status<i class="material-icons">cached</i></header>
+          <!-- TODO service
+            online   Web Server               80
+            offline  Email Server (incoming)  993
+            offline  Email Server (outgoing)  587
+            offline  Database Server          3306
+            online   SSH                      22
+          -->
+        </section>
+      </div>
+    </div>
+
+    <section class="panel disk">
+      <header>Disk Usage<i class="material-icons">cached</i></header>
+      <!-- TODO Disk
+        Filesystem   Mount   Use  Free    Used      Total
+        /dev/sda1    /       37%  1.42GB  808.07MB  2.36GB
+        /dev/sda2    /var    10%   2GB    212.04MB  2.34BB
+        /dev/sda3    /home    1%  2.53GB   4.21MB   2.69GB
+      -->
+    </section>
+  </main>
+</body>
+</html>

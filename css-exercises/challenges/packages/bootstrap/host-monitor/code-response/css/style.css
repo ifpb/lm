@@ -1,0 +1,98 @@
+body {
+  color: #797979;
+  background: #f2f2f2;
+  font-family: 'Ruda', sans-serif;
+  padding: 0px !important;
+  margin: 0px !important;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* navbar */
+.navbar {
+  background: #ffd777;
+  border-bottom: 1px solid #c9aa5f;
+  padding: .4rem 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #797979;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.navbar .admin-link .material-icons {
+  font-size: 30px;
+}
+
+.navbar img.user {
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+/* main form */
+.container form button {
+  background-color: #797979;
+  color: #fff;
+  font-size: .5rem;
+}
+
+/* main cards */
+.container .row {
+  margin: 2rem auto;
+}
+
+.card {
+  text-align: center;
+  min-height: 328px;
+  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.2);
+  transition: box-shadow 300ms ease;
+  border: none;
+}
+
+.card:hover {
+  box-shadow: 2px 3px 2px rgba(0, 0, 0, 0.3);
+}
+
+.card .card-header {
+  background-color: #797979;
+  color: #fff;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.card .card-body .material-icons {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+}
+
+#hostname .card-body .material-icons,
+#cpu-status .card-body .material-icons {
+  margin-bottom: 2rem;
+}
+
+#disk-size, #memory-size {
+  font-size: 2rem;
+  margin-bottom: 1rem; 
+}
+
+.card-body h2 {
+  font-size: 1.2rem;
+}
+
+.card table {
+  margin: 0;
+}
+
+.card table td,
+.card table th {
+  padding: .2rem;
+}

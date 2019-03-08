@@ -1,0 +1,75 @@
+body, h1, h2, p {
+  margin: 0;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.left-side-out {
+  width: 50%;
+  float: left;
+  background-color: #4ac5b1;
+}
+
+.left-side-in {
+  width: 480px;
+  float: right;
+  color: #f7f7f7;
+  margin-right: 20px;
+  padding: 50px 0;
+}
+
+.right-side-out {
+  width: 50%;
+  float: right;
+}
+
+.right-side-in {
+  width: 480px;
+  float: left;
+  margin-left: 20px;
+  padding: 50px 0;
+}
+
+
+.curriculum-info {
+  margin: 40px 0;
+}
+
+.curriculum-info>h1 {
+  text-transform: uppercase;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+.right-side-in .curriculum-info>h1 {
+  color: #49c5b1;
+}
+
+.curriculum-info h1 .material-icons {
+  font-size: 1.2em;
+  vertical-align: middle;
+  border-radius: 10px 0 10px 0;
+  padding: 4px;
+}
+
+.left-side-in .curriculum-info h1 .material-icons {
+  background: #f7f7f7;
+  color: #4ac5b1;
+}
+
+.right-side-in .curriculum-info h1 .material-icons {
+  background: #49c5b1;
+  color: #fff;
+}
+
+/* Cover */
+
+
+/* Education */
+.education {
+  margin-top: 40px;
+}
+
+/* Professional Skill */

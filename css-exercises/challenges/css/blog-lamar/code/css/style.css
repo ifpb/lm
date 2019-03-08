@@ -1,0 +1,25 @@
+/*
+colors: https://coolors.co/333333-969696-aaaaaa-d3d3d3-dddddd
+        https://coolors.co/969696-aaaaaa-d3d3d3-dddddd-ebebeb
+  #333
+  #969696
+  #aaa
+  #d3d3d3
+  #ddd
+  #ebebeb
+  #fff
+*/
+
+@font-face {
+  font-family: 'Domine';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../font/Domine-Regular.ttf');
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 135%;
+  margin: 0px;
+}

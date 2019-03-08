@@ -1,0 +1,108 @@
+/* https://www.w3.org/TR/css3-color/ */
+
+body {
+  color: darkslategrey;
+  font-family: arial, sans-serif;
+  font-size: 17px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+#copyright {
+  font-weight: bold;
+  font-style: italic;
+}
+
+h1 {
+  font-size:30px;
+  font-family: 'Audiowide', cursive;
+}
+
+h2 {
+  font-size:24px;
+  background-color: lightskyblue;
+  border-radius: 5px;
+}
+
+h1, h2, a, a:visited {
+  color: darkblue;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+i.material-icons {
+  font-size: 1rem;
+}
+p, i.material-icons {
+  line-height: 1.5rem;
+}
+
+.btn {
+  font-size: 1.3rem;
+}
+.btn:hover {
+  text-decoration: none;
+  background-color: darkblue;
+  color: white;
+}
+
+h1 a, h1 a:visited {
+  color: white;
+}
+h2 a, h2 a:visited {
+  color: lightskyblue;
+}
+h1:hover a, h2:hover a {
+  color: darkblue;
+}
+
+#social {
+  text-align: center;
+}
+
+#social a {
+  color: white;
+  font-size: 2rem;
+}
+
+#social .fa-facebook-square {
+  color: navy;
+}
+
+#social .fa-twitter-square {
+  color: dodgerblue;
+}
+
+#social .fa-linkedin-square {
+  color: navy;
+}
+
+@media print {
+  body, h1 {
+    color: black;
+    font-family: Times, serif;
+  }
+
+  h1#elon {
+    text-align: left;
+  }
+
+  h2 {
+    background-color: unset;
+  }
+
+  h1 a, h2 a {
+    color: white;
+  }
+
+  a.topo {
+    color: white;
+  }
+}

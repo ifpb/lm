@@ -1,0 +1,41 @@
+.sidebar,
+.navbar .brand-name {
+  width: 20%;
+  transition: all .5s;
+}
+
+.sidebar+main,
+.navbar .navbar-content {
+  margin-left: 20%;
+}
+
+.sidebar.only-icons+main,
+.navbar.only-icons .navbar-content {
+  margin-left: 70px;
+}
+
+.sidebar.only-icons,
+.navbar.only-icons .brand-name {
+  width: 70px;
+}
+
+main .logs,
+main .card .uptime table tbody {
+  height: 220px;
+  overflow: hidden;
+  overflow-y: scroll;
+  outline: none;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 1000px) {
+  .sidebar,
+  .navbar .brand-name {
+    width: 70px;
+  }
+
+  .sidebar+main,
+  .navbar .navbar-content {
+    margin-left: 70px;
+  }
+}

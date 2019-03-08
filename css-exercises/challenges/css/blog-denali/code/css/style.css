@@ -1,0 +1,25 @@
+/*
+colors: https://coolors.co/f0f0f0-c7c7c7-333333-888888-aaaaaa
+  #f0f0f0
+  #c7c7c7
+  #333
+  #888
+  #aaa
+  #fff
+*/
+
+@font-face {
+  font-family: Lato, sans-serif;
+  src: url(../font/Lato-Regular.ttf);
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: Lato, sans-serif;
+  background: #f0f0f0;
+  margin: 0px;
+  color: #333;
+  font-size: 14px;
+}
+

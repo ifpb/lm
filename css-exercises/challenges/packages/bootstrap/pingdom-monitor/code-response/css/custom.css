@@ -1,0 +1,94 @@
+@import "layout.css";
+@import "navbar.css";
+@import "sidebar.css";
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #797979;
+  background-color: #eee;
+  padding-top: 3.5rem;
+}
+
+.text-muted {
+  color: #9a9da0 !important;
+}
+
+main {
+  width: auto !important;
+}
+
+main h1 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #797979;
+}
+
+main>.row, main>.row>div[class^=col] {
+  margin: 30px auto 10px;
+}
+
+main .card-title {
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+
+main .response-time div[class^=col] {
+  padding: 0;
+}
+
+main .card .counter{
+  color: #505458;
+  margin: 10px 0;
+  font-weight: 700;
+}
+
+main .card .uptime th {
+  border-top: none;
+}
+
+main .card .uptime th,
+main .card .uptime td {
+  padding: .2rem .5rem;
+}
+
+main .card .uptime table {
+  counter-reset: row;
+}
+
+main .card .uptime table td:first-child::before {
+  content: counter(row);
+  counter-increment: row;
+}
+
+main .log {
+  border-bottom: 1px solid #e9ecef
+}
+
+main .log:last-child {
+  border-bottom: none;
+}
+
+main .log .name {
+  color: #333333;
+  line-height: 1.6;
+  margin: 0;
+}
+
+main .log .response {
+  color: #9a9da0;
+  margin: 0;
+  font-size: 12px;
+}
+
+main .log .fa-stack {
+  margin-right: 10px;
+  color: #57c5a5;
+}
+
+main .log .fa-stack.down {
+  color: #cc7c5d;
+}

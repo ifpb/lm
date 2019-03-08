@@ -1,0 +1,75 @@
+body {
+  background-color: #80deea;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: #fff;
+  padding: 30px;
+  width: 40%;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+}
+
+main form .form-group {
+  display: flex;
+  align-items: center;
+  margin: .4rem;
+  text-align: right;
+}
+
+main form label {
+  flex: none;
+  width: 100px;
+  padding-right: 20px;
+}
+
+main form label::after {
+  content: ":";
+}
+
+main form .form-control {
+  flex: 1 1 auto;
+}
+
+main form .cep {
+  grid-area: cep;
+}
+
+main form .street {
+  grid-area: street;
+}
+
+main form .number {
+  grid-area: number;
+}
+
+main form .neighborhood {
+  grid-area: neighborhood;
+}
+
+main form .state {
+  grid-area: state;
+}
+
+main form .city {
+  grid-area: city;
+}
+
+main form label {
+  font-size: .9rem;
+  font-weight: bold;
+  margin-bottom: .3rem;
+}
+
+main form input {
+  outline: none;
+  height: 1.5rem;
+}

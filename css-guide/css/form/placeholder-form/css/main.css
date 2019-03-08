@@ -1,0 +1,30 @@
+body {
+  background-color: #80deea;
+  font-family: sans-serif;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+main {
+  background-color: #fff;
+  padding: 30px;
+  width: 40%;
+}
+
+main form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+main form input[type=text] {
+  width: 50%;
+}
+
+main form input {
+  margin: 10px 0;
+  padding: 10px;
+  outline: none;
+}

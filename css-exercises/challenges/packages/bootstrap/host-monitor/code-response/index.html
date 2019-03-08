@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Ruda" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+    crossorigin="anonymous">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <a class="navbar-brand" href="#">HostDash</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-end admin-link" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a href="#">
+            <i class="material-icons">date_range</i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <i class="material-icons">notifications</i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a href="#">
+            <img class="user" src="img/admin.jpg" alt="admin">
+          </a>
+        </li>
+    </div>
+  </nav>
+  <main class="container">
+    <form action="">
+      <div class="row justify-content-center">
+        <div class="col-5">
+          <input type="text" placeholder="hostname" class="form-control">
+        </div>
+        <div class="col-1">
+          <button class="btn">
+            <i class="material-icons">search</i>
+          </button>
+        </div>
+      </div>
+    </form>
+    <div class="row">
+      <div class="col">
+        <section class="card" id="hostname">
+          <header class="card-header">GENERAL INFO</header>
+          <main class="card-body">
+            <i class="material-icons">info_outline</i>
+            <table class="table">
+              <tbody>
+                <tr>
+                  <td>Hostname</td>
+                  <td>yoshi</td>
+                </tr>
+                <tr>
+                  <td>OS</td>
+                  <td>CentOS</td>
+                </tr>
+                <tr>
+                  <td>Uptime</td>
+                  <td>40' 32''</td>
+                </tr>
+                <tr>
+                  <td>Processor</td>
+                  <td>Quad Core Xeon E5 2.8 Ghz</td>
+                </tr>
+              </tbody>
+            </table>
+          </main>
+        </section>
+      </div>
+      
+      <div class="col">
+        <section id="cpu-status" class="card">
+          <header class="card-header">CPU LOAD</header>
+          <main class="card-body">
+            <i class="material-icons">memory</i>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Instant</th>
+                  <th>Load Average</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Last 1'</td>
+                  <td>1%</td>
+                </tr>
+                <tr>
+                  <td>Last 10'</td>
+                  <td>80%</td>
+                </tr>
+                <tr>
+                  <td>Last 15'</td>
+                  <td>20%</td>
+                </tr>
+              </tbody>
+            </table>
+          </main>
+        </section>
+      </div>
+      
+      <div class="col">
+        <section id="memory-status" class="card">
+          <header class="card-header">MEMORY</header>
+          <main class="card-body">
+            <i class="material-icons">straighten</i>
+            <div id="memory-size">8 GB</div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Used</th>
+                  <th>Free</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>20%</td>
+                  <td>80%</td>
+                </tr>
+              </tbody>
+            </table>
+          </main>
+        </section>
+      </div>
+      </div>
+    
+    <div class="row">
+      <div class="col">
+        <section class="card">
+          <header class="card-header">PROCESS</header>
+          <main class="card-body">
+            <h2>TOP 7</h2>
+            <table id="top-process" class="table">
+              <thead>
+                <tr>
+                  <th>PID</th>
+                  <th>USER</th>
+                  <th>CPU%</th>
+                  <th>MEM%</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>44802</td>
+                  <td>root</td>
+                  <td>10</td>
+                  <td>1M</td>
+                </tr>
+                <tr>
+                  <td>3956</td>
+                  <td>root</td>
+                  <td>7</td>
+                  <td>34K</td>
+                </tr>
+                <tr>
+                  <td>3090</td>
+                  <td>mario</td>
+                  <td>5</td>
+                  <td>188K</td>
+                </tr>
+                <tr>
+                  <td>5890</td>
+                  <td>luigi</td>
+                  <td>2.5</td>
+                  <td>888K</td>
+                </tr>
+                <tr>
+                  <td>9821</td>
+                  <td>luigi</td>
+                  <td>2</td>
+                  <td>132K</td>
+                </tr>
+                <tr>
+                  <td>1234</td>
+                  <td>mario</td>
+                  <td>2</td>
+                  <td>2M</td>
+                </tr>
+                <tr>
+                  <td>4545</td>
+                  <td>root</td>
+                  <td>1</td>
+                  <td>10M</td>
+                </tr>
+              </tbody>
+            </table>
+          </main>
+        </section>
+      </div>
+
+      <div class="col">
+        <section class="card">
+          <header class="card-header">DISK USAGE</header>
+          <main class="card-body">
+            <i class="material-icons">storage</i>
+            <div id="disk-size">1 TB</div>
+            <table id="disk-usage" class="table">
+              <thead>
+                <tr>
+                  <th>Device</th>
+                  <th>Used</th>
+                  <th>System</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>/dev/sda1</td>
+                  <td>110G/600G</td>
+                  <td>Linux Swap</td>
+                </tr>
+                <tr>
+                  <td>/dev/sda2</td>
+                  <td>40G/400G</td>
+                  <td>Linux</td>
+                </tr>
+              </tbody>
+            </table>
+          </main>
+        </section>
+      </div>
+
+      <div class="col">
+        <section class="card">
+          <header class="card-header">NETWORK INTERFACES</header>
+          <main class="card-body">
+            <i class="material-icons">cloud_queue</i>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Interface</th>
+                  <th>TX</th>
+                  <th>RX</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>eth0</td>
+                  <td>1.7GB</td>
+                  <td>1GB</td>
+                </tr>
+                <tr>
+                  <td>eth1</td>
+                  <td>400MB</td>
+                  <td>2MB</td>
+                </tr>
+                <tr>
+                  <td>lo</td>
+                  <td>10MB</td>
+                  <td>11MB</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <td>Total</td>
+                  <td>2.11GB</td>
+                  <td>1.0GB</td>
+                </tr>
+              </tfoot>
+            </table>
+          </main>
+        </section>
+      </div>
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>

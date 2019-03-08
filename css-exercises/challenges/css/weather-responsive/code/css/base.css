@@ -1,0 +1,176 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+.city {
+  margin: 5vh 2%;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+}
+
+.forecasts {
+  display: grid;
+  grid-gap: 1.5rem;
+}
+
+/* today */
+.today {
+  padding: 0 0 4rem;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  /* justify-content: center; */
+  grid-template-areas : 
+    "city-name city-name"
+    "day day" 
+    "weather-name wi"
+    "weather weather"
+    "status status";
+}
+
+.today .city-name {
+  grid-area: city-name;
+  margin: .4rem auto;
+}
+
+.today .day {
+  grid-area: day;
+  margin: .4rem auto 2rem;
+}
+
+.today .city-name,
+.today .day {
+  color: #7f7f7f;
+  font-weight: 300;
+  font-size: 1.2rem;
+}
+
+.today .weather-name {
+  grid-area: weather-name;
+  justify-self: right;
+  font-weight: 400;
+  font-size: 2.3rem;
+}
+
+.today .icon {
+  grid-area: wi;
+  font-size: 2rem;
+}
+
+.today .weather {
+  grid-area: weather;
+  margin: 3rem 0;
+  display: grid;
+  grid-template-areas:
+    ". unit"
+    "value degree";
+}
+
+.today .weather .weather-value {
+  grid-area: value;
+  font-weight: 300;
+  font-size: 14rem;
+}
+
+.today .weather .weather-degree {
+  grid-area: degree;
+  justify-self: left;
+  margin-top: 2rem;
+  font-size: 5rem;
+}
+
+.today .weather .units {
+  grid-area: unit;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: -1.5rem;
+}
+
+.today .weather .units input {
+  display: none;
+}
+
+.today .weather .units label {
+  margin: .7rem 0 0 .5rem;
+  color: #7f7f7f;
+}
+
+.today .weather .units input:checked+label {
+  font-weight: 900;
+  color: #000;
+}
+
+.today .weather .units label:hover {
+  cursor: pointer;
+}
+
+.today .status {
+  grid-area: status;
+  letter-spacing: initial;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+}
+
+.today .status .status-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.today .status .status-item .wi {
+  font-size: 2rem;
+  margin-right: .5rem;
+}
+
+.today .status .status-item .value {
+  font-size: 1rem;
+  text-transform: initial;
+}
+
+/* forecast */
+.forecast {
+  display: grid;
+  grid-template-areas: "weekday icon vmax vmin";
+  align-items: center;
+  justify-content: space-around;
+}
+
+.forecast .weekday {
+  grid-area: weekday;
+  font-weight: 400;
+  font-size: 1.2rem;
+}
+
+.forecast .wi {
+  grid-area: icon;
+  font-size: 1.5rem;
+}
+
+.forecast .weather-value {
+  font-weight: 400;
+  font-size: 1.3rem;
+  letter-spacing: initial;
+}
+
+.forecast .max {
+  grid-area: vmax;
+}
+
+.forecast .min {
+  grid-area: valor;
+  grid-area: vmin;
+  color: #7f7f7f;
+}

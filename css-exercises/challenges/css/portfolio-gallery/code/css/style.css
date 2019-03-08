@@ -1,0 +1,76 @@
+@font-face {
+  font-family: Lora, sans-serif;
+  src: url(font/Lora-Regular.ttf);
+}
+
+@font-face {
+  font-family: Oxygen, sans-serif;
+  src: url(font/Oxygen-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato, sans-serif;
+  src: url(font/Lato-Regular.ttf);
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: Lora, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+/* navigation */
+nav {
+  background: #f7f7f7;
+  height: 60px;
+}
+
+/* header */
+
+/* article */
+article .reflexao {
+  background-color: #a872b7;
+}
+
+article .filme {
+  background-color: #dd783f;
+}
+
+article .fatos{
+  background-color: #e6c728;
+}
+
+article .curiosidade {
+  background-color: #49ae5c;
+}
+
+/* footer */
+body>footer {
+  height: 190px;
+  color: #fff;
+  background-color: #8BC34A;
+}
+
+footer .footer {
+  height: 150px;
+}
+
+footer .copyright {
+  background-color: #558B2F;
+  height: 40px;
+  line-height: 40px;
+}

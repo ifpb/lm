@@ -1,0 +1,20 @@
+ul {
+  list-style-type: none;
+}
+
+li {
+  display: inline;
+}
+
+li a {
+  text-decoration: none;
+}
+
+.material-icons {
+  color: #ccc;
+  font-size: 3rem;
+}
+
+.material-icons:hover {
+  color: #000;
+}

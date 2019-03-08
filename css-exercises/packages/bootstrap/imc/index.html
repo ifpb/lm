@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>IMC</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      .container {
+        margin: 40px auto;
+      }
+
+      .card-body {
+        padding: 10px 30px;
+      }
+
+      #calc-imc-btn {
+        font-size: 1.2em;
+      }
+
+      #calc-imc-btn .fa {
+        font-size: 1.4em;
+      }
+
+      .alert {
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-6">
+
+          <div class="card">
+            <div class="card-header">
+              <h2 class="text-center">IMC</h2>
+            </div>
+
+            <div class="card-body">
+              <div class="form-group">
+                <label for="altura">Altura(m)</label>
+                <input type="text" class="form-control form-control-lg" name="altura" id="altura" placeholder="Digite o altura">
+              </div>
+              <div class="form-group">
+                <label for="peso">Peso(Kg)</label>
+                <input type="text" class="form-control form-control-lg" name="peso" id="peso" placeholder="Digite a peso">
+              </div>
+              <div class="form-group">
+                <p>Sexo</p>
+                <input type="radio" name="sexo" value="masculino" id="masculino">
+                <label for="masculino">Masculino</label>
+                <input type="radio" name="sexo" value="feminino" id="feminino">
+                <label for="feminino">Feminino</label>
+              </div>
+              <div class="form-group">
+                <label for="imc">Condição</label>
+                <input type="text" class="form-control form-control-lg" name="imc" id="imc" readonly>
+              </div>
+              <div class="form-group text-center">
+                <button id="calc-imc-btn" class="btn btn-secondary">Calculando o IMC <i class="fa fa-tachometer" aria-hidden="true"></i></button>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+  </body>
+</html>

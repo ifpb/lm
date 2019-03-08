@@ -1,0 +1,13 @@
+.green {
+  color: #1ABB9C;
+}
+
+.red {
+  color: #E74C3C;
+}
+
+.bg-green {
+  background: #1ABB9C !important;
+  border: 1px solid #1ABB9C !important;
+  color: #fff;
+}

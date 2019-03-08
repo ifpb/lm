@@ -1,0 +1,9 @@
+digraph G {
+  body [label="<body>"]
+  p1 [label="<p>", style=filled, fillcolor=green]
+  p2 [label="<p>"]
+  p3 [label="<p>"]
+  body -> p1
+  body -> p2
+  body -> p3
+}

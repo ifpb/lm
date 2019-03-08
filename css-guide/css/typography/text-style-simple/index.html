@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    /*
+      Objetivos:
+        Declaração global da página com propriedades herdadas com fonte arial e sans-serif, e cor #616161 (`color`, `font-family`)
+        Uso do `background-color` para realçar regiões: com text-transform com uppercase, background-color com gray, e color white;
+        Declaração de estilo global: parágrafos com text-indent de 50px e line-height de 24px
+        Especificar estilo com id #sumario para aplicar background-color de #eee
+        Reuso de estilo via classes: .bold, .italic, .text-center
+        Distinguir o uso de <div> e <span>
+        Pseudo seletores de hyperlilnk: `:visited`, `:hover`, `:link`, `:active`
+        Personalizando estilo de um hyperlink
+        Animações com o `:hover`
+        Centralizando texto
+    */
+
+    body {
+      font-family: arial, sans-serif;
+      color: #616161;
+    }
+
+    body, h1 {
+      margin: 0;
+    }
+
+    h1 {
+      text-transform: uppercase;
+      background-color: gray;
+      color: white;
+    }
+
+    p {
+      text-indent: 50px;
+      line-height: 24px;
+    }
+
+    #sumario {
+      background-color: #eee;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .italic {
+      font-style: italic;
+    }
+
+    .text-center {
+      text-align: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: #1976D2;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    h2 a {
+      color: white;
+      font-size: 20px;
+    }
+
+    h2:hover a {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <h1 class="text-center">Estilizando Textos</h1>
+  <div id="sumario">
+    <h2>Sumário</h2>
+    <ul>
+      <li><a href="#dolor-ipsum">Dolor ipsum</a></li>
+      <li><a href="#ipsum-dolor">Ipsum dolor</a></li>
+    </ul>
+  </div>
+  <div>
+    <h2 id="dolor-ipsum">Dolor ipsum <a href="#dolor-ipsum">§</a></h2>
+    <p>Lorem ipsum dolor sit amet, <span class="bold"> Fulano consectetur adipisicing elit</span>. Tenetur cumque quisquam provident, suscipit sapiente, eum odio eveniet? Molestiae laboriosam nulla maxime dignissimos fugit autem, similique hic dicta, quas velit quibusdam!</p>
+    <p>Illum quis <a href="http://www.ifpb.edu.br/" title="IFPB">IFPB</a> cum, ea <span class="bold">suscipit amet</span> qui provident odio voluptas accusantium, veniam a possimus consequuntur ad consequatur aliquid delectus molestias molestiae accusamus nesciunt voluptate eius, repudiandae voluptatum officiis. Provident, nam.</p>
+    <p>Optio ea harum aliquam, officiis perspiciatis molestiae! Cum hic consequatur placeat ad sit aliquid, pariatur nihil, maxime ut. Quisquam tenetur dolores iure quis corporis praesentium molestias quo, repellat voluptatibus minus!</p>
+    <p>Harum explicabo <span class="bold italic">repellendus ab alias eveniet</span>, ratione adipisci quos voluptatibus eos ad similique sapiente, sint, doloribus magni, ipsam. Voluptate, earum? Magni velit at cumque officiis ex laboriosam, nihil delectus. Molestias!</p>
+    <p>Accusantium aperiam explicabo quia, minus nisi voluptatibus incidunt corporis atque quis facilis, optio assumenda eveniet voluptas consequatur consequuntur, hic reprehenderit. Eaque eveniet ut veritatis illo rerum quasi officiis, omnis nemo.</p>
+  </div>
+  <div>
+    <h2 id="ipsum-dolor">Ipsum dolor <a href="#ipsum-dolor">§</a></h2>
+    <p><a href="http://www.ifpb.edu.br/" title="IFPB">IFPB</a> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur cumque quisquam provident, suscipit sapiente, eum odio eveniet? Molestiae laboriosam nulla maxime dignissimos fugit autem, similique hic dicta, quas velit quibusdam!</p>
+    <p>Illum quis cum, ea <span class="italic">suscipit amet qui provident</span> odio voluptas accusantium, veniam a possimus consequuntur ad consequatur aliquid delectus molestias molestiae accusamus nesciunt voluptate eius, repudiandae voluptatum officiis. Provident, nam.</p>
+    <p>Optio ea harum aliquam, officiis perspiciatis molestiae! Cum hic consequatur placeat ad sit aliquid, pariatur nihil, maxime ut. Quisquam tenetur dolores iure quis corporis praesentium molestias quo, repellat voluptatibus minus!</p>
+    <p>Harum explicabo repellendus ab alias eveniet, ratione adipisci quos voluptatibus eos ad similique sapiente, sint, doloribus magni, ipsam. Voluptate, earum? Magni velit at cumque officiis ex laboriosam, nihil delectus. Molestias!</p>
+    <p>Accusantium aperiam explicabo quia, minus nisi voluptatibus incidunt corporis atque quis facilis, optio assumenda eveniet voluptas consequatur consequuntur, hic reprehenderit. Eaque eveniet ut veritatis illo rerum quasi officiis, omnis nemo.</p>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio quaerat velit saepe nostrum veniam vel, dolorum enim, quos debitis culpa iste, hic asperiores, deserunt. Ipsa nostrum voluptates ex, ipsum consequatur.</p>
+    <p>Natus at blanditiis nisi minima dolorum adipisci maxime, quo in, libero incidunt amet ad deserunt rem odio veniam, tempore quibusdam earum sint nam! Hic molestias reprehenderit minima, aut harum ut!</p>
+    <p>Illum ab suscipit temporibus itaque, nemo fuga atque possimus magnam reiciendis nam perspiciatis quia accusantium. Asperiores non ut quam ducimus eos necessitatibus maxime soluta, at, consequuntur est, dolorum natus vel.</p>
+    <p>In saepe nemo quas neque, ex quibusdam, aliquid perferendis tenetur velit recusandae, vero corporis? Incidunt illum ad nam nostrum quos provident temporibus ipsam iure expedita perspiciatis non, repellat soluta! Eius!</p>
+    <p>Fugit sed voluptatum assumenda animi voluptates ex quis excepturi quaerat, quos quibusdam itaque expedita culpa cupiditate eaque, iusto, officiis libero labore! Voluptatem architecto eius obcaecati enim nulla! Quaerat, distinctio repellendus.</p>
+    <p>Quo minus, quasi exercitationem. Aperiam, soluta cupiditate, ad deleniti fugit accusamus natus quam quisquam blanditiis similique, officia explicabo possimus nisi maxime odio eos impedit corporis nemo aliquid officiis aliquam! Ex.</p>
+    <p>Rem beatae libero, saepe maiores animi. Doloribus quis illum rem. Iure qui impedit pariatur aliquid nisi a sequi, tempora perspiciatis dolor explicabo atque, quas doloremque beatae odio rem fugit sunt.</p>
+    <p>Amet nisi assumenda aliquid iure, delectus eveniet, commodi similique ad officiis libero voluptate! Quia neque possimus repellat similique sit assumenda modi quis perspiciatis culpa incidunt hic sint, expedita fugit sapiente.</p>
+    <p>Rem similique eligendi error asperiores, tempore aspernatur quae sit quisquam quos, commodi, esse sequi, officia labore nihil placeat eveniet tenetur inventore? Nisi doloremque optio fuga fugiat totam eveniet quisquam odit.</p>
+    <p>Enim, nulla mollitia ut quisquam necessitatibus odio aliquid numquam nesciunt illo reprehenderit reiciendis commodi corrupti, nostrum itaque distinctio sed exercitationem alias. Magni temporibus amet sint consequuntur, quaerat minus, ducimus dicta!</p>
+    <p>Laboriosam itaque enim dolorem repellat, accusantium illo, sapiente provident tempora! Tenetur ullam, minima laborum quam aliquam, doloribus, reiciendis consequuntur quod ratione temporibus officia. Corporis cupiditate id in consectetur, quod neque?</p>
+    <p>Velit, iste pariatur fugiat? Molestiae quis id cum, suscipit accusantium mollitia dolores quam, inventore veniam ipsa qui enim omnis temporibus debitis tempora corrupti repellat ab cupiditate ipsum molestias. Quaerat, cupiditate!</p>
+    <p>Facere, expedita sunt libero magnam minus quas, non tempore animi beatae eum consequuntur eaque, perferendis et, minima voluptatum repellat consequatur quisquam labore deleniti ab suscipit totam. Aut commodi omnis earum?</p>
+    <p>Est voluptas reprehenderit, atque. Maiores consequatur laudantium labore obcaecati hic aperiam dignissimos sit earum, unde explicabo fugiat in rerum esse quasi quia adipisci architecto, nesciunt error consequuntur veniam aliquam. Natus!</p>
+    <p>Ut, non alias itaque excepturi. Deleniti, repellendus? Dignissimos molestias ipsum nam assumenda, beatae quaerat qui natus eveniet accusamus vitae accusantium aut excepturi! In aut sint saepe cumque repellendus eaque maiores!</p>
+  </div>
+</body>
+</html>

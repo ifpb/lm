@@ -1,0 +1,15 @@
+.gradient {
+  width: 200px;
+  height: 200px;
+  display: inline-block;
+}
+
+.multiple {
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, .70) 10%, transparent), url(../img/image.jpg);
+  background-size: cover;
+}
+
+.trendbg {
+  background-image: linear-gradient(45deg, rgba(0, 145, 200, .6), rgba(1, 193, 120, .6)), url(../img/image.jpg);
+  background-size: cover;
+}

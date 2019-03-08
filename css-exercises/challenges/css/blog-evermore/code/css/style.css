@@ -1,0 +1,56 @@
+@font-face {
+  font-family: Merriweather, sans-serif;
+  src: url(../font/Merriweather-Regular.ttf);
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  color: #333;
+  font-size: 16px;
+  line-height: 135%;
+  margin: 0px;
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 940px;
+  margin: auto;
+  padding: 80px 0px;
+}
+.float-right {
+  float: right;
+}
+
+/* header */
+body>header {
+  background-color: #f0f0f0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+body>header a.main-title {
+  display: block;
+  margin: 0px 0px 15px;
+  color: #333;
+  font-size: 35px;
+  line-height: 40px;
+  font-weight: 700;
+  text-decoration: none;
+}
+body>header p.main-subheading {
+  width: 60%;
+  margin: auto;
+  font-family: Merriweather, serif;
+  font-size: 16px;
+  color: #969696;
+}
+
+/* article */
+
+
+/* footer */
+body>footer {
+  background-color: #f0f0f0;
+}
+body>footer .wrapper {
+  padding: 18px 0px;
+}

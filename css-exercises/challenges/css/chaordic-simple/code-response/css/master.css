@@ -1,0 +1,158 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: 'Roboto Slab', serif;
+  margin: 0 0 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  text-transform: uppercase;
+}
+
+a {
+  color: #aa1423;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.wrapper {
+  width: 29rem;
+  margin: auto;
+}
+
+/* header */
+.header {
+  text-align: center;
+  padding: 1rem 0 .4rem;
+}
+
+/* banner */
+.banner {
+  padding: 15rem 0;
+  color: #fff;
+  text-align: center;
+  background-image: url(../img/background-home.jpg);
+  background-size: cover;
+}
+
+.banner .wrapper {
+  margin: 0 auto;
+}
+
+.banner p {
+  line-height: 1.5rem;
+}
+
+.banner form {
+  margin-top: 2rem;
+}
+
+.banner form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ff6e14;
+  width: 23rem;
+  font-size: 1rem;
+  outline: none;
+  color: #ff6e14;
+  padding-bottom: .3rem;
+}
+
+.banner form input::placeholder {
+  color: #ff6e14;
+}
+
+.banner button {
+  background-color: #ff6e14;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .5rem .7rem;
+}
+
+/* top 5 */
+.top-5 {
+  padding: 2rem 0 4rem;
+}
+
+.top-5  {
+  color: #aa1423;
+}
+
+.top-5 .top-links {
+  width: 20rem;
+  margin: auto;
+  padding: 0;
+  border-collapse: collapse;
+}
+
+.top-5 .top-links td {
+  padding: .3rem 0;
+  border-bottom: solid 2px #eee;
+}
+
+.top-5 .top-links td:last-child {
+  text-align: right;
+  color: #777;
+}
+
+/* hits */
+.hits {
+  position: relative;
+  padding: 3rem 0 2.5rem;
+  text-align: center;
+  color: #aa1423;
+  background-color: #eee;
+}
+
+.hits #triangle-down {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 20px);
+  width: 0;
+  height: 0;
+  border-left: 20px solid #eee;
+  border-right: 20px solid #eee;
+  border-top: 20px solid #fff;
+}
+
+.hits .count {
+  background-color: #fff;
+  font-size: 1.5rem;
+  border-radius: 3px;
+  padding: .3rem;
+}
+
+.hits .text {
+  color: #777;
+}
+
+/* footer */
+.footer {
+  padding: 1rem 11rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .social a {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: #777;
+}
+
+.footer .social a:hover {
+  color: #aa1423;
+}

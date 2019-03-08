@@ -1,0 +1,11 @@
+digraph G {
+  body [label="<body>"]
+  h11 [label="<h1>"]
+  p1 [label="<p>", style=filled, fillcolor=green]
+  p2 [label="<p>"]
+  p3 [label="<p>", style=filled, fillcolor=green]
+  body -> h11
+  body -> p1
+  body -> p2
+  body -> p3
+}

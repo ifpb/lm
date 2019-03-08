@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* header */
+
+/* banner */
+.banner {
+  background-image: url(../img/background-home.jpg);
+  background-size: cover;
+}
+
+.banner form {
+  margin-top: 2rem;
+}
+
+.banner form input {
+  background-color: transparent;
+  border: none;
+  border-bottom: 2px solid #ff6e14;
+  width: 23rem;
+  font-size: 1rem;
+  outline: none;
+  color: #ff6e14;
+  padding-bottom: .3rem;
+}
+
+.banner form input::placeholder {
+  color: #ff6e14;
+}
+
+.banner button {
+  background-color: #ff6e14;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: .5rem .7rem;
+}
+
+/* top 5 */
+
+/* hits */
+.hits {
+  position: relative;
+  padding: 3rem 0 2.5rem;
+  background-color: #eee;
+}
+
+.hits #triangle-down {
+  position: absolute;
+  top: 0;
+  left: calc(50% - 20px);
+  width: 0;
+  height: 0;
+  border-left: 20px solid #eee;
+  border-right: 20px solid #eee;
+  border-top: 20px solid #fff;
+}
+
+/* footer */
+.footer {
+  padding: 1rem 11rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer .social a {
+  text-decoration: none;
+  margin-left: 1rem;
+  color: #777;
+}
+
+.footer .social a:hover {
+  color: #aa1423;
+}

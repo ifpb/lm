@@ -1,0 +1,51 @@
+body {
+  color: #797979;
+  background: #f2f2f2;
+  font-family: 'Ruda', sans-serif;
+  padding: 0px !important;
+  margin: 0px !important;
+  font-size: 13px;
+  margin: 0;
+}
+
+/* navbar */
+.navbar {
+  background: #ffd777;
+  border-bottom: 1px solid #c9aa5f;
+  padding: .4rem 1rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #797979;
+}
+
+.navbar .navbar-brand {
+  color: #ffffff;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.navbar .admin-link .material-icons {
+  font-size: 30px;
+}
+
+.navbar img.user {
+  width: 30px;
+  border-radius: 50%;
+  margin-left: 5px;
+}
+
+/* main form */
+.container form button {
+  background-color: #797979;
+  color: #fff;
+  font-size: .5rem;
+}
+
+/* main cards */
+.container .row {
+  margin: 2rem auto;
+}

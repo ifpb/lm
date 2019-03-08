@@ -1,0 +1,32 @@
+@import "layout.css";
+@import "navbar.css";
+@import "sidebar.css";
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.5;
+  color: #797979;
+  background-color: #eee;
+  padding-top: 3.5rem;
+}
+
+.text-muted {
+  color: #9a9da0 !important;
+}
+
+main {
+  width: auto !important;
+}
+
+main h1 {
+  margin-bottom: 20px;
+  border-bottom: 1px solid #797979;
+}
+
+main .card .counter{
+  margin: 10px 0;
+  font-weight: 700;
+}
+

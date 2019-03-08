@@ -1,0 +1,332 @@
+<!-- 
+https://github.com/misterGF/CoPilot
+https://github.com/almasaeed2010/AdminLTE
+https://github.com/modularcode/modular-admin-html
+https://github.com/rdash/rdash-angular
+https://github.com/mrholek/CoreUI-Free-Bootstrap-Admin-Template
+https://github.com/epicmaxco/vuestic-admin 
+http://coderthemes.com/flacto/green_1_light/index.html
+https://www.pingdom.com
+-->
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>SysAdmin</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+  <header>
+    <nav class="navbar fixed-top row">
+      <div class="d-sm-block text-center brand-name">
+        <a class="" href="#">SysAdmin</a>
+      </div>
+      <div class="container-fluid navbar-content">
+        <a id="menu-toggle" href="">
+          <i class="fa fa-bars" aria-hidden="true"></i>
+        </a>
+        <form>
+          <input class="form-control" type="search" placeholder="Search..." aria-label="Search">
+          <a href="">
+            <i class="fa fa-search"></i>
+          </a>
+        </form>
+      </div>
+    </nav>
+  </header>
+
+  <div>
+      <nav class="d-sm-block sidebar">
+        <ul class="nav flex-column">
+          <li class="nav-item nav-heading">
+            <span class="text-muted">Navigation</span>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <i class="fa fa-tachometer" aria-hidden="true"></i>
+              <span>Overview</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-bar-chart" aria-hidden="true"></i>
+              <span>Reports</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <i class="fa fa-file-text" aria-hidden="true"></i>
+              <span>Analytics</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <main role="main" class="container-fluid">
+        <h1>Overview</h1>
+        
+        <div class="row dashboard">
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Hosts</h4>
+                <div class="row text-center">
+                  <div class="col">
+                    <h3 class="counter">10</h3>
+                    <p class="text-muted">Up</p>
+                  </div>
+                  <div class="col">
+                    <h3 class="counter">1</h3>
+                    <p class="text-muted">Down</p>
+                  </div>
+                </div>  
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 col-lg-4 d-md-none d-lg-block">
+            <div class="card response-time">
+              <div class="card-body">
+                <h4 class="card-title">Response Time (ms)</h4>
+                <div class="row text-center">
+                  <div class="col">
+                    <h3 class="counter">300</h3>
+                    <p class="text-muted">Min</p>
+                  </div>
+                  <div class="col">
+                    <h3 class="counter">450</h3>
+                    <p class="text-muted">Avg</p>
+                  </div>
+                  <div class="col">
+                    <h3 class="counter">1250</h3>
+                    <p class="text-muted">Max</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Uptime (%)</h4>
+                <div class="row text-center">
+                  <div class="col">
+                    <h3 class="counter">99</h3>
+                    <p class="text-muted">Mim</p>
+                  </div>
+                  <div class="col">
+                    <h3 class="counter">50</h3>
+                    <p class="text-muted">Max</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-12">
+            <div class="card">
+              <div class="card-body">
+                <h4 class="card-title">Logs</h4>
+
+                <div class="logs">
+                  <div class="log d-flex">
+                    <span class="fa-stack down fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-thumbs-down fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                      <p class="name">Moodle IFPB</p>
+                      <p class="response">Timeout (11/02/17 03:33:51)</p>
+                    </div>
+                  </div>
+                  <div class="log d-flex">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                      <p class="name">Suap</p>
+                      <p class="response">Resonse 500ms (11/02/17 03:32:51)</p>
+                    </div>
+                  </div>
+                  <div class="log d-flex">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                      <p class="name">Zimbra</p>
+                      <p class="response">Resonse 200ms (11/02/17 03:32:20)</p>
+                    </div>
+                  </div>
+                  <div class="log d-flex">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                      <p class="name">IFPB</p>
+                      <p class="response">Resonse 240ms (11/02/17 03:32:00)</p>
+                    </div>
+                  </div>
+                  <div class="log d-flex">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                      <p class="name">IFPB Edu</p>
+                      <p class="response">Resonse 300ms (11/02/17 03:31:41)</p>
+                    </div>
+                  </div>
+                  <div class="log d-flex">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                      <p class="name">Suap</p>
+                      <p class="response">Resonse 550ms (11/02/17 03:31:31)</p>
+                    </div>
+                  </div>
+                  <div class="log d-flex">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                      <p class="name">Q-Academico</p>
+                      <p class="response">Resonse 700ms (11/02/17 03:30:40)</p>
+                    </div>
+                  </div>
+                  <div class="log d-flex">
+                    <span class="fa-stack fa-lg">
+                      <i class="fa fa-circle fa-stack-2x"></i>
+                      <i class="fa fa-thumbs-up fa-stack-1x fa-inverse"></i>
+                    </span>
+                    <div>
+                      <p class="name">Suap</p>
+                      <p class="response">Resonse 400ms (11/02/17 03:30:00)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-8 col-md-12">
+            <div class="card">
+              <div class="card-body uptime">
+                <h4 class="card-title">Uptime</h4>
+
+                <table class="table">
+                  <thead>
+                    <tr>
+                      <th>#</th>
+                      <th>Site</th>
+                      <th>Type</th>
+                      <th>Status</th>
+                      <th>Uptime</th>
+                      <th>Since</th>
+                      <th>Response</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td></td>
+                      <td>Moodle IFPB</td>
+                      <td>HTTP</td>
+                      <td>
+                        <span class="badge badge-danger">DOWN</span>
+                      </td>
+                      <td>-</td>
+                      <td>30 mi</td>
+                      <td>-</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Q-Academico</td>
+                      <td>HTTP</td>
+                      <td>
+                        <span class="badge badge-warning">UP</span>
+                      </td>
+                      <td>50%</td>
+                      <td>4 mo</td>
+                      <td>1250 ms</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Suap</td>
+                      <td>HTTP</td>
+                      <td>
+                        <span class="badge badge-success">UP</span>
+                      </td>
+                      <td>99%</td>
+                      <td>30 da</td>
+                      <td>200 ms</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>IFPB</td>
+                      <td>HTTP</td>
+                      <td>
+                        <span class="badge badge-success">UP</span>
+                      </td>
+                      <td>90%</td>
+                      <td>6 mo</td>
+                      <td>500 ms</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>IFPB Edu</td>
+                      <td>HTTP</td>
+                      <td>
+                        <span class="badge badge-success">UP</span>
+                      </td>
+                      <td>85%</td>
+                      <td>8 mo</td>
+                      <td>350 ms</td>
+                    </tr>
+                    <tr>
+                      <td></td>
+                      <td>Zimbra</td>
+                      <td>Ping</td>
+                      <td>
+                        <span class="badge badge-success">UP</span>
+                      </td>
+                      <td>97%</td>
+                      <td>4 mo</td>
+                      <td>300 ms</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+  </div>
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="js/jquery-3.2.1.slim.min.js"></script>
+  <script src="js/jquery.waypoints.min.js"></script>
+  <script src="js/jquery.counterup.min.js"></script>
+  <script src="js/popper.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/custom.js"></script>
+</body>
+
+</html>
