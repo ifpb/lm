@@ -1,6 +1,6 @@
 ![Banner da disciplina](assets/lm.png)
 
-A disciplina de [Linguagem de Marcação](docs/plano-de-ensino.pdf) (LM) do Curso Superior de Tecnologia em Sistemas para Internet do IFPB tem como objetivo apresentar ao aluno conceitos sobre desenvolvimento Web Front-end. Sua carga horária apresenta um total de 67 horas aula e será ministrada pelo professor Luiz Carlos Chaves e Thiago Moura. Para as aulas serão utilizadas exposições e atividades práticas, além de avaliações individuais e em grupo.
+A disciplina de [Linguagem de Marcação](docs/plano-de-ensino.pdf) (LM) do Curso Superior de Tecnologia em Sistemas para Internet do IFPB tem como objetivo apresentar ao aluno conceitos sobre desenvolvimento Web Front-end. Sua carga horária apresenta um total de 67 horas aula e será ministrada pelo professor Francisco Dantas e Thiago Moura. Para as aulas serão utilizadas exposições e atividades práticas, além de avaliações individuais e em grupo.
 
 ## Conteúdo
 
@@ -13,14 +13,10 @@ A nota final será computado através da média ponderada das três maiores aval
 * Avaliação I: [Prova de HTML e CSS](exams/prova-html-css-1.md);
 * Avaliação II: [Prova de HTML e CSS](exams/prova-html-css-2.md);
 * Avaliação III: [Prova de HTML e CSS](exams/prova-html-css-3.md);
-* Avaliação IV: [Especificação do Projeto](exams/projeto.md).
-* Prova Finall: [Prova de HTML e CSS](exams/prova-final.md)
+* Avaliação IV: [Especificação do Projeto](exams/projeto.md);
+* Prova Finall: [Prova de HTML e CSS](exams/prova-final.md).
 
 Detalhe, a nota do projeto não poderá ser eliminada e atividades extras podem gerar pontuação extra.
-
-## Comunicação
-
-Toda a comunicação será realizada usando o [![Slack Status](https://ifpb.herokuapp.com/badge.svg)](https://ifpb.herokuapp.com/) no channel `#lm-20181`.
 
 ## Bibliografia
 
