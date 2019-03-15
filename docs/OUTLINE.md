@@ -72,7 +72,7 @@
 
 **Conteúdo:**
 - Exibindo a [arquitetura da Web](https://www.youtube.com/watch?v=guvsH5OFizE) ([Tripé da Web: URL, HTTP, HTML](https://ifpb.github.io/web-guide/slides/web.pdf))
-- Fundamentos de uma Linguagem de Marcação ([guide](https://ifpb.github.io/html-guide/markup/))
+- Fundamentos de uma Linguagem de Marcação ([guide](https://ifpb.github.io/lm/html-guide/markup/))
 
 **Reflexão:**
 * Explique como é possível transferir documentos antes e depois da Web.
@@ -115,14 +115,14 @@
 
 **Conteúdo:**
 - [Categorias do HTML](https://www.w3.org/TR/html5/dom.html#kinds-of-content)
-- [HTML Guide](https://ifpb.github.io/html-guide/html/)
-  - [Head Elements](https://ifpb.github.io/html-guide/html/head-elements/)
-  - [Text Elements](https://ifpb.github.io/html-guide/html/text-elements/)
-  - [Listas `<ol>`, `<ul>`, `<dl>`](https://ifpb.github.io/html-guide/html/list/)
+- [HTML Guide](https://ifpb.github.io/lm/html-guide/html/)
+  - [Head Elements](https://ifpb.github.io/lm/html-guide/html/head-elements/)
+  - [Text Elements](https://ifpb.github.io/lm/html-guide/html/text-elements/)
+  - [Listas `<ol>`, `<ul>`, `<dl>`](https://ifpb.github.io/lm/html-guide/html/list/)
     - Definição, Ordenada, Não ordenado
     - Personalizando marcadores
     - Lista aninhada
-  - [Hyperlink `<a>`](https://ifpb.github.io/html-guide/html/hyperlink/)
+  - [Hyperlink `<a>`](https://ifpb.github.io/lm/html-guide/html/hyperlink/)
     - Endereço absoluto e relativo
     - Abrindo recurso em nova aba
     - Links locais e externos
@@ -135,7 +135,7 @@
 * Como criar hyperlinks no HTML?
 
 **Exercício:**
-* Reconstrua a [Primeira Página da Web](https://ifpb.github.io/html-exercises/html/first-web-page/)
+* Reconstrua a [Primeira Página da Web](https://ifpb.github.io/lm/html-exercises/html/first-web-page/)
 * Analise os elementos HTML: [Content sectioning](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning), [Text content](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Text_content), [Inline text](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Inline_text_semantics).
 
 ## \# 05 - Analisando uma página (25/03/2019)
@@ -144,7 +144,7 @@
 **Conteúdo:**
 - Analisando uma página HTML
   - Utilizando as ferramentas: Ver Código Fonte, Ferramenta de Desenvolvedor e Plugin Web Developer
-    - Analisando a [Primeira Página da Web (Atual)](https://ifpb.github.io/html-exercises/html/first-web-page/site-response/)
+    - Analisando a [Primeira Página da Web (Atual)](https://ifpb.github.io/lm/html-exercises/html/first-web-page/site-response/)
   - Ferramenta de Desenvolvedor
     - Inspecionar e editar código, Toogle device toolbar, Network e Screenshot
 - Linha Horizontal `<hr>`
@@ -154,15 +154,15 @@
 * Como criar e utilizar as linhas horizontais?
 
 **Exercício:**
-* [Inspecione uma página na Web](https://ifpb.github.io/html-exercises/html/inspect-page/)
-* Reproduza a [Página LM](https://ifpb.github.io/html-exercises/html/page-lm-simple/)
+* [Inspecione uma página na Web](https://ifpb.github.io/lm/html-exercises/html/inspect-page/)
+* Reproduza a [Página LM](https://ifpb.github.io/lm/html-exercises/html/page-lm-simple/)
 
 ## \# 06 - Criando a página da disciplina com imagens (29/03/2019)
 ---
 
 **Conteúdo:**
-- [HTML Guide](https://ifpb.github.io/html-guide/html/)
-  - [Imagem: `<img>`, `<figure>`, `<figcaption>`](https://ifpb.github.io/html-guide/html/image-multimedia/)
+- [HTML Guide](https://ifpb.github.io/lm/html-guide/html/)
+  - [Imagem: `<img>`, `<figure>`, `<figcaption>`](https://ifpb.github.io/lm/html-guide/html/image-multimedia/)
     - Imagem dentro (Data URI), próximo ou distante do HTML (Custos e benefícios)
     - Atributos: `src`, `alt`, `width`, `title`
     - Imagem com link
@@ -174,36 +174,36 @@
 * Como alterar as dimensões de uma imagem usando HTML?
 
 **Exercício:**
-* [Página LM usando imagem](https://ifpb.github.io/html-exercises/html/page-lm-img/)
+* [Página LM usando imagem](https://ifpb.github.io/lm/html-exercises/html/page-lm-img/)
 
 ## \# 07 - Criando um currículo em HTML (01/04/2019)
 ---
 
 **Conteúdo:**
-- Revisão sobre HTML ([HTML Guide](https://ifpb.github.io/html-guide/html/))
+- Revisão sobre HTML ([HTML Guide](https://ifpb.github.io/lm/html-guide/html/))
 
 **Reflexão:**
 * Até o momento, quais marcações do HTML foram apresentadas?
 
 **Exercício:**
-* [Curriculum Vitae](https://ifpb.github.io/html-exercises/html/curriculum-simple/)
-* [Curriculum Vitae com Sumário](https://ifpb.github.io/html-exercises/html/curriculum-linkinternal/)
+* [Curriculum Vitae](https://ifpb.github.io/html-exercises/lm/html/curriculum-simple/)
+* [Curriculum Vitae com Sumário](https://ifpb.github.io/lm/html-exercises/html/curriculum-linkinternal/)
 
 ## \# 08 - Linguagem de Estilo e o CSS (05/04/2019)
 ---
 
 **Conteúdo:**
-- [Linguagem de Estilo](https://ifpb.github.io/css-guide/style/)
+- [Linguagem de Estilo](https://ifpb.github.io/lm/css-guide/style/)
   - Definição e exemplos
-- [Cascade Style Sheet (CSS) Guide](https://ifpb.github.io/css-guide/css/)
-  - [Origem do CSS](https://ifpb.github.io/css-guide/css/problem/)
-  - [Declarações do CSS](https://ifpb.github.io/css-guide/css/stylesheets/): local (`style=""`), interna ([`<style>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)), externa ([`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link))
+- [Cascade Style Sheet (CSS) Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Origem do CSS](https://ifpb.github.io/lm/css-guide/css/problem/)
+  - [Declarações do CSS](https://ifpb.github.io/lm/css-guide/css/stylesheets/): local (`style=""`), interna ([`<style>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/style)), externa ([`<link>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/link))
   - Sintaxe do CSS
-    - [Propriedades](https://ifpb.github.io/css-guide/css/property/):
+    - [Propriedades](https://ifpb.github.io/lm/css-guide/css/property/):
       - Texto & Fonte
         - `color`
         - `font-size`
-    - [Seletores básicos](https://ifpb.github.io/css-guide/css/selector/): 
+    - [Seletores básicos](https://ifpb.github.io/lm/css-guide/css/selector/): 
       - tipo (`elementname`)
         - Agrupamentos com [`<span>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/span) e [`<div>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div)
       - id (`#idname` e `id=""`)
@@ -219,23 +219,23 @@
 * Qual é o benefício de definir mais de uma classe à um elemento?
 
 **Exercício:**
-* [Criando seu primeiro estilo](https://ifpb.github.io/css-exercises/css/hello-world-css/)
+* [Criando seu primeiro estilo](https://ifpb.github.io/lm/css-exercises/css/hello-world-css/)
 
 ## \# 09 - Primeiros Passos com CSS (08/04/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Herança de estilo](https://ifpb.github.io/css-guide/css/inheritance/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Herança de estilo](https://ifpb.github.io/lm/css-guide/css/inheritance/)
   - [Inspecionando estilos dos Elementos](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/): Analisando e editando estilos
   - Sintaxe do CSS
-    - [Funções](https://ifpb.github.io/css-guide/css/function/)
-    - [Seletores](https://ifpb.github.io/css-guide/css/selector/)
+    - [Funções](https://ifpb.github.io/lm/css-guide/css/function/)
+    - [Seletores](https://ifpb.github.io/lm/css-guide/css/selector/)
       - Básico: Atributo `[]`
       - Combinação: Child `A > B`, Descendant `A B`, Adjacent sibling `A + B`, General sibling `A ~ B`
       - Pseudo-class: `:hover`, `:first-child`, `:nth-child`
       - Pseudo-element: `::selection`
-    - [Values](https://ifpb.github.io/css-guide/css/property/values.html)
+    - [Values](https://ifpb.github.io/lm/css-guide/css/property/values.html)
 
 **Reflexão:**
 * Qual é a composição da sintaxe do CSS?
@@ -244,21 +244,21 @@
 * O que acontece quando um elemento carrega um estilo inválido? É possível identificar?
 
 **Exercício:**
-* [Analisando uma página com Estilo](https://ifpb.github.io/css-exercises/css/inspect-style/)
-* [Selecionando Elementos no HTML](https://ifpb.github.io/css-exercises/css/selector-css/)
+* [Analisando uma página com Estilo](https://ifpb.github.io/lm/css-exercises/css/inspect-style/)
+* [Selecionando Elementos no HTML](https://ifpb.github.io/lm/css-exercises/css/selector-css/)
 
 
 ## \# 10 - Primeiros Passos com CSS (12/04/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
   - Sintaxe do CSS
-    - [At-rules](https://ifpb.github.io/css-guide/css/at-rule/)
+    - [At-rules](https://ifpb.github.io/lm/css-guide/css/at-rule/)
       - @import
       - @font-face
       - @media
-    - [Media query](https://ifpb.github.io/css-guide/css/media-query/)
+    - [Media query](https://ifpb.github.io/lm/css-guide/css/media-query/)
       - Media types
       - Media features
       - Logical operators
@@ -271,15 +271,15 @@
 * Qual a relação entre Media query e Design responsivo? Como definos *breakpoint* no Design responsivo?
 
 **Exercício:**
-* [Adpatando a página de impressão](https://ifpb.github.io/css-exercises/css/customize-print/)
+* [Adpatando a página de impressão](https://ifpb.github.io/lm/css-exercises/css/customize-print/)
 
 ## \# 11 - Estilizando Texto (15/04/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Estilizando Texto](https://ifpb.github.io/css-guide/css/typography/) ([Texto e fonte](https://ifpb.github.io/css-guide/css/typography/#text-and-font), [Alinhamento de Texto](https://ifpb.github.io/css-guide/css/typography/#text-layout))
-  - [Estilizando links](https://ifpb.github.io/css-guide/css/hyperlink/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Estilizando Texto](https://ifpb.github.io/lm/css-guide/css/typography/) ([Texto e fonte](https://ifpb.github.io/lm/css-guide/css/typography/#text-and-font), [Alinhamento de Texto](https://ifpb.github.io/lm/css-guide/css/typography/#text-layout))
+  - [Estilizando links](https://ifpb.github.io/lm/css-guide/css/hyperlink/)
     - pseudo-class selector: `:hover`, `:link`, `:active`, `:visited`, `:focus`
 
 **Reflexão:**
@@ -304,24 +304,24 @@
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Estilizando Texto](https://ifpb.github.io/css-guide/css/typography/)
-  - [Estilizando links](https://ifpb.github.io/css-guide/css/hyperlink/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Estilizando Texto](https://ifpb.github.io/lm/css-guide/css/typography/)
+  - [Estilizando links](https://ifpb.github.io/lm/css-guide/css/hyperlink/)
 
 **Reflexão:**
 * Quais são os estilos de alinhamento e aparência para fonte?
 * Como estilizamos um hyperlink?
 
 **Exercício:**
-* Criando o [Curriculum Vitae com Estilo](https://ifpb.github.io/css-exercises/css/curriculum-style-text/)
+* Criando o [Curriculum Vitae com Estilo](https://ifpb.github.io/lm/css-exercises/css/curriculum-style-text/)
 
 ## \# 13 - Web Fonts e Ícones (26/04/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Web Fontes](https://ifpb.github.io/css-guide/css/web-font/)
-  - [Ícones](https://ifpb.github.io/css-guide/css/icon/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Web Fontes](https://ifpb.github.io/lm/css-guide/css/web-font/)
+  - [Ícones](https://ifpb.github.io/lm/css-guide/css/icon/)
 
 **Reflexão:**
 * Quais são as configurações existentes para habilitar uma fonte da Web? É possível usar múltiplas fontes da Web?
@@ -334,14 +334,14 @@
 * Qual é a diferença entre o Material Icon e Font Awesome?
 
 **Exercício:**
-* [Curriculum Vitae com Web fontes e Ícones](https://ifpb.github.io/css-exercises/css/curriculum-style-icon/)
+* [Curriculum Vitae com Web fontes e Ícones](https://ifpb.github.io/lm/css-exercises/css/curriculum-style-icon/)
 
 ## \# 14 - Cascata no CSS (29/04/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Cascata](https://ifpb.github.io/css-guide/css/cascade/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Cascata](https://ifpb.github.io/lm/css-guide/css/cascade/)
 
 **Reflexão:**
 * Como é definido a ordem de cascata do CSS?
@@ -352,14 +352,14 @@
 
 **Exercício:**
 
-* [Analisando o efeito da cascata no CSS](https://ifpb.github.io/css-exercises/css/cascade-css/)
+* [Analisando o efeito da cascata no CSS](https://ifpb.github.io/lm/css-exercises/css/cascade-css/)
 
 ## \# 15 - Box Model (03/05/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Box model](https://ifpb.github.io/css-guide/css/box-model/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Box model](https://ifpb.github.io/lm/css-guide/css/box-model/)
 
 **Reflexão:**
 * O que é box model? Como um box pode ser exibido no navegador?
@@ -374,17 +374,17 @@
 * Como apresentar uma tabela em uma grid contínua sem espaçamento entre as bordas?
 
 **Exercício:**
-* Analise o Box Model [desses títulos](https://ifpb.github.io/css-guide/css/box-model/headers-box-model/).
-* [Cards em Box Model](https://ifpb.github.io/css-exercises/css/cards-box-model/)
+* Analise o Box Model [desses títulos](https://ifpb.github.io/lm/css-guide/css/box-model/headers-box-model/).
+* [Cards em Box Model](https://ifpb.github.io/lm/css-exercises/css/cards-box-model/)
 
 ## \# 16 - Estilizando Tabelas (06/05/2019)
 ---
 
 **Conteúdo:**
-- [HTML Guide](https://ifpb.github.io/html-guide/html/)
-  - [Criando Tabelas](https://ifpb.github.io/html-guide/html/table/)
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Estilizando Tabelas](https://ifpb.github.io/css-guide/css/table/)
+- [HTML Guide](https://ifpb.github.io/lm/html-guide/html/)
+  - [Criando Tabelas](https://ifpb.github.io/lm/html-guide/html/table/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Estilizando Tabelas](https://ifpb.github.io/lm/css-guide/css/table/)
 
 **Reflexão:**
 * Quando devemos utilizar tabelas no HTML?
@@ -396,38 +396,38 @@
 * Como colapsamos as bordas de uma tabela?
 
 **Exercício:**
-* [Estilizando tabelas](https://ifpb.github.io/css-exercises/css/table-css/)
+* [Estilizando tabelas](https://ifpb.github.io/lm/css-exercises/css/table-css/)
 
 ## \# 17 - Curriculum Vitae com Layout Básico (10/05/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Box model](https://ifpb.github.io/css-guide/css/box-model/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Box model](https://ifpb.github.io/lm/css-guide/css/box-model/)
 
 **Reflexão:**
 * Quais são os estilos de box model?
 
 **Exercício:**
-* [Curriculum Vitae com layout básico](https://ifpb.github.io/css-exercises/css/curriculum-style-layout/)
+* [Curriculum Vitae com layout básico](https://ifpb.github.io/lm/css-exercises/css/curriculum-style-layout/)
 
 
 ## \# 18 - Simulado I de HTML e CSS (13/05/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-- [HTML Guide](https://ifpb.github.io/html-guide/html/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+- [HTML Guide](https://ifpb.github.io/lm/html-guide/html/)
 
 **Reflexão:**
 * O que é possível fazer com o HTML e CSS até o momento?
 
 **Exercício:**
 - Simulado:
-  - [Profile Simples](https://ifpb.github.io/css-exercises/challenges/css/profile-simple/)
-  - [Curriculum Vitae](https://ifpb.github.io/css-exercises/challenges/css/curriculum-vitae/)
-  - [Cubo Network](https://ifpb.github.io/css-exercises/challenges/css/cubonetwork-simple/)
-- Outros exercícios de [HTML](https://ifpb.github.io/html-exercises/) e [CSS](https://ifpb.github.io/css-exercises/)
+  - [Profile Simples](https://ifpb.github.io/lm/css-exercises/challenges/css/profile-simple/)
+  - [Curriculum Vitae](https://ifpb.github.io/lm/css-exercises/challenges/css/curriculum-vitae/)
+  - [Cubo Network](https://ifpb.github.io/lm/css-exercises/challenges/css/cubonetwork-simple/)
+- Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
 ## \# 19 - Avaliação I de HTML e CSS (17/05/2019)
 ---
@@ -438,8 +438,8 @@
 ---
 
 **Conteúdo:**
-- [HTML Guide](https://ifpb.github.io/html-guide/html/)
-  - [Web Resource](https://ifpb.github.io/html-guide/html/web-resourse/)
+- [HTML Guide](https://ifpb.github.io/lm/html-guide/html/)
+  - [Web Resource](https://ifpb.github.io/lm/html-guide/html/web-resourse/)
 - [Web Guide](https://ifpb.github.io/web-guide/)
   - [Publicando páginas estáticas](https://ifpb.github.io/web-guide/deploy-static-website/)
 
@@ -448,7 +448,7 @@
 * O que o Github Pages e como publicamos uma página estática lá?
 
 **Exercício:**
-* Teste algum [Web Resource](https://ifpb.github.io/html-guide/html/web-resourse/) em seu projeto.
+* Teste algum [Web Resource](https://ifpb.github.io/lm/html-guide/html/web-resourse/) em seu projeto.
 * Faça a publicação do seu projeto usando o Github Pages.
 
 **Projeto:**
@@ -458,8 +458,8 @@
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Background](https://ifpb.github.io/css-guide/css/background/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Background](https://ifpb.github.io/lm/css-guide/css/background/)
 
 **Reflexão:**
 * Como é possível aplicar uma imagem de plano de fundo?
@@ -470,7 +470,7 @@
 
 **Exercício:**
 * Analise que background foi aplicado no cabeçalho (section.page-header) da [página da disciplina](https://ifpb.github.io/lm/).
-* Analise que background foi aplicado no cabeçalho (header) desta [página](https://ifpb.github.io/css-guide/css/background/bg-attachment/index.html).
+* Analise que background foi aplicado no cabeçalho (header) desta [página](https://ifpb.github.io/lm/css-guide/css/background/bg-attachment/index.html).
 
 ## \# 22 - Apresentação das propostas de Projetos (27/05/2019)
 ---
@@ -482,8 +482,8 @@
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Flexbox](https://ifpb.github.io/css-guide/css/layout-flexbox/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Flexbox](https://ifpb.github.io/lm/css-guide/css/layout-flexbox/)
 
 **Reflexão:**
 * O que é Flexible Box Layout?
@@ -493,60 +493,60 @@
 * É possível aninhar um conjunto de containers com Flexbox?
 
 **Exercício:**
-* Analise como foi a aplicação do Flexbox nesses [exemplos](https://ifpb.github.io/css-guide/css/layout-flexbox/#demo)
-* [Cards em Flexbox](https://ifpb.github.io/css-exercises/css/cards-flex/)
+* Analise como foi a aplicação do Flexbox nesses [exemplos](https://ifpb.github.io/lm/css-guide/css/layout-flexbox/#demo)
+* [Cards em Flexbox](https://ifpb.github.io/lm/css-exercises/css/cards-flex/)
 
 ## \# 24 - Flexible Box Layout - Flexbox (03/06/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Flexbox](https://ifpb.github.io/css-guide/css/layout-flexbox/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Flexbox](https://ifpb.github.io/lm/css-guide/css/layout-flexbox/)
 
 **Reflexão:**
 * O que é possível fazer com o Flexbox?
 
 **Exercício:**
-* [Portifólio com Flexbox](https://ifpb.github.io/css-exercises/css/portfolio-initial/)
+* [Portfólio com Flexbox](https://ifpb.github.io/lm/css-exercises/css/portfolio-initial/)
 
 ## \# 25 - CSS Grid (07/06/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [CSS Grid](https://ifpb.github.io/css-guide/css/layout-grid/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [CSS Grid](https://ifpb.github.io/lm/css-guide/css/layout-grid/)
 
 **Reflexão:**
 * O que é Grid Layout?
 * Na terminologia do Grid Layout o que é Grid lines, Grid cell, Grid area, Grid track, Grid row, Grid column e Gutter?
 * Como definir um layout em grid com 3 linhas e 2 colunas?
 * Uma vez que montamos um grid, como se reposiciona um item?
-* Uma vez que montamos um grid, como redimencionamos um item para ocupar mais de uma Grid cell?
+* Uma vez que montamos um grid, como redimensionamos um item para ocupar mais de uma Grid cell?
 
 **Exercício:**
-* [Cards em Grid Layout](https://ifpb.github.io/css-exercises/css/cards-grid/)
+* [Cards em Grid Layout](https://ifpb.github.io/lm/css-exercises/css/cards-grid/)
 
 ## \# 26 - CSS Grid (10/06/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [CSS Grid](https://ifpb.github.io/css-guide/css/layout-grid/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [CSS Grid](https://ifpb.github.io/lm/css-guide/css/layout-grid/)
 
 **Reflexão:**
 * O que é possível fazer com o CSS Grid?
 
 **Exercício:**
-* [Portifólio com Grid Layout](https://ifpb.github.io/css-exercises/css/portfolio-initial/)
-* Blog: [Evermore](https://ifpb.github.io/css-exercises/challenges/css/blog-evermore/), [Denali](https://ifpb.github.io/css-exercises/challenges/css/blog-denali/), [Lamar](https://ifpb.github.io/css-exercises/challenges/css/blog-lamar/), [Escape](https://ifpb.github.io/css-exercises/challenges/css/blog-escape/)
+* [Portfólio com Grid Layout](https://ifpb.github.io/lm/css-exercises/css/portfolio-initial/)
+* Blog: [Evermore](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-evermore/), [Denali](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-denali/), [Lamar](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-lamar/), [Escape](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-escape/)
 
 
 ## \# 27 - Design Responsivo (14/06/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Design Responsive](https://ifpb.github.io/css-guide/css/layout-responsive/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Design Responsive](https://ifpb.github.io/lm/css-guide/css/layout-responsive/)
 
 **Reflexão:**
 * O que é viewport?
@@ -558,7 +558,7 @@
 * Os Navegadores possuem algum recursos para testar a responsividade de um site?
 
 **Exercício:**
-* [Cards responsivos](https://ifpb.github.io/css-exercises/css/cards-responsive/)
+* [Cards responsivos](https://ifpb.github.io/lm/css-exercises/css/cards-responsive/)
 
 <!-- TODO
 - [Progressive enhancement e graceful degradation - Caelum](https://www.caelum.com.br/apostila-html-css-javascript/css-avancado/#progressive-enhancement) 
@@ -568,8 +568,8 @@
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Design Responsive](https://ifpb.github.io/css-guide/css/layout-responsive/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Design Responsive](https://ifpb.github.io/lm/css-guide/css/layout-responsive/)
 
 **Reflexão:**
 * O que é viewport?
@@ -581,21 +581,21 @@
 * Os Navegadores possuem algum recursos para testar a responsividade de um site?
 
 **Exercício:**
-* [Cubo Network](https://ifpb.github.io/css-exercises/challenges/css/cubonetwork-responsive/)
+* [Cubo Network](https://ifpb.github.io/lm/css-exercises/challenges/css/cubonetwork-responsive/)
 
 ## \# 29 - Simulado II de HTML e CSS (28/06/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-- [HTML Guide](https://ifpb.github.io/html-guide/html/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+- [HTML Guide](https://ifpb.github.io/lm/html-guide/html/)
 
 **Reflexão:**
 * O que é possível fazer com o HTML e CSS até o momento?
 
 **Exercício:**
-- [Simulado](https://ifpb.github.io/css-exercises/challenges/): [Weather](https://ifpb.github.io/css-exercises/challenges/css/weather-responsive/), [Cinebangue](https://ifpb.github.io/css-exercises/challenges/css/cinebangue-responsive/), [Profile](https://ifpb.github.io/css-exercises/challenges/css/profile-responsive/)
-- Outros exercícios de [HTML](https://ifpb.github.io/html-exercises/) e [CSS](https://ifpb.github.io/css-exercises/)
+- [Simulado](https://ifpb.github.io/lm/css-exercises/challenges/): [Weather](https://ifpb.github.io/lm/css-exercises/challenges/css/weather-responsive/), [Cinebangue](https://ifpb.github.io/lm/css-exercises/challenges/css/cinebangue-responsive/), [Profile](https://ifpb.github.io/lm/css-exercises/challenges/css/profile-responsive/)
+- Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
 ## \# 30 - Avaliação II de HTML e CSS (09/08/2019)
 ---
@@ -606,10 +606,10 @@
 ---
 
 **Conteúdo:**
-- [HTML Guide](https://ifpb.github.io/html-guide/html/)
-  - [Estruturando um Formulário](https://ifpb.github.io/html-guide/html/form/)
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Estilizando um Formulário](https://ifpb.github.io/css-guide/css/form/)
+- [HTML Guide](https://ifpb.github.io/lm/html-guide/html/)
+  - [Estruturando um Formulário](https://ifpb.github.io/lm/html-guide/html/form/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Estilizando um Formulário](https://ifpb.github.io/lm/css-guide/css/form/)
 
 **Reflexão:**
 
@@ -630,8 +630,8 @@
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Posicionamento com CSS](https://ifpb.github.io/css-guide/css/layout-position/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Posicionamento com CSS](https://ifpb.github.io/lm/css-guide/css/layout-position/)
 
 **Reflexão:**
 - O que é a propriedade `position` e quais são os seus possíveis valores?
@@ -642,16 +642,16 @@
 - O que é a propriedade `float`?
 
 **Exercício:**
-* Crie o menu fixo do [Blog Moon](https://ifpb.github.io/css-exercises/challenges/css/blog-moon/)
+* Crie o menu fixo do [Blog Moon](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-moon/)
 
 ## \# 33 - Animação com CSS (17/08/2019)
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-  - [Transform](https://ifpb.github.io/css-guide/css/transform/)
-  - [Transition](https://ifpb.github.io/css-guide/css/transition/)
-  - [Animation](https://ifpb.github.io/css-guide/css/animation/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+  - [Transform](https://ifpb.github.io/lm/css-guide/css/transform/)
+  - [Transition](https://ifpb.github.io/lm/css-guide/css/transition/)
+  - [Animation](https://ifpb.github.io/lm/css-guide/css/animation/)
 
 **Reflexão:**
 * Como uma animação pode melhorar ou piorar uma interface Web?
@@ -672,15 +672,15 @@
 ---
 
 **Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/css-guide/css/)
-- [HTML Guide](https://ifpb.github.io/html-guide/html/)
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+- [HTML Guide](https://ifpb.github.io/lm/html-guide/html/)
 
 **Reflexão:**
 * O que é possível fazer com o HTML e CSS até o momento?
 
 **Exercício:**
-- [CSS Challenges](https://ifpb.github.io/css-exercises/challenges/)
-- Outros exercícios de [HTML](https://ifpb.github.io/html-exercises/) e [CSS](https://ifpb.github.io/css-exercises/)
+- [CSS Challenges](https://ifpb.github.io/lm/css-exercises/challenges/)
+- Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
 ## \# 35 - Avaliação III de HTML e CSS (23/08/2019)
 ---
@@ -691,8 +691,8 @@
 ---
 
 **Conteúdo:**
-- [CSS Packages](https://ifpb.github.io/css-guide/packages/)
-  - [Bootstrap](https://ifpb.github.io/css-guide/packages/bootstrap/)
+- [CSS Packages](https://ifpb.github.io/lm/css-guide/packages/)
+  - [Bootstrap](https://ifpb.github.io/lm/css-guide/packages/bootstrap/)
   - [Materialize](http://materializecss.com)
   - [Bulma](https://bulma.io)
 
