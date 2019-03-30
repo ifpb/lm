@@ -186,7 +186,7 @@
 * Até o momento, quais marcações do HTML foram apresentadas?
 
 **Exercício:**
-* [Curriculum Vitae](https://ifpb.github.io/lm/html-exercises/lm/html/curriculum-simple/)
+* [Curriculum Vitae](https://ifpb.github.io/lm/html-exercises/html/curriculum-simple/)
 * [Curriculum Vitae com Sumário](https://ifpb.github.io/lm/html-exercises/html/curriculum-linkinternal/)
 
 ## \# 08 - Linguagem de Estilo e o CSS (05/04/2019)
