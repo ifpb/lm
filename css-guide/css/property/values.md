@@ -190,7 +190,7 @@ p {
 | tag | value | computed value |
 |-|-|-|
 | `body` | 16px | |
-| `h1` | 1.3rem | 16.48px |
+| `h1` | 1.3rem | 20.8px |
 | `p` | 105% | 16.8px |
 
 ## References
