@@ -6,7 +6,7 @@
 * [Conditional Information](#conditional-information)
   * [`@media`](#media)
   * [`@document`](#document)
-  * [`@supports`](#support)
+  * [`@supports`](#supports)
 * [Descriptive Information](#descriptive-information)
   * [`@font-face`](#font-face)
 
