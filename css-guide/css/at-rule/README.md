@@ -125,16 +125,18 @@ Functions:
 }
 ```
 
-### [`@support`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40supports)
+### [`@supports`](https://developer.mozilla.org/en-US/docs/Web/CSS/%40supports)
 
 ```css
-@supports (--main-color: green;) {
-  :root {
-    --main-color: green;
+@supports (display: grid) {
+  div {
+    display: grid;
   }
+}
 
-  body {
-    color: var(--varName);
+@supports not (display: grid) {
+  div {
+    float: right;
   }
 }
 ```

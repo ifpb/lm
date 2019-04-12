@@ -268,10 +268,10 @@
 * Qual é a utilidade dos at-rules no CSS?
 * O que é Media query? Qual é a sua composição? Onde definimos?
 * Como personalizamos uma página de impressão?
-* Qual a relação entre Media query e Design responsivo? Como definos *breakpoint* no Design responsivo?
+* Qual a relação entre Media query e Design responsivo? Como definimos *breakpoint* no Design responsivo?
 
 **Exercício:**
-* [Adpatando a página de impressão](https://ifpb.github.io/lm/css-exercises/css/customize-print/)
+* [Adaptando a página de impressão](https://ifpb.github.io/lm/css-exercises/css/customize-print/)
 
 ## \# 11 - Estilizando Texto (13/04/2019)
 ---
@@ -296,7 +296,7 @@
 * Como estilizamos um hyperlink?
 
 **Exercício:**
-* Acesse o artigo [Como Publicar no Jaguaribe Tech](https://medium.com/jaguaribetech/publicando-no-jaguaribe-tech-61907efc256c) do Blog [Jaguaritbe.tech](https://medium.com/jaguaribetech/), depois inspecione um título e um parágrafo para analisar quais estilos de alinhamento e aparência de texto eles possuem.
+* Acesse o artigo [Como Publicar no Jaguaribe Tech](https://medium.com/jaguaribetech/publicando-no-jaguaribe-tech-61907efc256c) do Blog [Jaguaribe.tech](https://medium.com/jaguaribetech/), depois inspecione um título e um parágrafo para analisar quais estilos de alinhamento e aparência de texto eles possuem.
 * No artigo anterior a página possui vários hyperlinks, então usando a ferramenta de inspecionar elemento escolha três hyperlinks e descreva seus estilos nos estágios `hover`, `link`, `active`, `visited` e `focus`.
 * Monte uma página e crie alguns links definindo estilos (`color`, `outline`, `text-decoration` e `cursor`) nos estados `:hover`, `:link`, `:active`, `:visited`, `:focus`. Por exemplo, a aparência no estágio `link` e `visited` seriam com a mesma cor e sem sublinhado, e nos demais estados o link ficaria com sublinhado, sem `outline` e com um tom de cor semelhante ao estado `link`.
 
