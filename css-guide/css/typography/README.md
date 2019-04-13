@@ -246,7 +246,6 @@ text-transform: capitalize;
 text-transform: uppercase;
 text-transform: lowercase;
 text-transform: none;
-text-transform: full-width;
 ```
 
 #### Example
@@ -354,10 +353,8 @@ text-align: left;
 text-align: right;
 text-align: center;
 text-align: justify;
-text-align: justify-all;
 text-align: start;
 text-align: end;
-text-align: match-parent;
 ```
 
 #### Example
