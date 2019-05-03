@@ -13,11 +13,11 @@
 [\# 11 - Estilizando Texto (13/04/2019)](#-11---estilizando-texto-13042019)<br>
 [\# 12 - Estilizando Texto (15/04/2019)](#-12---estilizando-texto-15042019)<br>
 [\# 13 - Web Fonts e Ícones (22/04/2019)](#-13---web-fonts-e-ícones-22042019)<br>
-[\# 14 - Exercícios de Revisão (26/04/2019)](#-14---exercícios-de-revisão-2604019)<br>
-[\# 15 - Cascata no CSS (29/04/2019)](#-15---cascata-no-css-2904019)<br>
+[\# 14 - Exercícios de Revisão (26/04/2019)](#-14---exercícios-de-revisão-26042019)<br>
+[\# 15 - Cascata no CSS (29/04/2019)](#-15---cascata-no-css-29042019)<br>
 [\# 16 - Box Model (03/05/2019)](#-16---box-model-03052019)<br>
 [\# 17 - Estilizando Tabelas (06/05/2019)](#-17---estilizando-tabelas-06052019)<br>
-[\# 18 - Curriculum Vitae com Layout Básico (10/05/2019)](#-18---curriculum-viate-com-layout-básico-10052019)<br>
+[\# 18 - Curriculum Vitae com Layout Básico (10/05/2019)](#-18---curriculum-vitae-com-layout-básico-10052019)<br>
 [\# 19 - Simulado I de HTML e CSS (13/05/2019)](#-19---simulado-i-de-html-e-css-13052019)<br>
 [\# 20 - Avaliação I de HTML e CSS (17/05/2019)](#-20---avaliação-i-de-html-e-css-17052019)<br>
 [\# 21 - Recursos da Web, Publicando seu site e Apresentação do Projeto (18/05/2019)](#-21---recursos-da-web-publicando-seu-site-e-apresentação-do-projeto-18052019)<br>
@@ -335,7 +335,6 @@
 
 **Exercício:**
 * [Curriculum Vitae com Web fontes e Ícones](https://ifpb.github.io/lm/css-exercises/css/curriculum-style-icon/)
-
 
 ## \# 14 - Exercícios de Revisão (26/04/2019)
 ---
