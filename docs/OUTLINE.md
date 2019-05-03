@@ -13,31 +13,31 @@
 [\# 11 - Estilizando Texto (13/04/2019)](#-11---estilizando-texto-13042019)<br>
 [\# 12 - Estilizando Texto (15/04/2019)](#-12---estilizando-texto-15042019)<br>
 [\# 13 - Web Fonts e Ícones (22/04/2019)](#-13---web-fonts-e-ícones-22042019)<br>
-[\# 14 - Exercícios de Revisão (26/04/2019)](#-14—exercicios-2604019)<br>
-[\# 15 - Cascata no CSS (29/04/2019)](#-14---cascata-no-css-2904019)<br>
-[\# 16 - Box Model (03/05/2019)](#-15---box-model-03052019)<br>
+[\# 14 - Exercícios de Revisão (26/04/2019)](#-14---exercicios-2604019)<br>
+[\# 15 - Cascata no CSS (29/04/2019)](#-15---cascata-no-css-2904019)<br>
+[\# 16 - Box Model (03/05/2019)](#-16---box-model-03052019)<br>
 [\# 17 - Estilizando Tabelas (06/05/2019)](#-16---estilizando-tabelas-06052019)<br>
-[\# 18 - Curriculum Vitae com Layout Básico (10/05/2019)](#-17---curriculum-viate-com-layout-básico-10052019)<br>
-[\# 19 - Simulado I de HTML e CSS (13/05/2019)](#-18---simulado-i-de-html-e-css-13052019)<br>
-[\# 20 - Avaliação I de HTML e CSS (17/05/2019)](#-19---avaliação-i-de-html-e-css-17052019)<br>
-[\# 21 - Recursos da Web, Publicando seu site e Apresentação do Projeto (18/05/2019)](#-20---recursos-da-web-publicando-seu-site-e-apresentação-do-projeto-18052019)<br>
-[\# 22 - Background (20/05/2019)](#-21---background-20052019)<br>
-[\# 23 - Apresentação das propostas de Projetos (24/05/2019)](#-22---apresentação-das-propostas-de-projetos-24052019)<br>
-[\# 24 - Flexible Box Layout - Flexbox (25/05/2019)](#-23---flexible-box-layout---flexbox-25052019)<br>
-[\# 25 - Flexible Box Layout - Flexbox (27/05/2019)](#-24---flexible-box-layout---flexbox-27052019)<br>
-[\# 26 - CSS Grid (31/05/2019)](#-25---css-grid-31052019)<br>
-[\# 27 - CSS Grid (03/06/2019)](#-26---css-grid-03062019)<br>
-[\# 28 - Design Responsivo (07/06/2019)](#-27---design-responsivo-07062019)<br>
-[\# 29 - Design Responsivo (10/06/2019)](#-28---design-responsivo-10062019)<br>
-[\# 30 - Simulado II de HTML e CSS (14/06/2019)](#-29---simulado-ii-de-html-e-css-14062019)<br>
-[\# 31 - Avaliação II de HTML e CSS (15/06/2019)](#-30---avaliação-ii-de-html-e-css-15062019)<br>
-[\# 32 - Formulário (17/06/2019)](#-31---formulário-17062019)<br>
-[\# 33 - Posicionamento de Elementos (xx/xx/xxx)](#-32---posicionamento-de-elementos-xxxxxxxx)<br>
-[\# 34 - Animação com CSS (xx/xx/xxxx)](#-33---animação-com-css-xxxxxxxx)<br>
-[\# 35 - Simulado III de HTML e CSS (xx/xx/xxxx)](#-34---simulado-iii-de-html-e-css-xxxxxxxx)<br>
-[\# 36 - Avaliação III de HTML e CSS (xx/xx/xxxx)](#-35---avaliação-iii-de-html-e-css-xxxxxxxx)<br>
-[\# 37 - Componentes da Web (xx/xx/xxxx)](#-36---componentes-da-web-xxxxxxxx)<br>
-[\# 38 - XML & DTD (xx/xx/xxxx)](#-37---xml--dtd-xxxxxxxx)<br>
+[\# 18 - Curriculum Vitae com Layout Básico (10/05/2019)](#-18---curriculum-viate-com-layout-básico-10052019)<br>
+[\# 19 - Simulado I de HTML e CSS (13/05/2019)](#-19---simulado-i-de-html-e-css-13052019)<br>
+[\# 20 - Avaliação I de HTML e CSS (17/05/2019)](#-20---avaliação-i-de-html-e-css-17052019)<br>
+[\# 21 - Recursos da Web, Publicando seu site e Apresentação do Projeto (18/05/2019)](#-21---recursos-da-web-publicando-seu-site-e-apresentação-do-projeto-18052019)<br>
+[\# 22 - Background (20/05/2019)](#-22---background-20052019)<br>
+[\# 23 - Apresentação das propostas de Projetos (24/05/2019)](#-23---apresentação-das-propostas-de-projetos-24052019)<br>
+[\# 24 - Flexible Box Layout - Flexbox (25/05/2019)](#-24---flexible-box-layout---flexbox-25052019)<br>
+[\# 25 - Flexible Box Layout - Flexbox (27/05/2019)](#-25---flexible-box-layout---flexbox-27052019)<br>
+[\# 26 - CSS Grid (31/05/2019)](#-26---css-grid-31052019)<br>
+[\# 27 - CSS Grid (03/06/2019)](#-27---css-grid-03062019)<br>
+[\# 28 - Design Responsivo (07/06/2019)](#-28---design-responsivo-07062019)<br>
+[\# 29 - Design Responsivo (10/06/2019)](#-29---design-responsivo-10062019)<br>
+[\# 30 - Simulado II de HTML e CSS (14/06/2019)](#-30---simulado-ii-de-html-e-css-14062019)<br>
+[\# 31 - Avaliação II de HTML e CSS (15/06/2019)](#-31---avaliação-ii-de-html-e-css-15062019)<br>
+[\# 32 - Formulário (17/06/2019)](#-32---formulário-17062019)<br>
+[\# 33 - Posicionamento de Elementos (xx/xx/xxx)](#-33---posicionamento-de-elementos-xxxxxxxx)<br>
+[\# 34 - Animação com CSS (xx/xx/xxxx)](#-34---animação-com-css-xxxxxxxx)<br>
+[\# 35 - Simulado III de HTML e CSS (xx/xx/xxxx)](#-35---simulado-iii-de-html-e-css-xxxxxxxx)<br>
+[\# 36 - Avaliação III de HTML e CSS (xx/xx/xxxx)](#-36---avaliação-iii-de-html-e-css-xxxxxxxx)<br>
+[\# 37 - Componentes da Web (xx/xx/xxxx)](#-37---componentes-da-web-xxxxxxxx)<br>
+[\# 38 - XML & DTD (xx/xx/xxxx)](#-38---xml--dtd-xxxxxxxx)<br>
 [\# 39 - Apresentação de Projetos (xx/xx/xxxx)](#-39---apresentação-de-projetos-xxxxxxxx)<br>
 [\# 40 - Apresentação de Projetos (xx/xx/xxxx)](#-40---apresentação-de-projetos-xxxxxxxx)<br>
 [\# 41 - Prova Final (xx/xx/xxxx)](#-41---prova—final-xxxxxxxx)<br>
