@@ -790,25 +790,25 @@ overflow: auto;
     <tr>
       <td>overflow: visible;</td>
       <td>
-        <div style="overflow: visible; border: 1px solid #000; width: 200px; height: 4rem;">Lorem ipsum dolor amet, consectetur.</div>
+        <div style="overflow: visible; border: 1px solid #000; width: 200px; height: 2rem;">Lorem ipsum dolor amet, consectetur.</div>
       </td>
     </tr>
     <tr>
       <td>overflow: hidden;</td>
       <td>
-        <div style="overflow: hidden; border: 1px solid #000; width: 200px; height: 4rem;">Lorem ipsum dolor amet, consectetur.</div>
+        <div style="overflow: hidden; border: 1px solid #000; width: 200px; height: 2rem;">Lorem ipsum dolor amet, consectetur.</div>
       </td>
     </tr>
     <tr>
       <td>overflow: scroll;</td>
       <td>
-        <div style="overflow: scroll; border: 1px solid #000; width: 200px; height: 4rem;">Lorem ipsum dolor amet, consectetur.</div>
+        <div style="overflow: scroll; border: 1px solid #000; width: 200px; height: 2rem;">Lorem ipsum dolor amet, consectetur.</div>
       </td>
     </tr>
     <tr>
       <td>overflow: auto;</td>
       <td>
-        <div style="overflow: auto; border: 1px solid #000; width: 200px; height: 4rem;">Lorem ipsum dolor amet, consectetur.</div>
+        <div style="overflow: auto; border: 1px solid #000; width: 200px; height: 2rem;">Lorem ipsum dolor amet, consectetur.</div>
       </td>
     </tr>
   </tbody>
