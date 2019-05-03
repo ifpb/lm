@@ -765,7 +765,7 @@ box-sizing: border-box;
 ## [Overflow](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
 ---
 
-> <b>Value:</b> visible \| hidden \| clip \| scroll \| auto
+> <b>Value:</b> visible \| hidden \| scroll \| auto
 
 ### Syntax
 
