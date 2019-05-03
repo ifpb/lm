@@ -731,10 +731,10 @@ box-sizing: content-box;
 box-sizing: border-box;
 ```
 
-- content-box
-	Default. The width and height properties (and min/max properties) includes only the content. Border and padding are not included
-- border-box
-	The width and height properties (and min/max properties) includes content, padding and border
+- <b>content-box</b>
+	- Default. The width and height properties (and min/max properties) includes only the content. Border and padding are not included
+- <b>border-box</b>
+	- The width and height properties (and min/max properties) includes content, padding and border
 
 
 ### Example
