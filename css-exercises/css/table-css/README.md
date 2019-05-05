@@ -37,15 +37,15 @@ A `<table>` deve seguir os seguintes padrões de estilos:
 
 **INSTRUÇÃO 1.** Todo o texto deverá estar centralizado, com fonte `"Times New Roman", Times, serif`, de tamanho de fonte de `12px`;
 
-**INSTRUÇÃO 2.** Largura (`width`) em 20%;
+**INSTRUÇÃO 2.** Largura (`width`) da tabela em 20%;
 
-**INSTRUÇÃO 3.** Ter cor de pano de fundo igual a `rgb(240,248,255)`;
+**INSTRUÇÃO 3.** A tabela terá cor de fundo igual a `rgb(240,248,255)`;
 
 **INSTRUÇÃO 4.** Apenas os th's e td's deverão ter bordas `"1px solid black"`, e padding de `5px`;
 
-**INSTRUÇÃO 5.** A linha que contém os th's deverá estar na cor `rgb(168, 218, 213)`. No entanto, se o mouse estiver posicionado sobre qualquer outra linha, esta também deverá estar com o mesmo rgb, voltando a cor anterior, com a saída do mouse.
+**INSTRUÇÃO 5.** A linha que contém os th's deverá estar na cor `rgb(168, 218, 213)`. No entanto, se o mouse estiver posicionado sobre qualquer outra linha, esta também deverá estar com o mesmo rgb, voltando a cor anterior, com a saída do mouse (usar a propriedade `hover`).
 
-**INSTRUÇÃO 6.** Os ícones para cada condição climática serão os do Weather Icons. A documentação de como inserí-lo no HTML encontra-se na [Página do Weather Icons](https://erikflowers.github.io/weather-icons). No entanto, o link para o seu CSS ja encontra-se refereciado deste arquivo. Para cada dia da semana, considere os seguintes ícones:
+**INSTRUÇÃO 6.** Os ícones para cada condição climática (coluna Tempo) serão os do Weather Icons. A documentação de como inserí-los no HTML encontra-se na [Página do Weather Icons](https://erikflowers.github.io/weather-icons). No entanto, o link para o seu CSS já encontra-se referenciado neste arquivo. Para cada dia da semana, considere os seguintes ícones:
 
 | Dia     | Nome do Ícone    |
 | ------- | ---------------- |
@@ -68,13 +68,13 @@ A `<table>` deve seguir os seguintes padrões de estilos:
 
 **INSTRUÇÃO 1.** Todo o texto deverá estar centralizado, exceto os nomes dos alunos que deverão estar com alinhamento a esquerda.
 
-**INSTRUÇÃO 2.** Largura (`width`) em `50%`, `min-width` de `300px`, e com `margin` `auto`;
+**INSTRUÇÃO 2.** Largura (`width`) da tabela em `50%`, `min-width` de `300px`, e com `margin` `auto`;
 
 **INSTRUÇÃO 3.** Bordas com `collapse`
 
 **INSTRUÇÃO 4.** Margem de distância do topo de `50px`;
 
-**INSTRUÇÃO 5.** Borda do topo e da base com `1px solid black`;
+**INSTRUÇÃO 5.** Borda do topo e da base (baixo) com `1px solid black`;
 
 **INSTRUÇÃO 6.** As linhas ímpares, que contém os nomes dos alunos, deverão estar com o plano de fundo na cor `rgb(240,248,255)`.
 
