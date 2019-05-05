@@ -154,7 +154,7 @@ Output:
   </table>
 </div>
 
-[table-span/index.html](table-span/index.html):
+[table-span/indexCol.html](table-span/indexCol.html):
 ```html
 <table>
   <thead>
