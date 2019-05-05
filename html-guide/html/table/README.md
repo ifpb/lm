@@ -154,6 +154,65 @@ Output:
   </table>
 </div>
 
+[table-span/index.html](table-span/index.html):
+```html
+<table>
+  <thead>
+    <tr>
+      <th>Language</th>
+      <th>Creator</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Python</td>
+      <td>Guido van Rossum</td>
+    </tr>
+    <tr>
+      <td>Javascript</td>
+      <td>Brendan Eich</td>
+    </tr>
+    <tr>
+      <td colspan="2">Dennis Ritchie</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>B</td>
+    </tr>
+  </tbody>
+</table>
+```
+
+Output:
+
+<div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem">
+  <table>
+    <thead>
+      <tr>
+        <th style="border: none;">Language</th>
+        <th style="border: none;">Creator</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td style="border: none;">Python</td>
+        <td style="border: none;">Guido van Rossum</td>
+      </tr>
+      <tr>
+        <td style="border: none;">Javascript</td>
+        <td style="border: none;">Brendan Eich</td>
+      </tr>
+      <tr>
+        <td style="border: none;" colspan="2">Dennis Ritchie</td>
+      </tr>
+      <tr>
+	<td style="border: none;">C</td>
+	<td style="border: none;">B</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
 ## References
 ---
 
