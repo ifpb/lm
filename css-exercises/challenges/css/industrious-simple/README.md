@@ -3,7 +3,7 @@
 ## Descrição
 ---
 
-A estrutura básica do site se encontra no arquivo [site.zip](site.zip), e é exigida a criação de no mínimo 3 componentes.
+A estrutura básica do site se encontra no arquivo [site.zip](site.zip), e é exigida a criação de no mínimo 3 (três) componentes.
 
 ## Componentes
 ---
