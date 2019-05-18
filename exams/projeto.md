@@ -12,7 +12,7 @@ A seguir, serão apresentados maiores detalhes do projeto.
 ## Apresentação do Tema
 ---
 
-Para ajudar na definição do tema central do projeto, que pode ser composto por até **três pessoas**, será exigido que cada projeto seja resumidamente apresentado em sala, oralmente, por cada um de seus integrantes, em data a ser definida.
+Para ajudar na definição do tema central do projeto, que pode ser composto por até **2 (duas) pessoas**, será exigido que cada projeto seja resumidamente apresentado em sala, oralmente, por cada um de seus integrantes, em data a ser definida.
 
 Assim, será exigido que a apresentação possua um tempo máximo de 3 minutos e contemple:
 
@@ -20,7 +20,7 @@ Assim, será exigido que a apresentação possua um tempo máximo de 3 minutos e
 * Alguma seleção de telas de sistemas existentes que façam algo semelhante ao que será proposto, ou seja, não precisamos reinventar a roda sempre;
 * Por fim, deve-se apresentar alguns esboços de tela de como a equipe enxerga o protótipo final do projeto, pode ser até mesmo [esquemas no papel](https://developers.google.com/web/fundamentals/design-and-ux/ux-basics/), pois o que importa é que fique claro as interações do sistema e sua navegabilidade. Caso necessário, o grupo pode utilizar alguma [ferramenta de prototipagem](https://uxtools.co/tools/prototyping).
 
-Para facilitar a listagem dos temas, todos os interessados devem declarar suas propostas [neste padlet](https://padlet.com/lucachaves/projetolm20182) seguindo esse formato de card:
+Para facilitar a listagem dos temas, todos os interessados devem declarar suas propostas [neste padlet](https://padlet.com/tmoura/r1osxk8sue5p) seguindo esse formato de card:
 
 ```
 Título/Tema do Projeto
@@ -29,9 +29,8 @@ Descrição:
 Resumidamente descreva a ideia central do seu projeto
 
 Equipe:
-- Nome do Aluno 1 (matricula)
-- Nome do Aluno 2 (matricula)
-- Nome do Aluno 3 (matricula)
+- Nome do Aluno 1 (matrícula)
+- Nome do Aluno 2 (matrícula)
 
 Proposta:
 http://link-da-apresentacao-da-proposta
@@ -40,7 +39,7 @@ Repositório:
 http://github.com/link-do-repositorio
 ```
 
-A declaração de informações no Padlet deve ser realizada por apenas um dos integrantes da equipe, e para possibilitar modificações futuras é necessário possuir uma [conta no padlet](https://padlet.com/referrals/lucachaves).
+A declaração de informações no Padlet deve ser realizada por apenas um dos integrantes da equipe, e para possibilitar modificações futuras é necessário possuir uma [conta no padlet](https://padlet.com/).
 
 Para obter mais inspirações vendo projetos dos outros períodos, basta acessar [ifpb/projects](https://ifpb.github.io/projects/) e procurar projetos com a tag `lm-`.
 
@@ -59,7 +58,7 @@ Portanto, para definir os critério de avaliação serão considerados questões
   - Estruturar o website utilizando a linguagem de marcação HMTL 5 com tags semânticas.
   - Estilização do website com CSS3 (em um ou mais arquivos a parte): tipografia e fontes, alinhamento de decoração dos textos, imagens de fundo, espaçamentos e margens, links.
   - Maximizar a utilização de seletores na estilização com CSS: ID, class, cascata e herança, pseudo-classes e pseudo-elementos. *P.S.* Não é necessário utilizar todas as possibilidades, mas tire proveito do que o CSS3 pode lhes oferecer.
-  - Posicionar os elementos do seu website utilizando conceito de layout em CSS: float, position, grid, flexbox, etc.
+  - Posicionar os elementos do seu website utilizando conceito de layout em CSS: grid, flexbox,float, position etc.
   - Trabalhe imagens com gradientes no seu projeto, anime os elementos do seu website com transition e altere propriedades visuais dos elementos com transform.
   - Crie uma área de Contato utilizando formulários.
   - Crie um design da página que seja responsivo, para garantir uma visualização confortável nos dispositivos móveis.
