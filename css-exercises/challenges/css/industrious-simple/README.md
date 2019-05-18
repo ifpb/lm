@@ -144,3 +144,5 @@ Contudo em `<!-- TODO - COMPONENTE 5 -->` no arquivo `css/main.css`, altere as s
 | facebook | `#4b64a6` |
 | instagram | `#dd2a7b` |
 | github | `#333333` |
+
+> [Alternativa de resposta](site-response/)
