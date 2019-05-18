@@ -22,8 +22,8 @@
 [\# 20 - Avaliação I de HTML e CSS (17/05/2019)](#-20---avaliação-i-de-html-e-css-17052019)<br>
 [\# 21 - Recursos da Web, Publicando seu site e Apresentação do Projeto (18/05/2019)](#-21---recursos-da-web-publicando-seu-site-e-apresentação-do-projeto-18052019)<br>
 [\# 22 - Background (20/05/2019)](#-22---background-20052019)<br>
-[\# 23 - Apresentação das propostas de Projetos (24/05/2019)](#-23---apresentação-das-propostas-de-projetos-24052019)<br>
-[\# 24 - Flexible Box Layout - Flexbox (25/05/2019)](#-24---flexible-box-layout---flexbox-25052019)<br>
+[\# 23 - Flexible Box Layout - Flexbox (24/05/2019)](#-23---flexible-box-layout---flexbox-24052019)<br>
+[\# 24 - Apresentação das propostas de Projetos (25/05/2019)](#-24---apresentação-das-propostas-de-projetos-25052019)<br>
 [\# 25 - Flexible Box Layout - Flexbox (27/05/2019)](#-25---flexible-box-layout---flexbox-27052019)<br>
 [\# 26 - CSS Grid (31/05/2019)](#-26---css-grid-31052019)<br>
 [\# 27 - CSS Grid (03/06/2019)](#-27---css-grid-03062019)<br>
@@ -433,6 +433,7 @@
   - [Profile Simples](https://ifpb.github.io/lm/css-exercises/challenges/css/profile-simple/)
   - [Curriculum Vitae](https://ifpb.github.io/lm/css-exercises/challenges/css/curriculum-vitae/)
   - [Cubo Network](https://ifpb.github.io/lm/css-exercises/challenges/css/cubonetwork-simple/)
+  - [Industrious](https://ifpb.github.io/lm/css-exercises/challenges/css/industrious-simple/)
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
 ## \# 20 - Avaliação I de HTML e CSS (17/05/2019)
@@ -478,13 +479,7 @@
 * Analise que background foi aplicado no cabeçalho (section.page-header) da [página da disciplina](https://ifpb.github.io/lm/).
 * Analise que background foi aplicado no cabeçalho (header) desta [página](https://ifpb.github.io/lm/css-guide/css/background/bg-attachment/index.html).
 
-## \# 23 - Apresentação das propostas de Projetos (24/05/2019)
----
-
-> A ordem de apresentação estará disponível nessa [página](../exams/projeto.md).
-
-
-## \# 24 - Flexible Box Layout - Flexbox (25/05/2019)
+## \# 23 - Flexible Box Layout - Flexbox (24/05/2019)
 ---
 
 **Conteúdo:**
@@ -501,6 +496,11 @@
 **Exercício:**
 * Analise como foi a aplicação do Flexbox nesses [exemplos](https://ifpb.github.io/lm/css-guide/css/layout-flexbox/#demo)
 * [Cards em Flexbox](https://ifpb.github.io/lm/css-exercises/css/cards-flex/)
+
+## \# 24 - Apresentação das propostas de Projetos (25/05/2019)
+---
+
+> A ordem de apresentação estará disponível nessa [página](../exams/projeto.md).
 
 ## \# 25 - Flexible Box Layout - Flexbox (27/06/2019)
 ---
