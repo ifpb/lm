@@ -62,13 +62,14 @@ h1 {
   background-color: currentcolor;
   color: green;
   padding: 20px;
+  text-shadow: 2px 2px tomato;
 }
 ```
 
 Output:
 
 <div style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;">
-  <h1 style="background-color: currentcolor; color: green; padding: 20px;">Lorem ipsum dolor</h1>
+  <h1 style="background-color: currentcolor; color: green; padding: 20px; text-shadow: 2px 2px tomato;">Lorem ipsum dolor</h1>
 </div>
 
 ## [Background Image](https://developer.mozilla.org/en-US/docs/Web/CSS/background-image)
