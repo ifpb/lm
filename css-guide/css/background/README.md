@@ -280,7 +280,10 @@ background-position: right;
 background-position: center;
 background-position: center right;
 
-/* <percentage> values */
+/* <percentage> values / <horizontal> <vertical> / x% y% 
+Top left corner: 0% 0%.
+Right bottom corner: 100% 100%
+*/
 background-position: 25% 75%;
 
 /* <length> values */
