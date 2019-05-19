@@ -215,9 +215,9 @@ Output:
 
 ```css
 /* Keyword values */
+background-repeat: repeat; /* default */
 background-repeat: repeat-x;
 background-repeat: repeat-y;
-background-repeat: repeat;
 background-repeat: no-repeat;
 ```
 
