@@ -542,7 +542,7 @@ header {
 ```
 Output:
 
-<div style="background: url(sprite/img/google.png) no-repeat -24px 0; width: 116px; height: 37px;"></div>
+<div style="background: url(sprite/img/google.png) no-repeat -24px 0; width: 116px; height: 37px;">TESTE</div>
 
 
 References:
