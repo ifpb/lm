@@ -333,7 +333,7 @@ background-size: contain;
 background-size: 50%;
 background-size: 3.2em;
 background-size: 12px;
-background-size: auto;
+background-size: auto; /* default - original size */
 
 /* Two-value syntax */
 /* first value: width of the image, second value: height */
