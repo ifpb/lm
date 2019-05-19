@@ -388,7 +388,7 @@ Output:
 
 ```css
 /* Keyword values */
-background-attachment: scroll; /* defaul */
+background-attachment: scroll; /* default */
 background-attachment: fixed;
 background-attachment: local;
 ```
@@ -411,6 +411,7 @@ header {
 Output:
 
 <iframe src="bg-attachment/index.html" width="100%" height="500px" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+
 
 * [scroll vs local 1](https://css-tricks.com/almanac/properties/b/background-attachment/)
 * [scroll vs local 2](https://www.1keydata.com/css-tutorial/background-attachment.php)
@@ -539,6 +540,10 @@ header {
   height: 37px;
 }
 ```
+Output:
+
+<div style="background: url(../img/google.png) no-repeat -24px 0; width: 116px; height: 37px;"></div>
+
 
 References:
 * [Sprite Cow](http://www.spritecow.com)
