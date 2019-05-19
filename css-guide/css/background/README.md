@@ -297,7 +297,7 @@ background-position: right 3em bottom 10px;
 
 [bg-position/](bg-position/) ([Source](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links#Including_icons_on_links)):
 ```css
-a[href*="http"] {
+a[href^="http"] {
   background-image: url('img/external-link-16.png');
   background-repeat: no-repeat;
   background-position: 100% 5px;

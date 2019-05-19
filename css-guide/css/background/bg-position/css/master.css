@@ -16,7 +16,7 @@ a:focus, a:hover {
   text-decoration: underline;
 }
 
-a[href*="http"] {
+a[href^="http"] {
   background-image: url('../img/external-link-16.png');
   background-repeat: no-repeat;
   background-position: 100% 5px;
