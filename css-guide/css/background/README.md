@@ -388,7 +388,7 @@ Output:
 
 ```css
 /* Keyword values */
-background-attachment: scroll;
+background-attachment: scroll; /* defaul */
 background-attachment: fixed;
 background-attachment: local;
 ```
@@ -411,6 +411,9 @@ header {
 Output:
 
 <iframe src="bg-attachment/index.html" width="100%" height="500px" style="border-radius: 0.3rem; border: solid 1px #dce6f0; padding: 0.8rem;"></iframe>
+
+* [scroll vs local 1](https://css-tricks.com/almanac/properties/b/background-attachment/)
+* [scroll vs local 2](https://www.1keydata.com/css-tutorial/background-attachment.php)
 
 ## [Background Blend Mode](https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode)
 ---
