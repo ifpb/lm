@@ -168,6 +168,10 @@ Terminology:
 ## [Flex Item - Flexibility Basis](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis)
 ---
 
+* The flex-basis property specifies the initial length of a flexible item.
+
+* <b>Note:</b> If the element is not a flexible item, the flex-basis property has no effect.
+
 > <b>Name:</b> flex-basis<br>
 > <b>Value:</b> content | `<width>`<br>
 > <b>Initial:</b> auto<br>
