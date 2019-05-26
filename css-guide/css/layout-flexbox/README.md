@@ -176,6 +176,9 @@ Terminology:
 > <b>Value:</b> content | `<width>`<br>
 > <b>Initial:</b> auto<br>
 
+* <b>content</b>: Indicates automatic sizing, based on the flex item's content.
+* <b>auto</b>: Retrieves the value of the main size property as the used 'flex-basis'.
+
 ### Example
 
 [flexibility-basis/index.html](flexibility-basis/index.html):
