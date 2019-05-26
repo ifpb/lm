@@ -756,11 +756,15 @@
 
 > Entrega do [Projeto Final](../exams/projeto.md).
 
-
 ## \# 41 - Prova Final (19/08/2019)
 ---
 
-> Exame a ser realizado no horário da aula.
+* Exame a ser realizado no horário da aula.
+* Essa prova contempla todo o conteúdo ministrado até a aula [Aula 34](#-34---animação-com-css-26072019)
+- Para estudar, revisar os simulados apontados anteriormente:
+  - [Simulados I](#-19---simulado-i-de-html-e-css-13052019)
+  - [Simulados II](#-31---simulado-ii-de-html-e-css-15062019)
+  - [Simulados III](#-35---simulado-iii-de-html-e-css-27072019)
 
 
 ## E agora?
