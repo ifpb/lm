@@ -624,7 +624,13 @@
 * O que é possível fazer com o HTML e CSS até o momento?
 
 **Exercício:**
-- [Simulado](https://ifpb.github.io/lm/css-exercises/challenges/): [Weather](https://ifpb.github.io/lm/css-exercises/challenges/css/weather-responsive/), [Cinebangue](https://ifpb.github.io/lm/css-exercises/challenges/css/cinebangue-responsive/), [Profile](https://ifpb.github.io/lm/css-exercises/challenges/css/profile-responsive/)
+
+- [Simulado](https://ifpb.github.io/lm/css-exercises/challenges/)
+
+  - [Weather](https://ifpb.github.io/lm/css-exercises/challenges/css/weather-responsive/)
+  - [Cinebangue](https://ifpb.github.io/lm/css-exercises/challenges/css/cinebangue-responsive/)
+  - [Profile](https://ifpb.github.io/lm/css-exercises/challenges/css/profile-responsive/)
+  - [IF.tech](https://ifpb.github.io/css-exercises/challenges/css/iftech/)
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
 ## \# 32 - Avaliação II de HTML e CSS (17/06/2019)
