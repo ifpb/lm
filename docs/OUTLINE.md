@@ -502,7 +502,7 @@
 
 > A ordem de apresentação estará disponível nessa [página](../exams/projeto.md).
 
-## \# 25 - Flexible Box Layout - Flexbox (27/06/2019)
+## \# 25 - Flexible Box Layout - Flexbox (27/05/2019)
 ---
 
 **Conteúdo:**
