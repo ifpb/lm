@@ -52,3 +52,5 @@ No arquivo `css/main.css`, especificamente em `/* TODO - COMPONENTE 3 */`, faça
 * O background é `fixo`, `não se repete` e cresce até cobrir toda a área disponível, ou seja, `cresce até atingir tanto a largura como altura disponível`.
 
 * Posicionar o background em `bottom`.
+
+> [Alternativa de resposta](site-response/)
