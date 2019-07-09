@@ -31,7 +31,7 @@
 [\# 29 - Design Responsivo (10/06/2019)](#-29---design-responsivo-10062019)<br>
 [\# 30 - Simulado II de HTML e CSS (15/06/2019)](#-30---simulado-ii-de-html-e-css-15062019)<br>
 [\# 31 - Avaliação II de HTML e CSS (17/06/2019)](#-31---avaliação-ii-de-html-e-css-17062019)<br>
-[\# 32 - Formulário (22/06/2019)](#-32---formulário-22062019)<br>
+[\# 32 - Formulário (22/07/2019)](#-32---formulário-22072019)<br>
 [\# 33 - Posicionamento de Elementos (26/07/2019)](#-33---posicionamento-de-elementos-26072019)<br>
 [\# 34 - Animação com CSS (27/07/2019)](#-34---animação-com-css-27072019)<br>
 [\# 35 - Simulado III de HTML e CSS (29/07/2019)](#-35---simulado-iii-de-html-e-css-29072019)<br>
