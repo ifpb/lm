@@ -29,18 +29,17 @@
 [\# 27 - CSS Grid (03/06/2019)](#-27---css-grid-03062019)<br>
 [\# 28 - Design Responsivo (07/06/2019)](#-28---design-responsivo-07062019)<br>
 [\# 29 - Design Responsivo (10/06/2019)](#-29---design-responsivo-10062019)<br>
-[\# 30 - Formulário (14/06/2019)](#-30---formulário-14062019)<br>
-[\# 31 - Simulado II de HTML e CSS (15/06/2019)](#-31---simulado-ii-de-html-e-css-15062019)<br>
-[\# 32 - Avaliação II de HTML e CSS (17/06/2019)](#-32---avaliação-ii-de-html-e-css-17062019)<br>
-[\# 33 - Posicionamento de Elementos (22/07/2019)](#-33---posicionamento-de-elementos-22072019)<br>
-[\# 34 - Animação com CSS (26/07/2019)](#-34---animação-com-css-26072019)<br>
-[\# 35 - Simulado III de HTML e CSS (27/07/2019)](#-35---simulado-iii-de-html-e-css-27072019)<br>
-[\# 36 - Avaliação III de HTML e CSS (29/07/2019)](#-36---avaliação-iii-de-html-e-css-29072019)<br>
-[\# 37 - Componentes da Web (02/08/2019)](#-37---componentes-da-web-02082019)<br>
-[\# 38 - XML & DTD (09/08/2019)](#-38---xml--dtd-09082019)<br>
-[\# 39 - Apresentação de Projetos (12/08/2019)](#-39---apresentação-de-projetos-12082019)<br>
-[\# 40 - Apresentação de Projetos (16/08/2019)](#-40---apresentação-de-projetos-16082019)<br>
-[\# 41 - Prova Final (19/08/2019)](#-41---prova—final-19082019)<br>
+[\# 30 - Simulado II de HTML e CSS (15/06/2019)](#-30---simulado-ii-de-html-e-css-15062019)<br>
+[\# 31 - Avaliação II de HTML e CSS (17/06/2019)](#-31---avaliação-ii-de-html-e-css-17062019)<br>
+[\# 32 - Formulário (22/06/2019)](#-32---formulário-22062019)<br>
+[\# 33 - Posicionamento de Elementos (26/07/2019)](#-33---posicionamento-de-elementos-26072019)<br>
+[\# 34 - Animação com CSS (27/07/2019)](#-34---animação-com-css-27072019)<br>
+[\# 35 - Simulado III de HTML e CSS (29/07/2019)](#-35---simulado-iii-de-html-e-css-29072019)<br>
+[\# 36 - Avaliação III de HTML e CSS (02/08/2019)](#-36---avaliação-iii-de-html-e-css-02082019)<br>
+[\# 37 - Componentes da Web (09/08/2019)](#-37---componentes-da-web-09082019)<br>
+[\# 38 - Apresentação de Projetos (12/08/2019)](#-38---apresentação-de-projetos-12082019)<br>
+[\# 39 - Apresentação de Projetos (16/08/2019)](#-39---apresentação-de-projetos-16082019)<br>
+[\# 40 - Prova Final (19/08/2019)](#-40---prova—final-19082019)<br>
 
 ## \# 01 - Apresentação do curso (11/03/2019)
 ---
@@ -589,7 +588,32 @@
 **Exercício:**
 * [Cubo Network](https://ifpb.github.io/lm/css-exercises/challenges/css/cubonetwork-responsive/)
 
-## \# 30 - Formulário (14/06/2019)
+## \# 30 - Simulado II de HTML e CSS (15/06/2019)
+---
+
+**Conteúdo:**
+- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
+- [HTML Guide](https://ifpb.github.io/lm/html-guide/html/)
+
+**Reflexão:**
+* O que é possível fazer com o HTML e CSS até o momento?
+
+**Exercício:**
+
+- [Simulado](https://ifpb.github.io/lm/css-exercises/challenges/)
+
+  - [Weather](https://ifpb.github.io/lm/css-exercises/challenges/css/weather-responsive/)
+  - [Cinebangue](https://ifpb.github.io/lm/css-exercises/challenges/css/cinebangue-responsive/)
+  - [Profile](https://ifpb.github.io/lm/css-exercises/challenges/css/profile-responsive/)
+  - [IF.tech](https://ifpb.github.io/css-exercises/challenges/css/iftech/)
+- Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
+
+## \# 31 - Avaliação II de HTML e CSS (17/06/2019)
+---
+
+> Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-2.md)
+
+## \# 32 - Formulário (22/07/2019)
 ---
 
 **Conteúdo:**
@@ -613,32 +637,7 @@
   * [Galeria 3](https://medium.com/commonux/how-to-design-a-form-wizard-b85fe1cc665a)
 * Crie e estilize algum formulário em seu projeto.
 
-## \# 31 - Simulado II de HTML e CSS (15/06/2019)
----
-
-**Conteúdo:**
-- [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
-- [HTML Guide](https://ifpb.github.io/lm/html-guide/html/)
-
-**Reflexão:**
-* O que é possível fazer com o HTML e CSS até o momento?
-
-**Exercício:**
-
-- [Simulado](https://ifpb.github.io/lm/css-exercises/challenges/)
-
-  - [Weather](https://ifpb.github.io/lm/css-exercises/challenges/css/weather-responsive/)
-  - [Cinebangue](https://ifpb.github.io/lm/css-exercises/challenges/css/cinebangue-responsive/)
-  - [Profile](https://ifpb.github.io/lm/css-exercises/challenges/css/profile-responsive/)
-  - [IF.tech](https://ifpb.github.io/css-exercises/challenges/css/iftech/)
-- Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
-
-## \# 32 - Avaliação II de HTML e CSS (17/06/2019)
----
-
-> Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-2.md)
-
-## \# 33 - Posicionamento de Elementos (22/07/2019)
+## \# 33 - Posicionamento de Elementos (26/07/2019)
 ---
 
 **Conteúdo:**
@@ -656,14 +655,14 @@
 **Exercício:**
 * Crie o menu fixo do [Blog Moon](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-moon/)
 
-## \# 34 - Animação com CSS (26/07/2019)
+## \# 34 - Animação com CSS (27/07/2019)
 ---
 
 **Conteúdo:**
 - [CSS Guide](https://ifpb.github.io/lm/css-guide/css/)
-  - [Transform](https://ifpb.github.io/lm/css-guide/css/transform/)
-  - [Transition](https://ifpb.github.io/lm/css-guide/css/transition/)
-  - [Animation](https://ifpb.github.io/lm/css-guide/css/animation/)
+- [Transform](https://ifpb.github.io/lm/css-guide/css/transform/)
+- [Transition](https://ifpb.github.io/lm/css-guide/css/transition/)
+- [Animation](https://ifpb.github.io/lm/css-guide/css/animation/)
 
 **Reflexão:**
 * Como uma animação pode melhorar ou piorar uma interface Web?
@@ -680,7 +679,7 @@
   - [Start Bootstrap](https://startbootstrap.com/template-categories/all/)
 * Construa algumas animações no seu projeto.
 
-## \# 35 - Simulado III de HTML e CSS (27/07/2019)
+## \# 35 - Simulado III de HTML e CSS (29/07/2019)
 ---
 
 **Conteúdo:**
@@ -694,12 +693,12 @@
 - [CSS Challenges](https://ifpb.github.io/lm/css-exercises/challenges/)
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
-## \# 36 - Avaliação III de HTML e CSS (29/07/2019)
+## \# 36 - Avaliação III de HTML e CSS (02/08/2019)
 ---
 
 > Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-3.md)
 
-## \# 37 - Componentes da Web (02/08/2019)
+## \# 37 - Componentes da Web (09/08/2019)
 ---
 
 **Conteúdo:**
@@ -716,53 +715,18 @@
 * Analise algum template do repositório [Start Bootstrap](https://startbootstrap.com/template-categories/all/).
 * Crie alguma página básica usando o Bootstrap.
 
-## \# 38 - XML & DTD (09/08/2019)
----
-
-**Conteúdo:**
-- DOCTYPE:
-  - Lista de doctypes: [w3schools](https://www.w3schools.com/tags/tag_doctype.asp), [html.com](https://html.com/tags/doctype/)
-  - Versões: [HTML 4.01](https://www.w3.org/TR/html4/sgml/dtd.html), [Entities HTML 5.2](https://www.w3.org/TR/html52/entities.dtd)
-- [XML](https://www.w3schools.com/xml/default.asp)
-  - [Introduction](https://www.w3schools.com/xml/xml_whatis.asp)
-  - [Namespaces](https://www.w3schools.com/xml/xml_namespaces.asp)
-  - [Validator](https://www.w3schools.com/xml/xml_validator.asp)
-- [XML DTD](https://www.w3schools.com/xml/xml_dtd.asp)
-  - [Building Blocks](https://www.w3schools.com/xml/xml_dtd_building.asp)
-  - [Elements](https://www.w3schools.com/xml/xml_dtd_elements.asp)
-  - [Attributes](https://www.w3schools.com/xml/xml_dtd_attributes.asp)
-  - [Entities](https://www.w3schools.com/xml/xml_dtd_entities.asp)
-  - [Examples](https://www.w3schools.com/xml/xml_dtd_examples.asp)
-- Exemplos:
-  - [XML Sitemaps](https://www.sitepoint.com/xml-sitemaps-beginners-guide/)
-  - [WebDANFE - Exemplo de XML de Nota Fiscal Eletrônica](https://www.webdanfe.com.br/danfe/exemplos/NFe_assinada.html)
-
-**Reflexão:**
-* Como estruturamos dados por meio de uma Linguagem de Marcação?
-* O que é um XML?
-* Como validar um XML por meio de um DTD?
-
-**Exercício:**
-* Represente a estrutura a seguir usando XML com alguma validação de DTD:
-
-| Matrícula | Nome | E-mail |
-|-|-|-|
-| 123 | Alice | alice@email.com |
-| 321 | Bob | bob@email.com |
-
-
-## \# 39 - Apresentação de Projetos (12/08/2019)
+## \# 38 - Apresentação de Projetos (12/08/2019)
 ---
 
 > Entrega do [Projeto Final](../exams/projeto.md).
 
 
-## \# 40 - Apresentação de Projetos (16/08/2019)
+## \# 39 - Apresentação de Projetos (16/08/2019)
 ---
 
 > Entrega do [Projeto Final](../exams/projeto.md).
 
-## \# 41 - Prova Final (19/08/2019)
+## \# 40 - Prova Final (19/08/2019)
 ---
 
 * Exame a ser realizado no horário da aula.
