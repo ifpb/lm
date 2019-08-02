@@ -8,7 +8,7 @@ A estrutura básica do site se encontra no arquivo [site.zip](site.zip), e é ex
 ## Componentes
 ---
 
-**COMPONENTE 1 -** Crie a animação de carremento do site conforme o vídeo 1.
+**COMPONENTE 1 -** Crie a animação de carregamento do site conforme o vídeo 1.
 
 *Vídeo 1 - Animação Banner Principal (No Google Chrome você deve acionar o play)*<br>
 <video width="90%" height="90%" autoplay loop controls>
