@@ -11,14 +11,14 @@ A estrutura básica do site se encontra no arquivo [site.zip](site.zip), e é ex
 **COMPONENTE 1 -** Crie a animação de carremento do site conforme o vídeo 1.
 
 *Vídeo 1 - Animação Banner Principal (No Google Chrome você deve acionar o play)*<br>
-<video width="80%" height="80%" autoplay loop controls>
+<video width="90%" height="90%" autoplay loop controls>
   <source src="assets/anime1.mp4" type="video/mp4">
 </video>
 
 No arquivo `css/main.css` adicione as modificações em `/* TODO ANIMAÇÃO */`. Observe que a primeira linha (INDUSTRIOUS) leva 2 segundos para caminhar da `direita para a esquerda`. A segunda linha caminha, no mesmo tempo, da `esquerda para a direita` e a terceira linha da `direita para a esquerda`.
 
 *Vídeo 2 - Animação das imagens dos `Testimonials` (No Google Chrome você deve acionar o play)*<br>
-<video autoplay loop controls>
+<video width="90%" height="90%" autoplay loop controls>
   <source src="assets/anime2.mp4" type="video/mp4">
 </video>
 
