@@ -10,7 +10,8 @@
   * Template de Blog: [Denalli](css/blog-denalli/), [Escape](css/blog-escape/), [Evermore](css/blog-evermore/), [Lamar](css/blog-lamar/), [Moon](css/blog-moon/)
   * Cubonetwork: [Simples](css/cubonetwork-simple/), [Responsivo](css/cubonetwork-responsive/)
   * Chaordic: [Simples](css/chaordic-simple/)
-  * iftech: [responsivo](css/iftech) e [animação](css/iftech-animation)
+  * IF.tech: [responsivo](css/iftech) e [animação](css/iftech-animation)
+  * Industrious: [responsivo](css/industrious-responsive) e [animação](css/industrious-animation)
   * [Pokedex](css/pokedex)
 * Packages
   * Boostrap

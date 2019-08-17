@@ -34,7 +34,9 @@ No arquivo `index.html`, insira o formulário em `<!-- TODO FORMULÁRIO -->`. No
 No CSS, respeite as seguintes configurações:
 
 * Toda a área do formulário tem cor de fundo igual a `#820202`, padding de `2%` e cor da fonte igual a `whitesmoke`
-* O botão ENVIAR tem tamanho da fonte de `150px`
+* O botão ENVIAR tem tamanho da fonte de `15px`
 * O `input` do campo nome tem largura de `200px`
 * O `input` do campo endereco tem largura de `300px`
 * O `input` do campo habilidades tem largura de `300px`
+
+> [Alternativa de resposta](site-response/)

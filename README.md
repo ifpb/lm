@@ -14,7 +14,7 @@ A nota final será computado através da média ponderada das três maiores aval
 * Avaliação II: [Prova de HTML e CSS](exams/prova-html-css-2.md);
 * Avaliação III: [Prova de HTML e CSS](exams/prova-html-css-3.md);
 * Avaliação IV: [Especificação do Projeto](exams/projeto.md);
-* Prova Finall: [Prova de HTML e CSS](exams/prova-final.md).
+* Prova Final: [Prova de HTML e CSS](exams/prova-final.md).
 
 Detalhe, a nota do projeto não poderá ser eliminada e atividades extras podem gerar pontuação extra.
 
