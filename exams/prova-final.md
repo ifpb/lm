@@ -15,4 +15,4 @@ Leia as observações a seguir:
 ## DESCRIÇÃO
 ---
 
-A prova se encontra disponível neste [link](https://ifpb.github.io/css-exercises/challenges/css/projetos/).
+A prova se encontra disponível neste [link](https://ifpb.github.io/lm/css-exercises/challenges/css/projetos/).
