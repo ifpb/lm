@@ -59,5 +59,4 @@ O campo `pesquisa` dos filtros, com o evento `:focus`, tem animação ilustrada 
 </video>
 
 <br>
-<br>
-<br>
+> [Alternativa de resposta](site-response/)

@@ -689,9 +689,11 @@
 **Reflexão:**
 * O que é possível fazer com o HTML e CSS até o momento?
 
-**Exercício:**
+**Exercícios:**
   - [IF.tech Animation](https://ifpb.github.io/lm/css-exercises/challenges/css/iftech-animation/)
+  - [Pokedex](https://ifpb.github.io/lm/css-exercises/challenges/css/pokedex/)
   - [Industrious Animation](https://ifpb.github.io/lm/css-exercises/challenges/css/industrious-animation/)
+  - [Projetos](https://ifpb.github.io/lm/css-exercises/challenges/css/projetos/)
 
 - [CSS Challenges](https://ifpb.github.io/lm/css-exercises/challenges/)
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
