@@ -1,52 +1,53 @@
 # Roteiro das Aulas
 
-[\# 01 - Apresentação do curso (11/03/2019)](#-01---apresentação-do-curso-11032019)<br>
-[\# 02 - Apresentação da Disciplina & Linguagem de Marcação (15/03/2019)](#-02---apresentação-da-disciplina--linguagem-de-marcação-15032019)<br>
-[\# 03 - Primeiros passos com HTML (18/03/2019)](#-03---primeiros-passos-com-html-18032019)<br>
-[\# 04 - Sintaxe e Estruturas do HTML (22/03/2019)](#-04---sintaxe-e-estruturas-do-html-22032019)<br>
-[\# 05 - Analisando uma página (25/03/2019)](#-05---analisando-uma-página-25032019)<br>
-[\# 06 - Criando a página da disciplina com imagens (29/03/2019)](#-06---criando-a-página-da-disciplina-com-imagens-29032019)<br>
-[\# 07 - Criando um currículo em HTML (01/04/2019)](#-07---criando-um-currículo-em-html-01042019)<br>
-[\# 08 - Linguagem de Estilo e o CSS (05/04/2019)](#-08---linguagem-de-estilo-e-o-css-05042019)<br>
-[\# 09 - Primeiros Passos com CSS (08/04/2019)](#-09---primeiros-passos-com-css-08042019)<br>
-[\# 10 - Primeiros Passos com CSS (12/04/2019)](#-10---primeiros-passos-com-css-12042019)<br>
-[\# 11 - Estilizando Texto (13/04/2019)](#-11---estilizando-texto-13042019)<br>
-[\# 12 - Estilizando Texto (15/04/2019)](#-12---estilizando-texto-15042019)<br>
-[\# 13 - Web Fonts e Ícones (22/04/2019)](#-13---web-fonts-e-ícones-22042019)<br>
-[\# 14 - Exercícios de Revisão (26/04/2019)](#-14---exercícios-de-revisão-26042019)<br>
-[\# 15 - Cascata no CSS (29/04/2019)](#-15---cascata-no-css-29042019)<br>
-[\# 16 - Box Model (03/05/2019)](#-16---box-model-03052019)<br>
-[\# 17 - Estilizando Tabelas (06/05/2019)](#-17---estilizando-tabelas-06052019)<br>
-[\# 18 - Curriculum Vitae com Layout Básico (10/05/2019)](#-18---curriculum-vitae-com-layout-básico-10052019)<br>
-[\# 19 - Simulado I de HTML e CSS (13/05/2019)](#-19---simulado-i-de-html-e-css-13052019)<br>
-[\# 20 - Avaliação I de HTML e CSS (17/05/2019)](#-20---avaliação-i-de-html-e-css-17052019)<br>
-[\# 21 - Recursos da Web, Publicando seu site e Apresentação do Projeto (18/05/2019)](#-21---recursos-da-web-publicando-seu-site-e-apresentação-do-projeto-18052019)<br>
-[\# 22 - Background (20/05/2019)](#-22---background-20052019)<br>
-[\# 23 - Flexible Box Layout - Flexbox (24/05/2019)](#-23---flexible-box-layout---flexbox-24052019)<br>
-[\# 24 - Apresentação das propostas de Projetos (25/05/2019)](#-24---apresentação-das-propostas-de-projetos-25052019)<br>
-[\# 25 - Flexible Box Layout - Flexbox (27/05/2019)](#-25---flexible-box-layout---flexbox-27052019)<br>
-[\# 26 - CSS Grid (31/05/2019)](#-26---css-grid-31052019)<br>
-[\# 27 - CSS Grid (03/06/2019)](#-27---css-grid-03062019)<br>
-[\# 28 - Design Responsivo (07/06/2019)](#-28---design-responsivo-07062019)<br>
-[\# 29 - Design Responsivo (10/06/2019)](#-29---design-responsivo-10062019)<br>
-[\# 30 - Simulado II de HTML e CSS (15/06/2019)](#-30---simulado-ii-de-html-e-css-15062019)<br>
-[\# 31 - Avaliação II de HTML e CSS (17/06/2019)](#-31---avaliação-ii-de-html-e-css-17062019)<br>
-[\# 32 - Formulário (22/07/2019)](#-32---formulário-22072019)<br>
-[\# 33 - Posicionamento de Elementos (26/07/2019)](#-33---posicionamento-de-elementos-26072019)<br>
-[\# 34 - Animação com CSS (27/07/2019)](#-34---animação-com-css-27072019)<br>
-[\# 35 - Simulado III de HTML e CSS (29/07/2019)](#-35---simulado-iii-de-html-e-css-29072019)<br>
-[\# 36 - Avaliação III de HTML e CSS (02/08/2019)](#-36---avaliação-iii-de-html-e-css-02082019)<br>
-[\# 37 - Componentes da Web (09/08/2019)](#-37---componentes-da-web-09082019)<br>
-[\# 38 - Apresentação de Projetos (12/08/2019)](#-38---apresentação-de-projetos-12082019)<br>
-[\# 39 - Apresentação de Projetos (16/08/2019)](#-39---apresentação-de-projetos-16082019)<br>
-[\# 40 - Prova Final (19/08/2019)](#-40---prova—final-19082019)<br>
+[\# 01 - Apresentação do curso (26/08/2019)(SEG)](#-01---apresentação-do-curso-26082019)<br>
+[\# 02 - Apresentação da Disciplina & Linguagem de Marcação (30/08/2019)(SEX)](#-02---apresentação-da-disciplina--linguagem-de-marcação-30082019)<br>
+[\# 03 - Primeiros passos com HTML (31/08/2019)(SAB)](#-03---primeiros-passos-com-html-31082019)<br>
+[\# 04 - Sintaxe e Estruturas do HTML (02/09/2019)(SEG)](#-04---sintaxe-e-estruturas-do-html-02092019)<br>
+[\# 05 - Analisando uma página (06/09/2019)(SEX)](#-05---analisando-uma-página-06092019)<br>
+[\# 06 - Criando a página da disciplina com imagens (09/09/2019)(SEG)](#-06---criando-a-página-da-disciplina-com-imagens-09092019)<br>
+[\# 07 - Criando um currículo em HTML (13/09/2019)(SEX)](#-07---criando-um-currículo-em-html-13092019)<br>
+[\# 08 - Linguagem de Estilo e o CSS (14/09/2019)(SAB)](#-08---linguagem-de-estilo-e-o-css-14092019)<br>
+[\# 09 - Primeiros Passos com CSS (16/09/2019)(SEG)](#-09---primeiros-passos-com-css-16092019)<br>
+[\# 10 - Primeiros Passos com CSS (20/09/2019)(SEX)](#-10---primeiros-passos-com-css-20092019)<br>
+[\# 11 - Estilizando Texto (23/09/2019)(SEG)](#-11---estilizando-texto-23092019)<br>
+[\# 12 - Estilizando Texto (27/09/2019)(SEX)](#-12---estilizando-texto-27092019)<br>
+[\# 13 - Web Fonts e Ícones (30/09/2019)(SEG)](#-13---web-fonts-e-ícones-30092019)<br>
+[\# 14 - Exercícios de Revisão (04/10/2019)(SEX)](#-14---exercícios-de-revisão-04102019)<br>
+[\# 15 - Cascata no CSS (07/10/2019)(SEG)](#-15---cascata-no-css-07102019)<br>
+[\# 16 - Box Model (11/10/2019)(SEX)](#-16---box-model-11102019)<br>
+[\# 17 - Estilizando Tabelas (14/10/2019)(SEG)](#-17---estilizando-tabelas-14102019)<br>
+[\# 18 - Curriculum Vitae com Layout Básico (18/10/2019)(SEX)](#-18---curriculum-vitae-com-layout-básico-18102019)<br>
+[\# 19 - Simulado I de HTML e CSS (19/10/2019)(SAB)](#-19---simulado-i-de-html-e-css-19102019)<br>
+[\# 20 - Avaliação I de HTML e CSS (21/10/2019)(SEG)](#-20---avaliação-i-de-html-e-css-21102019)<br>
+[\# 21 - Recursos da Web, Publicando seu site e Apresentação do Projeto (25/10/2019)(SEX)](#-21---recursos-da-web-publicando-seu-site-e-apresentação-do-projeto-25102019)<br>
+[\# 22 - Background (01/11/2019)(SEX)](#-22---background-01112019)<br>
+[\# 23 - Flexible Box Layout - Flexbox (04/11/2019)(SEG)](#-23---flexible-box-layout---flexbox-04112019)<br>
+[\# 24 - Apresentação das propostas de Projetos (08/11/2019)(SEX)](#-24---apresentação-das-propostas-de-projetos-08112019)<br>
+[\# 25 - Flexible Box Layout - Flexbox (09/11/2019)(SAB)](#-25---flexible-box-layout---flexbox-09112019)<br>
+[\# 26 - CSS Grid (11/11/2019)(SEG)](#-26---css-grid-11112019)<br>
+[\# 27 - CSS Grid (18/11/2019)(SEG)](#-27---css-grid-18112019)<br>
+[\# 28 - Design Responsivo (22/11/2019)(SEX)](#-28---design-responsivo-22112019)<br>
+[\# 29 - Design Responsivo (25/11/2019)(SEG)](#-29---design-responsivo-25112019)<br>
+[\# 30 - Simulado II de HTML e CSS (29/11/2019)(SEX)](#-30---simulado-ii-de-html-e-css-29112019)<br>
+[\# 31 - Avaliação II de HTML e CSS (02/12/2019)(SEG)](#-31---avaliação-ii-de-html-e-css-02122019)<br>
+[\# 32 - Formulário (06/12/2019)(SEX)](#-32---formulário-06122019)<br>
+[\# 33 - Posicionamento de Elementos (09/12/2019)(SEG)](#-33---posicionamento-de-elementos-09122019)<br>
+[\# 34 - Animação com CSS (13/12/2019)(SEX)](#-34---animação-com-css-13122019)<br>
+[\# 35 - Simulado III de HTML e CSS (14/12/2019)(SAB)](#-35---simulado-iii-de-html-e-css-14122019)<br>
+[\# 36 - Avaliação III de HTML e CSS (16/12/2019)(SEG)](#-36---avaliação-iii-de-html-e-css-16122019)<br>
+[\# 37 - Componentes da Web (20/12/2019)(SEX)](#-37---componentes-da-web-20122019)<br>
+[\# 38 - XML e DTD (21/12/2019)(SAB)](#-38---xml-e-dtd-21122019)<br>
+[\# 39 - Apresentação de Projetos (20/01/2019)(SEG)](#-39---apresentação-de-projetos-20012019)<br>
+[\# 40 - Apresentação de Projetos (24/01/2019)(SEX)](#-40---apresentação-de-projetos-24012019)<br>
+[\# 41 - Prova Final (27/01/2019)(SEG)](#-41---prova—final-27012019)<br>
 
-## \# 01 - Apresentação do curso (11/03/2019)
+## \# 01 - Apresentação do curso (26/08/2019)
 ---
 
 > Apresentação do CSTSI.
 
-## \# 02 - Apresentação da Disciplina & Linguagem de Marcação (15/03/2019)
+## \# 02 - Apresentação da Disciplina & Linguagem de Marcação (30/08/2019)
 ---
 
 ### Apresentação da Disciplina
@@ -86,7 +87,7 @@
 * Pesquise sobre a evolução da Web.
 * Descreva o que é uma Linguagem de Marcação
 
-## \# 03 - Primeiros passos com HTML (18/03/2019)
+## \# 03 - Primeiros passos com HTML (31/08/2019)
 ---
 
 **Conteúdo:**
@@ -109,7 +110,7 @@
 **Exercício:**
 * [Crie sua Primeira Página Web](https://ifpb.github.io/lm/html-exercises/html/hello-world-html/)
 
-## \# 04 - Sintaxe e Estruturas do HTML (22/03/2019)
+## \# 04 - Sintaxe e Estruturas do HTML (02/09/2019)
 ---
 
 **Conteúdo:**
@@ -137,7 +138,7 @@
 * Reconstrua a [Primeira Página da Web](https://ifpb.github.io/lm/html-exercises/html/first-web-page/)
 * Analise os elementos HTML: [Content sectioning](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning), [Text content](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Text_content), [Inline text](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Inline_text_semantics).
 
-## \# 05 - Analisando uma página (25/03/2019)
+## \# 05 - Analisando uma página (06/09/2019)
 ---
 
 **Conteúdo:**
@@ -156,7 +157,7 @@
 * [Inspecione uma página na Web](https://ifpb.github.io/lm/html-exercises/html/inspect-page/)
 * Reproduza a [Página LM](https://ifpb.github.io/lm/html-exercises/html/page-lm-simple/)
 
-## \# 06 - Criando a página da disciplina com imagens (29/03/2019)
+## \# 06 - Criando a página da disciplina com imagens (09/09/2019)
 ---
 
 **Conteúdo:**
@@ -175,7 +176,7 @@
 **Exercício:**
 * [Página LM usando imagem](https://ifpb.github.io/lm/html-exercises/html/page-lm-img/)
 
-## \# 07 - Criando um currículo em HTML (01/04/2019)
+## \# 07 - Criando um currículo em HTML (13/09/2019)
 ---
 
 **Conteúdo:**
@@ -188,7 +189,7 @@
 * [Curriculum Vitae](https://ifpb.github.io/lm/html-exercises/html/curriculum-simple/)
 * [Curriculum Vitae com Sumário](https://ifpb.github.io/lm/html-exercises/html/curriculum-linkinternal/)
 
-## \# 08 - Linguagem de Estilo e o CSS (05/04/2019)
+## \# 08 - Linguagem de Estilo e o CSS (14/09/2019)
 ---
 
 **Conteúdo:**
@@ -220,7 +221,7 @@
 **Exercício:**
 * [Criando seu primeiro estilo](https://ifpb.github.io/lm/css-exercises/css/hello-world-css/)
 
-## \# 09 - Primeiros Passos com CSS (08/04/2019)
+## \# 09 - Primeiros Passos com CSS (16/09/2019)
 ---
 
 **Conteúdo:**
@@ -247,7 +248,7 @@
 * [Selecionando Elementos no HTML](https://ifpb.github.io/lm/css-exercises/css/selector-css/)
 
 
-## \# 10 - Primeiros Passos com CSS (12/04/2019)
+## \# 10 - Primeiros Passos com CSS (20/09/2019)
 ---
 
 **Conteúdo:**
@@ -272,7 +273,7 @@
 **Exercício:**
 * [Adaptando a página de impressão](https://ifpb.github.io/lm/css-exercises/css/customize-print/)
 
-## \# 11 - Estilizando Texto (13/04/2019)
+## \# 11 - Estilizando Texto (23/09/2019)
 ---
 
 **Conteúdo:**
@@ -299,7 +300,7 @@
 * No artigo anterior a página possui vários hyperlinks, então usando a ferramenta de inspecionar elemento escolha três hyperlinks e descreva seus estilos nos estágios `hover`, `link`, `active`, `visited` e `focus`.
 * Monte uma página e crie alguns links definindo estilos (`color`, `outline`, `text-decoration` e `cursor`) nos estados `:hover`, `:link`, `:active`, `:visited`, `:focus`. Por exemplo, a aparência no estágio `link` e `visited` seriam com a mesma cor e sem sublinhado, e nos demais estados o link ficaria com sublinhado, sem `outline` e com um tom de cor semelhante ao estado `link`.
 
-## \# 12 - Estilizando Texto (15/04/2019)
+## \# 12 - Estilizando Texto (27/09/2019)
 ---
 
 **Conteúdo:**
@@ -314,7 +315,7 @@
 **Exercício:**
 * Criando o [Curriculum Vitae com Estilo](https://ifpb.github.io/lm/css-exercises/css/curriculum-style-text/)
 
-## \# 13 - Web Fonts e Ícones (22/04/2019)
+## \# 13 - Web Fonts e Ícones (30/09/2019)
 ---
 
 **Conteúdo:**
@@ -335,13 +336,13 @@
 **Exercício:**
 * [Curriculum Vitae com Web fontes e Ícones](https://ifpb.github.io/lm/css-exercises/css/curriculum-style-icon/)
 
-## \# 14 - Exercícios de Revisão (26/04/2019)
+## \# 14 - Exercícios de Revisão (04/10/2019)
 ---
 
 **Conteúdo:**
 * Revisão dos conteúdos apresentados anteriormente
 
-## \# 15 - Cascata no CSS (29/04/2019)
+## \# 15 - Cascata no CSS (07/10/2019)
 ---
 
 **Conteúdo:**
@@ -359,7 +360,7 @@
 
 * [Analisando o efeito da cascata no CSS](https://ifpb.github.io/lm/css-exercises/css/cascade-css/)
 
-## \# 16 - Box Model (03/05/2019)
+## \# 16 - Box Model (11/10/2019)
 ---
 
 **Conteúdo:**
@@ -382,7 +383,7 @@
 * Analise o Box Model [desses títulos](https://ifpb.github.io/lm/css-guide/css/box-model/headers-box-model/).
 * [Cards em Box Model](https://ifpb.github.io/lm/css-exercises/css/cards-box-model/)
 
-## \# 17 - Estilizando Tabelas (06/05/2019)
+## \# 17 - Estilizando Tabelas (14/10/2019)
 ---
 
 **Conteúdo:**
@@ -403,7 +404,7 @@
 **Exercício:**
 * [Estilizando tabelas](https://ifpb.github.io/lm/css-exercises/css/table-css/)
 
-## \# 18 - Curriculum Vitae com Layout Básico (10/05/2019)
+## \# 18 - Curriculum Vitae com Layout Básico (18/10/2019)
 ---
 
 **Conteúdo:**
@@ -417,7 +418,7 @@
 * [Curriculum Vitae com layout básico](https://ifpb.github.io/lm/css-exercises/css/curriculum-style-layout/)
 
 
-## \# 19 - Simulado I de HTML e CSS (13/05/2019)
+## \# 19 - Simulado I de HTML e CSS (19/10/2019)
 ---
 
 **Conteúdo:**
@@ -435,12 +436,12 @@
   - [Industrious](https://ifpb.github.io/lm/css-exercises/challenges/css/industrious-simple/)
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
-## \# 20 - Avaliação I de HTML e CSS (17/05/2019)
+## \# 20 - Avaliação I de HTML e CSS (21/10/2019)
 ---
 
 > Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-1.md)
 
-## \# 21 - Recursos da Web, Publicando seu site e Apresentação do Projeto (18/05/2019)
+## \# 21 - Recursos da Web, Publicando seu site e Apresentação do Projeto (25/10/2019)
 ---
 
 **Conteúdo:**
@@ -460,7 +461,7 @@
 **Projeto:**
 > Critérios de avaliação do [projeto final](../exams/projeto.md)
 
-## \# 22 - Background (20/05/2019)
+## \# 22 - Background (01/11/2019)
 ---
 
 **Conteúdo:**
@@ -478,7 +479,7 @@
 * Analise que background foi aplicado no cabeçalho (section.page-header) da [página da disciplina](https://ifpb.github.io/lm/).
 * Analise que background foi aplicado no cabeçalho (header) desta [página](https://ifpb.github.io/lm/css-guide/css/background/bg-attachment/index.html).
 
-## \# 23 - Flexible Box Layout - Flexbox (24/05/2019)
+## \# 23 - Flexible Box Layout - Flexbox (04/11/2019)
 ---
 
 **Conteúdo:**
@@ -496,12 +497,12 @@
 * Analise como foi a aplicação do Flexbox nesses [exemplos](https://ifpb.github.io/lm/css-guide/css/layout-flexbox/#demo)
 * [Cards em Flexbox](https://ifpb.github.io/lm/css-exercises/css/cards-flex/)
 
-## \# 24 - Apresentação das propostas de Projetos (25/05/2019)
+## \# 24 - Apresentação das propostas de Projetos (08/11/2019)
 ---
 
 > A ordem de apresentação estará disponível nessa [página](../exams/projeto.md).
 
-## \# 25 - Flexible Box Layout - Flexbox (27/05/2019)
+## \# 25 - Flexible Box Layout - Flexbox (09/11/2019)
 ---
 
 **Conteúdo:**
@@ -514,7 +515,7 @@
 **Exercício:**
 * [Portfólio com Flexbox](https://ifpb.github.io/lm/css-exercises/css/portfolio-initial/)
 
-## \# 26 - CSS Grid (31/05/2019)
+## \# 26 - CSS Grid (11/11/2019)
 ---
 
 **Conteúdo:**
@@ -531,7 +532,7 @@
 **Exercício:**
 * [Cards em Grid Layout](https://ifpb.github.io/lm/css-exercises/css/cards-grid/)
 
-## \# 27 - CSS Grid (03/06/2019)
+## \# 27 - CSS Grid (18/11/2019)
 ---
 
 **Conteúdo:**
@@ -546,7 +547,7 @@
 * Blog: [Evermore](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-evermore/), [Denali](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-denali/), [Lamar](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-lamar/), [Escape](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-escape/)
 
 
-## \# 28 - Design Responsivo (07/06/2019)
+## \# 28 - Design Responsivo (22/11/2019)
 ---
 
 **Conteúdo:**
@@ -569,7 +570,7 @@
 - [Progressive enhancement e graceful degradation - Caelum](https://www.caelum.com.br/apostila-html-css-javascript/css-avancado/#progressive-enhancement) 
 -->
 
-## \# 29 - Design Responsivo (10/06/2019)
+## \# 29 - Design Responsivo (25/11/2019)
 ---
 
 **Conteúdo:**
@@ -588,7 +589,7 @@
 **Exercício:**
 * [Cubo Network](https://ifpb.github.io/lm/css-exercises/challenges/css/cubonetwork-responsive/)
 
-## \# 30 - Simulado II de HTML e CSS (15/06/2019)
+## \# 30 - Simulado II de HTML e CSS (29/11/2019)
 ---
 
 **Conteúdo:**
@@ -608,12 +609,12 @@
   - [IF.tech](https://ifpb.github.io/css-exercises/challenges/css/iftech/)
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
-## \# 31 - Avaliação II de HTML e CSS (17/06/2019)
+## \# 31 - Avaliação II de HTML e CSS (02/12/2019)
 ---
 
 > Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-2.md)
 
-## \# 32 - Formulário (22/07/2019)
+## \# 32 - Formulário (06/12/2019)
 ---
 
 **Conteúdo:**
@@ -637,7 +638,7 @@
   * [Galeria 3](https://medium.com/commonux/how-to-design-a-form-wizard-b85fe1cc665a)
 * Crie e estilize algum formulário em seu projeto.
 
-## \# 33 - Posicionamento de Elementos (26/07/2019)
+## \# 33 - Posicionamento de Elementos (09/12/2019)
 ---
 
 **Conteúdo:**
@@ -655,7 +656,7 @@
 **Exercício:**
 * Crie o menu fixo do [Blog Moon](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-moon/)
 
-## \# 34 - Animação com CSS (27/07/2019)
+## \# 34 - Animação com CSS (13/12/2019)
 ---
 
 **Conteúdo:**
@@ -679,7 +680,7 @@
   - [Start Bootstrap](https://startbootstrap.com/template-categories/all/)
 * Construa algumas animações no seu projeto.
 
-## \# 35 - Simulado III de HTML e CSS (29/07/2019)
+## \# 35 - Simulado III de HTML e CSS (14/12/2019)
 ---
 
 **Conteúdo:**
@@ -698,12 +699,12 @@
 - [CSS Challenges](https://ifpb.github.io/lm/css-exercises/challenges/)
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
-## \# 36 - Avaliação III de HTML e CSS (02/08/2019)
+## \# 36 - Avaliação III de HTML e CSS (16/12/2019)
 ---
 
 > Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-3.md)
 
-## \# 37 - Componentes da Web (09/08/2019)
+## \# 37 - Componentes da Web (20/12/2019)
 ---
 
 **Conteúdo:**
@@ -720,18 +721,57 @@
 * Analise algum template do repositório [Start Bootstrap](https://startbootstrap.com/template-categories/all/).
 * Crie alguma página básica usando o Bootstrap.
 
-## \# 38 - Apresentação de Projetos (12/08/2019)
+## \# 38 - XML e DTD (21/12/2019)
+---
+
+**Conteúdo:**
+- DOCTYPE:
+  - Lista de doctypes: [w3schools](https://www.w3schools.com/tags/tag_doctype.asp), [html.com](https://html.com/tags/doctype/)
+  - Versões: [HTML 4.01](https://www.w3.org/TR/html4/sgml/dtd.html), [Entities HTML 5.2](https://www.w3.org/TR/html52/entities.dtd)
+- [XML](https://www.w3schools.com/xml/default.asp)
+  - [Introduction](https://www.w3schools.com/xml/xml_whatis.asp)
+  - [Namespaces](https://www.w3schools.com/xml/xml_namespaces.asp)
+  - [Validator](https://www.w3schools.com/xml/xml_validator.asp)
+- [XML DTD](https://www.w3schools.com/xml/xml_dtd.asp)
+  - [Building Blocks](https://www.w3schools.com/xml/xml_dtd_building.asp)
+  - [Elements](https://www.w3schools.com/xml/xml_dtd_elements.asp)
+  - [Attributes](https://www.w3schools.com/xml/xml_dtd_attributes.asp)
+  - [Entities](https://www.w3schools.com/xml/xml_dtd_entities.asp)
+  - [Examples](https://www.w3schools.com/xml/xml_dtd_examples.asp)
+- Exemplos:
+  - [XML Sitemaps](https://www.sitepoint.com/xml-sitemaps-beginners-guide/)
+  - [WebDANFE - Exemplo de XML de Nota Fiscal Eletrônica](https://www.webdanfe.com.br/danfe/exemplos/NFe_assinada.html)
+
+**Reflexão:**
+* Como estruturamos dados por meio de uma Linguagem de Marcação?
+* O que é um XML?
+* Como validar um XML por meio de um DTD?
+
+**Exercício:**
+* Represente a estrutura a seguir usando XML com alguma validação de DTD:
+
+| Matrícula | Nome | E-mail |
+|-|-|-|
+| 123 | Alice | alice@email.com |
+| 321 | Bob | bob@email.com |
+
+
+## \# 39 - Apresentação de Projetos (20/12/2019)
 ---
 
 > Entrega do [Projeto Final](../exams/projeto.md).
 
-
-## \# 39 - Apresentação de Projetos (16/08/2019)
+## \# 40 - Prova Final (24/12/2019)
 ---
 
-> Entrega do [Projeto Final](../exams/projeto.md).
+* Exame a ser realizado no horário da aula.
+* Essa prova contempla todo o conteúdo ministrado até a aula [Aula 34](#-34---animação-com-css-26072019)
+- Para estudar, revisar os simulados apontados anteriormente:
+  - [Simulados I](#-19---simulado-i-de-html-e-css-13052019)
+  - [Simulados II](#-31---simulado-ii-de-html-e-css-15062019)
+  - [Simulados III](#-35---simulado-iii-de-html-e-css-27072019)
 
-## \# 40 - Prova Final (19/08/2019)
+## \# 41 - Prova Final (27/01/2019)
 ---
 
 * Exame a ser realizado no horário da aula.
