@@ -114,7 +114,7 @@
 ---
 
 **Conteúdo:**
-- [Categorias do HTML](https://www.w3.org/TR/html5/dom.html#kinds-of-content)
+<!-- - [Categorias do HTML](https://www.w3.org/TR/html5/dom.html#kinds-of-content) -->
 - [HTML Guide](https://ifpb.github.io/lm/html-guide/html/)
   - [Head Elements](https://ifpb.github.io/lm/html-guide/html/head-elements/)
   - [Text Elements](https://ifpb.github.io/lm/html-guide/html/text-elements/)
@@ -129,7 +129,7 @@
 - Criando a primeira página da Web
 
 **Reflexão:**
-* É possível agrupar os elementos em categorias?
+<!-- * É possível agrupar os elementos em categorias? -->
 * Quais elementos podemos colocar no `<head>`?
 * Quais são os tipos de listas existentes no HTML?
 * Como criar hyperlinks no HTML?
