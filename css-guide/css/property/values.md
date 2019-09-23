@@ -142,28 +142,28 @@ Font: [Web safe fonts (Core fonts for the Web)](https://en.wikipedia.org/wiki/Co
 
 | Unit | Description | Style | Syntax | Preview |
 |-|-|-|-|-|
-| ch | 0-width | font-size: 1ch; | `<abosolut-size>` | <span style="font-size: 1ch;">Lorem ipsum</span> |
-| em | calculated font-size of the element | font-size: 1.5em; | `<abosolut-size>` | <span style="font-size: 1.5em;">Lorem ipsum</span> |
-| rem | calculated font-size of the root element | font-size: 1.5rem; | `<abosolut-size>` | <span style="font-size: 1.5rem;">Lorem ipsum</span> |
-| ex | x-heigth | font-size: 1ex; | `<abosolut-size>` | <span style="font-size: 1ex;">Lorem ipsum</span> |
+| ch | 0-width | font-size: 1ch; | `<absolute-size>` | <span style="font-size: 1ch;">Lorem ipsum</span> |
+| em | calculated font-size of the element | font-size: 1.5em; | `<absolute-size>` | <span style="font-size: 1.5em;">Lorem ipsum</span> |
+| rem | calculated font-size of the root element | font-size: 1.5rem; | `<absolute-size>` | <span style="font-size: 1.5rem;">Lorem ipsum</span> |
+| ex | x-heigth | font-size: 1ex; | `<absolute-size>` | <span style="font-size: 1ex;">Lorem ipsum</span> |
 
 #### Viewport-percentage lengths
 
 | Unit | Description | Style | Syntax | Preview |
 |-|-|-|-|-|
-| vh | 1% of the height of the viewport | font-size: 1vh; | `<abosolut-size>` | <span style="font-size: 1vh;">Lorem ipsum</span> |
-| vw | 1% of the width of the viewport | font-size: 1vw; | `<abosolut-size>` | <span style="font-size: 1vw;">Lorem ipsum</span> |
-| vmin | smaller of vw and vh | font-size: 1vmin; | `<abosolut-size>` | <span style="font-size: 1vmin;">Lorem ipsum</span> |
-| vmax | larger of vw and vh | font-size: 1vmax; | `<abosolut-size>` | <span style="font-size: 1vmax;">Lorem ipsum</span> |
+| vh | 1% of the height of the viewport | font-size: 1vh; | `<absolute-size>` | <span style="font-size: 1vh;">Lorem ipsum</span> |
+| vw | 1% of the width of the viewport | font-size: 1vw; | `<absolute-size>` | <span style="font-size: 1vw;">Lorem ipsum</span> |
+| vmin | smaller of vw and vh | font-size: 1vmin; | `<absolute-size>` | <span style="font-size: 1vmin;">Lorem ipsum</span> |
+| vmax | larger of vw and vh | font-size: 1vmax; | `<absolute-size>` | <span style="font-size: 1vmax;">Lorem ipsum</span> |
 
 ### Absolute length units
 
 | Unit | Description | Style | Syntax | Preview |
 |-|-|-|-|-|
-| px | pixel | font-size: 20px; | `<abosolut-size>` | <span style="font-size: 20px;">Lorem ipsum</span> |
-| cm | centimeter | font-size: 1cm; | `<abosolut-size>` | <span style="font-size: 1cm;">Lorem ipsum</span> |
-| mm | millimeter | font-size: 10mm; | `<abosolut-size>` | <span style="font-size: 10mm;">Lorem ipsum</span> |
-| in | inch | font-size: .2in; | `<abosolut-size>` | <span style="font-size: .2in;">Lorem ipsum</span> |
+| px | pixel | font-size: 20px; | `<absolute-size>` | <span style="font-size: 20px;">Lorem ipsum</span> |
+| cm | centimeter | font-size: 1cm; | `<absolute-size>` | <span style="font-size: 1cm;">Lorem ipsum</span> |
+| mm | millimeter | font-size: 10mm; | `<absolute-size>` | <span style="font-size: 10mm;">Lorem ipsum</span> |
+| in | inch | font-size: .2in; | `<absolute-size>` | <span style="font-size: .2in;">Lorem ipsum</span> |
 
 ### Example
 

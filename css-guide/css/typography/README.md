@@ -131,8 +131,8 @@ font-size: 80%;
 
 | Style | Syntax | Preview |
 |-|-|-|
-| font-size: small; | `<abosolut-size>` | <span style="font-size: small;">Lorem ipsum</span> |
-| font-size: large; | `<abosolut-size>` | <span style="font-size: large;">Lorem ipsum</span> |
+| font-size: small; | `<absolute-size>` | <span style="font-size: small;">Lorem ipsum</span> |
+| font-size: large; | `<absolute-size>` | <span style="font-size: large;">Lorem ipsum</span> |
 | font-size: larger; | `<relative-size>` | <span style="font-size: larger;">Lorem ipsum</span> |
 | font-size: 16px; | `<length>` | <span style="font-size: 16px;">Lorem ipsum</span> |
 | font-size: 1.5rem; | `<length>` | <span style="font-size: 1.5rem;">Lorem ipsum</span> |
