@@ -19,8 +19,8 @@
 [\# 17 - Estilizando Tabelas (14/10/2019)(SEG)](#-17---estilizando-tabelas-14102019)<br>
 [\# 18 - Curriculum Vitae com Layout Básico (18/10/2019)(SEX)](#-18---curriculum-vitae-com-layout-básico-18102019)<br>
 [\# 19 - Simulado I de HTML e CSS (19/10/2019)(SAB)](#-19---simulado-i-de-html-e-css-19102019)<br>
-[\# 20 - Avaliação I de HTML e CSS (21/10/2019)(SEG)](#-20---avaliação-i-de-html-e-css-21102019)<br>
-[\# 21 - Recursos da Web, Publicando seu site e Apresentação do Projeto (25/10/2019)(SEX)](#-21---recursos-da-web-publicando-seu-site-e-apresentação-do-projeto-25102019)<br>
+[\# 20 - Recursos da Web, Publicando seu site e Apresentação do Projeto (21/10/2019)(SEG)](#-20---recursos-da-web-publicando-seu-site-e-apresentação-do-projeto-21102019)<br>
+[\# 21 - Avaliação I de HTML e CSS (25/10/2019)(SEX)](#-21---avaliação-i-de-html-e-css-25102019)<br>
 [\# 22 - Background (01/11/2019)(SEX)](#-22---background-01112019)<br>
 [\# 23 - Flexible Box Layout - Flexbox (04/11/2019)(SEG)](#-23---flexible-box-layout---flexbox-04112019)<br>
 [\# 24 - Apresentação das propostas de Projetos (08/11/2019)(SEX)](#-24---apresentação-das-propostas-de-projetos-08112019)<br>
@@ -436,12 +436,7 @@
   - [Industrious](https://ifpb.github.io/lm/css-exercises/challenges/css/industrious-simple/)
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
-## \# 20 - Avaliação I de HTML e CSS (21/10/2019)
----
-
-> Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-1.md)
-
-## \# 21 - Recursos da Web, Publicando seu site e Apresentação do Projeto (25/10/2019)
+## \# 20 - Recursos da Web, Publicando seu site e Apresentação do Projeto (21/10/2019)
 ---
 
 **Conteúdo:**
@@ -460,6 +455,11 @@
 
 **Projeto:**
 > Critérios de avaliação do [projeto final](../exams/projeto.md)
+
+## \# 21 - Avaliação I de HTML e CSS (25/10/2019)
+---
+
+> Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-1.md)
 
 ## \# 22 - Background (01/11/2019)
 ---
