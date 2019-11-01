@@ -5,6 +5,10 @@
 
 A estrutura básica do site se encontra no arquivo [site.zip](site.zip), e é exigida a criação de TODOS os componentes.
 
+Ao final, o site terá o seguinte aspecto:
+
+![](assets/site.png)<br>
+
 ## Componentes
 ---
 
