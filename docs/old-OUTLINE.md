@@ -37,6 +37,7 @@
 [\# 35 - Simulado III de HTML e CSS (16/12/2019)(SEG)](#-35---simulado-iii-de-html-e-css-16122019)<br>
 [\# 36 - Avaliação III de HTML e CSS (20/12/2019)(SEX)](#-36---avaliação-iii-de-html-e-css-20122019)<br>
 [\# 37 - Componentes da Web (21/12/2019)(SAB)](#-37---componentes-da-web-21122019)<br>
+[\# 38 - XML e DTD (21/12/2019)(SAB)](#-38---xml-e-dtd-21122019)<br>
 [\# 38 - Apresentação de Projetos (20/01/2019)(SEG)](#-38---apresentação-de-projetos-20012019)<br>
 [\# 39 - Apresentação de Projetos (24/01/2019)(SEX)](#-39---apresentação-de-projetos-24012019)<br>
 [\# 40 - Prova Final (27/01/2019)(SEG)](#-40---prova—final-27012019)<br>
@@ -435,7 +436,7 @@
   - [Industrious](https://ifpb.github.io/lm/css-exercises/challenges/css/industrious-simple/)
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
-## \# 20 - Recursos da Web, Publicando seu site e Apresentação do Projeto (25/10/2019)
+## \# 20 - Recursos da Web, Publicando seu site e Apresentação do Projeto (21/10/2019)
 ---
 
 **Conteúdo:**
@@ -455,12 +456,12 @@
 **Projeto:**
 > Critérios de avaliação do [projeto final](../exams/projeto.md)
 
-## \# 21 - Avaliação I de HTML e CSS (01/11/2019)
+## \# 21 - Avaliação I de HTML e CSS (25/10/2019)
 ---
 
 > Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-1.md)
 
-## \# 22 - Background (04/11/2019)
+## \# 22 - Background (01/11/2019)
 ---
 
 **Conteúdo:**
@@ -478,7 +479,7 @@
 * Analise que background foi aplicado no cabeçalho (section.page-header) da [página da disciplina](https://ifpb.github.io/lm/).
 * Analise que background foi aplicado no cabeçalho (header) desta [página](https://ifpb.github.io/lm/css-guide/css/background/bg-attachment/index.html).
 
-## \# 23 - Flexible Box Layout - Flexbox (08/11/2019)
+## \# 23 - Flexible Box Layout - Flexbox (04/11/2019)
 ---
 
 **Conteúdo:**
@@ -496,12 +497,12 @@
 * Analise como foi a aplicação do Flexbox nesses [exemplos](https://ifpb.github.io/lm/css-guide/css/layout-flexbox/#demo)
 * [Cards em Flexbox](https://ifpb.github.io/lm/css-exercises/css/cards-flex/)
 
-## \# 24 - Apresentação das propostas de Projetos (09/11/2019)
+## \# 24 - Apresentação das propostas de Projetos (08/11/2019)
 ---
 
 > A ordem de apresentação estará disponível nessa [página](../exams/projeto.md).
 
-## \# 25 - Flexible Box Layout - Flexbox (11/11/2019)
+## \# 25 - Flexible Box Layout - Flexbox (09/11/2019)
 ---
 
 **Conteúdo:**
@@ -514,7 +515,7 @@
 **Exercício:**
 * [Portfólio com Flexbox](https://ifpb.github.io/lm/css-exercises/css/portfolio-initial/)
 
-## \# 26 - CSS Grid (18/11/2019)
+## \# 26 - CSS Grid (11/11/2019)
 ---
 
 **Conteúdo:**
@@ -531,7 +532,7 @@
 **Exercício:**
 * [Cards em Grid Layout](https://ifpb.github.io/lm/css-exercises/css/cards-grid/)
 
-## \# 27 - CSS Grid (22/11/2019)
+## \# 27 - CSS Grid (18/11/2019)
 ---
 
 **Conteúdo:**
@@ -546,7 +547,7 @@
 * Blog: [Evermore](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-evermore/), [Denali](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-denali/), [Lamar](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-lamar/), [Escape](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-escape/)
 
 
-## \# 28 - Design Responsivo (25/11/2019)
+## \# 28 - Design Responsivo (22/11/2019)
 ---
 
 **Conteúdo:**
@@ -569,7 +570,7 @@
 - [Progressive enhancement e graceful degradation - Caelum](https://www.caelum.com.br/apostila-html-css-javascript/css-avancado/#progressive-enhancement) 
 -->
 
-## \# 29 - Design Responsivo (29/11/2019)
+## \# 29 - Design Responsivo (25/11/2019)
 ---
 
 **Conteúdo:**
@@ -588,7 +589,7 @@
 **Exercício:**
 * [Cubo Network](https://ifpb.github.io/lm/css-exercises/challenges/css/cubonetwork-responsive/)
 
-## \# 30 - Simulado II de HTML e CSS (02/12/2019)
+## \# 30 - Simulado II de HTML e CSS (29/11/2019)
 ---
 
 **Conteúdo:**
@@ -608,12 +609,12 @@
   - [IF.tech](https://ifpb.github.io/css-exercises/challenges/css/iftech/)
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
-## \# 31 - Avaliação II de HTML e CSS (06/12/2019)
+## \# 31 - Avaliação II de HTML e CSS (02/12/2019)
 ---
 
 > Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-2.md)
 
-## \# 32 - Formulário (09/12/2019)
+## \# 32 - Formulário (06/12/2019)
 ---
 
 **Conteúdo:**
@@ -637,7 +638,7 @@
   * [Galeria 3](https://medium.com/commonux/how-to-design-a-form-wizard-b85fe1cc665a)
 * Crie e estilize algum formulário em seu projeto.
 
-## \# 33 - Posicionamento de Elementos (13/12/2019)
+## \# 33 - Posicionamento de Elementos (09/12/2019)
 ---
 
 **Conteúdo:**
@@ -655,7 +656,7 @@
 **Exercício:**
 * Crie o menu fixo do [Blog Moon](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-moon/)
 
-## \# 34 - Animação com CSS (14/12/2019)
+## \# 34 - Animação com CSS (13/12/2019)
 ---
 
 **Conteúdo:**
@@ -679,7 +680,7 @@
   - [Start Bootstrap](https://startbootstrap.com/template-categories/all/)
 * Construa algumas animações no seu projeto.
 
-## \# 35 - Simulado III de HTML e CSS (16/12/2019)
+## \# 35 - Simulado III de HTML e CSS (14/12/2019)
 ---
 
 **Conteúdo:**
@@ -698,12 +699,12 @@
 - [CSS Challenges](https://ifpb.github.io/lm/css-exercises/challenges/)
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
-## \# 36 - Avaliação III de HTML e CSS (20/12/2019)
+## \# 36 - Avaliação III de HTML e CSS (16/12/2019)
 ---
 
 > Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-3.md)
 
-## \# 37 - Componentes da Web (21/12/2019)
+## \# 37 - Componentes da Web (20/12/2019)
 ---
 
 **Conteúdo:**
@@ -720,17 +721,57 @@
 * Analise algum template do repositório [Start Bootstrap](https://startbootstrap.com/template-categories/all/).
 * Crie alguma página básica usando o Bootstrap.
 
-## \# 38 - Apresentação de Projetos (20/01/2019)
+## \# 38 - XML e DTD (21/12/2019)
+---
+
+**Conteúdo:**
+- DOCTYPE:
+  - Lista de doctypes: [w3schools](https://www.w3schools.com/tags/tag_doctype.asp), [html.com](https://html.com/tags/doctype/)
+  - Versões: [HTML 4.01](https://www.w3.org/TR/html4/sgml/dtd.html), [Entities HTML 5.2](https://www.w3.org/TR/html52/entities.dtd)
+- [XML](https://www.w3schools.com/xml/default.asp)
+  - [Introduction](https://www.w3schools.com/xml/xml_whatis.asp)
+  - [Namespaces](https://www.w3schools.com/xml/xml_namespaces.asp)
+  - [Validator](https://www.w3schools.com/xml/xml_validator.asp)
+- [XML DTD](https://www.w3schools.com/xml/xml_dtd.asp)
+  - [Building Blocks](https://www.w3schools.com/xml/xml_dtd_building.asp)
+  - [Elements](https://www.w3schools.com/xml/xml_dtd_elements.asp)
+  - [Attributes](https://www.w3schools.com/xml/xml_dtd_attributes.asp)
+  - [Entities](https://www.w3schools.com/xml/xml_dtd_entities.asp)
+  - [Examples](https://www.w3schools.com/xml/xml_dtd_examples.asp)
+- Exemplos:
+  - [XML Sitemaps](https://www.sitepoint.com/xml-sitemaps-beginners-guide/)
+  - [WebDANFE - Exemplo de XML de Nota Fiscal Eletrônica](https://www.webdanfe.com.br/danfe/exemplos/NFe_assinada.html)
+
+**Reflexão:**
+* Como estruturamos dados por meio de uma Linguagem de Marcação?
+* O que é um XML?
+* Como validar um XML por meio de um DTD?
+
+**Exercício:**
+* Represente a estrutura a seguir usando XML com alguma validação de DTD:
+
+| Matrícula | Nome | E-mail |
+|-|-|-|
+| 123 | Alice | alice@email.com |
+| 321 | Bob | bob@email.com |
+
+
+## \# 39 - Apresentação de Projetos (20/12/2019)
 ---
 
 > Entrega do [Projeto Final](../exams/projeto.md).
 
-## \# 39 - Apresentação de Projetos (24/01/2019)
+## \# 40 - Prova Final (24/12/2019)
 ---
 
-> Entrega do [Projeto Final](../exams/projeto.md).
+* Exame a ser realizado no horário da aula.
+* Essa prova contempla todo o conteúdo ministrado até a aula [Aula 34](#-34---animação-com-css-26072019)
+- Para estudar, revisar os simulados apontados anteriormente:
+  - [Simulados I](#-19---simulado-i-de-html-e-css-13052019)
+  - [Simulados II](#-31---simulado-ii-de-html-e-css-15062019)
+  - [Simulados III](#-35---simulado-iii-de-html-e-css-27072019)
 
-## \# 40 - Prova Final (27/01/2019)
+## \# 41 - Prova Final (27/01/2019)
 ---
 
 * Exame a ser realizado no horário da aula.
