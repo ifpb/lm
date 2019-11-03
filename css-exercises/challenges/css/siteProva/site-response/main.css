@@ -1,0 +1,131 @@
+/**************** 
+* TODO COMPONENTE 1 
+*****************/
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin: 0;
+    background-color: whitesmoke;
+    font-size: 1.1rem;
+ }
+
+/** FIM DO COMPONENTE 1 **/
+
+/**************** 
+* TODO COMPONENTE 2 
+*****************/
+.menu ul li{
+    display: inline-block;
+    font-size: 1rem;
+    font-style: italic;
+    margin: 7px;
+    border-right: 1.5px solid #d3d3d3;
+    border-bottom: 1.5px solid #d3d3d3;
+    padding: 2px;
+}
+.menu a{
+    text-decoration: none;
+    color: black;
+}
+
+.menu a:hover{
+    font-weight: 600;
+}
+/** FIM DO COMPONENTE 2 **/
+
+/**************** 
+* TODO COMPONENTE 3 
+*****************/
+.testemunhos{
+    text-align: center;
+}
+.testemunho{
+    width: 35%;
+    height: 100%;
+    background-color: #d3d3d3;
+    border-radius: 5px;
+    padding: 3rem;
+    display: inline-block;
+    margin: 1%;
+}
+.testemunho .icone{
+    text-align: center;
+}
+.testemunho i{
+    font-size: 3em;
+    color: blue;
+}
+.testemunho .declaracao{
+    font-style: italic;
+}
+
+.testemunho .aluno{
+    font-weight: bold;
+    font-size: .8em;
+    text-align: right;
+}
+/** FIM DO COMPONENTE 3 **/
+
+/**************** 
+* TODO COMPONENTE 4 
+*****************/
+.notas{
+    background-color: #8CC7FF;
+    padding: 40px;
+}
+.notas table{
+    font-size: 1.3em;
+    margin: auto;
+    border-collapse: collapse;
+    width: 30%;
+    border-color: whitesmoke;
+    text-align: left;
+}
+.notas table thead tr{
+    border-bottom: 3px solid whitesmoke;
+}
+.notas table tbody tr{
+    border-bottom: 1px solid whitesmoke;
+}
+.notas table tbody tr:hover{
+    background-color: blue;
+    color: whitesmoke;
+    font-weight: bold;
+}
+
+/** FIM DO COMPONENTE 4 **/
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 5rem;
+    margin: 20px 5%;
+}
+header img{
+    width: 100px;
+}
+.logo{
+    width: 130px;
+    height: 130px;
+}
+
+.banner{
+    background-color: #8CC7FF;
+    height: 200px;
+}
+.banner h1{
+    text-align:center;
+    font-size: 3.5em;
+    color: whitesmoke;
+    padding-top: 50px;
+    text-shadow:#d3d3d3 5px 2px;
+}
+
+footer{
+    background-color: black;
+    color: whitesmoke;
+    margin-bottom: 0;
+    height: 100px;
+    text-align: center;
+    padding-top: 15px;
+    font-weight: bold;
+}

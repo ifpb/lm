@@ -51,7 +51,7 @@ Contudo, considere os seguintes itens:
   </ul>
   ```
 
-* No arquivo `css/main.css`, especificamente em `/* TODO COMPONENTE 2 */`, adicione bordas (direita e baixo) para cada um dos elementos do menu. Bordas de cor `#d3d3d3` e espessura de `1.5px`. Tamanho da fonte de `1rem` com a fonte em itálico.
+* No arquivo `main.css`, especificamente em `/* TODO COMPONENTE 2 */`, adicione bordas (direita e baixo) para cada um dos elementos do menu. Bordas de cor `#d3d3d3` e espessura de `1.5px`. Tamanho da fonte de `1rem` com a fonte em itálico.
 
 * Para cada um dos elementos do Menu, não esqueça de fazer ajustes de Box Model para que os elementos fiquem mais bem apresentados conforme as figuras 1a e 1b.
 
@@ -88,7 +88,7 @@ No arquivo `index.html`, especificamente em `<!-- Adicionar os Testemunhos -->`,
   -> launch
   ```
 
-No arquivo `css/main.css`, especificamente em `/* TODO COMPONENTE 3 */`, faça:
+No arquivo `main.css`, especificamente em `/* TODO COMPONENTE 3 */`, faça:
 
 * Cada testemunho deve ter largura de `30%`, margem de `1%` e altura de `100%`. A cor de fundo é `#d3d3d3`. A borda tem curvatura de `5px`.
 
@@ -107,8 +107,10 @@ Contudo, considere os seguintes itens:
 
 * Em `<!-- Adicionar Tabela de Notas -->`, no arquivo `index.html`, adicione a tabela de notas da *Figura 3*
 
-* No arquivo `master.css`, em `/* TODO COMPONENTE 4 */`, as notas possuem cor de fundo igual a `#8CC7FF`. Toda a tabela tem tamanho da fonte de `1.3em`, com todo o texto interno a tabela alinhado à esquerda. A tabela é centralizada na página. As bodas da tabela possuem cor `whitesmoke`. A tabela tem largura de `30%`.
+* No arquivo `main.css`, em `/* TODO COMPONENTE 4 */`, as notas possuem cor de fundo igual a `#8CC7FF`. Toda a tabela tem tamanho da fonte de `1.3em`, com todo o texto interno a tabela alinhado à esquerda. A tabela é centralizada na página. As bodas da tabela possuem cor `whitesmoke`. A tabela tem largura de `30%`.
 
 * A linha do título possui borda abaixo de `3px`. As outras linhas possuem borda abaixo de `1px`.
 
 * Com exceção do título, quando o mouse estiver sobre alguma linha, a cor de fundo deve ser `blue` e o texto deve ficar em negrito.
+
+> [Alternativa de resposta](site-response/)
