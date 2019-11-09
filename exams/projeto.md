@@ -20,7 +20,7 @@ Assim, será exigido que a apresentação possua um tempo máximo de 3 minutos e
 * Alguma seleção de telas de sistemas existentes que façam algo semelhante ao que será proposto, ou seja, não precisamos reinventar a roda sempre;
 * Por fim, deve-se apresentar alguns esboços de tela de como a equipe enxerga o protótipo final do projeto, pode ser até mesmo [esquemas no papel](https://developers.google.com/web/fundamentals/design-and-ux/ux-basics/), pois o que importa é que fique claro as interações do sistema e sua navegabilidade. Caso necessário, o grupo pode utilizar alguma [ferramenta de prototipagem](https://uxtools.co/tools/prototyping).
 
-Para facilitar a listagem dos temas, todos os interessados devem declarar suas propostas [neste padlet](https://padlet.com/tmoura/r1osxk8sue5p) seguindo esse formato de card:
+Para facilitar a listagem dos temas, todos os interessados devem declarar suas propostas [neste padlet](https://padlet.com/tmoura/xxwe27krciuj) seguindo esse formato de card:
 
 ```
 Título/Tema do Projeto
