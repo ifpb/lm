@@ -606,6 +606,7 @@
   - [Cinebangue](https://ifpb.github.io/lm/css-exercises/challenges/css/cinebangue-responsive/)
   - [Profile](https://ifpb.github.io/lm/css-exercises/challenges/css/profile-responsive/)
   - [IF.tech](https://ifpb.github.io/css-exercises/challenges/css/iftech/)
+  - [Industrious-responsivo]https://ifpb.github.io/lm/css-exercises/challenges/css/industrious-responsive/
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
 
 ## \# 31 - Avaliação II de HTML e CSS (06/12/2019)
