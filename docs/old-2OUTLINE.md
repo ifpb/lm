@@ -27,25 +27,14 @@
 [\# 25 - Flexible Box Layout - Flexbox (11/11/2019)(SEG)](#-25---flexible-box-layout---flexbox-11112019)<br>
 [\# 26 - CSS Grid (18/11/2019)(SEG)](#-26---css-grid-18112019)<br>
 [\# 27 - CSS Grid (22/11/2019)(SEX)](#-27---css-grid-22112019)<br>
-<!-- [\# 28 - Design Responsivo (25/11/2019)(SEG)](#-28---design-responsivo-25112019)<br> -->
-<!-- [\# 29 - Design Responsivo (29/11/2019)(SEX)](#-29---design-responsivo-29112019)<br> -->
-<!-- [\# 30 - Simulado II de HTML e CSS (02/12/2019)(SEG)](#-30---simulado-ii-de-html-e-css-02122019)<br>
+[\# 28 - Design Responsivo (25/11/2019)(SEG)](#-28---design-responsivo-25112019)<br>
+[\# 29 - Design Responsivo (29/11/2019)(SEX)](#-29---design-responsivo-29112019)<br>
+[\# 30 - Simulado II de HTML e CSS (02/12/2019)(SEG)](#-30---simulado-ii-de-html-e-css-02122019)<br>
 [\# 31 - Avaliação II de HTML e CSS (06/12/2019)(SEX)](#-31---avaliação-ii-de-html-e-css-06122019)<br>
 [\# 32 - Formulário (09/12/2019)(SEG)](#-32---formulário-09122019)<br>
 [\# 33 - Posicionamento de Elementos (13/12/2019)(SEX)](#-33---posicionamento-de-elementos-13122019)<br>
 [\# 34 - Animação com CSS (14/12/2019)(SAB)](#-34---animação-com-css-14122019)<br>
-[\# 35 - Simulado III de HTML e CSS (16/12/2019)(SEG)](#-35---simulado-iii-de-html-e-css-16122019)<br> -->
-
-[\# 28 - IF.TECH]()<br>
-[\# 29 - IF.TECH]()<br>
-[\# 30 - Design Responsivo (02/12/2019)(SEG)](#-30---design-responsivo-02122019)<br>
-[\# 31 - Design Responsivo (06/12/2019)(SEX)](#-31---design-responsivo-06122019)<br>
-[\# 31 - Simulado II de HTML e CSS (06/12/2019)(SEX)](#-31---simulado-ii-de-html-e-css-06122019)<br>
-[\# 32 - Formulário (09/12/2019)(SEG)](#-32---formulário-09122019)<br>
-[\# 33 - Avaliação II de HTML e CSS (13/12/2019)(SEX)](#-33---avaliação-ii-de-html-e-css-13122019)<br>
-[\# 34 - Posicionamento de Elementos (14/12/2019)(SAB)](#-34---posicionamento-de-elementos-14122019)<br>
-[\# 34 - Animação com CSS (14/12/2019)(SAB)](#-34---animação-com-css-14122019)<br>
-[\# 35 - Animação com CSS + Simulado III de HTML e CSS (16/12/2019)(SEG)](#-37---animacao-com-css-simulado-iii-de-html-e-css-16122019)<br>
+[\# 35 - Simulado III de HTML e CSS (16/12/2019)(SEG)](#-35---simulado-iii-de-html-e-css-16122019)<br>
 [\# 36 - Avaliação III de HTML e CSS (20/12/2019)(SEX)](#-36---avaliação-iii-de-html-e-css-20122019)<br>
 [\# 37 - Componentes da Web (21/12/2019)(SAB)](#-37---componentes-da-web-21122019)<br>
 [\# 38 - Apresentação de Projetos (20/01/2019)(SEG)](#-38---apresentação-de-projetos-20012019)<br>
@@ -556,10 +545,8 @@
 * [Portfólio com Grid Layout](https://ifpb.github.io/lm/css-exercises/css/portfolio-initial/)
 * Blog: [Evermore](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-evermore/), [Denali](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-denali/), [Lamar](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-lamar/), [Escape](https://ifpb.github.io/lm/css-exercises/challenges/css/blog-escape/)
 
-## \# 28 - IF.TECH (25/11/2019)
-## \# 29 - IF.TECH (29/11/2019)
 
-## \# 30 - Design Responsivo (02/12/2019)
+## \# 28 - Design Responsivo (25/11/2019)
 ---
 
 **Conteúdo:**
@@ -582,7 +569,7 @@
 - [Progressive enhancement e graceful degradation - Caelum](https://www.caelum.com.br/apostila-html-css-javascript/css-avancado/#progressive-enhancement) 
 -->
 
-## \# 31 - Design Responsivo (06/12/2019)
+## \# 29 - Design Responsivo (29/11/2019)
 ---
 
 **Conteúdo:**
@@ -601,7 +588,7 @@
 **Exercício:**
 * [Cubo Network](https://ifpb.github.io/lm/css-exercises/challenges/css/cubonetwork-responsive/)
 
-## \# 31 - Simulado II de HTML e CSS (06/12/2019)
+## \# 30 - Simulado II de HTML e CSS (02/12/2019)
 ---
 
 **Conteúdo:**
@@ -621,6 +608,11 @@
   - [IF.tech](https://ifpb.github.io/css-exercises/challenges/css/iftech/)
   - [Industrious-responsivo](https://ifpb.github.io/lm/css-exercises/challenges/css/industrious-responsive/)
 - Outros exercícios de [HTML](https://ifpb.github.io/lm/html-exercises/) e [CSS](https://ifpb.github.io/lm/css-exercises/)
+
+## \# 31 - Avaliação II de HTML e CSS (06/12/2019)
+---
+
+> Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-2.md)
 
 ## \# 32 - Formulário (09/12/2019)
 ---
@@ -646,12 +638,7 @@
   * [Galeria 3](https://medium.com/commonux/how-to-design-a-form-wizard-b85fe1cc665a)
 * Crie e estilize algum formulário em seu projeto.
 
-## \# 33 - Avaliação II de HTML e CSS (13/12/2019)
----
-
-> Todos os detalhes da avaliação estão disponíveis nesta [página](../exams/prova-html-css-2.md)
-
-## \# 34 - Posicionamento de Elementos (14/12/2019)
+## \# 33 - Posicionamento de Elementos (13/12/2019)
 ---
 
 **Conteúdo:**
