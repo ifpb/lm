@@ -35,7 +35,6 @@
 [\# 33 - Posicionamento de Elementos (13/12/2019)(SEX)](#-33---posicionamento-de-elementos-13122019)<br>
 [\# 34 - Animação com CSS (14/12/2019)(SAB)](#-34---animação-com-css-14122019)<br>
 [\# 35 - Simulado III de HTML e CSS (16/12/2019)(SEG)](#-35---simulado-iii-de-html-e-css-16122019)<br> -->
-
 [\# 28 - IF.TECH]()<br>
 [\# 29 - IF.TECH]()<br>
 [\# 30 - Design Responsivo (02/12/2019)(SEG)](#-30---design-responsivo-02122019)<br>
