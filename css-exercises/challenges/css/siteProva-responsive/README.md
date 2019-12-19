@@ -54,3 +54,5 @@ No arquivo `main.css`, especificamente em `/* TODO COMPONENTE 3 */`, faça as se
 * O background é fixo e deve cobrir todo o espaço disponível;
 * O backgroung é posicionado a `-100px` no eixo `y`;
 * A cor e a imagem se mesclam no modo `overlay`;
+
+> [Alternativa de resposta](site-response/)
