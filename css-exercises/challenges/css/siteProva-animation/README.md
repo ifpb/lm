@@ -48,3 +48,5 @@ No CSS, respeite as seguintes configurações:
 * Todos os inputs possuem tamanho da fonte `larger`;
 
 * Usar FLEX para estilizar o formulário.
+
+> [Alternativa de resposta](site-response/)
