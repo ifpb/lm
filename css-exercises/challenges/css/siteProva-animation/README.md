@@ -30,7 +30,7 @@ No arquivo `main.css` adicione as modificações em `/* TODO COMPONENTE 1 */`.
   <source src="assets/testemunhos.mp4" type="video/mp4">
 </video>
 
-No arquivo `main.css` adicione as modificações em `/* TODO COMPONENTE 2 */`. Observe que ao passar o mouse por cima dos ícones, eles aumentam o seu tamanho original em `20%` e voltam ao tamanho original com a saída do mouse. Observe que além do ícone aumentar, uma borda `direita` e `baixo` é criada com espessura de `5px`, sólida, `preta` e transparência de `60%`. O tempo total da transformação é de `1s`.
+No arquivo `main.css` adicione as modificações em `/* TODO COMPONENTE 2 */`. Observe que ao passar o mouse por cima dos ícones, eles aumentam o seu tamanho original em `20%` e voltam ao tamanho original com a saída do mouse. Observe que além do ícone aumentar, uma sombra `direita` e `baixo` é criada com espessura de `5px`, sólida, `preta` e transparência de `60%`. O tempo total da transformação é de `1s`.
 
 **COMPONENTE 3 -** Crie um formulário conforme a Figura 1.
 
