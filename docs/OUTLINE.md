@@ -145,8 +145,7 @@
   - Utilizando as ferramentas: Ver Código Fonte e Inspecionar do Google Chrome
   <!-- Ferramenta de Desenvolvedor e Plugin Web Developer -->
     - Analisando a [Primeira Página da Web (Atual)](https://ifpb.github.io/lm/html-exercises/html/first-web-page/site-response/)
-  <!-- - Ferramenta de Desenvolvedor
-    - Inspecionar e editar código, Toogle device toolbar, Network e Screenshot -->
+  <!-- - Ferramenta de Desenvolvedor - Inspecionar e editar código, Toogle device toolbar, Network e Screenshot -->
 - Linha Horizontal `<hr>`
 
 **Reflexão:**
