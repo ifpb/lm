@@ -66,10 +66,9 @@
             └── img
                 └── image.png
 ```
-
+<!-- <img src="/img/image.png" alt="Image Description"> (http) -->
 ```html
 <img src="../img/image.png" alt="Image Description">
-<!-- <img src="/img/image.png" alt="Image Description"> (http) -->
 <img src="http://site.com/img/image.png" alt="Image Description"> (http)
 <img src="/var/www/site/img/image.png" alt="Image Description"> 👎
 ```
