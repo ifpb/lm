@@ -241,10 +241,10 @@
 * Qual é o benefício da herança no CSS?
 * Como é possível identificar o estilo atribuído a algum elemento no HTML?
 * O que acontece quando um elemento carrega um estilo inválido? É possível identificar?
-<!-- 
-**Exercício:**
-* [Analisando uma página com Estilo](https://ifpb.github.io/lm/css-exercises/css/inspect-style/)
-* [Selecionando Elementos no HTML](https://ifpb.github.io/lm/css-exercises/css/selector-css/) -->
+
+[//]: <> **Exercício:**
+[//]: <> * [Analisando uma página com Estilo](https://ifpb.github.io/lm/css-exercises/css/inspect-style/)
+[//]: <> * [Selecionando Elementos no HTML](https://ifpb.github.io/lm/css-exercises/css/selector-css/)
 
 
 ## \# 10 - Primeiros Passos com CSS (13/03/2020)
