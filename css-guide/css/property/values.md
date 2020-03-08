@@ -193,6 +193,27 @@ p {
 | `h1` | 1.3rem | 20.8px |
 | `p` | 105% | 16.8px |
 
+
+#### EM vs REM Units
+
+```css
+body{
+  font-size: 16px;
+}
+
+h1 {
+  font-size: 1.3rem; /*  20.8px */
+}
+
+#paragrafo1 {
+  font-size: 1.3em; /*  20.8px */
+}
+
+#paragrafo2 {
+  font-size: 1.3em; /*  20.8px */
+  margin: 2em;   /* 41.6px */
+}
+```
 ## References
 ---
 
