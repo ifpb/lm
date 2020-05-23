@@ -17,7 +17,7 @@ Uma página Web, como a do [IFPB](http://www.ifpb.edu.br/), possui muitos detalh
 
 Isso se justifica pela própria natureza da Web, pois as páginas são estruturadas e publicadas em arquivos disponíveis na Internet por meio de servidores, e que podem ser copiados por navegadores. 
 
-Inclusive, a maioria dos navegadores disponibilizam opções para facilitar o acesso e análise desses recursos, desta forma se torna possível analisar a forma como o site foi estruturado. Mas, como e onde eu encontro usar essas opções?
+Inclusive, a maioria dos navegadores disponibilizam opções para facilitar o acesso e análise desses recursos, desta forma se torna possível analisar a forma como o site foi estruturado. Mas, como e onde eu encontro essas opções?
 
 Um exemplo dessa análise, pode ser visto na *Figura 1* ao acessar uma página do [IFPB](http://www.ifpb.edu.br/) usando o Google Chrome, pois no item **Ver Código Fonte** do menu popup, é possível ver que outra janela é aberta com o código fonte utilizado para construir a página.
 
