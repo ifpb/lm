@@ -15,7 +15,7 @@ O objetivo desta atividade consiste em abordar os seguintes tópicos:
 ## Descrição
 ---
 
-Digamos que o proforessor da disciplina esqueceu de fazer backup dos seus arquivos de aula e perdeu toda a página da disciplina em seu computador. Mas por sorte, ao acessar o github do período passado, ainda foi possível recuperar um esboço da página dentro da imagem da *Figura 1*.
+Digamos que o professor da disciplina esqueceu de fazer backup dos seus arquivos de aula e perdeu toda a página da disciplina em seu computador. Mas por sorte, ao acessar o github do período passado, ainda foi possível recuperar um esboço da página dentro da imagem da *Figura 1*.
 
 Portanto, o professor está pedindo ajuda aos alunos do IFPB para recriarem a página da disciplina, mas de modo que se preserve a organização original da *Figura 1*. Vale salientar que algumas informações que estarão disponíveis no arquivo arquivo compactado, [site.zip](site.zip), que fornece todas as imagens necessárias seguindo a estrutura:
 
