@@ -16,14 +16,14 @@ h1, p
 |-|-|-|-|
 | [Universal selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Universal_selectors) | `*` |  `*` | |
 | [Type selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Type_selectors) | `E` | `p` | |
-| [Class selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) | `E.classname` <br> `.classname` | `p.odd` <br> `odd` | |
+| [Class selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors) | `E.classname` <br> `.classname` | `p.odd` <br> `.odd` | |
 | [ID selector](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors) | `E#idname` <br> `#idname` | `p#first-paragraph` <br> `#first-paragraph` | |
 | [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `E[attr]` | `p[lang]` | contain attribute |
 | [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr]` | `[lang]` |  contain attribute |
 | [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr=value]` | `[lang="pt-BR"]` |  value is exactly value |
 | [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr~=value]` | `[class~="odd"]` |  value is a whitespace-separated list of words, one of which is exactly value |
 | [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr|=value]` | `[lang|="BR"]` |  value can be exactly value or can begin with value immediately followed by a hyphen |
-| [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr^=value]` | `[lang^="pt"]` |  value value is prefixed (preceded) by value |
+| [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr^=value]` | `[lang^="pt"]` |  value is prefixed (preceded) by value |
 | [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr$=value]` | `[lang$="BR"]` |  value is suffixed (followed) by value |
 | [Attribute selector](https://developer.mozilla.org/en-US/docs/Web/CSS/Attribute_selectors) | `[attr*=value]` | `[class*="odd"]` |  value contains at least one occurrence of value within the string |
 
