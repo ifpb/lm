@@ -489,6 +489,7 @@ Output:
 > <b>Value:</b> [ `<bg-layer>` , ]* `<final-bg-layer>`<br>
 > <br>
 > `<bg-layer>` = `<bg-image>` || `<bg-position>` [ / `<bg-size>` ]? || `<repeat-style>` || `<attachment>` || `<box>` || `<box>`<br>
+
 > `<final-bg-layer>` = `<background-color>` || `<bg-image>` || `<bg-position>` [ / `<bg-size>` ]? || `<repeat-style>` || `<attachment>` || `<box>` || `<box>`
 
 ### Syntax
