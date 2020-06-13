@@ -8,7 +8,7 @@
   * [Descendant combinator](#descendant-combinator)
 * [Pseudo-class](#pseudo-class)
   * [`:hover`](#hover)
-  * [`:first-child`](first-child)
+  * [`:first-child`](#first-child)
   * `:nth-child()`: [`:nth-child(2)`](#nth-child2), [`:nth-child(2n)`](#nth-child2n)
 * [Pseudo-element](#pseudo-element)
   * [`::selection`](#selection)
