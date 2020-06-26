@@ -561,7 +561,7 @@ word-spacing: 110%;
 > <b>Value:</b> [ [ `<font-style>` || `<font-variant>` || `<font-weight>` || `<font-stretch>` ]? `<font-size>` [ / `<line-height>` ]? `<font-family>` ] | caption | icon | menu | message-box | small-caption | status-bar<br>
 > <br>
 > `<font-stretch>` = normal \| ultra-condensed \| extra-condensed \| condensed \| semi-condensed \| semi-expanded \| expanded \| extra-expanded \| ultra-expanded<br>
-> `<font-variant>` = nomral \| small-caps 
+> `<font-variant>` = normal \| small-caps 
 
 #### Syntax
 
