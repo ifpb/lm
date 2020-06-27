@@ -38,7 +38,7 @@ site
 
 Conforme ilustra a *Figura 1* o Curriculum deve apresentar uma seção contendo, em uma lista não ordenada, um sumário com links para cada seção listada.
 
-No `index.html` há uma breve descrição/resumo sobre o Elom Musk, no entanto uma descrição mais completa deve encontrar-se em outro documento HTML, que é acessível através do hyperlink **leia mais**. O conteúdo dessa segunda página deve ser conforme ilustra a *Figura 2*. Observe que esta possui uma imagem de uma seta que deve conter um hiperlink para o documento `index.html`.
+No `index.html` há uma breve descrição/resumo sobre o Elon Musk, no entanto uma descrição mais completa deve encontrar-se em outro documento HTML, que é acessível através do hyperlink **leia mais**. O conteúdo dessa segunda página deve ser conforme ilustra a *Figura 2*. Observe que esta possui uma imagem de uma seta que deve conter um hiperlink para o documento `index.html`.
 
 *Figura 2* - Layout do Resumo
 <img src="assets/screen-resumo.png" alt="Layout Resumo" style="border: 2px solid #000">

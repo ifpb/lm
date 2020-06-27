@@ -817,11 +817,11 @@ overflow: auto;
 ## [Outline](https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
 ---
 
-> <b>Value:</b> [ `<outline-color>` || `<outline-style>` || `<outline-width>` ]
+> <b>Value:</b> [ `<outline-color>` || `<outline-style>` || `<outline-width>` ] <br>
 > <br>
 > `<outline-color>` = `<color>`<br>
 > `<outline-style>` = none \| hidden \| dotted \| dashed \| solid \| double \| groove \| ridge \| inset \| outset<br>
-> `<outline-width>` = <length> \| thin \| medium \| thick<br>
+> `<outline-width>` = `<length>` \| thin \| medium \| thick<br>
 
 ### Syntax
 

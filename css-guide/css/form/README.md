@@ -62,6 +62,6 @@
   * [Designing UX Login Form and Process – UX Planet](https://uxplanet.org/designing-ux-login-form-and-process-8b17167ed5b9)
   * [How to Design Great UX for Sign Up Form – UX Planet](https://uxplanet.org/how-to-design-great-ux-for-sign-up-form-8ce39f84659)
   * [How To Build An Awesome Form – Kuba Chrześcijanek – Medium](https://medium.com/@kubachrzecijanek/how-to-build-an-awesome-form-1e9b2c1bd00d)
-  * [8 ways to create the perfect Registration Form – Prototypr](https://blog.prototypr.io/8-ways-to-create-the-perfect-registration-form-6a155ed972f1)
+  * [8 ways to create the perfect Registration Form – Prototype](https://blog.prototypr.io/8-ways-to-create-the-perfect-registration-form-6a155ed972f1)
   * [Payment Form Design Inspiration – Inspiration Supply – Medium](https://medium.com/inspiration-supply/payment-form-design-inspiration-492c6e5d32c3)
   * [A crash course: Form design for usability across desktop and mobile](https://medium.com/@adaptivelab/a-crash-course-form-design-for-usability-across-desktop-and-mobile-9ff83d37d885)

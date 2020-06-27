@@ -8,7 +8,7 @@ A disciplina apresenta o seguinte [conteúdo](docs/CONTENT.md), enquanto que seu
 
 ## Avaliações
 
-A nota final será computado através da média ponderada das três maiores avaliações:
+A nota final será computada através da média ponderada das três maiores avaliações:
 
 * Avaliação I: [Prova de HTML e CSS](exams/prova-html-css-1.md);
 * Avaliação II: [Prova de HTML e CSS](exams/prova-html-css-2.md);

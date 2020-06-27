@@ -7,7 +7,7 @@
   * O que acontece se font-family não possuir a fonte instalada no computador?
   * Qual é a diferença entre <font-family> e <generic-family>?
   * É possível usar uma fonte que não está instalada no computador?
-  * Qual é a recomendação para se difinir uma família de fonte?
+  * Qual é a recomendação para se definir uma família de fonte?
   * Qual a diferança entre unidades de medida relativa e absoluta?
   * Até quantos pesos podem existir em uma fonte?
   * Como mudamos a aparência default de um link?

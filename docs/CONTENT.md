@@ -13,9 +13,9 @@ Dentre os principais temas que serão abordados na disciplina pode-se listar:
   * Folha de estilo
   * Herança e cascata
   * Seletores, propriedades, funções, media query, at-rules
-  * Definiação de layouts e estilos
+  * Definição de layouts e estilos
   * Animações
-  * Extenções de CSS
+  * Extensões de CSS
 * XML
   * Definição
   * Estrutura

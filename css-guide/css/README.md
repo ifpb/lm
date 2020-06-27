@@ -59,7 +59,7 @@
 * Framework:
   * [Top CSS frameworks to follow in 2017](https://medium.com/@thomasmarciniak/top-css-frameworks-to-follow-in-2017-51d283dd00fb)
   * [Popular CSS Libraries](http://cssdb.co/)
-  * [Bootsrap](http://getbootstrap.com/) ([cheat sheet](http://hackerthemes.com/bootstrap-cheatsheet/))
+  * [Bootstrap](http://getbootstrap.com/) ([cheat sheet](http://hackerthemes.com/bootstrap-cheatsheet/))
   * [Foundation](http://foundation.zurb.com/)
   * [PureCSS](http://purecss.io/)
   * [Bulma](https://bulma.io)

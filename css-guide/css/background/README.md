@@ -259,7 +259,7 @@ Output:
 ### Reference
 
 - [Continuous Background Graphics](https://www.freepik.com/index.php?goto=2&k=continuous-background&isCat=1&isKeyword=1&type=1&vars=1)
-- [Continuos Background](https://www.shutterstock.com/search/continuous+background)
+- [Continuous Background](https://www.shutterstock.com/search/continuous+background)
 - [Seamless Pattern Graphics](https://www.freepik.com/free-photos-vectors/seamless-pattern)
 - [Strip Generator](http://www.stripegenerator.com/)
 - [Gradient](http://www.generateit.net/gradient/index.php)
@@ -489,6 +489,7 @@ Output:
 > <b>Value:</b> [ `<bg-layer>` , ]* `<final-bg-layer>`<br>
 > <br>
 > `<bg-layer>` = `<bg-image>` || `<bg-position>` [ / `<bg-size>` ]? || `<repeat-style>` || `<attachment>` || `<box>` || `<box>`<br>
+
 > `<final-bg-layer>` = `<background-color>` || `<bg-image>` || `<bg-position>` [ / `<bg-size>` ]? || `<repeat-style>` || `<attachment>` || `<box>` || `<box>`
 
 ### Syntax

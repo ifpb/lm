@@ -77,7 +77,7 @@
 * Explique como é possível transferir documentos antes e depois da Web.
 * Qual é o tripé da Web? 
 * Qual é a diferença entre um conteúdo estático e dinâmico?
-* É possível formatar um documento (título, negrito, itálico, etc) usando apenas uma arquivo de texto? Caso afirmativo, dê exemplos de como seria isto?
+* É possível formatar um documento (título, negrito, itálico, etc) usando apenas um arquivo de texto? Caso afirmativo, dê exemplos de como seria isto?
 * Explique porque as linguagens de marcação exigem programas específicos.
 * A legibilidade de uma linguagem de marcação tem alguma relação com o tamanho do documento?
 
@@ -102,7 +102,7 @@
 
 **Reflexão:**
 * Quais são os elementos sintáticos do HTML?
-* Qual é a estrutura básico do HTML?
+* Qual é a estrutura básica do HTML?
 * Qual é a importância do `<meta charset="">` no HTML?
 * Quais são as marcações básicas de texto do HTML?
 
@@ -118,7 +118,7 @@
   - [Head Elements](https://ifpb.github.io/lm/html-guide/html/head-elements/)
   - [Text Elements](https://ifpb.github.io/lm/html-guide/html/text-elements/)
   - [Listas `<ol>`, `<ul>`, `<dl>`](https://ifpb.github.io/lm/html-guide/html/list/)
-    - Definição, Ordenada, Não ordenado
+    - Ordenada, Não ordenada, Definição
     - Personalizando marcadores
     - Lista aninhada
   - [Hyperlink `<a>`](https://ifpb.github.io/lm/html-guide/html/hyperlink/)
