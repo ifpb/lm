@@ -1,0 +1,7 @@
+img {
+  display: inline !important;
+}
+
+article li ul {
+  margin-top: 0;
+}

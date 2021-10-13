@@ -1,0 +1,72 @@
+.bg {
+  width: 200px;
+  height: 133px;
+  display: inline-block;
+  background-image: url(../img/computer.jpg);
+  background-size: cover;
+  background-color: rgba(1, 193, 120, .9);
+}
+
+.normal {
+  background-blend-mode: normal;
+}
+
+.multiply {
+  background-blend-mode: multiply;
+}
+
+.screen {
+  background-blend-mode: screen;
+}
+
+.overlay {
+  background-blend-mode: overlay;
+}
+
+.darken {
+  background-blend-mode: darken;
+}
+
+.lighten {
+  background-blend-mode: lighten;
+}
+
+.color-dodge {
+  background-blend-mode: color-dodge;
+}
+
+.color-burn {
+  background-blend-mode: color-burn;
+}
+
+.hard-light {
+  background-blend-mode: hard-light;
+}
+
+.soft-light {
+  background-blend-mode: soft-light;
+}
+
+.difference {
+  background-blend-mode: difference;
+}
+
+.exclusion {
+  background-blend-mode: exclusion;
+}
+
+.hue {
+  background-blend-mode: hue;
+}
+
+.saturation {
+  background-blend-mode: saturation;
+}
+
+.color {
+  background-blend-mode: color;
+}
+
+.luminosity {
+  background-blend-mode: luminosity;
+}

@@ -1,0 +1,31 @@
+ul {
+  list-style-type: none;
+  display: flex;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li .fab {
+  width: 50px;
+  height: 50px;
+  margin: .2rem;
+  border-radius: 50%;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+li .fa-facebook-f {
+  background-color: #3b5898;
+}
+
+li .fa-instagram {
+  background-color: #69453b;
+}
+
+li .fa-twitter{
+  background-color: #55acef;
+}

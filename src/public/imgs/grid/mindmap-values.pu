@@ -1,0 +1,285 @@
+@startmindmap
+<style>
+mindmapDiagram {
+  Node {
+    BackGroundColor LightYellow
+  }
+  rootNode {
+    FontSize 35
+    BackGroundColor white
+  }
+  :depth(1) {
+    FontSize 15
+  }
+  .containerStyle * {
+    BackgroundColor YellowGreen
+  }
+  .itemStyle * {
+    BackgroundColor SkyBlue
+  }
+}
+</style>
++ Grid
+' ++ W3C TR
+' +++_ CSS Grid Layout Module Level 2 https://www.w3.org/TR/css-grid-2/
+' +++_ CSS Box Alignment Module Level 3 https://www.w3.org/TR/css-align-3/
+++ display <<containerStyle>>
++++_ grid
++++_ inline-grid
+++ Alignment
++++ Content
+++++ justify-content <<containerStyle>>
++++++_ <u>normal</u>
++++++_ <content-distribution>
+++++++_ space-between
+++++++_ space-around
+++++++_ space-evenly
+++++++_ stretch
++++++_ <overflow-position>? [ <content-position> | left | right ]
+++++++_ <overflow-position>
++++++++_ unsafe
++++++++_ safe
+++++++_ <content-position>
++++++++_ center
++++++++_ start
++++++++_ end
++++++++_ flex-start
++++++++_ flex-end
+++++ align-content <<containerStyle>>
++++++_ <u>normal</u>
++++++_ <baseline-position>
+++++++_ [ first | last ]? baseline
++++++_ <content-distribution>
+++++++_ space-between
+++++++_ space-around
+++++++_ space-evenly
+++++++_ stretch
++++++_ <overflow-position>? <content-position>
+++++++_ <overflow-position>
++++++++_ unsafe
++++++++_ safe
+++++++_ <content-position>
++++++++_ center
++++++++_ start
++++++++_ end
++++++++_ flex-start
++++++++_ flex-end
+++++ place-content <<containerStyle>>
++++++_ <u>normal normal</u>
++++++_ <align-content> <justify-content>?
++++ Items
+++++ justify-items <<containerStyle>>
++++++_ <u>legacy</u>
++++++_ normal
++++++_ stretch
++++++_ <baseline-position>
+++++++_ [ first | last ]? baseline
++++++_ <overflow-position>? [<self-position> | left | right]
+++++++_ <overflow-position>
++++++++_ unsafe
++++++++_ safe
+++++++_ <self-position>
++++++++_ center
++++++++_ start
++++++++_ end
++++++++_ self-start
++++++++_ self-end
++++++++_ flex-start
++++++++_ flex-end
++++++_ legacy && [ left | right | center ]
+++++ align-items <<containerStyle>>
++++++_ <u>normal</u>
++++++_ strech
++++++_ <baseline-position>
+++++++_ [ first | last ]? baseline
++++++_ <overflow-position>? <self-position>
+++++++_ <overflow-position>
++++++++_ unsafe
++++++++_ safe
+++++++_ <self-position>
++++++++_ center
++++++++_ start
++++++++_ end
++++++++_ self-start
++++++++_ self-end
++++++++_ flex-start
++++++++_ flex-end
+++++ place-items <<containerStyle>>
++++++_ <u>normal legacy</u>
++++++_ <align-items> <justify-items>?
++++ Self
+++++ justify-self <<itemStyle>>
++++++_ <u>auto</u>
++++++_ normal
++++++_ stretch
++++++_ <baseline-position>
+++++++_ [ first | last ]? baseline
++++++_ <overflow-position>? [<self-position> | left | right]
+++++++_ <overflow-position>
++++++++_ unsafe
++++++++_ safe
+++++++_ <self-position>
++++++++_ center
++++++++_ start
++++++++_ end
++++++++_ self-start
++++++++_ self-end
++++++++_ flex-start
++++++++_ flex-end
+++++ align-self <<itemStyle>>
++++++_ <u>auto</u>
++++++_ normal
++++++_ stretch
++++++_ <baseline-position>
+++++++_ [ first | last ]? baseline
++++++_ <overflow-position>? <self-position>
+++++++_ <overflow-position>
++++++++_ unsafe
++++++++_ safe
+++++++_ <self-position>
++++++++_ center
++++++++_ start
++++++++_ end
++++++++_ self-start
++++++++_ self-end
++++++++_ flex-start
++++++++_ flex-end
+++++ place-self <<itemStyle>>
++++++_ <u>auto auto</u>
++++++_ <align-self> <justify-self>?
+-- Layout
+--- grid <<containerStyle>>
+----_ <grid-template>
+----_ <grid-template-rows> / [ auto-flow && dense? ] <grid-auto-columns>?
+----_ [ auto-flow && dense? ] <grid-auto-rows>? / <grid-template-columns>
+--- Template
+---- grid-template <<containerStyle>>
+-----_ <u>none</u>
+-----_ <grid-template-rows> / <grid-template-columns>
+-----_ [ <line-names>? <string> <track-size>? <line-names>? ]+ [ / <explicit-track-list> ]?
+---- grid-template-columns <<containerStyle>>
+-----_ <u>none</u>
+-----_ <track-list>
+------_ [ <line-names>? [ <track-size> | <track-repeat> ] ]+ <line-names>?
+-----_ <auto-track-list>
+-----_ subgrid <line-name-list>?
+---- grid-template-rows <<containerStyle>>
+-----_ <u>none</u>
+-----_ <track-list>
+------_ [ <line-names>? [ <track-size> | <track-repeat> ] ]+ <line-names>?
+-----_ <auto-track-list>
+-----_ subgrid <line-name-list>?
+---- grid-template-areas <<containerStyle>>
+-----_ <u>none</u>
+-----_ <string>+
+---- grid-area <<itemStyle>>
+-----_ <u>auto auto auto auto</u>
+-----_ <grid-line> [ / <grid-line> ]{0,3}
+------_ <grid-line>
+-------_ auto
+-------_ <custom-ident>
+-------_ <integer> && <custom-ident>?
+-------_ span && [ <integer> || <custom-ident> ]
+--- Row
+---- grid-row <<itemStyle>>
+-----_ <u>auto auto</u>
+-----_ <grid-line> [ / <grid-line> ]?
+---- grid-row-start <<itemStyle>>
+-----_ <u>auto</u>
+-----_ <grid-line>
+------_ auto
+------_ <custom-ident>
+------_ <integer> && <custom-ident>?
+------_ span && [ <integer> || <custom-ident> ]
+---- grid-row-end <<itemStyle>>
+-----_ <u>auto</u>
+-----_ <grid-line>
+------_ auto
+------_ <custom-ident>
+------_ <integer> && <custom-ident>?
+------_ span && [ <integer> || <custom-ident> ]
+--- Column
+---- grid-column <<itemStyle>>
+-----_ <u>auto auto</u>
+-----_ <grid-line> [ / <grid-line> ]?
+---- grid-column-start <<itemStyle>>
+-----_ <u>auto</u>
+-----_ <grid-line>
+------_ auto
+------_ <custom-ident>
+------_ <integer> && <custom-ident>?
+------_ span && [ <integer> || <custom-ident> ]
+---- grid-column-end <<itemStyle>>
+-----_ <u>auto</u>
+-----_ <grid-line>
+------_ auto
+------_ <custom-ident>
+------_ <integer> && <custom-ident>?
+------_ span && [ <integer> || <custom-ident> ]
+--- Auto
+---- grid-auto-flow <<containerStyle>>
+-----_ <u>row</u>
+-----_ [ row | column ] || dense
+---- grid-auto-rows <<containerStyle>>
+-----_ <u>auto</u>
+-----_ <track-size>+
+------_ <track-breadth>
+-------_ <length>
+-------_ <percentage>
+-------_ <flex>
+-------_ min-content
+-------_ max-content
+-------_ auto
+------_ minmax( <inflexible-breadth> , <track-breadth> )
+-------_ <inflexible-breadth>
+--------_ <length>
+--------_ <percentage>
+--------_ min-content
+--------_ max-content
+--------_ auto
+-------_ <track-breadth>
+--------_ <length>
+--------_ <percentage>
+--------_ <flex>
+--------_ min-content
+--------_ max-content
+--------_ auto
+------_ fit-content( <length> )
+------_ fit-content( <percentage> )
+---- grid-auto-columns <<containerStyle>>
+-----_ <u>auto</u>
+-----_ <track-size>+
+------_ <track-breadth>
+-------_ <length>
+-------_ <percentage>
+-------_ <flex>
+-------_ min-content
+-------_ max-content
+-------_ auto
+------_ minmax( <inflexible-breadth> , <track-breadth> )
+-------_ <inflexible-breadth>
+--------_ <length>
+--------_ <percentage>
+--------_ min-content
+--------_ max-content
+--------_ auto
+-------_ <track-breadth>
+--------_ <length>
+--------_ <percentage>
+--------_ <flex>
+--------_ min-content
+--------_ max-content
+--------_ auto
+------_ fit-content( <length> )
+------_ fit-content( <percentage> )
+--- Gap
+---- grid-gap <<containerStyle>>
+-----_ <u>normal normal</u>
+-----_ <grid-row-gap> <grid-column-gap>?
+---- grid-row-gap <<containerStyle>>
+-----_ <u>normal</u>
+-----_ <length-percentage>
+---- grid-column-gap <<containerStyle>>
+-----_ <u>normal</u>
+-----_ <length-percentage>
+@endmindmap

@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+.direction {
+  margin: 1rem 0;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.row-reverse {
+  flex-direction: row-reverse;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.column-reverse {
+  flex-direction: column-reverse;
+}
+
+.container {
+  display: flex;
+  transition: all .4s;
+  border: 1px solid #000;
+}
+
+.item {
+  margin: .2rem;
+  padding: .4rem;
+  min-width: 2.6rem;
+  min-height: 2.6rem;
+  background: #888;
+  color: #fff;
+  font-size: 2.3rem;
+  text-align: center;
+  font-weight: bold;
+}

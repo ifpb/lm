@@ -1,1 +1,0 @@
-https://css-tricks.com/snippets/css/drop-caps/

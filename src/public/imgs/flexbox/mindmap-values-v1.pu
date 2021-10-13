@@ -1,0 +1,91 @@
+@startmindmap
+<style>
+mindmapDiagram {
+  Node {
+    BackGroundColor white
+  }
+  rootNode {
+    FontSize 35
+  }
+  :depth(1) {
+    FontSize 15
+    BackGroundColor LightYellow
+  }
+  leafNode {
+    FontColor gray
+    FontSize 15
+  }
+  .containerStyle * {
+    BackgroundColor YellowGreen
+  }
+  .itemStyle * {
+    BackgroundColor SkyBlue
+  }
+}
+</style>
++ FlexBox
+' ++ W3C TR
+' +++_ CSS Flexible Box Layout Module Level 1 https://www.w3.org/TR/css-flexbox-1/
+' +++_ CSS Box Alignment Module Level 3 https://www.w3.org/TR/css-align-3/
+-- Orientation
+--- flex-direction <<containerStyle>>
+----_ <u>row</u>
+----_ row-reverse
+----_ column
+----_ column-reverse
+--- flex-wrap <<containerStyle>>
+----_ <u>nowrap</u>
+----_ wrap
+----_ wrap-reverse
+--- flex-flow <<containerStyle>>
+----_ <u>row nowrap</u>
+----_ <flex-direction> || <flex-wrap>
+--- order <<itemStyle>>
+----_ <u>0</u>
+----_ <integer>
+-- Flexibility
+--- flex-grow <<itemStyle>>
+----_ <u>0</u>
+----_ <number>
+--- flex-shrink <<itemStyle>>
+----_ <u>1</u>
+----_ <number>
+--- flex-basis <<itemStyle>>
+----_ <u>auto</u>
+----_ content
+----_ <width>
+--- flex <<itemStyle>>
+----_ <u>0 1 auto</u>
+----_ none
+----_ <flex-grow> <flex-shrink>? || <flex-basis>
+++ display <<containerStyle>>
++++_ flex
++++_ inline-flex
+++ Alignment
++++ justify-content <<containerStyle>>
+++++_ <u>flex-start</u>
+++++_ flex-end
+++++_ center
+++++_ space-between
+++++_ space-around
++++ align-content <<containerStyle>>
+++++_ flex-start
+++++_ flex-end
+++++_ center
+++++_ space-between
+++++_ space-around
+++++_ <u>stretch</u>
++++ align-items <<containerStyle>>
+++++_ flex-start
+++++_ flex-end
+++++_ center
+++++_ baseline
+++++_ <u>stretch</u>
++++ align-self <<itemStyle>>
+++++_ <u>auto</u>
+++++_ flex-start
+++++_ flex-end
+++++_ center
+++++_ baseline
+++++_ stretch
+@endmindmap

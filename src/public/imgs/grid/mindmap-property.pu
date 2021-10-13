@@ -1,0 +1,64 @@
+@startmindmap
+<style>
+mindmapDiagram {
+  Node {
+    BackGroundColor LightYellow
+  }
+  rootNode {
+    FontSize 35
+    BackGroundColor white
+  }
+  :depth(1) {
+    FontSize 15
+  }
+  .containerStyle * {
+    BackgroundColor YellowGreen
+  }
+  .itemStyle * {
+    BackgroundColor SkyBlue
+  }
+}
+</style>
++ Grid
+' ++ W3C TR
+' +++_ CSS Grid Layout Module Level 2 https://www.w3.org/TR/css-grid-2/
+' +++_ CSS Box Alignment Module Level 3 https://www.w3.org/TR/css-align-3/
+++ display <<containerStyle>>
+++ Alignment
++++ Content
+++++ justify-content <<containerStyle>>
+++++ align-content <<containerStyle>>
+++++ place-content <<containerStyle>>
++++ Items
+++++ justify-items <<containerStyle>>
+++++ align-items <<containerStyle>>
+++++ place-items <<containerStyle>>
++++ Self
+++++ justify-self <<itemStyle>>
+++++ align-self <<itemStyle>>
+++++ place-self <<itemStyle>>
+-- Layout
+--- grid <<containerStyle>>
+--- Template
+---- grid-template <<containerStyle>>
+---- grid-template-columns <<containerStyle>>
+---- grid-template-rows <<containerStyle>>
+---- grid-template-areas <<containerStyle>>
+---- grid-area <<itemStyle>>
+--- Row
+---- grid-row <<itemStyle>>
+---- grid-row-start <<itemStyle>>
+---- grid-row-end <<itemStyle>>
+--- Column
+---- grid-column <<itemStyle>>
+---- grid-column-start <<itemStyle>>
+---- grid-column-end <<itemStyle>>
+--- Auto
+---- grid-auto-flow <<containerStyle>>
+---- grid-auto-rows <<containerStyle>>
+---- grid-auto-columns <<containerStyle>>
+--- Gap
+---- grid-gap <<containerStyle>>
+---- grid-row-gap <<containerStyle>>
+---- grid-column-gap <<containerStyle>>
+@endmindmap

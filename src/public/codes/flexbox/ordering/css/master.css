@@ -1,0 +1,41 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.example {
+  box-sizing: border-box;
+  padding: 1rem;
+}
+
+.example .name {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.container {
+  display: flex;
+  transition: all .4s;
+  border: 1px solid #000;
+}
+
+.order-1 {
+  order: 1;
+}
+
+.order--1 {
+  order: -1;
+}
+
+.item {
+  margin: .2rem;
+  padding: .4rem;
+  min-width: 2rem;
+  min-height: 2rem;
+  background: #888;
+  color: #fff;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+}

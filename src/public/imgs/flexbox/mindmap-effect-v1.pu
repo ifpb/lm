@@ -1,0 +1,52 @@
+@startmindmap
+<style>
+mindmapDiagram {
+  Node {
+    BackGroundColor white
+  }
+  rootNode {
+    FontSize 35
+  }
+  :depth(1) {
+    FontSize 15
+    BackGroundColor LightYellow
+  }
+  .containerStyle * {
+    BackgroundColor YellowGreen
+  }
+  .itemStyle * {
+    BackgroundColor SkyBlue
+  }
+}
+</style>
++ FlexBox
+' ++ W3C TR
+' +++_ CSS Flexible Box Layout Module Level 1 https://www.w3.org/TR/css-flexbox-1/
+' +++_ CSS Box Alignment Module Level 3 https://www.w3.org/TR/css-align-3/
+-- Orientation
+--- flex-direction <<containerStyle>>
+----_ main axis (place, direction)
+--- flex-wrap <<containerStyle>>
+----_ lines (multiple, direction)
+--- flex-flow <<containerStyle>>
+--- order <<itemStyle>>
+----_ main axis (order)
+-- Flexibility
+--- flex-grow <<itemStyle>>
+----_ main size (grow)
+--- flex-shrink <<itemStyle>>
+----_ main size (shrink)
+--- flex-basis <<itemStyle>>
+----_ main size (initial size)
+--- flex <<itemStyle>>
+++ display <<containerStyle>>
+++ Alignment
++++ justify-content <<containerStyle>>
+++++_ main-axis (space)
++++ align-content <<containerStyle>>
+++++_  cross-axis (space)
++++ align-items <<containerStyle>>
+++++_  cross-axis (aligns)
++++ align-self <<itemStyle>>
+++++_  cross-axis (aligns)
+@endmindmap

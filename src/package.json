@@ -1,0 +1,21 @@
+{
+  "name": "src",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "next",
+    "dev": "next dev",
+    "build": "next build",
+    "export": "next build && next export -o ../docs && yarn replace && yarn nojekyll",
+    "replace": "node replacer.js",
+    "nojekyll": "touch ../docs/.nojekyll"
+  },
+  "dependencies": {
+    "next": "^11.1.2",
+    "prism-react-renderer": "^1.2.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  },
+  "devDependencies": {
+    "replace-in-file": "^6.2.0"
+  }
+}

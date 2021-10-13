@@ -1,3 +1,0 @@
-# Packages
-
-* [Bootstrap](bootstrap/)

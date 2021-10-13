@@ -1,0 +1,53 @@
+@startmindmap
+<style>
+mindmapDiagram {
+  Node {
+    BackGroundColor white
+  }
+  rootNode {
+    FontSize 35
+  }
+  :depth(1) {
+    FontSize 15
+    BackGroundColor LightYellow
+  }
+  .containerStyle * {
+    BackgroundColor YellowGreen
+  }
+  .itemStyle * {
+    BackgroundColor SkyBlue
+  }
+}
+</style>
++ FlexBox
+' ++ W3C TR
+' +++_ CSS Flexible Box Layout Module Level 1 https://www.w3.org/TR/css-flexbox-1/
+' +++_ CSS Box Alignment Module Level 3 https://www.w3.org/TR/css-align-3/
+-- Orientation
+--- flex-direction <<containerStyle>>
+----_ how flex items are placed in the flex container defining the main axis and the direction (normal or reversed)
+--- flex-wrap <<containerStyle>>
+----_ whether flex items are forced onto one line or can wrap onto multiple lines. If wrapping is allowed, it sets the direction that lines are stacked.
+--- flex-flow <<containerStyle>>
+----_ order to lay out an item in a flex
+--- order <<itemStyle>>
+----_ order to lay out an item in a flex
+-- Flexibility
+--- flex-grow <<itemStyle>>
+----_ flex grow of a flex item main size
+--- flex-shrink <<itemStyle>>
+----_ flex shrink of a flex item main size
+--- flex-basis <<itemStyle>>
+----_ initial main size of a flex item
+--- flex <<itemStyle>>
+++ display <<containerStyle>>
+++ Alignment
++++ justify-content <<containerStyle>>
+++++_ distributes space between and around content items along the main-axis
++++ align-content <<containerStyle>>
+++++_ distributes space between and around content items along a cross-axis
++++ align-items <<containerStyle>>
+++++_ aligns the items on the cross axis
++++ align-self <<itemStyle>>
+++++_ aligns the item on the cross axis
+@endmindmap

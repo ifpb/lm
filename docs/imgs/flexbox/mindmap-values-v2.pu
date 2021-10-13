@@ -1,0 +1,202 @@
+@startmindmap
+<style>
+mindmapDiagram {
+  Node {
+    BackGroundColor white
+  }
+  rootNode {
+    FontSize 35
+  }
+  :depth(1) {
+    BackGroundColor LightYellow
+    FontSize 15
+  }
+  leafNode {
+    FontColor gray
+    FontSize 15
+  }
+  .containerStyle * {
+    BackgroundColor YellowGreen
+  }
+  .containerBoxAlignStyle * {
+    BackgroundColor YellowGreen
+    LineStyle 4
+    LineThickness .5
+  }
+  .itemStyle * {
+    BackgroundColor SkyBlue
+  }
+  .itemBoxAlignStyle * {
+    BackgroundColor SkyBlue
+    LineStyle 4
+    LineThickness .5
+  }
+}
+</style>
+' + W3C TR
+' ++_ CSS Flexible Box Layout Module Level 1 https://www.w3.org/TR/css-flexbox-1/
+' ++_ CSS Box Alignment Module Level 3 https://www.w3.org/TR/css-align-3/
++ FlexBox
+-- display <<containerStyle>>
+---_ flex
+---_ inline-flex
+-- Orientation
+--- flex-direction <<containerStyle>>
+----_ <u>row</u>
+----_ row-reverse
+----_ column
+----_ column-reverse
+--- flex-wrap <<containerStyle>>
+----_ <u>nowrap</u>
+----_ wrap
+----_ wrap-reverse
+--- flex-flow <<containerStyle>>
+----_ <u>row nowrap</u>
+----_ <flex-direction> || <flex-wrap>
+--- order <<itemStyle>>
+----_ <u>0</u>
+----_ <integer>
+-- Flexibility
+--- flex-grow <<itemStyle>>
+----_ <u>0</u>
+----_ <number>
+--- flex-shrink <<itemStyle>>
+----_ <u>1</u>
+----_ <number>
+--- flex-basis <<itemStyle>>
+----_ <u>auto</u>
+----_ content
+----_ <width>
+--- flex <<itemStyle>>
+----_ <u>0 1 auto</u>
+----_ none
+----_ <flex-grow> <flex-shrink>? || <flex-basis>
+++ Alignment
++++ row-gap <<containerBoxAlignStyle>>
+++++_ <u>normal</u>
+++++_ <length-percentage>
++++ column-gap <<containerBoxAlignStyle>>
+++++_ <u>normal</u>
+++++_ <length-percentage>
++++ gap <<containerBoxAlignStyle>>
+++++_ <u>normal normal</u>
+++++_ <row-gap> <column-gap>?
++++ justify-content <<containerStyle>>
+++++_ <u>flex-start</u>
+++++_ normal
+++++_ <content-distribution>
++++++_ space-between
++++++_ space-around
++++++_ space-evenly
++++++_ stretch
+++++_ <overflow-position>? [ <content-position> | left | right ]
++++++_ <overflow-position>
+++++++_ unsafe
+++++++_ safe
++++++_ <content-position>
+++++++_ center
+++++++_ start
+++++++_ end
+++++++_ flex-start
+++++++_ flex-end
++++ justify-items <<containerBoxAlignStyle>>
+++++_ <u>legacy</u>
+++++_ normal
+++++_ stretch
+++++_ <baseline-position>
++++++_ [ first | last ]? baseline
+++++_ <overflow-position>? [<self-position> | left | right]
++++++_ <overflow-position>
+++++++_ unsafe
+++++++_ safe
++++++_ <self-position>
+++++++_ center
+++++++_ start
+++++++_ end
+++++++_ self-start
+++++++_ self-end
+++++++_ flex-start
+++++++_ flex-end
+++++_ legacy && [ left | right | center ]
++++ justify-self <<itemBoxAlignStyle>>
+++++_ <u>auto</u>
+++++_ normal
+++++_ stretch
+++++_ <baseline-position>
++++++_ [ first | last ]? baseline
+++++_ <overflow-position>? [<self-position> | left | right]
++++++_ <overflow-position>
+++++++_ unsafe
+++++++_ safe
++++++_ <self-position>
+++++++_ center
+++++++_ start
+++++++_ end
+++++++_ self-start
+++++++_ self-end
+++++++_ flex-start
+++++++_ flex-end
++++ align-content <<containerStyle>>
+++++_ <u>normal</u>
+++++_ <baseline-position>
++++++_ [ first | last ]? baseline
+++++_ <content-distribution>
++++++_ space-between
++++++_ space-around
++++++_ space-evenly
++++++_ stretch
+++++_ <overflow-position>? <content-position>
++++++_ <overflow-position>
+++++++_ unsafe
+++++++_ safe
++++++_ <content-position>
+++++++_ center
+++++++_ start
+++++++_ end
+++++++_ flex-start
+++++++_ flex-end
++++ align-items <<containerStyle>>
+++++_ <u>normal</u>
+++++_ strech
+++++_ <baseline-position>
++++++_ [ first | last ]? baseline
+++++_ <overflow-position>? <self-position>
++++++_ <overflow-position>
+++++++_ unsafe
+++++++_ safe
++++++_ <self-position>
+++++++_ center
+++++++_ start
+++++++_ end
+++++++_ self-start
+++++++_ self-end
+++++++_ flex-start
+++++++_ flex-end
++++ align-self <<itemStyle>>
+++++_ <u>auto</u>
+++++_ normal
+++++_ stretch
+++++_ <baseline-position>
++++++_ [ first | last ]? baseline
+++++_ <overflow-position>? <self-position>
++++++_ <overflow-position>
+++++++_ unsafe
+++++++_ safe
++++++_ <self-position>
+++++++_ center
+++++++_ start
+++++++_ end
+++++++_ self-start
+++++++_ self-end
+++++++_ flex-start
+++++++_ flex-end
++++ place-content <<containerBoxAlignStyle>>
+++++_ <u>normal</u>
+++++_ <align-content> <justify-content>?
++++ place-items <<containerBoxAlignStyle>>
+++++_ <u>normal legacy</u>
+++++_ <align-items> <justify-items>?
++++ place-self <<itemBoxAlignStyle>>
+++++_ <u>auto auto</u>
+++++_ <align-self> <justify-self>?
+@endmindmap

@@ -1,0 +1,18 @@
+.container {
+  display: grid;
+  grid-template-columns: 3fr repeat(2, 1fr);
+  grid-template-rows: 3fr 1fr;
+  grid-gap: 20px;
+  height: 400px;
+
+}
+
+.item {
+  border: 3px solid #000;
+}
+
+.item1 {
+  background-color: aqua;
+  grid-row: 2 / 3;
+  grid-column: 2 / 4;
+}

@@ -1,0 +1,8 @@
+@font-face{
+  font-family: Lobster;
+  src: url(../fonts/Lobster-Regular.ttf)
+}
+
+h1 {
+  font-family: Lobster, cursive;
+}

@@ -1,0 +1,16 @@
+ul {
+  list-style-type: none;
+}
+
+li a {
+  text-decoration: none;
+}
+
+li:nth-child(1) .fa-facebook-f {
+  font-size: 1.5rem;
+  color: #3b5898;
+}
+
+li:nth-child(2) .fa-facebook {
+  color: #3b5898;
+}
