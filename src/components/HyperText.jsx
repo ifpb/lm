@@ -13,10 +13,18 @@ export default function HyperText({ src, children, height }) {
   };
 
   const handleResize = useCallback((iframe) => {
-    setIFrameHeight(
-      height ||
-        iframe.current.contentWindow.document.documentElement.offsetHeight
+    const { body, documentElement } = iframe.current.contentWindow.document;
+
+    const contentHeight = Math.max(
+      body?.clientHeight,
+      body?.offsetHeight,
+      body?.scrollHeight,
+      documentElement?.clientHeight,
+      documentElement?.offsetHeight,
+      documentElement?.scrollHeight
     );
+
+    setIFrameHeight(height || contentHeight);
   }, []);
 
   useEffect(() => {
@@ -34,7 +42,7 @@ export default function HyperText({ src, children, height }) {
       src={src}
       style={{
         ...style,
-        height: `${Number(iFrameHeight) + 30}px`,
+        height: `${Number(iFrameHeight) + 50}px`,
         width: '100%',
       }}
     />
