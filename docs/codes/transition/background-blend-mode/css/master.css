@@ -1,0 +1,9 @@
+.filter-blend {
+  background-color: transparent;
+  background-blend-mode: screen;
+  transition: all 1s;
+}
+
+.filter-blend:hover {
+  background-color: #f00;
+}

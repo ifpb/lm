@@ -1,8 +1,363 @@
 import HyperText from '../../../components/HyperText.jsx';
 
-# Animation
+# Transform, Transition, Animation
 
-## Syntax
+## Transform
+
+### Syntax
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+
+```css
+/* Keyword values */
+transform: none;
+
+/* Function values */
+transform: scale(2);
+transform: rotate(45deg);
+transform: skew(40deg);
+
+/* Multiple function values */
+transform: scale(2) rotate(45deg);
+```
+
+### Scale
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/scale)
+
+```css
+scale(sx)
+scale(sx, sy)
+scaleX(sx)
+scaleY(sy)
+```
+
+[scale.html](/codes/transform/scale.html):
+
+<HyperText src="/codes/transform/scale.html" />
+
+### Rotate
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/rotate)
+
+```css
+rotate(a)
+rotateX(a)
+rotateY(a)
+rotateZ(a)
+rotate3d(x, y, z, a)
+```
+
+[rotate.html](/codes/transform/rotate.html):
+
+<HyperText src="/codes/transform/rotate.html" />
+
+### Translate
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/translate)
+
+```css
+translate(tx)
+translateX(tx)
+translateY(tx)
+translateZ(tx)
+translate(tx, ty)
+translate3d(tx, ty, tz)
+```
+
+[translate.html](/codes/transform/translate.html):
+
+<HyperText src="/codes/transform/translate.html" />
+
+### Skew
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/skew)
+
+```css
+skew(ax)
+skewX(ax)
+skewY(ax)
+skew(ax, ay)
+```
+
+[skew.html](/codes/transform/skew.html):
+
+<HyperText src="/codes/transform/skew.html" />
+
+### Matrix
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-function/matrix)
+
+```css
+matrix(a, b, c, d, tx, ty)
+matrix3d(a1, b1, c1, d1, a2, b2, c2, d2, a3, b3, c3, d3, a4, b4, c4, d4)
+```
+
+[matrix.html](/codes/transform/matrix.html):
+
+<HyperText src="/codes/transform/matrix.html" />
+
+## Transition
+
+### Syntax
+
+> <b>Value:</b> [ none \| `<single-transition-property>` ] \|\| `<time>` \|\| `<single-transition-timing-function>` \|\| `<time>`<br />
+> <br />
+> `<single-transition-timing-function>`: linear \| ease \| ease-in \| ease-out \| ease-in-out \| cubic-bezier(`<number>`, `<number>`, `<number>`, `<number>`) \| step-start \| step-end \| steps(`<integer>`[, [ start \| end ] ]?) \| frames(`<integer>`)
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
+
+```css
+/* Apply to 1 property */
+/* property name | duration */
+transition: margin-right 4s;
+
+/* property name | duration | delay */
+transition: margin-right 4s 1s;
+
+/* property name | duration | timing function */
+transition: margin-right 4s ease-in-out;
+
+/* property name | duration | timing function | delay */
+transition: margin-right 4s ease-in-out 1s;
+
+/* Apply to 2 properties */
+transition: margin-right 4s, color 1s;
+
+/* Apply to all changed properties */
+transition: all 0.5s ease-out;
+```
+
+[Animatable CSS properties](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+
+### Opacity
+
+```css
+.fade {
+  opacity: 0.5;
+  transition: opacity 1s;
+  will-change: opacity;
+}
+
+.fade:hover {
+  opacity: 1;
+}
+```
+
+[opacity.html](/codes/transition/opacity.html):
+
+<HyperText src="/codes/transition/opacity.html" />
+
+### Border inset
+
+```css
+.inset-border {
+  transition: box-shadow 1s;
+}
+
+.inset-border:hover {
+  box-shadow: inset 0 0 0 25px #53a7ea;
+}
+```
+
+[border-inset.html](/codes/transition/border-inset.html):
+
+<HyperText src="/codes/transition/border-inset.html" />
+
+### Transform scale grow
+
+```css
+.grow {
+  transition: transform 1s;
+  will-change: scale;
+}
+
+.grow:hover {
+  transform: scale(1.2);
+}
+```
+
+[transform-grow.html](/codes/transition/transform-grow.html):
+
+<HyperText src="/codes/transition/transform-grow.html" />
+
+### Transform scale shrink
+
+```css
+.shrink {
+  transition: transform 1s;
+  will-change: transform;
+}
+
+.shrink:hover {
+  transform: scale(0.8);
+}
+```
+
+[transform-shrink.html](/codes/transition/transform-shrink.html):
+
+<HyperText src="/codes/transition/transform-shrink.html" />
+
+### Transform scale image
+
+```css
+.img-scale {
+  overflow: hidden;
+}
+
+.img-scale img {
+  transition: transform 1s;
+  will-change: transform
+}
+
+.img-scale img:hover {
+  transform: scale(1.2);
+}
+```
+
+[transform-scale.html](/codes/transition/transform-scale.html):
+
+<HyperText src="/codes/transition/transform-scale.html" />
+
+### Transform translate
+
+```css
+.translate {
+  transition: transform 1s;
+  will-change: transform;
+}
+
+.translate:hover {
+  transform: translateY(10px);
+}
+```
+
+[transform-translate.html](/codes/transition/transform-translate.html):
+
+<HyperText src="/codes/transition/transform-translate.html" />
+
+### Filter blur
+
+```css
+.blur {
+  filter: blur(1px);
+  transition: filter 1s;
+}
+
+.blur:hover {
+  filter: blur(0px);
+}
+```
+
+[filter-blur.html](/codes/transition/filter-blur.html):
+
+<HyperText src="/codes/transition/filter-blur.html" />
+
+### Filter contrast
+
+```css
+.contrast {
+  transition: filter .5s;
+}
+
+.contrast:hover {
+  filter: contrast(120%);
+}
+```
+
+[filter-contrast.html](/codes/transition/filter-contrast.html):
+
+<HyperText src="/codes/transition/filter-contrast.html" />
+
+### Filter sepia
+
+```css
+.sepia {
+  filter: sepia(100%);
+  transition: filter 0.5s;
+}
+
+.sepia:hover {
+  filter: sepia(0%);
+}
+```
+
+[filter-sepia.html](/codes/transition/filter-sepia.html):
+
+<HyperText src="/codes/transition/filter-sepia.html" />
+
+### Filter gray scale
+
+```css
+.gray-scale {
+  filter: grayscale(100%);
+  transition: filter 0.5s;
+}
+
+.gray-scale:hover {
+  filter: grayscale(0%);
+}
+```
+
+[filter-gray-scale.html](/codes/transition/filter-gray-scale.html):
+
+<HyperText src="/codes/transition/filter-gray-scale.html" />
+
+### Filter drop shadow
+
+```css
+.drop-shadow {
+  transition: filter 1s;
+  will-change: transform;
+}
+
+.drop-shadow:hover {
+  filter: drop-shadow(2px 2px 3px #000);
+}
+```
+
+[filter-drop-shadow.html](/codes/transition/filter-drop-shadow.html):
+
+<HyperText src="/codes/transition/filter-drop-shadow.html" />
+
+### Background color
+
+```css
+.chcolor {
+  transition: background 1s;
+  will-change: background;
+}
+
+.chcolor:hover {
+  background:#53a7ea;
+}
+```
+
+[background-color.html](/codes/transition/background-color.html):
+
+<HyperText src="/codes/transition/background-color.html" />
+
+### Background blend mode
+
+```css
+.filter-blend {
+  background-color: transparent;
+  background-blend-mode: screen;
+  transition: all 1s;
+}
+
+.filter-blend:hover {
+  background-color: #f00;
+}
+```
+
+[background-blend-mode.html](/codes/transition/background-blend-mode.html):
+
+<HyperText src="/codes/transition/background-blend-mode.html" />
+
+## Animation
+
+### Syntax
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/animation)
 
@@ -22,7 +377,7 @@ animation: 3s linear 1s slidein;
 animation: 3s slidein;
 ```
 
-## Spinner
+### Spinner
 
 ```css
 .spinner {
@@ -43,9 +398,9 @@ animation: 3s slidein;
 
 [spinner/index.html](/codes/animation/spinner/index.html):
 
-<HyperText src="/codes/animation/spinner/index.html" />
+<HyperText src="/codes/animation/spinner/index.html" height="200" />
 
-## Bounce
+### Bounce
 
 ```css
 @keyframes bounce {
@@ -80,24 +435,39 @@ animation: 3s slidein;
 
 [bounce/index.html](/codes/animation/bounce/index.html):
 
-<HyperText src="/codes/animation/bounce/index.html" />
+<HyperText src="/codes/animation/bounce/index.html" height="200" />
 
 ## Referências
 
-- [CSS Animations - Guia de bolso](https://legacy.gitbook.com/book/daliannyvieira/css-animations-pocket-guide/details)
-- [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
-- [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
-- [Keyframe Animation Syntax](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
-- [@keyframes](https://tympanus.net/codrops/css_reference/keyframes/)
-- [Create 2-state, SVG-powered animated icons (Icon Transition Generator)](https://blog.nucleoapp.com/create-2-state-svg-powered-animated-icons-76ed19160a7e)
-- Library
-  - [The Top 9 Animation Libraries for UI Designers in 2017](https://www.sitepoint.com/our-top-9-animation-libraries/)
-  - [Animate.css](https://daneden.github.io/animate.css/)
-  - [Hover.css - A collection of CSS3 powered hover effects](http://ianlunn.github.io/Hover/)
-  - [Animista](http://animista.net/play/basic/slide-fwd)
-- CSS Animations
-  - [Pure CSS Loaders](https://loading.io/css/)
-  - [16 top CSS animation examples](https://www.creativebloq.com/inspiration/css-animation-examples)
-  - [15 New Awesome Creative CSS Animations](https://cssnewbie.com/15-new-awesome-creative-css-animations/#.W049pS2ZM0o)
-  - [30 Cool CSS Animations You Have To See](https://www.hongkiat.com/blog/creative-css-animations/)
-  - [20 Best CSS Animations on CodeCanyon](https://code.tutsplus.com/tutorials/20-best-css-animations--cms-27561)
+- Transform
+  - [Using CSS transforms \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transforms/Using_CSS_transforms)
+  - [CSS Transforms Module Level 1](https://www.w3.org/TR/css-transforms-1/#funcdef-rotate3d)
+  - [transform \| CSS Tricks](https://css-tricks.com/almanac/properties/t/transform/)
+  - [The CSS3 matrix() Transform for the Mathematically Challenged](http://www.useragentman.com/blog/2011/01/07/css3-matrix-transform-for-the-mathematically-challenged/)
+  - [Alternative Units for CSS3 Rotation Transforms (grad, rad, turn)](https://www.impressivewebs.com/alternative-units-css3-rotate-transforms/)
+  - [Rendering Performance](https://developers.google.com/web/fundamentals/performance/rendering/) ([CSS triggers: Layout, Paint, Composite](https://csstriggers.com))
+- Animation
+  - [CSS Animations - Guia de bolso](https://legacy.gitbook.com/book/daliannyvieira/css-animations-pocket-guide/details)
+  - [Using CSS animations](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Animations/Using_CSS_animations)
+  - [CSS Animations Level 1](https://www.w3.org/TR/css-animations-1/)
+  - [Keyframe Animation Syntax](https://css-tricks.com/snippets/css/keyframe-animation-syntax/)
+  - [@keyframes](https://tympanus.net/codrops/css_reference/keyframes/)
+  - [Create 2-state, SVG-powered animated icons (Icon Transition Generator)](https://blog.nucleoapp.com/create-2-state-svg-powered-animated-icons-76ed19160a7e)
+  - Library
+    - [The Top 9 Animation Libraries for UI Designers in 2017](https://www.sitepoint.com/our-top-9-animation-libraries/)
+    - [Animate.css](https://daneden.github.io/animate.css/)
+    - [Hover.css - A collection of CSS3 powered hover effects](http://ianlunn.github.io/Hover/)
+    - [Animista](http://animista.net/play/basic/slide-fwd)
+  - Transition
+    - [Using CSS transitions](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Transitions/Using_CSS_transitions)
+  - [transition-timing-function](https://developer.mozilla.org/en-US/docs/Web/CSS/transition-timing-function)
+  - [cubic-bezier.com](http://cubic-bezier.com/)
+  - CSS Animations
+    - [Pure CSS Loaders](https://loading.io/css/)
+    - [16 top CSS animation examples](https://www.creativebloq.com/inspiration/css-animation-examples)
+    - [15 New Awesome Creative CSS Animations](https://cssnewbie.com/15-new-awesome-creative-css-animations/#.W049pS2ZM0o)
+    - [30 Cool CSS Animations You Have To See](https://www.hongkiat.com/blog/creative-css-animations/)
+    - [20 Best CSS Animations on CodeCanyon](https://code.tutsplus.com/tutorials/20-best-css-animations--cms-27561)
+  - Exemplos
+    - [Bootstrapmade](https://bootstrapmade.com/)
+    - [Pokedex](https://ifpb.github.io/challenges/web/front-end/css/pokedex/)
