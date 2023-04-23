@@ -29,14 +29,14 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
     <meta name="generator" content={Astro.generator} />
     <title>{frontmatter?.title ?? 'LM'}</title>
   </head>
-  <body class="bg-gray-100 dark:bg-slate-800 dark:text-white scroll-smooth">
+  <body class="bg-gray-100 dark:bg-slate-800 dark:text-white">
     <NavBar />
     <div
-      class="relative z-0 flex max-sm:flex-col justify-between items-stretch"
+      class="relative z-0 lg:pl-40 xl:pl-64 flex max-sm:flex-col justify-between items-stretch"
     >
       <Sidebar />
       <article
-        class="md:mx-auto py-8 max-sm:px-4 prose 2xl:prose-xl dark:prose-invert overflow-hidden scroll-smooth"
+        class="md:mx-auto py-8 max-sm:px-4 prose 2xl:prose-xl dark:prose-invert overflow-hidden"
       >
         <slot />
         <p>
@@ -58,7 +58,7 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
 
                 return (
                   <li
-                    class="text-slate-400 dark:text-white hover:text-slate-800 transition-all duration-150"
+                    class="text-slate-400 hover:text-slate-700 dark:hover:text-white transition-all duration-300"
                     style={`margin-left: ${padding}rem`}
                   >
                     <a href={`#${slug}`}>{text}</a>
@@ -73,8 +73,13 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
 </html>
 
 <style is:global>
-  a.active {
-    @apply text-slate-700 font-bold;
+  html,
+  body {
+    @apply scroll-smooth;
+  }
+
+  nav.toc a.active {
+    @apply text-slate-700 dark:text-white font-bold;
   }
 
   :is(h1, h2, h3, h4, h5, h6)[id] {

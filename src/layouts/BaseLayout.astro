@@ -20,10 +20,17 @@ const { pageTitle } = Astro.props;
   <body class="bg-gray-100 dark:bg-slate-800 dark:text-white scroll-smooth">
     <NavBar />
     <div
-      class="mx-auto relative min-h-screen flex max-sm:flex-col justify-between items-stretch"
+      class="mx-auto relative min-h-screen lg:pl-40 xl:pl-64 flex max-sm:flex-col justify-between items-stretch"
     >
       <Sidebar />
       <slot />
     </div>
   </body>
 </html>
+
+<style is:global>
+  html,
+  body {
+    @apply scroll-smooth;
+  }
+</style>

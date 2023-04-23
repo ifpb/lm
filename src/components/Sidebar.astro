@@ -1,6 +1,6 @@
 <aside
   id="default-sidebar"
-  class="sticky top-10 z-40 w-full md:w-40 xl:w-64 self-start shadow-md bg-gray-100 dark:shadow-gray-500 hidden lg:block"
+  class="md:fixed left-0 mt-11 md:h-screen w-full md:w-40 xl:w-64 self-start shadow-md bg-gray-100 dark:bg-slate-800 hidden dark:border-r-white/30 dark:border-r lg:block"
   aria-label="Sidebar"
 >
   <div class="md:h-screen px-3 py-4 overflow-y-auto">
@@ -8,7 +8,7 @@
       <li>
         <a
           href="/lm/"
-          class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+          class="flex items-center p-2 text-gray-500 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
         >
           Disciplina
         </a>
@@ -16,7 +16,7 @@
       <li>
         <a
           href="/lm/classnotes/"
-          class="flex items-center p-2 text-gray-900 rounded-lg dark:text-white hover:bg-gray-100 dark:hover:bg-gray-700"
+          class="flex items-center p-2 text-gray-500 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
         >
           Conteúdos
         </a>
@@ -24,3 +24,19 @@
     </ul>
   </div>
 </aside>
+
+<style is:global>
+  aside a.active {
+    @apply text-gray-900 font-bold bg-gray-200 dark:bg-gray-700;
+  }
+</style>
+
+<script is:inline>
+  document.querySelectorAll('#default-sidebar a').forEach((el) => {
+    if (el.href === window.location.href) {
+      el.classList.add('active');
+    } else {
+      el.classList.remove('active');
+    }
+  });
+</script>

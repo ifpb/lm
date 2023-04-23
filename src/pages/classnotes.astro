@@ -23,7 +23,7 @@ classroomEntries.sort(
       {
         classroomEntries.map((entry) => (
           <a href={`/lm/${entry.slug}`}>
-            <div class="rounded border-gray-400 bg-white dark:bg-slate-800 dark:border-white/30 dark:border-2 p-4 overflow-hidden shadow-lg">
+            <div class="rounded border-gray-400 bg-white dark:bg-slate-800 dark:hover:bg-gray-700 dark:border-white/30 dark:border transition-all duration-300 p-4 overflow-hidden shadow-lg">
               <h1 class="font-semibold text-lg">
                 <span class="text-gray-400">#{classnoteOrder(entry.slug)}</span>{' '}
                 <span>{entry.data.title}</span>
