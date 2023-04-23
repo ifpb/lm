@@ -2,6 +2,14 @@ body {
   background-color: white;
 }
 
+.bg-gray-100 {
+	background-color: #f3f4f6;
+}
+
+.color-black {
+  color: black;
+}
+
 .inline-block {
   display: inline-block;
 }

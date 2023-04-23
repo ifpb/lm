@@ -1,5 +1,9 @@
 a {
-  font-size: 2rem;
-  color: #3b5898;
   text-decoration: none;
+  color: #3b5898;
+  font-size: 3rem;
+}
+
+a:hover {
+  color: #555;
 }

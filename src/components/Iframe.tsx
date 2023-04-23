@@ -59,6 +59,10 @@ export default function Iframe({ src, height }: Props) {
           a {
             color: var(--color-primary);
           }
+
+          * {
+            border-color: var(--color-primary) !important;
+          }
         </style>`
       );
     }
