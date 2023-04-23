@@ -1,0 +1,288 @@
+---
+title: Formulários
+---
+
+import CodeTree from '../../../../components/CodeTree.astro';
+import CodePreview from '../../../../components/CodePreview.astro';
+import HtmlPreview from '../../../../components/HtmlPreview.astro';
+
+# Formulários
+
+## Elementos do Formulário
+
+### single-line text field
+
+<HtmlPreview>
+  <input type="text" name="cpf" />
+</HtmlPreview>
+
+```html
+<input type="text" name="cpf" />
+```
+
+required:
+
+<HtmlPreview>
+  <form>
+    <input type="text" name="cpf" required />{'*'}
+  </form>
+</HtmlPreview>
+
+```html
+<input type="text" name="cpf" required />*
+```
+
+placeholder:
+
+<HtmlPreview>
+  <input type="text" name="cpf" placeholder="000.000.000-00" />
+</HtmlPreview>
+
+```html
+<input type="text" name="cpf" placeholder="000.000.000-00" />
+```
+
+value:
+
+<HtmlPreview>
+  <input type="text" name="cpf" value="000.000.000-00" />
+</HtmlPreview>
+
+```html
+<input type="text" name="cpf" value="000.000.000-00" />
+```
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text)
+
+### label field
+
+<HtmlPreview src="/lm/codes/form/elements/label.html" />
+<CodePreview src="/lm/codes/form/elements/label.html" lang="html" />
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
+
+### password field
+
+<HtmlPreview>
+  <input type="password" name="password" />
+</HtmlPreview>
+
+```html
+<input type="password" name="password" />
+```
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password)
+
+### radio button field
+
+<HtmlPreview src="/lm/codes/form/elements/radioButton.html" />
+<CodePreview src="/lm/codes/form/elements/radioButton.html" lang="html" />
+
+<HtmlPreview src="/lm/codes/form/elements/radioButtonGroup.html" />
+<CodePreview src="/lm/codes/form/elements/radioButtonGroup.html" lang="html" />
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
+
+### checkbox field
+
+<HtmlPreview src="/lm/codes/form/elements/checkbox.html" />
+<CodePreview src="/lm/codes/form/elements/checkbox.html" lang="html" />
+
+<HtmlPreview src="/lm/codes/form/elements/checkboxGroup.html" />
+<CodePreview src="/lm/codes/form/elements/checkboxGroup.html" lang="html" />
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
+
+### button field
+
+<HtmlPreview>
+  <button>Create</button>
+</HtmlPreview>
+
+```html
+<input type="button" name="submit" value="Create" />
+<input type="submit" name="submit" value="Create" />
+<button>Create</button>
+```
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button)
+
+### file field
+
+<HtmlPreview>
+  <input type="file" name="file" />
+</HtmlPreview>
+
+```html
+<input type="file" name="file" />
+```
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
+
+### [range field](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
+
+<HtmlPreview>
+  <input type="range" name="number" min="1" max="99" step="1" onInput={(event) => document.querySelector('input[name=number-value]').value = event.target.value} />
+  <input type="text" name="number-value" value="20" size="3" />
+</HtmlPreview>
+
+```html
+<input type="range" name="number" min="1" max="100" step="1" />
+<input type="text" name="number-value" value="20" size="3" />
+```
+
+### number field
+
+<HtmlPreview>
+  <form>
+    <input type="number" name="number" />
+  </form>
+</HtmlPreview>
+
+```html
+<input type="number" name="number" />
+```
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number)
+
+### date field
+
+<HtmlPreview>
+  <form>
+    <input type="date" name="date" />
+  </form>
+</HtmlPreview>
+
+```html
+<input type="date" name="date" />
+```
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date)
+
+### email field
+
+<HtmlPreview>
+  <form>
+    <input type="email" name="email" />
+  </form>
+</HtmlPreview>
+
+```html
+<input type="email" name="email" />
+```
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email)
+
+### multi-line text field
+
+<HtmlPreview>
+  <label for="message">Mensagem:</label><br />
+  <textarea name="message" id="message" rows="3" cols="60">digite uma mensagem</textarea>
+</HtmlPreview>
+
+```html
+<label for="message">Mensagem:</label><br />
+<textarea name="message" id="message" rows="3" cols="60">
+digite uma mensagem</textarea
+>
+```
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
+
+### combobox field
+
+<HtmlPreview src="/lm/codes/form/elements/select.html" />
+<CodePreview src="/lm/codes/form/elements/select.html" lang="html" />
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
+
+## Formulário
+
+### Estrutura do Formulário
+
+[simple-form/index.html](/codes/form/simple-form/index.html):
+
+<HtmlPreview src="/lm/codes/form/simple-form/index.html" />
+
+```html
+<main>
+  <h1 style="color: #606c71">Contato</h1>
+  <form action="sucesso.html" method="post">
+    <fieldset>
+      <div>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required /> *
+      </div>
+      <div>
+        <label for="curso">Curso</label>
+        <select name="curso" id="curso">
+          <option value="" selected>escolha um curso</option>
+          <option value="TSI">Sistemas para Internet</option>
+          <option value="RC">Redes de Computadores</option>
+        </select>
+      </div>
+    </fieldset>
+    <input type="submit" value="Enviar" />
+  </form>
+</main>
+```
+
+### Formulário com Boostrap
+
+[bootstrap-form/index.html](/codes/form/bootstrap-form/index.html):
+
+<HtmlPreview src="/lm/codes/form/bootstrap-form/index.html" />
+
+```html
+<main class="container">
+  <h1>Contato</h1>
+  <form action="sucesso.html" method="post">
+    <div class="form-group">
+      <label for="nome">Nome</label>*
+      <input type="text" class="form-control" id="nome" name="nome" required />
+    </div>
+    <div class="form-group">
+      <label for="curso">Curso</label>
+      <select class="form-control" name="curso" id="curso">
+        <option value="" selected>escolha um curso</option>
+        <option value="TSI">Sistemas para Internet</option>
+        <option value="RC">Redes de Computadores</option>
+      </select>
+    </div>
+    <input type="submit" value="Enviar" />
+  </form>
+</main>
+```
+
+[bootstrap-grid-form/index.html](/codes/form/bootstrap-grid-form/index.html):
+
+<HtmlPreview src="/lm/codes/form/bootstrap-grid-form/index.html" />
+
+```html
+<main class="container">
+  <h1>Contato</h1>
+  <form action="sucesso.html" method="post">
+    <div class="row">
+      <div class="form-group col-sm-6">
+        <label for="nome">Nome</label>*
+        <input
+          type="text"
+          class="form-control"
+          id="nome"
+          name="nome"
+          required
+        />
+      </div>
+      <div class="form-group col-sm-6">
+        <label for="curso">Curso</label>
+        <select class="form-control" name="curso" id="curso">
+          <option value="" selected>escolha um curso</option>
+          <option value="TSI">Sistemas para Internet</option>
+          <option value="RC">Redes de Computadores</option>
+        </select>
+      </div>
+    </div>
+    <input type="submit" value="Enviar" />
+  </form>
+</main>
+```

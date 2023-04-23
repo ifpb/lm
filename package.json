@@ -1,18 +1,31 @@
 {
-  "name": "lm-nextra",
-  "private": true,
-  "workspaces": [
-    "packages/nextra",
-    "packages/nextra-theme-docs",
-    "src"
-  ],
+  "name": "lm-astro",
+  "type": "module",
+  "version": "0.0.1",
   "scripts": {
-    "start": "yarn workspace src start",
-    "dev": "yarn workspace src dev",
-    "export": "yarn workspace src export",
-    "build": "yarn build:core && yarn build:theme-docs && yarn workspace src build",
-    "build:src": "yarn workspace src build",
-    "build:core": "yarn workspace nextra build",
-    "build:theme-docs": "yarn workspace nextra-theme-docs build"
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^0.19.0",
+    "@astrojs/react": "^2.1.1",
+    "@astrojs/tailwind": "^3.1.1",
+    "@types/react": "^18.0.37",
+    "@types/react-dom": "^18.0.11",
+    "astro": "^2.3.0",
+    "astro-icon": "^0.8.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tailwindcss": "^3.3.1",
+    "tree-node-cli": "^1.6.0"
+  },
+  "devDependencies": {
+    "@iconify/react": "^4.1.0",
+    "@tailwindcss/typography": "^0.5.9",
+    "@types/node": "^18.15.13",
+    "shiki": "^0.14.1"
   }
 }

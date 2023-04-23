@@ -1,0 +1,10 @@
+p {
+  margin-top: 2rem;
+}
+
+span {
+  border: 2px solid #000;
+  padding-left: 20px;
+  padding-right: 1em;
+  padding-top: 1em;
+}

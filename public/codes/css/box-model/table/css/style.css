@@ -1,0 +1,12 @@
+.separate {
+  border-collapse: separate;
+  border-spacing: .5rem;
+}
+
+.collapse {
+  border-collapse: collapse;
+}
+
+td {
+  border: 1px solid #000;
+}

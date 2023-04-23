@@ -1,0 +1,37 @@
+---
+import { getCollection } from 'astro:content';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { CLASSNOTES } from '../consts';
+
+const classnoteOrder = (classnote: string) => CLASSNOTES.indexOf(classnote) + 1;
+
+const classroomEntries = await getCollection('classnotes', ({ slug }) =>
+  CLASSNOTES.includes(slug)
+);
+
+classroomEntries.sort(
+  (a, b) => classnoteOrder(a.slug) - classnoteOrder(b.slug)
+);
+---
+
+<BaseLayout pageTitle="Conteúdos">
+  <main class="mx-auto">
+    <h1 class="font-bold text-4xl text-center py-16">Conteúdos</h1>
+    <div
+      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 pb-16 px-4"
+    >
+      {
+        classroomEntries.map((entry) => (
+          <a href={`/lm/${entry.slug}`}>
+            <div class="rounded border-gray-400 bg-white dark:bg-slate-800 dark:border-white/30 dark:border-2 p-4 overflow-hidden shadow-lg">
+              <h1 class="font-semibold text-lg">
+                <span class="text-gray-400">#{classnoteOrder(entry.slug)}</span>{' '}
+                <span>{entry.data.title}</span>
+              </h1>
+            </div>
+          </a>
+        ))
+      }
+    </div>
+  </main>
+</BaseLayout>

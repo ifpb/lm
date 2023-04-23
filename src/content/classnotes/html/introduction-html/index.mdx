@@ -1,0 +1,123 @@
+---
+title: Introdução ao HTML
+---
+
+import HtmlPreview from '../../../../components/HtmlPreview.astro';
+import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
+
+# Introdução ao HTML
+
+## Sintase
+
+### Tags
+
+Estrutura:
+
+```text
+openning              closing
+  tag      content      tag
+  ┌┴┐┌────────────────┐┌─┴─┐
+  <p>Lorem ipsum dolor.</p>
+  └────────────────────────┘
+          Element
+```
+
+Exemplos:
+
+- Cabeçalho: `<title>`, `<link>`, `<style>`, `<meta>`, [outros](https://github.com/joshbuchea/HEAD)
+- Texto: `<p>`, `<b>`, `<i>`, `<h1-6>`
+- Lista: `<ul>`, `<ol>`, `<li>`, `<dl>`, `<dt>`, `<dd>`
+- Hiperlink: `<a>`
+- Tabela: `<table>`, `<tr>`, `<th>`, `<td>`
+- Imagem: `<img>`
+- Mais exemplos: [HTML Reference - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
+### Atributo de tag
+
+Estrutura:
+
+```text
+attribute (chaves="valor")
+   ┌─────┴────┐
+<p lang="pt-BR">Lorem ipsum dolor.</p>
+```
+
+Exemplos:
+
+- Global: `lang`, `id`, `class`
+- Específico:
+  - `<img>`: `src`, `alt`
+  - `<ol>`: `start`, `type`
+  - `<table>`: `border`
+  - `<meta>`: `name`, `content`
+
+Código:
+
+```html
+<meta name="description" content="A description of the page" />
+```
+
+## Estrutura básica
+
+<CodeHtmlCssPreview code="/codes/html/introduction-html/basic-structure" codeCss={false} />
+
+## Tags
+
+### Hyperlink
+
+Sintaxe:
+
+```text
+hyperlink = content + url
+
+content = text, image...
+```
+
+```html
+<a href="url">content</a>
+```
+
+<CodeHtmlCssPreview code="/codes/html/introduction-html/hyperlink" codeCss={false} />
+
+
+### Imagem
+
+Sintaxe:
+
+```html
+<img src="url" alt="text alternative" />
+```
+
+Arquivos:
+
+```text
+/
+└── var
+    └── www
+        └── site
+            └── pages
+                ├── index.html
+                └── img
+                    └── image.png
+```
+
+Código (Abrir no Liver Server e localmente)):
+
+```html
+<!-- Endereço relativo (index.html => image.png) -->
+<img src="img/image.png" alt="Image Description" />
+
+<!-- Endereço absoluto -->
+<img
+  src="/var/www/site/pages/img/image.png"
+  alt="Image Description"
+/>
+```
+
+Resultado:
+
+<HtmlPreview src="/codes/html/introduction-html/image/index.html" />
+
+### Lista
+
+<CodeHtmlCssPreview code="/codes/html/introduction-html/list" codeCss={false} />

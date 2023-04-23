@@ -1,12 +1,36 @@
+---
+layout: ../layouts/MarkDownLayout.astro
+title: Linguagem de Marcação
+---
+
 # Linguagem de Marcação
 
-![Banner da disciplina](/imgs/lm.png)
+<img src="/imgs/lm.png" alt="Banner da disciplina" class="hidden md:block" />
 
 A disciplina de [Linguagem de Marcação](/docs/plano-de-ensino.pdf) (LM) do Curso Superior de Tecnologia em Sistemas para Internet do IFPB tem como objetivo apresentar ao aluno conceitos sobre desenvolvimento Web Front-end. Sua carga horária apresenta um total de 67 horas aula e será ministrada pelo professor Francisco Dantas e Luiz Carlos Chaves. Para as aulas serão utilizadas exposições e atividades práticas, além de avaliações individuais e em grupo.
 
 ## Conteúdo
 
-A disciplina apresenta o seguinte [conteúdo](/content), que será dividido conforme este [roteiro de aula](/classnote), e o possui uma sala no Google Classroom.
+A disciplina apresenta o seguinte conteúdo, que será dividido conforme este [roteiro de aula](/lm/classnotes):
+
+- Estrutura da Web
+  - Função do cliente e servidor HTTP
+  - Componentes para construir um sistema Web
+- HTML
+  - Hypertexto
+  - Tag, atributo, Entidades
+  - Estrutura do HTML
+- CSS
+  - Folha de estilo
+  - Herança e cascata
+  - Seletores, propriedades, funções, media query, at-rules
+  - Definição de layouts e estilos
+  - Animações
+  - Extensões de CSS
+- XML
+  - Definição
+  - Estrutura
+  - Validação
 
 ## Horário e ambiente
 
@@ -14,16 +38,16 @@ As aulas da disciplina serão alocados nesse horário e ambiente:
 
 | Dia     | Horário     | Ambiente    |
 | ------- | ----------- | ----------- |
-| Segunda | 13:30-14:30 | Google Meet |
-| Sexta   | 13:30-14:30 | Google Meet |
+| Segunda | 13:00-14:40 | Lab 03 e 58 |
+| Quarta  | 13:00-14:40 | Lab 03 e 57 |
 
 ## Avaliações
 
 A nota final será computada através da média ponderada das três maiores avaliações:
 
-- Avaliação I: Exercícios;
-- Avaliação II: [Projeto I](/exams/projeto);
-- Avaliação III: [Projeto II](/exams/projeto);
+- Avaliação I: [Exercícios](https://ifpb.github.io/exercises/);
+- Avaliação II: [Projeto I](/lm/project);
+- Avaliação III: [Projeto II](/lm/project);
 
 ## Comunicação
 
@@ -40,3 +64,21 @@ Toda a comunicação será realizada usando o Google Chat.
 [![Apostila Caelum](/imgs/books/caelum.png)](https://www.caelum.com.br/apostila-html-css-javascript/) [![Learn code HTML CSS](/imgs/books/learn-code-html-css.png)](https://learn.shayhowe.com/advanced-html-css/) [![HTML Reference](/imgs/books/mdn.png)](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference) [![CSS Reference](/imgs/books/mdn.png)](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) [![Aprendendo XML](/imgs/books/xml.jpg)](http://shop.oreilly.com/product/9780596004200.do)
 
 E para completar ainda mais a listagem existe estes [exemplares](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) como outros indicações.
+
+## Ferramentas
+
+- Editor
+  - [Visual Studio Code](http://code.visualstudio.com)
+- Design
+  - [Figma](https://www.figma.com/)
+- Navegador
+  - [Chrome](https://www.google.com/chrome/browser/index.html) ([Chrome status](https://www.chromestatus.com/features), [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm))
+  - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+- Versionamento de código
+  - [Git](https://git-scm.com/)
+
+<style>
+  img {
+    display: inline-block;
+  }
+</style>

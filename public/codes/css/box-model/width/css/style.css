@@ -1,0 +1,15 @@
+p {
+  border: 5px solid #000;
+}
+
+.w_400 {
+  width: 400px;
+}
+
+.m_auto {
+  margin: auto;
+}
+
+.ml_auto {
+  margin-left: auto;
+}

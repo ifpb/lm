@@ -1,0 +1,12 @@
+h1 {
+  text-align: center;
+  color: #f00;
+}
+
+@media print {
+  h1 {
+    text-align: left;
+    color: #000;
+  }
+}
+

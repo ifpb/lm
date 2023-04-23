@@ -1,0 +1,15 @@
+---
+import Iframe from './Iframe.jsx';
+
+const { src } = Astro.props;
+---
+
+<div class="code-preview overflow-hidden">
+  {src ? <Iframe src={`/lm${src}`} client:load /> : <slot />}
+</div>
+
+<style>
+  .code-preview {
+    @apply bg-gray-200 dark:bg-slate-500 rounded p-4;
+  }
+</style>

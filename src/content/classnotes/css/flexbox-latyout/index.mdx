@@ -1,0 +1,237 @@
+---
+title: Flexible Box Layout (Flexbox)
+---
+
+import CodeTree from '../../../../components/CodeTree.astro';
+import CodePreview from '../../../../components/CodePreview.astro';
+import HtmlPreview from '../../../../components/HtmlPreview.astro';
+
+# CSS Flexible Box Layout Module (Flexbox)
+
+## Flexbox Terminology
+
+![](https://www.w3.org/TR/css-flexbox-1/images/flex-direction-terms.svg)
+
+Reference: [W3C](https://www.w3.org/TR/css-flexbox-1/)
+
+Terminology:
+
+- Flex container
+- Flex item
+- Main axis (main-start, main-end)
+- Cross axis (cross-start, cross-end)
+
+## Display
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+
+> <b>Name:</b> display
+> <br />
+> <b>Value:</b> flex \| inline-flex
+> <br />
+> <b>Initial:</b> inline
+> <br />
+
+[display/index.html](/lm/codes/flexbox/display/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/display/index.html" />
+
+## Flex Container
+
+### Orientation - Direction
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-direction)
+
+> <b>Name:</b> flex-direction
+> <br />
+> <b>Value:</b> row \| row-reverse \| column \| column-reverse
+> <br />
+> <b>Initial:</b> row
+> <br />
+
+[directions/index.html](/lm/codes/flexbox/directions/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/directions/index.html" />
+
+### Orientation - Wrap
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-wrap)
+
+> <b>Name:</b> flex-Wrap
+> <br />
+> <b>Value:</b> nowrap | wrap | wrap-reverseWrap
+> <br />
+> <b>Initial:</b> nowrap
+> <br />
+
+[wraps/index.html](/lm/codes/flexbox/wraps/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/wraps/index.html" />
+
+### Orientation - Direction & Wrap
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-flow)
+
+> <b>Name:</b> flex-flow<br />
+<b>Value:</b> `<flex-direction>` || `<flex-wrap>`<br />
+<b>Initial:</b> individual properties<br />
+
+[directions-wraps/index.html](/lm/codes/flexbox/directions-wraps/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/directions-wraps/index.html" />
+
+### Justify Content
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content)
+
+> <b>Name:</b> justify-content
+> <br />
+> <b>Value:</b> flex-start | flex-end | center | space-between | space-around
+> <br />
+> <b>Initial:</b> flex-start
+> <br />
+
+[justify-contents/index.html](/lm/codes/flexbox/justify-contents/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/justify-contents/index.html" />
+
+### Alignment Items
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/align-items)
+
+> <b>Name:</b> align-items
+> <br />
+> <b>Value:</b> flex-start | flex-end | center | baseline | stretch
+> <br />
+> <b>Initial:</b> stretch
+> <br />
+
+[alignment-items/index.html](/lm/codes/flexbox/alignment-items/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/alignment-items/index.html" />
+
+### Alignment Content
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/align-content)
+
+> <b>Name:</b> align-content
+> <br />
+> <b>Value:</b> flex-start | flex-end | center | space-between | space-around |
+> stretch
+> <br />
+> <b>Initial:</b> stretch
+> <br />
+
+[alignment-content/index.html](/lm/codes/flexbox/alignment-content/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/alignment-content/index.html" />
+
+## Flex Item
+
+### Alignment Self
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/align-self)
+
+> <b>Name:</b> align-self
+> <br />
+> <b>Value:</b> auto | flex-start | flex-end | center | baseline | stretch
+> <br />
+> <b>Initial:</b> auto
+> <br />
+
+[alignment-self/index.html](/lm/codes/flexbox/alignment-self/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/alignment-self/index.html" />
+
+### Ordering
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/order)
+
+> <b>Name:</b> order<br />
+<b>Value:</b> `<integer>`<br />
+<b>Initial:</b> 0<br />
+
+[ordering/index.html](/lm/codes/flexbox/ordering/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/ordering/index.html" />
+
+### Flexibility Grow
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-grow)
+
+> <b>Name:</b> flex-grow<br />
+<b>Value:</b> `<integer>`<br />
+<b>Initial:</b> 0<br />
+
+[flexibility-grow/index.html](/lm/codes/flexbox/flexibility-grow/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/flexibility-grow/index.html" />
+
+### Flexibility Shrink
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-shrink)
+
+> <b>Name:</b> flex-shrink<br />
+<b>Value:</b> `<integer>`<br />
+<b>Initial:</b> 1<br />
+
+[flexibility-shrink/index.html](/lm/codes/flexbox/flexibility-shrink/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/flexibility-shrink/index.html" />
+
+### Flexibility Basis
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex-basis)
+
+> <b>Name:</b> flex-basis<br />
+<b>Value:</b> content | `<width>`<br />
+<b>Initial:</b> auto<br />
+
+[flexibility-basis/index.html](/lm/codes/flexbox/flexibility-basis/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/flexibility-basis/index.html" />
+
+### Flexibility Shorthand
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/flex)
+
+> <b>Name:</b> flex<br />
+<b>Value:</b> none | [ `<flex-grow>` `<flex-shrink>`? || `<flex-basis>` ]<br />
+<b>Initial:</b> 0 1 auto<br />
+
+[flexibility/index.html](/lm/codes/flexbox/flexibility/index.html):
+
+<HtmlPreview src="/lm/codes/flexbox/flexibility/index.html" />
+
+## Demo
+
+- [Menu](demo/menu/) ([css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-examples))
+- [Cards](demo/cards/) ([Article](https://codeburst.io/build-a-minimalist-html-card-in-just-53-lines-of-code-with-flexbox-b40801927eb5), [Source](https://github.com/bmorelli25/flexbox-card-tutorial))
+- [Holy Grail Layout](demo/holy-grail-layout/) ([css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/#flexbox-examples))
+
+## Referências
+
+- [CSS Flexible Box Layout Module Level 1 \| W3C](https://www.w3.org/TR/css-flexbox-1/)
+- [CSS Box Alignment Module Level 3 \| W3C](https://www.w3.org/TR/css-align-3/)
+- [CSS Flexible Box Layout \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout)
+- [Basic concepts of flexbox \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Flexible_Box_Layout/Basic_Concepts_of_Flexbox)
+- [A Complete Guide to Flexbox \| css-tricks](https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+- [CSS Flexible Box Layout Module \| Can I Use](https://caniuse.com/#feat=flexbox)
+- [Build a Minimalist HTML Card in just 53 lines of code (with Flexbox)](https://codeburst.io/build-a-minimalist-html-card-in-just-53-lines-of-code-with-flexbox-b40801927eb5)
+- [How Flexbox works — explained with big, colorful, animated gifs](https://medium.freecodecamp.org/an-animated-guide-to-flexbox-d280cf6afc35)
+- [Flexbox - The Ultimate CSS Flex Cheatsheet (with animated diagrams!)](https://www.freecodecamp.org/news/flexbox-the-ultimate-css-flex-cheatsheet/)
+- [Learn CSS Flexbox in 5 Minutes](https://medium.freecodecamp.org/learn-css-flexbox-in-5-minutes-b941f0affc34)
+- [Flexbox Cheat Sheet](https://yoksel.github.io/flex-cheatsheet/)
+- [Flexbox - A friendly tutorial for modern CSS layouts](https://internetingishard.com/html-and-css/flexbox/)
+- [Flexbox - Use Flexbox para levar a criação de layouts CSS ao próximo nível](http://desenvolvimentoparaweb.com/css/flexbox/)
+- [Guia Flexbox](https://origamid.com/projetos/flexbox-guia-completo/)
+- [Flexbox in CSS \| cssreference](https://cssreference.io/flexbox/)
+- [Flexbox - Align last itemin grid to the left](https://haizdesign.com/css/flexbox-align-last-item-grid-left/)
+- Animated Flexbox ([1](https://codepen.io/osublake/full/dMLQJr), [2](https://codepen.io/osublake/pen/dMLQJr))
+- [The Complete Illustrated Flexbox Tutorial](https://medium.freecodecamp.org/the-complete-illustrated-flexbox-tutorial-d35c085dbf35) 👍
+- [Flexbox — The Animated Tutorial](https://medium.com/@js_tut/flexbox-the-animated-tutorial-8075cbe4c1b2)
+- [CSS Flex—An Interactive Tutorial](https://medium.freecodecamp.org/css-flex-an-interactive-tutorial-19ff6e93558)
+- [Flexbox Playground](https://ifpb.github.io/lm/css-exercises/css/portfolio-initial/)
+- [Flex Guide](https://flexbox.malven.co/)
+- [Meet the first visual flexbox builder](https://flexbox.webflow.com/)
+- [Flexbox — The Animated Tutorial](https://jstutorial.medium.com/flexbox-the-animated-tutorial-8075cbe4c1b2)

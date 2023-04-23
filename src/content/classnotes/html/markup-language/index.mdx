@@ -1,0 +1,127 @@
+---
+title: Linguagem de Marcação
+---
+
+import CodeTree from '../../../../components/CodeTree.astro';
+import CodePreview from '../../../../components/CodePreview.astro';
+import HtmlPreview from '../../../../components/HtmlPreview.astro';
+
+# Linguagem de Marcação
+
+## Desafio
+
+Código:
+
+<CodePreview src="/codes/html/markup-language/text.txt" />
+
+Resultado:
+
+<HtmlPreview src="/codes/html/markup-language/text.html" />
+
+## Markdown
+
+Código:
+
+<CodePreview src="/codes/html/markup-language/text.md" />
+
+Marcação:
+
+| Estrutura                          | .md             |
+| ---------------------------------- | --------------- |
+| <h1 class="m-0 text-xl">Title</h1> | \#              |
+| paragraph                          | quebra de linha |
+| <em>Italic</em>                    | \*, \_          |
+| <strong>Bold</strong>              | \*\*, \_\_      |
+
+Resultado ([Markdown Preview - vscode](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview)):
+
+<HtmlPreview src="/codes/html/markup-language/text.html" />
+
+Referências:
+
+- [Sintaxe](https://daringfireball.net/projects/markdown/syntax)
+- [Markdown Guide](https://www.markdownguide.org/basic-syntax/)
+- [Cheatsheet](https://github.com/adam-p/markdown-here/wiki/Markdown-Cheatsheet)
+- [Markdown Preview (vscode)](https://code.visualstudio.com/docs/languages/markdown#_markdown-preview)
+
+## LaTeX
+
+Código:
+
+<CodePreview src="/codes/html/markup-language/text.tex" />
+
+Marcação:
+
+| Estrutura                          | .tex            |
+| ---------------------------------- | --------------- |
+| <h1 class="m-0 text-xl">Title</h1> | \section*       |
+| paragraph                          | quebra de linha |
+| <em>Italic</em>                    | \emph           |
+| <strong>Bold</strong>              | \textbf         |
+
+
+Resultado: ([LaTex Base](https://latexbase.com/d/1d962929-b886-4f15-aedb-2f24576e7875))
+
+Referências:
+
+- [LaTeX (.tex)](https://www.overleaf.com/learn/)
+- [Latexbase (Editor Online)](https://latexbase.com/)
+
+## XML
+
+Código:
+
+<CodePreview src="/codes/html/markup-language/text-odt/content.xml" />
+
+Marcação:
+
+| Estrutura                          | .odt                                    |
+| ---------------------------------- | --------------------------------------- |
+| <h1 class="m-0 text-xl">Title</h1> | `<text:h>`                              |
+| paragraph                          | `<text:p>`                              |
+| <em>Italic</em>                    | `<text:span>` com `font-style="italic"` |
+| <strong>Bold</strong>              | `<text:span>` com `font-style="bold"`   |
+
+Resultado: ([Libre Office](/lm/codes/html/markup-language/text.odt))
+
+Referências:
+
+- [Extensible Markup Language (.xml)](https://developer.mozilla.org/en-US/docs/Web/XML/XML_introduction)
+- [Open Document (.odt)](https://en.wikipedia.org/wiki/OpenDocument)
+- [Scalable Vector Graphics (.svg)](https://developer.mozilla.org/en-US/docs/Web/SVG)
+
+## HTML
+
+Código:
+
+<CodePreview src="/codes/html/markup-language/text.html" />
+
+Marcação:
+
+| Estrutura                          | .html      |
+| ---------------------------------- | ---------- |
+| <h1 class="m-0 text-xl">Title</h1> | `<h1>`     |
+| paragraph                          | `<p>`      |
+| <em>Italic</em>                    | `<em>`     |
+| <strong>Bold</strong>              | `<strong>` |
+
+
+Resultado ([Web Browser](/lm/codes/html/markup-language/text.html)):
+
+<HtmlPreview src="/codes/html/markup-language/text.html" />
+
+Referências:
+
+- [Sintaxe](https://www.w3.org/TR/html/)
+- [HTML Reference - MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
+
+## Comparação de Marcadores
+
+| Estrutura                          | .md             | .tex            | .odt          | .html      |
+| ---------------------------------- | --------------- | --------------- | ------------- | ---------- |
+| <h1 class="m-0 text-xl">Title</h1> | \#              | \section*       | `<text:h>`    | `<h1>`     |
+| paragraph                          | quebra de linha | quebra de linha | `<text:p>`    | `<p>`      |
+| <em>Italic</em>                    | \*              | \emph           | `<text:span>` | `<em>`     |
+| <strong>Bold</strong>              | \*\*            | \textbf         | `<text:span>` | `<strong>` |
+
+

@@ -1,0 +1,51 @@
+---
+import CodePreview from './CodePreview.astro';
+import CodeTree from './CodeTree.astro';
+import HtmlPreview from './HtmlPreview.astro';
+
+export interface Props {
+  code: string;
+  onlyBody?: boolean;
+  codeTree?: boolean;
+  codeCss?: boolean;
+}
+
+const { code, onlyBody = true, codeCss = true, codeTree = false } = Astro.props;
+
+const codeName = code.split('/').pop();
+---
+
+{
+  codeTree && (
+    <>
+      <p>Arquivos:</p>
+      <CodeTree src={code} />
+    </>
+  )
+}
+
+<p>Código:</p>
+
+{
+  codeCss && (
+    <>
+      <p>
+        <code>{code}/css/style.css</code>:
+      </p>
+      <CodePreview src={`${code}/css/style.css`} />
+    </>
+  )
+}
+
+<p>
+  <code>{code}/index.html</code>
+  :
+</p>
+
+<CodePreview src={`${code}/index.html`} onlyBody={onlyBody} />
+
+<p>
+  Resultado (<a href={`/lm${code}/index.html`}>{codeName}</a>):
+</p>
+
+<HtmlPreview src={`${code}/index.html`} />

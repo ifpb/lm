@@ -1,0 +1,464 @@
+---
+title: Estilo de Texto
+---
+
+import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
+
+# Estilo de Texto
+
+## Text, Font
+
+- W3C TR CSS 2.2: [Text](https://www.w3.org/TR/CSS22/text.html), [Font](https://www.w3.org/TR/CSS22/fonts.html)
+- [Fundamental text and font styling](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Fundamentals)
+
+### Color
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/color)
+
+> <b>Values:</b> [`<color>`](values.md#color)
+
+Exemplo:
+
+```css
+/* <named-color> value */
+color: red;
+
+/* <hex-color> value */
+color: #009900;
+
+/* <rgb-color> value */
+color: rgb(34, 12, 64);
+
+/* <hsl-color> value */
+color: hsl(30, 100%, 50%);
+```
+
+| Style                       | Style           | Preview                                                         |
+| --------------------------- | --------------- | --------------------------------------------------------------- |
+| color: tomato;              | `<named-color>` | <span style={{color: 'tomato'}}>Lorem ipsum</span>              |
+| color: #FF6347;             | `<hex-color>`   | <span style={{color: '#FF6347'}}>Lorem ipsum</span>             |
+| color: rgb(255,99,71);      | `<rgb-color>`   | <span style={{color: 'rgb(255,99,71)'}}>Lorem ipsum</span>      |
+| color: hsl(9, 100%, 64%);   | `<hsl-color>`   | <span style={{color: 'hsl(9, 100%, 64%)'}}>Lorem ipsum</span>   |
+| color: rgba(255,99,71, .6); | `<rgba-color>`  | <span style={{color: 'rgba(255,99,71, .6)'}}>Lorem ipsum</span> |
+
+Fonte: [Tomato Color](http://www.color-hex.com/color/ff6347) (Shades, Tints, Triadic Colors, Analogous Colors, Monochromatic Colors, Complementary Color)
+
+### Font family
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
+
+> <b>Values:</b> [[ [`<family-name>`](values.md#family-name) | [`<generic-family>`](values.md#generic-family) ] [, [ [`<family-name>`](values.md#family-name) | [`<generic-family>`](values.md#generic-family)] ]\* ] | `inherit`<br /><br />[`<family-name>`](values.md#family-name) = `<string>`<br />[`<generic-family>`](values.md#generic-family) = serif | sans-serif | cursive | fantasy | monospace<br />
+
+Exemplo:
+
+```css
+/* A font family name and a generic family name */
+font-family: Gill Sans Extrabold, sans-serif;
+font-family: 'Goudy Bookletter 1911', sans-serif;
+
+/* A generic family name only */
+font-family: serif;
+font-family: sans-serif;
+font-family: monospace;
+font-family: cursive;
+font-family: fantasy;
+font-family: system-ui;
+```
+
+Font stacks / Fallback
+
+```css
+body {
+  font-family: Ubuntu, Arial, sans-serif;
+}
+```
+
+| Style                                   | Syntax                                                           | Preview                                                                     |
+| --------------------------------------- | ---------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| font-family: serif;                     | `<generic-family>`                                               | <span style={{fontFamily: "serif"}}>Lorem ipsum</span>                      |
+| font-family: Times, serif;              | `<family-name>`, <br />`<generic-family>`                        | <span style={{fontFamily: "Times, serif;"}}>Lorem ipsum</span>              |
+| font-family: "Time New Roman", serif;   | `<family-name>`, <br />`<generic-family>`                        | <span style={{fontFamily: "'Time New Roman', serif;"}}>Lorem ipsum</span>   |
+| font-family: Ubuntu, Arial, sans-serif; | `<family-name>`, <br />`<family-name>`, <br />`<generic-family>` | <span style={{fontFamily: "Ubuntu, Arial, sans-serif;"}}>Lorem ipsum</span> |
+
+### Font size
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size)
+
+> <b>Values:</b> [ `<absolute-size>` | `<relative-size>` | [`<length>`](values.md#length) | `<percentage>` | inherit ]<br /><br />`<absolute-size>` = xx-small | x-small | small | medium | large | x-large | xx-large<br />`<relative-size>` = larger | smaller<br />
+
+Exemplo:
+
+```css
+/* <absolute-size> values */
+font-size: xx-small;
+font-size: x-small;
+font-size: small;
+font-size: medium;
+font-size: large;
+font-size: x-large;
+font-size: xx-large;
+
+/* <relative-size> values */
+font-size: smaller;
+font-size: larger;
+
+/* <length> values */
+font-size: 12px;
+font-size: 0.8rem;
+
+/* <percentage> values */
+font-size: 80%;
+```
+
+| Style              | Syntax            | Preview                                               |
+| ------------------ | ----------------- | ----------------------------------------------------- |
+| font-size: small;  | `<abosolut-size>` | <span style={{fontSize: "small"}}>Lorem ipsum</span>  |
+| font-size: large;  | `<abosolut-size>` | <span style={{fontSize: "large"}}>Lorem ipsum</span>  |
+| font-size: larger; | `<relative-size>` | <span style={{fontSize: "larger"}}>Lorem ipsum</span> |
+| font-size: 16px;   | `<length>`        | <span style={{fontSize: "16px"}}>Lorem ipsum</span>   |
+| font-size: 1.5rem; | `<length>`        | <span style={{fontSize: "1.5rem"}}>Lorem ipsum</span> |
+| font-size: 1.5em;  | `<length>`        | <span style={{fontSize: "1.5em"}}>Lorem ipsum</span>  |
+| font-size: 150%;   | `<percentage>`    | <span style={{fontSize: "150%"}}>Lorem ipsum</span>   |
+
+### Font style
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-style)
+
+> <b>Values:</b> normal \| italic \| oblique \| inherit
+
+Exemplo:
+
+```css
+font-style: normal;
+font-style: italic;
+font-style: oblique;
+```
+
+| Style                | Preview                                                 |
+| -------------------- | ------------------------------------------------------- |
+| font-style: normal;  | <span style={{fontStyle: "normal"}}>Lorem ipsum</span>  |
+| font-style: italic;  | <span style={{fontStyle: "italic"}}>Lorem ipsum</span>  |
+| font-style: oblique; | <span style={{fontStyle: "oblique"}}>Lorem ipsum</span> |
+
+### Font weight
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
+
+> <b>Values:</b> normal \| bold \| bolder \| lighter \| 100 \| 200 \| 300 \| 400
+> \| 500 \| 600 \| 700 \| 800 \| 900
+
+Exemplo:
+
+```css
+/* Keyword values */
+font-weight: normal;
+font-weight: bold;
+
+/* Keyword values relative to the parent */
+font-weight: lighter;
+font-weight: bolder;
+
+/* Numeric keyword values */
+font-weight: 100;
+font-weight: 200;
+font-weight: 300;
+font-weight: 400;
+font-weight: 500;
+font-weight: 600;
+font-weight: 700;
+font-weight: 800;
+font-weight: 900;
+```
+
+| Style                 | Preview                                                  |
+| --------------------- | -------------------------------------------------------- |
+| font-weight: normal;  | <span style={{fontWeight: "normal"}}>Lorem ipsum</span>  |
+| font-weight: bold;    | <span style={{fontWeight: "bold"}}>Lorem ipsum</span>    |
+| font-weight: lighter; | <span style={{fontWeight: "lighter"}}>Lorem ipsum</span> |
+| font-weight: bolder;  | <span style={{fontWeight: "bolder"}}>Lorem ipsum</span>  |
+| font-weight: 100;     | <span style={{fontWeight: "100"}}>Lorem ipsum</span>     |
+| font-weight: 200;     | <span style={{fontWeight: "200"}}>Lorem ipsum</span>     |
+| font-weight: 300;     | <span style={{fontWeight: "300"}}>Lorem ipsum</span>     |
+| font-weight: 400;     | <span style={{fontWeight: "400"}}>Lorem ipsum</span>     |
+| font-weight: 500;     | <span style={{fontWeight: "500"}}>Lorem ipsum</span>     |
+| font-weight: 600;     | <span style={{fontWeight: "600"}}>Lorem ipsum</span>     |
+| font-weight: 700;     | <span style={{fontWeight: "700"}}>Lorem ipsum</span>     |
+| font-weight: 800;     | <span style={{fontWeight: "800"}}>Lorem ipsum</span>     |
+| font-weight: 900;     | <span style={{fontWeight: "900"}}>Lorem ipsum</span>     |
+
+### Text decoration
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
+
+> <b>Values:</b> `<text-decoration-line>` || `<text-decoration-color>` || `<text-decoration-style>`<br /> <br /> `<text-decoration-line>` = none | [ underline || overline || line-through || blink ]<br /> `<text-decoration-color>` = `<color>`<br /> `<text-decoration-style>` = solid | double | dotted | dashed | wavy<br />
+
+Exemplo:
+
+```css
+/* Keyword values */
+text-decoration: none; /* No text decoration */
+text-decoration: underline; /* Underlining */
+text-decoration: underline red; /* Red underlining */
+text-decoration: underline wavy red; /* Red wavy underlining */
+```
+
+| Style                                | Preview                                                                 |
+| ------------------------------------ | ----------------------------------------------------------------------- |
+| text-decoration: none;               | <span style={{textDecoration: "none"}}>Lorem ipsum</span>               |
+| text-decoration: underline;          | <span style={{textDecoration: "underline"}}>Lorem ipsum</span>          |
+| text-decoration: line-through;       | <span style={{textDecoration: "line-through"}}>Lorem ipsum</span>       |
+| text-decoration: overline;           | <span style={{textDecoration: "overline"}}>Lorem ipsum</span>           |
+| text-decoration: underline red;      | <span style={{textDecoration: "underline red"}}>Lorem ipsum</span>      |
+| text-decoration: underline red wavy; | <span style={{textDecoration: "underline red wavy"}}>Lorem ipsum</span> |
+
+### Text transform
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform)
+
+> <b>Values:</b> none \| capitalize \| uppercase \| lowercase \| full-width
+
+Exemplo:
+
+```css
+/* Keyword values */
+text-transform: capitalize;
+text-transform: uppercase;
+text-transform: lowercase;
+text-transform: none;
+text-transform: full-width;
+```
+
+| Style                       | Preview                                                        |
+| --------------------------- | -------------------------------------------------------------- |
+| text-transform: none;       | <span style={{textTransform: "none"}}>Lorem ipsum</span>       |
+| text-transform: uppercase;  | <span style={{textTransform: "uppercase"}}>Lorem ipsum</span>  |
+| text-transform: lowercase;  | <span style={{textTransform: "lowercase"}}>Lorem ipsum</span>  |
+| text-transform: capitalize; | <span style={{textTransform: "capitalize"}}>Lorem ipsum</span> |
+
+### Font shorthand
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font)
+
+> <b>Value:</b> [ [ `<font-style>` || `<font-variant>` || `<font-weight>` || `<font-stretch>` ]? `<font-size>` [ / `<line-height>` ]? `<font-family>` ] | caption | icon | menu | message-box | small-caption | status-bar<br /> <br /> `<font-stretch>` = normal \| ultra-condensed \| extra-condensed \| condensed \| semi-condensed \| semi-expanded \| expanded \| extra-expanded \| ultra-expanded<br /> `<font-variant>` = nomral \| small-caps
+
+Exemplo:
+
+```css
+/* `<font-size>` `<font-family>` */
+font: 80% sans-serif;
+
+/* `<font-style>` `<font-size>` `<font-family>` */
+font: italic 1.5rem sans-serif;
+
+/* `<font-style>` `<font-weight>` `<font-size>` `<font-family>` */
+font: italic bold 1.5rem sans-serif;
+
+/* `<font-style>` `<font-weight>` `<font-size>`/`<line-height>` `<font-family>` */
+font: italic bold 1.5rem/1.5 sans-serif;
+
+/* `<font-style>` `<font-variant>` `<font-weight>` `<font-size>`/`<line-height>` `<font-family>` */
+font: italic small-caps bold 1.5rem/1.5 sans-serif;
+```
+
+| Style                                               | Preview                                                                                                                |
+| --------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------- |
+| font: 80% sans-serif;                               | <span style={{fontSize: "1.5rem", font: "80% sans-serif"}}>Lorem ipsum<br />dolor</span>                               |
+| font: italic 1.5rem sans-serif;                     | <span style={{fontSize: "1.5rem", font: "italic 1.5rem sans-serif"}}>Lorem ipsum<br />dolor</span>                     |
+| font: italic bold 1.5rem sans-serif;                | <span style={{fontSize: "1.5rem", font: "italic bold 1.5rem sans-serif"}}>Lorem ipsum<br />dolor</span>                |
+| font: italic bold 1.5rem/1.8 sans-serif;            | <span style={{fontSize: "1.5rem", font: "italic bold 1.5rem/1.8 sans-serif"}}>Lorem ipsum<br />dolor</span>            |
+| font: italic small-caps bold 1.5rem/1.8 sans-serif; | <span style={{fontSize: "1.5rem", font: "italic small-caps bold 1.5rem/1.8 sans-serif"}}>Lorem ipsum<br />dolor</span> |
+
+### Text drop shadows
+
+- [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow)
+- [CSS3 Text Shadow Generator](https://css3gen.com/text-shadow/)
+- [12 Fun CSS Text Shadows You Can Copy and Paste](https://designshack.net/articles/css/12-fun-css-text-shadows-you-can-copy-and-paste/)
+- [CSS Text Effects From CodePen](https://freebiesupply.com/blog/css-text-effects-from-codepen/)
+- [CSS-Tricks text-shadow](https://css-tricks.com/almanac/properties/t/text-shadow/)
+
+Exemplo:
+
+```css
+/* offset-x | offset-y | blur-radius | color */
+text-shadow: 1px 1px 2px black;
+
+/* color | offset-x | offset-y | blur-radius */
+text-shadow: #fc0 1px 0 10px;
+
+/* offset-x | offset-y | color */
+text-shadow: 5px 5px #558abb;
+
+/* color | offset-x | offset-y */
+text-shadow: white 2px 5px;
+
+/* offset-x | offset-y */
+text-shadow: 5px 10px;
+
+/* Global values */
+text-shadow: unset;
+```
+
+Simple shadow
+
+| Style                                                                         | Preview                                                                                                                                                                             |
+| ----------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| text-shadow: unset;                                                           | <span style={{fontSize: "1.5rem", textShadow: "unset"}}>Lorem ipsum</span>                                                                                                          |
+| text-shadow: 1px 1px 2px black;                                               | <span style={{fontSize: "1.5rem", textShadow: "1px 1px 2px black"}}>Lorem ipsum</span>                                                                                              |
+| text-shadow: 10px 1px 2px black;                                              | <span style={{fontSize: "1.5rem", textShadow: "10px 1px 2px black"}}>Lorem ipsum</span>                                                                                             |
+| text-shadow: 1px 11px 2px black;                                              | <span style={{fontSize: "1.5rem", textShadow: "1px 10px 2px black"}}>Lorem ipsum</span>                                                                                             |
+| text-shadow: 1px 11px .5px black;                                             | <span style={{fontSize: "1.5rem", textShadow: "1px 10px .5px black"}}>Lorem ipsum</span>                                                                                            |
+| color: rgba(0,168,255,0.5);<br />text-shadow: 2px -1px 0 rgba(255,0,180,0.5); | <span style={{fontSize: "1.5rem", color: "rgba(0,168,255,0.5)", textShadow: "2px -1px 0 rgba(255,0,180,0.5)", textTransform: "uppercase", letterSpacing: "3px"}}>Lorem ipsum</span> |
+
+Multiple shadow
+
+Fonte: [O surpreendente text-shadow](https://medium.com/jaguaribetech/o-surpreendente-text-shadow-1e3a9599ae4f)
+
+<CodeHtmlCssPreview code="/codes/css/text-style/text-shadow" />
+
+Fonte: [CSS Text Effects From CodePen](https://freebiesupply.com/blog/css-text-effects-from-codepen/)
+
+<CodeHtmlCssPreview code="/codes/css/text-style/text-shadow-long" />
+
+## Text layout
+
+### Text Alignment
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-align)
+
+> <b>Values:</b> start \| end \| left \| right \| center \| justify \| match-parent
+
+```css
+/* Keyword values */
+text-align: left;
+text-align: right;
+text-align: center;
+text-align: justify;
+text-align: justify-all;
+text-align: start;
+text-align: end;
+text-align: match-parent;
+```
+
+| Style                | Preview                                                                                        |
+| -------------------- | ---------------------------------------------------------------------------------------------- |
+| text-align: left;    | <div style={{textAlign: "left", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</div>    |
+| text-align: center;  | <div style={{textAlign: "center", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</div>  |
+| text-align: right;   | <div style={{textAlign: "right", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</div>   |
+| text-align: justify; | <div style={{textAlign: "justify", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</div> |
+
+### Text indent
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/text-indent)
+
+> <b>Values:</b> `<length-percentage>`<br /> <br /> `<length-percentage>` = `<length>` | `<percentage>`
+
+Exemplo:
+
+```css
+/* <length> values */
+text-indent: 3mm;
+text-indent: 40px;
+
+/* <percentage> value
+   relative to the containing block width */
+text-indent: 15%;
+```
+
+| Style              | Preview                                                                                      |
+| ------------------ | -------------------------------------------------------------------------------------------- |
+| text-indent: 3rem; | <div style={{textIndent: "3rem", width: "200px"}}>Lorem ipsum dolor amet, consectetur.</div> |
+| text-indent: 20px; | <div style={{textIndent: "20px", width: "200px"}}>Lorem ipsum dolor amet, consectetur.</div> |
+
+### Line height
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/line-height)
+
+> <b>Value:</b> normal \| `<number>` \| `<length>` \| `<percentage>`
+
+Exemplo:
+
+```css
+/* Keyword value */
+line-height: normal;
+
+/* <number> values */
+line-height: 3.5;
+
+/* <length> values */
+line-height: 3em;
+
+/* <percentage> values */
+line-height: 34%;
+```
+
+| Style                | Preview                                                                                        |
+| -------------------- | ---------------------------------------------------------------------------------------------- |
+| line-height: normal; | <div style={{lineHeight: "normal", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</div> |
+| line-height: 3;      | <div style={{lineHeight: "3", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</div>      |
+| line-height: 3em;    | <div style={{lineHeight: "3em", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</div>    |
+| line-height: 300%;   | <div style={{lineHeight: "300%", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</div>   |
+
+### Letter spacing
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing)
+
+> <b>Value:</b> normal \| `<length>`
+
+Exemplo:
+
+```css
+/* Keyword value */
+letter-spacing: normal;
+
+/* <length> values */
+letter-spacing: 0.3em;
+```
+
+| Style                   | Preview                                                                                         |
+| ----------------------- | ----------------------------------------------------------------------------------------------- |
+| letter-spacing: normal; | <td style={{letterSpacing: "normal", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</td> |
+| letter-spacing: 0.1em;  | <td style={{letterSpacing: "0.1em", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</td>  |
+| letter-spacing: 0.2em;  | <td style={{letterSpacing: "0.2em", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</td>  |
+
+### Word spacing
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/word-spacing)
+
+> <b>Value:</b> normal \| `<length>` \| `<percentage>`
+
+Exemplo:
+
+```css
+/* Keyword value */
+word-spacing: normal;
+
+/* <length> values */
+word-spacing: 0.3em;
+
+/* <percentage> values */
+word-spacing: 110%;
+```
+
+| Style                 | Preview                                                                                       |
+| --------------------- | --------------------------------------------------------------------------------------------- |
+| word-spacing: normal; | <td style={{wordSpacing: "normal", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</td> |
+| word-spacing: 0.1em;  | <td style={{wordSpacing: "0.1em", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</td>  |
+| word-spacing: 1em;    | <td style={{wordSpacing: "1em", width: "240px"}}>Lorem ipsum dolor amet, consectetur.</td>    |
+
+## Hyperlink
+
+- [Styling Hyperlinks - W3C](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links)
+- [Outline - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
+- [Cursor - MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor)
+
+| State     | Selector   | Style                                | Preview                                                                                                                                  |
+| --------- | ---------- | ------------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------- |
+| Unvisited | `:link`    | color: rgb(0, 0, 238);               | <a href="#" style={{textDecoration: "underline", cursor: "pointer", color: "rgb(0, 0, 238)"}}>link</a>                                   |
+| Visited   | `:visited` | color: rgb(85, 26, 139);             | <a href="#" style={{textDecoration: "underline", cursor: "auto", color: "rgb(85, 26, 139)"}}>link</a>                                    |
+| Hover     | `:hover`   | cursor: pointer;                     | <a href="#" style={{textDecoration: "underline", cursor: "pointer", color: "rgb(85, 26, 139)"}}>link</a>                                 |
+| Focus     | `:focus`   | outline: rgb(59, 153, 252) auto 5px; | <a href="#" style={{textDecoration: "underline", cursor: "auto", color: "rgb(0, 0, 238); outline: rgb(59, 153, 252) auto 5px"}}>link</a> |
+| Active    | `:active`  | color: rgb(238, 0, 0);               | <a href="#" style={{textDecoration: "underline", cursor: "auto", color: "rgb(238, 0, 0)"}}>link</a>                                      |
+
+Properties: [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color), [cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor), [outline](https://developer.mozilla.org/en-US/docs/Web/CSS/outline), [text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
+
+<CodeHtmlCssPreview code="/codes/css/text-style/hyperlink-state" />

@@ -1,0 +1,125 @@
+---
+title: Publicação de Páginas
+---
+
+import CodeTree from '../../../../components/CodeTree.astro';
+import CodePreview from '../../../../components/CodePreview.astro';
+import HtmlPreview from '../../../../components/HtmlPreview.astro';
+
+# Publicação de Páginas
+
+## [Github Pages](https://pages.github.com)
+
+Create a new repository link
+
+![](/imgs/deploy/create-a-new-repository-link.png)
+
+Create a new repository page
+
+![](/imgs/deploy/create-a-new-repository-page.png)
+
+Repository page
+
+![](/imgs/deploy/repository-page.png)
+
+Install git
+
+[Donwlos Git](https://git-scm.com/downloads)
+
+```bash
+# apt-get install git
+```
+
+Create site folder
+
+```bash
+$ mkdir site-name
+```
+
+Open folder
+
+```bash
+$ code site-name
+```
+
+> Go to File > Menu > Open folder
+
+![](/imgs/deploy/open-folder.png)
+
+Initialize Git Repository
+
+```bash
+$ git init
+```
+
+![](/imgs/deploy/git-initialize.png)
+
+Create site
+
+![](/imgs/deploy/create-site.png)
+
+Git add
+
+```bash
+$ git add -A
+```
+
+![](/imgs/deploy/git-add.gif)
+
+Git commit
+
+```bash
+$ git config user.email "example@email.com"
+$ git config user.name "example"
+```
+
+```bash
+$ git commit -m "primeira versão do site"
+```
+
+![](/imgs/deploy/git-commit.gif)
+
+Git remote add
+
+```bash
+$ git remote add origin https://github.com/lucachaves/site-name.git
+```
+
+![](/imgs/deploy/git-remote-add.gif)
+
+Git push
+
+```bash
+$ git push -u origin master
+```
+
+![](/imgs/deploy/git-push.gif)
+
+> Enter login and password
+
+[git-credential-store - Helper to store credentials on disk](https://git-scm.com/docs/git-credential-store):
+
+```bash
+$ git config credential.helper store
+$ git push
+```
+
+Repository page with code
+
+![](/imgs/deploy/new-repository-page.png)
+
+Create github page
+
+[username.github.io/site-name/](https://username.github.io/site-name/)
+
+![](/imgs/deploy/create-github-pages.gif)
+
+## Netlify
+
+[Como colocar seu site no ar de graca](https://willianjusten.com.br/como-colocar-seu-site-no-ar-de-graca/)
+
+## Referências
+
+- [How to Initialize a Git Repository using Visual Studio Code and Publish the Code to Git Server](https://www.codeproject.com/Articles/1177391/How-to-Initialize-a-Git-Repository-using-Visual-St)
+- [Using Version Control in VS Code](https://code.visualstudio.com/docs/editor/versioncontrol)
+- [Git Version Control in VS Code](https://code.visualstudio.com/docs/introvideos/versioncontrol)

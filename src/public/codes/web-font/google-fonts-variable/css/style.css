@@ -1,9 +1,0 @@
-@font-face{
-  font-family: 'Kufam';
-  src: url(../fonts/Kufam-VariableFont_wght.ttf)
-}
-
-h1 {
-  font-family: 'Kufam', cursive;
-  font-variation-settings: 'wght' 850;
-}

@@ -1,0 +1,372 @@
+---
+title: Box Model
+---
+
+import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
+import HtmlPreview from '../../../../components/HtmlPreview.astro';
+
+# Box Model
+
+![Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/box-model.png)
+
+![Box Model](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/standard-box-model.png)
+
+Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap)
+
+## Display
+
+| Display      | Flow                                                 | Margin, Border, Padding | Height | Width |
+| ------------ | ---------------------------------------------------- | ----------------------- | ------ | ----- |
+| Inline       | surrounding text without creating line breaks before | Ok                      |        |       |
+| Block        | stacked upon other boxes                             | Ok                      | Ok     | Ok    |
+| Inline-block | surrounding text without creating line breaks before | Ok                      | Ok     | Ok    |
+| none         | turns off the display of an element                  |                         |        |       |
+
+Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
+
+### Inline box
+
+<CodeHtmlCssPreview code="/codes/css/box-model/display-inline" codeCss={false} />
+
+### Block box
+
+<CodeHtmlCssPreview code="/codes/css/box-model/display-block" codeCss={false} />
+
+### Inline-block box
+
+<CodeHtmlCssPreview code="/codes/css/box-model/display-inline-block" />
+
+## Border
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border):
+
+> <b>Value:</b> `<br-width>` || `<br-style>` || `<color>`<br /><br />`<br-width>` = `<length>` \| thin \| medium \| thick<br />`<br-style>` = none \| hidden \| dotted \| dashed \| solid \| double \| groove \| ridge \| inset \| outset
+
+Sintaxe:
+
+```css
+/* style */
+border: solid;
+
+/* width | style */
+border: 2px dotted;
+
+/* style | color */
+border: outset #f33;
+
+/* width | style | color */
+border: medium dashed green;
+```
+
+Shorthand:
+
+| Shorthand                                                                         | Longhand                                                                                                                                                                                                                                                                                                                                                                                   |
+| --------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [`border`](https://developer.mozilla.org/en-US/docs/Web/CSS/border)               | [`border-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width)<br />[`border-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style)<br />[`border-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color)                                                                                                                                  |
+| [`border-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top)       | [`border-top-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-width)<br />[`border-top-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-style)<br />[`border-top-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color)                                                                                                          |
+| [`border-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom) | [`border-bottom-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-width)<br />[`border-bottom-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-style)<br />[`border-bottom-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color)                                                                                        |
+| [`border-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right)   | [`border-right-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-width)<br />[`border-right-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-style)<br />[`border-right-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color)                                                                                              |
+| [`border-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left)     | [`border-left-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-width)<br />[`border-left-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-style)<br />[`border-left-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-color)                                                                                                    |
+| [`border-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-width)   | [`border-top-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-width)<br />[`border-right-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-width)<br />[`border-bottom-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-width)<br />[`border-left-width`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-width) |
+| [`border-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style)   | [`border-top-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-style)<br />[`border-right-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-style)<br />[`border-bottom-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-style)<br />[`border-left-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-style) |
+| [`border-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color)   | [`border-top-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color)<br />[`border-right-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color)<br />[`border-bottom-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color)<br />[`border-left-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-color) |
+
+<CodeHtmlCssPreview code="/codes/css/box-model/border" />
+
+<CodeHtmlCssPreview code="/codes/css/box-model/border-style" />
+
+## Margin
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
+
+> <b>Value:</b> [ `<length>` \| `<percentage>` \| auto ]{1,4}
+
+Sintaxe:
+
+```css
+/* Apply to all four sides */
+margin: 1em;
+margin: -3px;
+
+/* vertical | horizontal */
+margin: 5% auto;
+
+/* top | horizontal | bottom */
+margin: 1em auto 2em;
+
+/* top | right | bottom | left */
+margin: 2px 1em 0 auto;
+```
+
+Shorthand:
+
+| Shorthand                                                           | Longhand                                                                                                                                                                                                                                                                                                                                   |
+| ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) | [`margin-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom)<br />[`margin-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)<br />[`margin-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right)<br />[`margin-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top) |
+
+<CodeHtmlCssPreview code="/codes/css/box-model/margin-block" />
+
+<CodeHtmlCssPreview code="/codes/css/box-model/margin-inline" />
+
+## Padding
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
+
+> <b>Value:</b> [ `<length>` \| `<percentage>` ]{1,4}
+
+Sintaxe:
+
+```css
+/* Apply to all four sides */
+padding: 1em;
+
+/* vertical | horizontal */
+padding: 5% 10%;
+
+/* top | horizontal | bottom */
+padding: 1em 2em 2em;
+
+/* top | right | bottom | left */
+padding: 5px 1em 0 2em;
+```
+
+Shorthand:
+
+| Shorthand                                                             | Longhand                                                                                                                                                                                                                                                                                                                                           |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) | [`padding-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom)<br />[`padding-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left)<br />[`padding-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right)<br />[`padding-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top) |
+
+<CodeHtmlCssPreview code="/codes/css/box-model/padding-block" />
+
+<CodeHtmlCssPreview code="/codes/css/box-model/padding-inline" />
+
+## Width
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/width)
+
+> <b>Value:</b> [ `<length>` \| `<percentage>` \| auto ]
+
+Sintaxe:
+
+```css
+/* <length> values */
+width: 300px;
+width: 25em;
+
+/* <percentage> value */
+width: 75%;
+```
+
+<CodeHtmlCssPreview code="/codes/css/box-model/width" />
+
+
+`min-width` e `max-width`
+
+<CodeHtmlCssPreview code="/codes/css/box-model/min-width" />
+
+## Height
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/height)
+
+> <b>Value:</b> [ `<length>` \| `<percentage>` \| auto ]
+
+Sintaxe:
+
+```css
+/* <length> values */
+height: 300px;
+height: 25em;
+
+/* <percentage> value */
+height: 75%;
+```
+
+<CodeHtmlCssPreview code="/codes/css/box-model/height" />
+
+## Border Radius
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
+
+> <b>Value:</b> `<length-percentage>`{1,4} [ / `<length-percentage>`{1,4} ]?<br /> <br /> `<length-percentage>` = `<length>` | `<percentage>`
+
+Sintaxe:
+
+```css
+/* Radius is set for all 4 sides */
+border-radius: 10px;
+
+/* top-left-and-bottom-right | top-right-and-bottom-left */
+border-radius: 10px 5%;
+
+/* top-left | top-right-and-bottom-left | bottom-right */
+border-radius: 2px 4px 2px;
+
+/* top-left | top-right | bottom-right | bottom-left */
+border-radius: 1px 0 3px 4px;
+
+/* (first radius values) / radius */
+border-radius: 10px 5% / 20px;
+
+/* (first radius values) / top-left-and-bottom-right | top-right-and-bottom-left */
+border-radius: 10px 5% / 20px 30px;
+
+/* (first radius values) / top-left | top-right-and-bottom-left | bottom-right */
+border-radius: 10px 5px 2em / 20px 25px 30%;
+
+/* (first radius values) / top-left | top-right | bottom-right | bottom-left */
+border-radius: 10px 5% / 20px 25em 30px 35em;
+```
+
+<CodeHtmlCssPreview code="/codes/css/box-model/border-radius" />
+
+Shorthand:
+
+| Shorthand                                                                         | Longhand                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [`border-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) | [`border-top-left-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius)<br />[`border-top-right-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius)<br />[`border-bottom-right-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius)<br />[`border-bottom-left-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius) |
+
+Código:
+
+```css
+border-radius: 1em/5em;
+
+/* ... is equivalent to: */
+border-top-left-radius: 1em 5em;
+border-top-right-radius: 1em 5em;
+border-bottom-right-radius: 1em 5em;
+border-bottom-left-radius: 1em 5em;
+```
+
+```css
+border-radius: 4px 3px 6px / 2px 4px;
+
+/* ... is equivalent to: */
+border-top-left-radius: 4px 2px;
+border-top-right-radius: 3px 4px;
+border-bottom-right-radius: 6px 2px;
+border-bottom-left-radius: 3px 4px;
+```
+
+## Box Shadow
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
+
+> <b>Value:</b> none \| `<shadow>`<br /> <br /> `<shadow>` = inset? && `<length>`{2,4} && `<color>`?
+
+Sintaxe:
+
+```css
+/* offset-x | offset-y | color */
+box-shadow: 60px -16px teal;
+
+/* offset-x | offset-y | blur-radius | color */
+box-shadow: 10px 5px 5px black;
+
+/* offset-x | offset-y | blur-radius | spread-radius | color */
+box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+
+/* inset | offset-x | offset-y | color */
+box-shadow: inset 5em 1em gold;
+
+/* Any number of shadows, separated by commas */
+box-shadow: 3px 3px red, -1em 0 0.4em olive;
+```
+
+<CodeHtmlCssPreview code="/codes/css/box-model/box-shadow" />
+
+## Border Collapse
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/border-collapse)
+
+> <b>Value:</b> collapse \| separate
+
+Sintaxe:
+
+```css
+/* Keyword values */
+border-collapse: collapse;
+border-collapse: separate;
+```
+
+<CodeHtmlCssPreview code="/codes/css/box-model/table" />
+
+## Box Sizing
+
+![](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model/alternate-box-model.png)
+
+Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap)
+
+> <b>Value:</b> content-box \| border-box
+
+Sintaxe:
+
+```css
+/* Keyword values */
+box-sizing: content-box;
+box-sizing: border-box;
+```
+
+<CodeHtmlCssPreview code="/codes/css/box-model/box-sizing" codeCss={false} />
+
+## Overflow
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/overflow)
+
+> <b>Value:</b> visible \| hidden \| clip \| scroll \| auto
+
+Sintaxe:
+
+```css
+/* Keyword values */
+overflow: visible;
+overflow: hidden;
+overflow: scroll;
+overflow: auto;
+```
+
+<CodeHtmlCssPreview code="/codes/css/box-model/overflow" codeCss={false} />
+
+## Outline
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/outline)
+
+> <b>Value:</b> [ `<outline-color>` || `<outline-style>` || `<outline-width>` ] <br /> <br /> `<outline-color>` = `<color>`<br /> `<outline-style>` = none \| hidden \| dotted \| dashed \| solid \| double \| groove \| ridge \| inset \| outset<br /> `<outline-width>` = `<length>` \| thin \| medium \| thick<br />
+
+Sintaxe:
+
+```css
+/* style */
+outline: solid;
+
+/* color | style */
+outline: #f66 dashed;
+
+/* style | width */
+outline: inset thick;
+
+/* color | style | width */
+outline: green solid 3px;
+```
+
+Exemplo:
+
+| Style                     | Preview                                                           |
+| ------------------------- | ----------------------------------------------------------------- |
+| outline: solid;           | <div style={{outline: 'solid'}}>Lorem ipsum dolor</div>           |
+| outline: #f66 dashed;     | <div style={{outline: '#f66 dashed'}}>Lorem ipsum dolor</div>     |
+| outline: green solid 3px; | <div style={{outline: 'green solid 3px'}}>Lorem ipsum dolor</div> |
+
+## References
+
+- [Box model recap](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Box_model_recap)
+- [Styling borders using CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Borders)
+- Display
+  - [Content sectioning \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Content_sectioning)
+  - [Text content \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Text_content)
+  - [Inline text semantics \| W3C](https://developer.mozilla.org/en-US/docs/Web/HTML/Element#Inline_text_semantics)
+- Box shadow
+  - [Box Shadow Generator](https://www.cssmatic.com/box-shadow)
+  - [Box Shadow \| CSS Tricks](https://css-tricks.com/almanac/properties/b/box-shadow/)
+  - [CSS3 Box Shadows Effects](https://codepen.io/haibnu/pen/FxGsI)
+  - [Material Design Box Shadows](https://codepen.io/sdthornton/pen/wBZdXq)
+  - [18 Amazing Effects You can Create with CSS3 Box Shadows](https://www.hongkiat.com/blog/creative-css-shadows/)

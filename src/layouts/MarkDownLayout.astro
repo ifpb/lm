@@ -1,0 +1,100 @@
+---
+import { Icon } from 'astro-icon';
+import NavBar from '../components/NavBar.astro';
+import Sidebar from '../components/Sidebar.astro';
+import { GITHUB_EDIT_URL } from '../consts';
+
+export interface Props {
+  frontmatter: {
+    title: string;
+  };
+  file: string;
+  headings: {
+    slug: string;
+    text: string;
+    depth: number;
+  }[];
+}
+
+const { frontmatter, headings, file } = Astro.props;
+
+const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{frontmatter?.title ?? 'LM'}</title>
+    <style>
+      li.active {
+        @apply text-slate-700 font-bold;
+      }
+    </style>
+  </head>
+  <body class="bg-gray-100 dark:bg-slate-800 dark:text-white scroll-smooth">
+    <NavBar />
+    <div class="relative flex justify-between items-stretch">
+      <Sidebar />
+      <article
+        class="md:mx-auto py-8 max-sm:px-4 prose 2xl:prose-xl dark:prose-invert overflow-hidden"
+      >
+        <slot />
+        <p>
+          <a href={githubEditUrl} target="_blank">
+            <Icon name="ic:baseline-mode-edit" size={20} class="inline" />
+            <span>Editar esta página</span>
+          </a>
+        </p>
+      </article>
+      <nav
+        class="toc sticky top-0 py-8 w-40 lg:w-64 self-start hidden lg:block"
+      >
+        <ul class="flex flex-col gap-2">
+          {
+            headings
+              .filter(({ depth }) => depth > 1)
+              .map(({ slug, text, depth }) => {
+                const padding = depth > 2 ? depth - 2 : '';
+
+                return (
+                  <li
+                    class="text-slate-400 dark:text-white hover:text-slate-800 transition-all duration-150"
+                    style={`margin-left: ${padding}rem`}
+                  >
+                    <a href={`#${slug}`}>{text}</a>
+                  </li>
+                );
+              })
+          }
+        </ul>
+      </nav>
+    </div>
+    <script is:inline>
+      window.addEventListener('DOMContentLoaded', () => {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            const id = entry.target.getAttribute('id');
+            if (entry.intersectionRatio > 0) {
+              document
+                .querySelector(`li a[href="#${id}"]`)
+                .parentElement.classList.add('active');
+            } else {
+              document
+                .querySelector(`li a[href="#${id}"]`)
+                .parentElement.classList.remove('active');
+            }
+          });
+        });
+
+        document
+          .querySelectorAll(':is(h2, h3, h4, h5, h6)[id]')
+          .forEach((heading) => {
+            observer.observe(heading);
+          });
+      });
+    </script>
+  </body>
+</html>

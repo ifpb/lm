@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+}
+
+.material-icons {
+  color: #3b5898;
+  font-size: 3rem;
+}
+
+.material-icons:hover {
+  color: #555;
+}

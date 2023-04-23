@@ -1,0 +1,104 @@
+---
+title: Introdução ao CSS
+---
+
+import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
+
+# Introdução ao CSS
+
+## Dilema da Estilização
+
+[Primeira Página da Web](http://info.cern.ch/hypertext/WWW/TheProject.html)
+
+### `<center>`
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/deprecated-center" codeCss={false} />
+
+Referência: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center)
+
+### `<font>`
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/deprecated-font" codeCss={false} />
+
+Referência: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font)
+
+## Declaração do CSS
+
+### Inline stylesheet
+
+Atributo Style:
+
+```text
+            declaration
+          ┌──────┴───────┐
+<p style="font-size: 20px;">Lorem ipsum dolor</p>
+          └───┬───┘  └─┬─┘
+          property   value
+```
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/css-inline" codeCss={false} />
+
+### Internal stylesheet
+
+Blocos de Estilo e Tag Style:
+
+```text
+ selector
+   ┌┴┐     declaration
+    p { ┌──────┴───────┐
+        font-size: 20px;
+    }   └───┬───┘  └─┬─┘
+        property   value
+```
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/css-internal" onlyBody={false} codeCss={false} />
+
+### External stylesheet
+
+Tag Link:
+
+```html
+<link rel="stylesheet" href="css/style.css" />
+```
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/css-external" onlyBody={false} codeTree={true} />
+
+## Sintaxe do CSS
+
+### Propriedades
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/property-font" />
+
+### Seletores
+
+#### Elemento
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/selector-element" />
+
+#### `#id`
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/selector-id" />
+
+#### `.class`
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/selector-class" />
+
+#### Descendant combinator
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/selector-descendant-combinator" />
+
+### Função
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/function-rgb" />
+
+### At-rules
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/at-rule-import" onlyBody={false} />
+
+### Media Query
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/media-print" />
+
+### Variáveis
+
+<CodeHtmlCssPreview code="/codes/css/introduction-css/css-variable" />

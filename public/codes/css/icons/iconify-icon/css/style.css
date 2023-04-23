@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+}
+
+.iconify-inline {
+  color: #3b5898;
+  font-size: 3rem;
+}
+
+.iconify-inline:hover {
+  color: #555;
+}

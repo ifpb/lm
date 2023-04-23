@@ -1,0 +1,18 @@
+---
+import { Code } from 'astro/components';
+import tree from 'tree-node-cli';
+import { existsSync } from 'node:fs';
+import { resolve } from 'node:path';
+
+export interface Props {
+  src: string;
+}
+
+const { src } = Astro.props;
+
+const file = resolve('./public' + src);
+
+const codeTree = existsSync(file) ? tree(file) : 'Code not found';
+---
+
+<Code code={codeTree} />

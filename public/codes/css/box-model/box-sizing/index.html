@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Sizing</title>
+  </head>
+  <body>
+    <table style="width: 100%">
+      <thead>
+        <tr>
+          <th>Style</th>
+          <th>Preview</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>box-sizing: content-box;</td>
+          <td>
+            <div
+              style="
+                box-sizing: content-box;
+                border: 5px solid #000;
+                width: 200px;
+              "
+            >
+              Lorem ipsum dolor
+            </div>
+          </td>
+        </tr>
+        <tr>
+          <td>box-sizing: border-box;</td>
+          <td>
+            <div
+              style="
+                box-sizing: border-box;
+                border: 5px solid #000;
+                width: 200px;
+              "
+            >
+              Lorem ipsum dolor
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
