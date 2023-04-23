@@ -306,7 +306,10 @@ box-sizing: content-box;
 box-sizing: border-box;
 ```
 
-<CodeHtmlCssPreview code="/codes/css/box-model/box-sizing" codeCss={false} />
+| Style                    | Preview                                                                                                                                       |
+| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| box-sizing: content-box; | <div style={{boxSizing: 'content-box', border: "1px solid #000", width: '200px', padding: '1rem'}}>Lorem ipsum dolor amet, consectetur.</div> |
+| box-sizing: border-box;  | <div style={{boxSizing: 'border-box', border: "1px solid #000", width: '200px', padding: '1rem'}}>Lorem ipsum dolor amet, consectetur.</div>  |
 
 ## Overflow
 
@@ -324,7 +327,14 @@ overflow: scroll;
 overflow: auto;
 ```
 
-<CodeHtmlCssPreview code="/codes/css/box-model/overflow" codeCss={false} />
+Exemplo:
+
+| Style              | Preview                                                                                                                                 |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
+| overflow: visible; | <div style={{overflow: 'visible', border: "1px solid #000", width: '200px', height: '2rem'}}>Lorem ipsum dolor amet, consectetur.</div> |
+| overflow: hidden;  | <div style={{overflow: 'hidden', border: "1px solid #000", width: '200px', height: '2rem'}}>Lorem ipsum dolor amet, consectetur.</div>  |
+| overflow: scroll;  | <div style={{overflow: 'scroll', border: "1px solid #000", width: '200px', height: '2rem'}}>Lorem ipsum dolor amet, consectetur.</div>  |
+| overflow: auto;    | <div style={{overflow: 'auto', border: "1px solid #000", width: '200px', height: '2rem'}}>Lorem ipsum dolor amet, consectetur.</div>    |
 
 ## Outline
 
@@ -350,11 +360,11 @@ outline: green solid 3px;
 
 Exemplo:
 
-| Style                     | Preview                                                           |
-| ------------------------- | ----------------------------------------------------------------- |
-| outline: solid;           | <div style={{outline: 'solid'}}>Lorem ipsum dolor</div>           |
-| outline: #f66 dashed;     | <div style={{outline: '#f66 dashed'}}>Lorem ipsum dolor</div>     |
-| outline: green solid 3px; | <div style={{outline: 'green solid 3px'}}>Lorem ipsum dolor</div> |
+| Style                     | Preview                                                                           |
+| ------------------------- | --------------------------------------------------------------------------------- |
+| outline: solid;           | <div style={{outline: 'solid', width: '200px'}}>Lorem ipsum dolor</div>           |
+| outline: #f66 dashed;     | <div style={{outline: '#f66 dashed', width: '200px'}}>Lorem ipsum dolor</div>     |
+| outline: green solid 3px; | <div style={{outline: 'green solid 3px', width: '200px'}}>Lorem ipsum dolor</div> |
 
 ## References
 

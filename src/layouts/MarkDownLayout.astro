@@ -98,25 +98,35 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
     let current = '';
 
     sections.forEach((section) => {
+      const documentTop = Math.ceil(document.documentElement.scrollTop);
+
+      const bodyHeight = document.body.clientHeight;
+
       const firstSectionTop = sections[0].offsetTop;
 
       const sectionTop = section.offsetTop;
 
       // const sectionHeight = section.clientHeight;
 
-      if (document.documentElement.scrollTop + firstSectionTop >= sectionTop) {
+      // console.log(
+      //   section.id,
+      //   sectionTop,
+      //   documentTop,
+      //   documentTop < firstSectionTop,
+      //   documentTop >= sectionTop,
+      //   documentTop >= bodyHeight - window.innerHeight
+      // );
+
+      if (documentTop < firstSectionTop) {
+        current = sections[0].id;
+      } else if (documentTop >= sectionTop) {
         current = section.id;
-      } else if (
-        document.documentElement.scrollTop >=
-        document.body.clientHeight - window.innerHeight
-      ) {
+      } else if (documentTop >= bodyHeight - window.innerHeight) {
         current = sections[sections.length - 1].id;
       }
     });
 
     navLinks.forEach((link) => {
-      console.log(decodeURI(link.href.split('#').pop()), current);
-
       link.classList.remove('active');
 
       if (decodeURI(link.href.split('#').pop()) === current) {

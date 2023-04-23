@@ -1,19 +1,26 @@
 ---
-import type { Lang } from 'shiki';
 import { Code } from 'astro/components';
 import { readFileSync, existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 export interface Props {
-  src: string;
+  src?: string;
   onlyBody?: boolean;
 }
 
 const { src, onlyBody } = Astro.props;
 
-const file = resolve('./public' + src);
+let code = '';
 
-let code = existsSync(file) ? readFileSync(file, 'utf8') : 'Code not found';
+let lang = '';
+
+if (src) {
+  const file = resolve('./public' + src);
+
+  code = existsSync(file) ? readFileSync(file, 'utf8') : 'Code not found';
+
+  lang = existsSync(file) ? src?.split('.').pop() : 'plaintext';
+}
 
 if (onlyBody && code.includes('<body')) {
   const bodyContentPattern =
@@ -27,8 +34,21 @@ if (onlyBody && code.includes('<body')) {
 
   code = body?.replace(new RegExp(`^${firstIndentation}`, 'gim'), '') ?? code;
 }
-
-const lang = existsSync(file) ? src?.split('.').pop() : 'txt';
 ---
 
-<Code code={code} lang={lang as Lang} />
+<div class="dark-code-theme">
+  <Code code={code} lang={lang} theme="github-dark" />
+</div>
+<div class="light-code-theme">
+  <Code code={code} lang={lang} theme="github-light" />
+</div>
+
+<style is:global>
+  .dark .light-code-theme {
+    display: none;
+  }
+
+  html:not(.dark) .dark-code-theme {
+    display: none;
+  }
+</style>

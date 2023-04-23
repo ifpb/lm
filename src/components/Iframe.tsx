@@ -1,4 +1,6 @@
 import React, { useCallback, useEffect, useRef, useState } from 'react';
+import { useStore } from '@nanostores/react';
+import { isDark } from '../stores/themeStore';
 
 export interface Props extends React.HTMLAttributes<HTMLIFrameElement> {
   src: string;
@@ -7,7 +9,10 @@ export interface Props extends React.HTMLAttributes<HTMLIFrameElement> {
 
 export default function Iframe({ src, height }: Props) {
   const [iFrameHeight, setIFrameHeight] = useState(0);
+
   const iFrameRef = useRef<HTMLIFrameElement>(null);
+
+  const $isDark = useStore(isDark);
 
   const handleResize = useCallback(
     (iframe: React.RefObject<HTMLIFrameElement>) => {
@@ -31,6 +36,33 @@ export default function Iframe({ src, height }: Props) {
   useEffect(() => {
     handleResize(iFrameRef);
   }, [handleResize, iFrameRef]);
+
+  useEffect(() => {
+    // console.log($isDark);
+
+    iFrameRef?.current?.contentWindow?.document.head
+      .querySelector('style')
+      ?.remove();
+
+    if ($isDark) {
+      iFrameRef?.current?.contentWindow?.document.head.insertAdjacentHTML(
+        'beforeend',
+        `<style>
+          :root {
+            --color-primary: #ffffff;
+          }
+
+          body {
+            color: var(--color-primary);
+          }
+
+          a {
+            color: var(--color-primary);
+          }
+        </style>`
+      );
+    }
+  }, [$isDark]);
 
   return (
     <iframe

@@ -1,12 +1,21 @@
 import React, { useEffect, useState } from 'react';
 import { Icon } from '@iconify/react';
+import { useStore } from '@nanostores/react';
+import { isDark } from '../stores/themeStore';
 
 export default function ThemeToggle() {
   const [theme, setTheme] = useState(localStorage.getItem('theme') ?? 'light');
+  const $isDark = useStore(isDark);
 
   const handleClick = () => {
     setTheme(theme === 'light' ? 'dark' : 'light');
+
+    isDark.set(theme === 'light');
   };
+
+  useEffect(() => {
+    isDark.set(theme === 'dark');
+  }, []);
 
   useEffect(() => {
     if (theme === 'dark') {
@@ -14,6 +23,7 @@ export default function ThemeToggle() {
     } else {
       document.documentElement.classList.remove('dark');
     }
+
     localStorage.setItem('theme', theme);
   }, [theme]);
 
