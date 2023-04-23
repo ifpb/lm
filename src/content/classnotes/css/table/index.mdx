@@ -2,9 +2,7 @@
 title: Tabelas
 ---
 
-import CodeTree from '../../../../components/CodeTree.astro';
-import CodePreview from '../../../../components/CodePreview.astro';
-import HtmlPreview from '../../../../components/HtmlPreview.astro';
+import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
 
 # Tabelas
 
@@ -19,138 +17,12 @@ Oct 2017   Oct 2016    Change    Programming Language     Ratings      Change
 
 ## Collapsed
 
-table-collapse/index.html:
-
-```html
-<table>
-  <thead>
-    <tr>
-      <th>Oct 2017</th>
-      <th>Oct 2016</th>
-      <th>Change</th>
-      <th>Programming Language</th>
-      <th>Ratings</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td></td>
-      <td>Java</td>
-      <td>12.431%</td>
-      <td>-6.37%</td>
-    </tr>
-    ...
-    <tr>
-      <td>5</td>
-      <td>5</td>
-      <td></td>
-      <td>Python</td>
-      <td>3.803%</td>
-      <td>+0.03%</td>
-    </tr>
-  </tbody>
-</table>
-```
-
-table-collapse/css/master.css:
-
-```css
-table {
-  border-collapse: collapse;
-}
-
-td,
-th {
-  border: 1px solid #000;
-  padding: 0.4em 1em;
-}
-```
-
-Resultado:
-
-[/lm/codes/table/table-collapse/index.html](/lm/codes/table/table-collapse/index.html):
-
-<HtmlPreview src="/lm/codes/table/table-collapse/index.html" />
+<CodeHtmlCssPreview code="/codes/css/table/table-collapse" />
 
 ## Striped rows
 
-table-striped-row/index.html:
+<CodeHtmlCssPreview code="/codes/css/table/table-striped-row" />
 
-```html
-<table>
-  <thead>
-    <tr>
-      <th>Oct 2017</th>
-      <th>Oct 2016</th>
-      <th>Change</th>
-      <th>Programming Language</th>
-      <th>Ratings</th>
-      <th>Change</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>1</td>
-      <td>1</td>
-      <td></td>
-      <td>Java</td>
-      <td>12.431%</td>
-      <td>-6.37%</td>
-    </tr>
-    ...
-    <tr>
-      <td>5</td>
-      <td>5</td>
-      <td></td>
-      <td>Python</td>
-      <td>3.803%</td>
-      <td>+0.03%</td>
-    </tr>
-  </tbody>
-</table>
-```
-
-table-striped-row/css/master.css:
-
-```css
-table {
-  width: 100%;
-  border-collapse: collapse;
-  text-align: left;
-}
-
-table td,
-table th {
-  padding: 1%;
-}
-
-table thead th {
-  border-bottom: 2px solid #ddd;
-}
-
-table tbody tr {
-  border-bottom: 1px solid #ddd;
-}
-
-table tbody tr:nth-child(odd) {
-  background-color: #f9f9f9;
-}
-
-table tbody tr:hover {
-  background-color: #d3d3d3;
-  font-weight: bold;
-}
-```
-
-Resultado:
-
-[/lm/codes/table/table-striped-row/index.html](/lm/codes/table/table-striped-row/index.html):
-
-<HtmlPreview src="/lm/codes/table/table-striped-row/index.html" />
-
-## Reference
+## Referências
 
 - [How To Architect A Complex Web Table](https://www.smashingmagazine.com/2019/02/complex-web-tables/)

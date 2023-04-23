@@ -6,6 +6,7 @@ body {
 }
 
 body>div {
+  color: #000;
   background-color: #fff;
   width: 80%;
   min-width: 960px;
