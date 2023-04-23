@@ -20,7 +20,7 @@ const { pageTitle } = Astro.props;
   <body class="bg-gray-100 dark:bg-slate-800 dark:text-white scroll-smooth">
     <NavBar />
     <div
-      class="mx-auto relative min-h-screen flex justify-between items-stretch"
+      class="mx-auto relative min-h-screen flex max-sm:flex-col justify-between items-stretch"
     >
       <Sidebar />
       <slot />

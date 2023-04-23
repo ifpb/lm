@@ -28,18 +28,15 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
     <title>{frontmatter?.title ?? 'LM'}</title>
-    <style>
-      li.active {
-        @apply text-slate-700 font-bold;
-      }
-    </style>
   </head>
   <body class="bg-gray-100 dark:bg-slate-800 dark:text-white scroll-smooth">
     <NavBar />
-    <div class="relative flex justify-between items-stretch">
+    <div
+      class="relative z-0 flex max-sm:flex-col justify-between items-stretch"
+    >
       <Sidebar />
       <article
-        class="md:mx-auto py-8 max-sm:px-4 prose 2xl:prose-xl dark:prose-invert overflow-hidden"
+        class="md:mx-auto py-8 max-sm:px-4 prose 2xl:prose-xl dark:prose-invert overflow-hidden scroll-smooth"
       >
         <slot />
         <p>
@@ -50,7 +47,7 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
         </p>
       </article>
       <nav
-        class="toc sticky top-0 py-8 w-40 lg:w-64 self-start hidden lg:block"
+        class="toc sticky top-14 py-8 w-40 lg:w-64 self-start hidden lg:block"
       >
         <ul class="flex flex-col gap-2">
           {
@@ -72,29 +69,54 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
         </ul>
       </nav>
     </div>
-    <script is:inline>
-      window.addEventListener('DOMContentLoaded', () => {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            const id = entry.target.getAttribute('id');
-            if (entry.intersectionRatio > 0) {
-              document
-                .querySelector(`li a[href="#${id}"]`)
-                .parentElement.classList.add('active');
-            } else {
-              document
-                .querySelector(`li a[href="#${id}"]`)
-                .parentElement.classList.remove('active');
-            }
-          });
-        });
-
-        document
-          .querySelectorAll(':is(h2, h3, h4, h5, h6)[id]')
-          .forEach((heading) => {
-            observer.observe(heading);
-          });
-      });
-    </script>
   </body>
 </html>
+
+<style is:global>
+  a.active {
+    @apply text-slate-700 font-bold;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6)[id] {
+    padding-top: 3rem;
+  }
+</style>
+
+<script is:inline>
+  const sections = document.querySelectorAll(':is(h2, h3, h4, h5, h6)[id]');
+
+  const navLinks = document.querySelectorAll('nav.toc li a');
+
+  navLinks[0].classList.add('active');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach((section) => {
+      const firstSectionTop = sections[0].offsetTop;
+
+      const sectionTop = section.offsetTop;
+
+      // const sectionHeight = section.clientHeight;
+
+      if (document.documentElement.scrollTop + firstSectionTop >= sectionTop) {
+        current = section.id;
+      } else if (
+        document.documentElement.scrollTop >=
+        document.body.clientHeight - window.innerHeight
+      ) {
+        current = sections[sections.length - 1].id;
+      }
+    });
+
+    navLinks.forEach((link) => {
+      console.log(decodeURI(link.href.split('#').pop()), current);
+
+      link.classList.remove('active');
+
+      if (decodeURI(link.href.split('#').pop()) === current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
