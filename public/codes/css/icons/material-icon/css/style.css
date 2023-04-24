@@ -1,12 +1,9 @@
-a {
+.icon {
   text-decoration: none;
-  color: #3b5898;
-}
-
-a .material-icons {
+  color: #000;
   font-size: 3rem;
 }
 
-a:hover {
+.icon:hover {
   color: #555;
 }
