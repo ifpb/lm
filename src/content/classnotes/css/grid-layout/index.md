@@ -16,6 +16,7 @@ title: CSS Grid Layout
 
 ## Referências
 
+- [Grid CSS Playground](/lm/codes/css/grid-layout/grid-playground/index.html)
 - [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/)
 - [Basic concepts of grid layout (Subgrid) \| MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout/Basic_Concepts_of_Grid_Layout#Subgrid)
 - [CSS Grid — The Beginner’s Guide](https://medium.freecodecamp.org/css-grid-the-beginners-guide-45998e6f6b8)

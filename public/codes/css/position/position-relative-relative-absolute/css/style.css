@@ -1,0 +1,35 @@
+body {
+  margin: 0;
+}
+
+.relative {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+.absolute {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.grandparent {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.parent {
+  width: 100px;
+  height: 100px;
+  background-color: green;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: lime;
+}

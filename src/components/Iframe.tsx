@@ -35,35 +35,41 @@ export default function Iframe({ src, height }: Props) {
 
   useEffect(() => {
     handleResize(iFrameRef);
+
+    iFrameRef?.current?.contentWindow?.document.head.insertAdjacentHTML(
+      'beforeend',
+      `<style>
+        :root {
+          --color-primary: #000;
+        }
+
+        :root.dark {
+          --color-primary: #fff;
+        }
+
+        body {
+          color: var(--color-primary);
+        }
+
+        a {
+          color: var(--color-primary);
+        }
+
+        * {
+          border-color: var(--color-primary);
+        }
+      </style>`
+    );
   }, [handleResize, iFrameRef]);
 
   useEffect(() => {
-    // console.log($isDark);
-
-    iFrameRef?.current?.contentWindow?.document.head
-      .querySelector('style')
-      ?.remove();
-
     if ($isDark) {
-      iFrameRef?.current?.contentWindow?.document.head.insertAdjacentHTML(
-        'beforeend',
-        `<style>
-          :root {
-            --color-primary: #ffffff;
-          }
-
-          body {
-            color: var(--color-primary);
-          }
-
-          a {
-            color: var(--color-primary);
-          }
-
-          * {
-            border-color: var(--color-primary) !important;
-          }
-        </style>`
+      iFrameRef?.current?.contentWindow?.document.documentElement.classList.add(
+        'dark'
+      );
+    } else {
+      iFrameRef?.current?.contentWindow?.document.documentElement.classList.remove(
+        'dark'
       );
     }
   }, [$isDark]);

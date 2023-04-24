@@ -8,31 +8,31 @@ export interface Props {
   onlyBody?: boolean;
   codeTree?: boolean;
   codeCss?: boolean;
+  height?: number;
 }
 
-const { code, onlyBody = true, codeCss = true, codeTree = false } = Astro.props;
+const {
+  code,
+  height,
+  onlyBody = true,
+  codeCss = true,
+  codeTree = false,
+} = Astro.props;
 
 const codeName = code.split('/').pop();
 ---
+
+<p>
+  <a href={`/lm${code}/index.html`}>{codeName}</a>:
+</p>
+
+<HtmlPreview src={`${code}/index.html`} height={height} />
 
 {
   codeTree && (
     <>
       <p>Arquivos:</p>
       <CodeTree src={code} />
-    </>
-  )
-}
-
-<p>Código:</p>
-
-{
-  codeCss && (
-    <>
-      <p>
-        <code>{code}/css/style.css</code>:
-      </p>
-      <CodePreview src={`${code}/css/style.css`} />
     </>
   )
 }
@@ -44,8 +44,13 @@ const codeName = code.split('/').pop();
 
 <CodePreview src={`${code}/index.html`} onlyBody={onlyBody} />
 
-<p>
-  Resultado (<a href={`/lm${code}/index.html`}>{codeName}</a>):
-</p>
-
-<HtmlPreview src={`${code}/index.html`} />
+{
+  codeCss && (
+    <>
+      <p>
+        <code>{code}/css/style.css</code>:
+      </p>
+      <CodePreview src={`${code}/css/style.css`} />
+    </>
+  )
+}

@@ -1,0 +1,27 @@
+body {
+  margin: 0;
+}
+
+.static {
+  position: static;
+}
+
+.absolute {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.parent {
+  margin-top: 50px;
+  margin-left: 50px;
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.child {
+  width: 100px;
+  height: 100px;
+  background-color: lime;
+}

@@ -21,8 +21,33 @@ const { entry } = Astro.props;
 const { Content, headings } = await entry?.render();
 
 const file = `/src/content/classnotes/${entry.id}`;
+
+const slug = entry?.slug;
 ---
 
 <MarkDownLayout frontmatter={entry?.data} headings={headings} file={file}>
   <Content />
 </MarkDownLayout>
+
+<script define:vars={{ slug }}>
+  if (['css/box-model'].includes(slug)) {
+    console.log(slug);
+    document.querySelectorAll('iframe').forEach((iframe) => {
+      iframe.addEventListener('load', () => {
+        const iframeDocument = iframe.contentDocument;
+
+        const iframeHead = iframeDocument?.head;
+
+        const style = document.createElement('style');
+
+        style.innerHTML = `
+          * {
+            border-color: var(--color-primary) !important;
+          }
+        `;
+
+        iframeHead?.appendChild(style);
+      });
+    });
+  }
+</script>

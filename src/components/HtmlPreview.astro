@@ -1,11 +1,11 @@
 ---
 import Iframe from './Iframe.jsx';
 
-const { src } = Astro.props;
+const { src, height } = Astro.props;
 ---
 
 <div class="code-preview overflow-hidden">
-  {src ? <Iframe src={`/lm${src}`} client:load /> : <slot />}
+  {src ? <Iframe src={`/lm${src}`} height={height} client:load /> : <slot />}
 </div>
 
 <style>

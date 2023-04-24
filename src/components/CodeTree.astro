@@ -15,4 +15,9 @@ const file = resolve('./public' + src);
 const codeTree = existsSync(file) ? tree(file) : 'Code not found';
 ---
 
-<Code code={codeTree} />
+<div class="dark-code-theme">
+  <Code code={codeTree} theme="github-dark" />
+</div>
+<div class="light-code-theme">
+  <Code code={codeTree} theme="github-light" />
+</div>

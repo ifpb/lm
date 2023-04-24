@@ -1,93 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link rel="stylesheet" href="card.css">
-  <style>
-    .scale-1 {
-      transform: scale(1);
-    }
-    .scale-1_2 {
-      transform: scale(1.2);
-    }
-    .scale-0_5 {
-      transform: scale(0.5);
-    }
-    .scalex-1_3 {
-      transform: scaleX(1.3);
-    }
-    .scaley-1_3 {
-      transform: scaleY(1.3);
-    }
-    .scale-1_3-1_3 {
-      transform: scale(1.3, 1.3);
-    }
-    .scale-1_3-1_3-1_3 {
-      transform: scale3d(1.3, 1.3, 1.3);
-    }
-  </style>
-</head>
-<body>
-  <div class="cards">
-    <div class="card">
-      <div class="card-header">
-        normal
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./card.css" />
+    <style>
+      .scale-1 {
+        transform: scale(1);
+      }
+      .scale-1_2 {
+        transform: scale(1.2);
+      }
+      .scale-0_5 {
+        transform: scale(0.5);
+      }
+      .scalex-1_3 {
+        transform: scaleX(1.3);
+      }
+      .scaley-1_3 {
+        transform: scaleY(1.3);
+      }
+      .scale-1_3-1_3 {
+        transform: scale(1.3, 1.3);
+      }
+      .scale-1_3-1_3-1_3 {
+        transform: scale3d(1.3, 1.3, 1.3);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <div class="card">
+        <div class="card-header">normal</div>
+        <div class="card-body">
+          <div class="box"></div>
+        </div>
       </div>
-      <div class="card-body">
-        <div class="box"></div>
+      <div class="card">
+        <div class="card-header">scale(1.2)</div>
+        <div class="card-body">
+          <div class="box scale-1_2"></div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        scale(1.2)
+      <div class="card">
+        <div class="card-header">scale(0.5)</div>
+        <div class="card-body">
+          <div class="box scale-0_5"></div>
+        </div>
       </div>
-      <div class="card-body">
-        <div class="box scale-1_2"></div>
+      <div class="card">
+        <div class="card-header">scaleX(1.3)</div>
+        <div class="card-body">
+          <div class="box scalex-1_3"></div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        scale(0.5)
+      <div class="card">
+        <div class="card-header">scaleY(1.3)</div>
+        <div class="card-body">
+          <div class="box scaley-1_3"></div>
+        </div>
       </div>
-      <div class="card-body">
-        <div class="box scale-0_5"></div>
+      <div class="card">
+        <div class="card-header">scale(1.3, 1.3)</div>
+        <div class="card-body">
+          <div class="box scale-1_3-1_3"></div>
+        </div>
       </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        scaleX(1.3)
-      </div>
-      <div class="card-body">
-        <div class="box scalex-1_3"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        scaleY(1.3)
-      </div>
-      <div class="card-body">
-        <div class="box scaley-1_3"></div>
-      </div>
-    </div>
-    <div class="card">
-      <div class="card-header">
-        scale(1.3, 1.3)
-      </div>
-      <div class="card-body">
-        <div class="box scale-1_3-1_3"></div>
+      <div class="card">
+        <div class="card-header">scale3d(1.3, 1.3, 1.3)</div>
+        <div class="card-body">
+          <div class="box scale-1_3-1_3-1_3"></div>
+        </div>
       </div>
     </div>
-    <div class="card">
-      <div class="card-header">
-        scale3d(1.3, 1.3, 1.3)
-      </div>
-      <div class="card-body">
-        <div class="box scale-1_3-1_3-1_3"></div>
-      </div>
-    </div>
-  </div>
-</body>
+  </body>
 </html>

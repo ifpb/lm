@@ -5,261 +5,59 @@ title: Posicionamento de Elementos
 import CodeTree from '../../../../components/CodeTree.astro';
 import CodePreview from '../../../../components/CodePreview.astro';
 import HtmlPreview from '../../../../components/HtmlPreview.astro';
+import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
 
 # Posicionamento de Elementos
 
 ## Static positioning
 
-[demo/static.html](/codes/position/demo/static.html):
-
-```css
-#two {
-  background-color: #eee;
-  position: static;
-}
-```
-
-<HtmlPreview src="/lm/codes/position/demo/static.html" />
+<CodeHtmlCssPreview code="/codes/css/position/position-static" />
 
 ## Relative positioning
 
-### top, bottom, left, and right
+<CodeHtmlCssPreview code="/codes/css/position/position-relative" />
 
-[demo/relative.html](/codes/position/demo/relative.html):
+Propriedades: top, bottom, left, right, z-index
 
-```css
-#two {
-  background-color: #eee;
-  position: relative;
-  top: 5.8vw;
-  left: 5.8vw;
-}
-```
-
-<HtmlPreview src="/lm/codes/position/demo/relative.html" />
-
-### z-index
-
-[demo/z-index.html](/codes/position/demo/z-index.html):
-
-```css
-#two {
-  background-color: #eee;
-  position: relative;
-  top: 5.8vw;
-  left: 5.8vw;
-  z-index: -1;
-}
-
-#three {
-  z-index: -2;
-}
-```
-
-<HtmlPreview src="/lm/codes/position/demo/z-index.html" />
+<CodeHtmlCssPreview code="/codes/css/position/z-index" />
 
 ## Absolute positioning
 
-[demo/absolute.html](/codes/position/demo/absolute.html):
+<CodeHtmlCssPreview code="/codes/css/position/position-absolute" />
 
-```css
-#two {
-  background-color: #eee;
-  position: absolute;
-  top: 5.8vw;
-  left: 5.8vw;
-}
-```
+Positioning contexts (Closest positioned)
 
-<HtmlPreview src="/lm/codes/position/demo/absolute.html" />
+<CodeHtmlCssPreview code="/codes/css/position/position-static-absolute" />
 
-### Positioning contexts (Closest positioned)
+<CodeHtmlCssPreview code="/codes/css/position/position-relative-absolute" />
 
-[demo/static-absolute.html](/codes/position/demo/static-absolute.html):
-
-```html
-<div class="static parent">
-  <div class="absolute child"></div>
-</div>
-```
-
-```css
-.static {
-  position: static;
-}
-
-.absolute {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-```
-
-<HtmlPreview src="/lm/codes/position/demo/static-absolute.html" />
-
-[demo/rel-absolute.html](/codes/position/demo/rel-absolute.html):
-
-```html
-<div class="relative parent">
-  <div class="absolute child"></div>
-</div>
-```
-
-```css
-.relative {
-  position: relative;
-  top: 20px;
-  left: 20px;
-}
-
-.absolute {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-```
-
-<HtmlPreview src="/lm/codes/position/demo/rel-absolute.html" />
-
-[demo/rel-rel-absolute.html](/codes/position/demo/rel-rel-absolute.html):
-
-```html
-<div class="relative grandparent">
-  <div class="relative parent">
-    <div class="absolute child"></div>
-  </div>
-</div>
-```
-
-```css
-.relative {
-  position: relative;
-  top: 20px;
-  left: 20px;
-}
-
-.absolute {
-  position: absolute;
-  top: 20px;
-  left: 20px;
-}
-```
-
-<HtmlPreview src="/lm/codes/position/demo/rel-rel-absolute.html" />
+<CodeHtmlCssPreview code="/codes/css/position/position-relative-relative-absolute" />
 
 ## Fixed positioning
 
-[demo/fixed.html](/codes/position/demo/fixed.html):
-
-```css
-#two {
-  background-color: #eee;
-  position: fixed;
-  top: 5.8vw;
-  left: 5.8vw;
-}
-```
-
-<HtmlPreview src="/lm/codes/position/demo/fixed.html" height="200" />
+<CodeHtmlCssPreview code="/codes/css/position/position-fixed" height={200} />
 
 ## Sticky positioning
 
-[demo/sticky.html](/codes/position/demo/sticky.html):
-
-```css
-dt {
-  position: -webkit-sticky;
-  position: sticky;
-  top: -1px;
-}
-```
-
-<HtmlPreview src="/lm/codes/position/demo/sticky.html" height="300" />
+<CodeHtmlCssPreview code="/codes/css/position/position-sticky" height={200} />
 
 ## Stretch a Box
 
 ### Absolute inside Absolute, with Fixed Dimensions
 
-[demo/static-static-fixed-height.html](/codes/position/demo/static-static-fixed-height.html):
-
-```html
-<div class="parent">
-  <div class="child"></div>
-</div>
-```
-
-```css
-.parent {
-  position: static;
-  width: 200px;
-  border: 3px solid #000;
-}
-
-.child {
-  position: static;
-  width: 100px;
-  height: 100px;
-  background-color: lime;
-}
-```
-
-<HtmlPreview src="/lm/codes/position/demo/static-static-fixed-height.html" />
+<CodeHtmlCssPreview code="/codes/css/position/fixed-height-static-static" />
 
 ### Absolute Inside Relative, with Fixed Dimensions
 
-[demo/rel-absolute-fixed-heigh.html](/codes/position/demo/rel-absolute-fixed-height.html):
-
-```css
-.parent {
-  position: relative;
-  width: 200px;
-  border: 3px solid #000;
-}
-
-.child {
-  position: absolute;
-  width: 100px;
-  height: 100px;
-  background-color: lime;
-}
-```
-
-<HtmlPreview src="/lm/codes/position/demo/rel-absolute-fixed-height.html" />
+<CodeHtmlCssPreview code="/codes/css/position/fixed-height-relative-absolute" />
 
 ### Absolute Inside Relative Without a Specific Height
 
-[demo/rel-absolute-strech-height.html](/codes/position/demo/rel-absolute-strech-height.html):
-
-```css
-.parent {
-  position: relative;
-  width: 200px;
-  height: 100px;
-  border: 3px solid #000;
-}
-
-.child {
-  position: absolute;
-  width: 100px;
-  top: 0px;
-  bottom: 0px;
-  background-color: lime;
-}
-```
-
-<HtmlPreview src="/lm/codes/position/demo/rel-absolute-strech-height.html" />
+<CodeHtmlCssPreview code="/codes/css/position/strech-height-relative-absolute" />
 
 ## Float
 
-[demo/float.html](/codes/position/demo/float.html)
-
-```css
-img {
-  float: right;
-}
-```
-
-<HtmlPreview src="/lm/codes/position/demo/float.html" />
+<CodeHtmlCssPreview code="/codes/css/position/float" />
 
 ## Referências
 
