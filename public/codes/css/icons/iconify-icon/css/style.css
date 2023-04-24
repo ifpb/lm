@@ -1,3 +1,11 @@
+.dark .icon {
+  color: #fff;
+}
+
+.dark .icon:hover {
+  color: #ddd;
+}
+
 .icon {
   text-decoration: none;
   color: #000;
