@@ -1,9 +1,11 @@
+/* light mode */
 :root {
   --background-color: #fff;
-  --text-color: #121416d8;
+  --text-color: #000;
 }
 
-body.dark {
+/* dark mode */
+html.dark {
   --background-color: #0d1117;
   --text-color: #F7F8F8;
 }

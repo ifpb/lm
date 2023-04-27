@@ -1,11 +1,20 @@
 ---
+import { readFile } from '../helpers/files';
 import Iframe from './Iframe.jsx';
 
-const { src, height } = Astro.props;
+const { src, height, isShowIframe = true } = Astro.props;
 ---
 
 <div class="code-preview overflow-hidden">
-  {src ? <Iframe src={`/lm${src}`} height={height} client:load /> : <slot />}
+  {
+    src && isShowIframe ? (
+      <Iframe src={`/lm${src}`} height={height} client:load />
+    ) : src ? (
+      <Fragment set:html={readFile('./public' + src)} />
+    ) : (
+      <slot />
+    )
+  }
 </div>
 
 <style>

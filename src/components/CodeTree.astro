@@ -5,19 +5,20 @@ import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
 
 export interface Props {
-  src: string;
+  src?: string;
+  content?: string;
 }
 
-const { src } = Astro.props;
+const { src, content } = Astro.props;
 
-const file = resolve('./public' + src);
-
-const codeTree = existsSync(file) ? tree(file) : 'Code not found';
+const codeTree = existsSync(resolve('./public' + src))
+  ? tree(resolve('./public' + src))
+  : 'Code not found';
 ---
 
 <div class="dark-code-theme">
-  <Code code={codeTree} theme="github-dark" />
+  <Code code={content ?? codeTree} theme="github-dark" />
 </div>
 <div class="light-code-theme">
-  <Code code={codeTree} theme="github-light" />
+  <Code code={content ?? codeTree} theme="github-light" />
 </div>

@@ -1,56 +1,65 @@
 ---
+import { existsFile } from '../helpers/files';
 import CodePreview from './CodePreview.astro';
 import CodeTree from './CodeTree.astro';
 import HtmlPreview from './HtmlPreview.astro';
 
 export interface Props {
-  code: string;
+  src: string;
   onlyBody?: boolean;
   codeTree?: boolean;
   codeCss?: boolean;
+  isShowIframe?: boolean;
   height?: number;
+  htmlFile: string;
 }
 
 const {
-  code,
+  src,
   height,
   onlyBody = true,
+  isShowIframe = true,
   codeCss = true,
   codeTree = false,
+  htmlFile,
 } = Astro.props;
 
-const codeName = code.split('/').pop();
+const codeName = src.split('/').pop();
+
+const htmlPath = `${src}/${htmlFile ?? 'index.html'}`;
+
+const cssPath = `${src}/css/style.css`;
 ---
 
 <p>
-  <a href={`/lm${code}/index.html`}>{codeName}</a>:
+  <a href={`/lm${htmlPath}`}>{codeName}</a>:
 </p>
 
-<HtmlPreview src={`${code}/index.html`} height={height} />
+<HtmlPreview src={htmlPath} height={height} isShowIframe={isShowIframe} />
 
 {
   codeTree && (
     <>
       <p>Arquivos:</p>
-      <CodeTree src={code} />
+      <CodeTree src={src} />
     </>
   )
 }
 
 <p>
-  <code>{code}/index.html</code>
+  <code>{htmlPath}</code>
   :
 </p>
 
-<CodePreview src={`${code}/index.html`} onlyBody={onlyBody} />
+<CodePreview src={htmlPath} onlyBody={onlyBody} />
 
 {
-  codeCss && (
+  existsFile(cssPath) && codeCss && (
     <>
       <p>
-        <code>{code}/css/style.css</code>:
+        <code>{cssPath}</code>:
       </p>
-      <CodePreview src={`${code}/css/style.css`} />
+      <CodePreview src={cssPath} />
     </>
   )
 }

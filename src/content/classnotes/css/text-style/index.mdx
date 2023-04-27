@@ -2,6 +2,7 @@
 title: Estilo de Texto
 ---
 
+import CodePreview from '../../../../components/CodePreview.astro';
 import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
 
 # Estilo de Texto
@@ -19,8 +20,8 @@ import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro'
 
 Exemplo:
 
-```css
-/* <named-color> value */
+export const colorSyntax =
+`/* <named-color> value */
 color: red;
 
 /* <hex-color> value */
@@ -30,8 +31,9 @@ color: #009900;
 color: rgb(34, 12, 64);
 
 /* <hsl-color> value */
-color: hsl(30, 100%, 50%);
-```
+color: hsl(30, 100%, 50%);`
+
+<CodePreview content={colorSyntax} lang="css" />
 
 | Style                       | Style           | Preview                                                         |
 | --------------------------- | --------------- | --------------------------------------------------------------- |
@@ -313,11 +315,11 @@ Multiple shadow
 
 Fonte: [O surpreendente text-shadow](https://medium.com/jaguaribetech/o-surpreendente-text-shadow-1e3a9599ae4f)
 
-<CodeHtmlCssPreview code="/codes/css/text-style/text-shadow" />
+<CodeHtmlCssPreview src="/codes/css/text-style/text-shadow" />
 
 Fonte: [CSS Text Effects From CodePen](https://freebiesupply.com/blog/css-text-effects-from-codepen/)
 
-<CodeHtmlCssPreview code="/codes/css/text-style/text-shadow-long" />
+<CodeHtmlCssPreview src="/codes/css/text-style/text-shadow-long" />
 
 ## Text layout
 
@@ -461,4 +463,4 @@ word-spacing: 110%;
 
 Properties: [color](https://developer.mozilla.org/en-US/docs/Web/CSS/color), [cursor](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor), [outline](https://developer.mozilla.org/en-US/docs/Web/CSS/outline), [text-decoration](https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration)
 
-<CodeHtmlCssPreview code="/codes/css/text-style/hyperlink-state" />
+<CodeHtmlCssPreview src="/codes/css/text-style/hyperlink-state" />

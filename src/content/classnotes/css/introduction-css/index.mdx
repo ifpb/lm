@@ -2,6 +2,8 @@
 title: Introdução ao CSS
 ---
 
+import CodePreview from '../../../../components/CodePreview.astro';
+import CodeTree from '../../../../components/CodeTree.astro';
 import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
 
 # Introdução ao CSS
@@ -12,13 +14,13 @@ import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro'
 
 ### `<center>`
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/deprecated-center" codeCss={false} />
+<CodeHtmlCssPreview src="/codes/css/introduction-css/deprecated-center" />
 
 Referência: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center)
 
 ### `<font>`
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/deprecated-font" codeCss={false} />
+<CodeHtmlCssPreview src="/codes/css/introduction-css/deprecated-font" />
 
 Referência: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font)
 
@@ -28,77 +30,92 @@ Referência: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fon
 
 Atributo Style:
 
-```
-            declaration
+export const inlineCodeTree =
+`            declaration
           ┌──────┴───────┐
 <p style="font-size: 20px;">Lorem ipsum dolor</p>
           └───┬───┘  └─┬─┘
-          property   value
-```
+          property   value`
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/css-inline" codeCss={false} />
+<CodeTree content={inlineCodeTree} />
+
+<CodeHtmlCssPreview src="/codes/css/introduction-css/css-inline" />
 
 ### Internal stylesheet
 
 Blocos de Estilo e Tag Style:
 
-```
- selector
+export const internalCodeTree =
+`selector
    ┌┴┐     declaration
     p { ┌──────┴───────┐
         font-size: 20px;
     }   └───┬───┘  └─┬─┘
-        property   value
-```
+        property   value`
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/css-internal" onlyBody={false} codeCss={false} />
+<CodeTree content={internalCodeTree} />
+
+<CodeHtmlCssPreview src="/codes/css/introduction-css/css-internal" onlyBody={false} />
 
 ### External stylesheet
 
 Tag Link:
 
-```html
+<CodePreview lang="html">
 <link rel="stylesheet" href="css/style.css" />
-```
+</CodePreview>
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/css-external" onlyBody={false} codeTree={true} />
+<CodeHtmlCssPreview src="/codes/css/introduction-css/css-external" onlyBody={false} codeTree={true} />
 
 ## Sintaxe do CSS
 
 ### Propriedades
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/property-font" />
+<CodeHtmlCssPreview src="/codes/css/introduction-css/property-font" />
 
 ### Seletores
 
 #### Elemento
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/selector-element" />
+<CodeHtmlCssPreview src="/codes/css/introduction-css/selector-element" />
 
 #### `#id`
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/selector-id" />
+<CodeHtmlCssPreview src="/codes/css/introduction-css/selector-id" />
 
 #### `.class`
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/selector-class" />
+<CodeHtmlCssPreview src="/codes/css/introduction-css/selector-class" />
 
 #### Descendant combinator
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/selector-descendant-combinator" />
+<CodeHtmlCssPreview src="/codes/css/introduction-css/selector-descendant-combinator" />
 
 ### Função
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/function-rgb" />
+#### `rgb()` e `rgba()`
+
+<CodeHtmlCssPreview src="/codes/css/introduction-css/function-rgb" />
+
+#### `calc()`
+
+<CodeHtmlCssPreview src="/codes/css/introduction-css/function-calc" />
 
 ### At-rules
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/at-rule-import" onlyBody={false} />
+<CodeHtmlCssPreview src="/codes/css/introduction-css/at-rule-import" onlyBody={false} />
 
 ### Media Query
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/media-print" />
+<CodeHtmlCssPreview src="/codes/css/introduction-css/media-print" />
 
 ### Variáveis
 
-<CodeHtmlCssPreview code="/codes/css/introduction-css/css-variable" />
+<CodeHtmlCssPreview src="/codes/css/introduction-css/css-variable" />
+
+### Unidades de Medida
+
+- [`<lenght>`](https://developer.mozilla.org/en-US/docs/Web/CSS/lenght): px, em, rem, cm, mm, in, pt, pc, vh, vw, vmin, vmax, %
+- [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color): `<named-color>`, `<hex-color>`, rgb(), rgba(), hsl(), hsla()
+- [`<angle>`](https://developer.mozilla.org/en-US/docs/Web/CSS/angle): deg, rad, grad, turn
+- [`<time>`](https://developer.mozilla.org/en-US/docs/Web/CSS/time): s, ms

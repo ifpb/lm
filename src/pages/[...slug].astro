@@ -31,7 +31,6 @@ const slug = entry?.slug;
 
 <script define:vars={{ slug }}>
   if (['css/box-model'].includes(slug)) {
-    console.log(slug);
     document.querySelectorAll('iframe').forEach((iframe) => {
       iframe.addEventListener('load', () => {
         const iframeDocument = iframe.contentDocument;
