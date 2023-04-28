@@ -8,7 +8,8 @@ export interface Props {
   src: string;
   onlyBody?: boolean;
   codeTree?: boolean;
-  codeCss?: boolean;
+  isShowHtml?: boolean;
+  isShowCss?: boolean;
   isShowIframe?: boolean;
   height?: number;
   htmlFile: string;
@@ -19,7 +20,8 @@ const {
   height,
   onlyBody = true,
   isShowIframe = true,
-  codeCss = true,
+  isShowHtml = true,
+  isShowCss = true,
   codeTree = false,
   htmlFile,
 } = Astro.props;
@@ -46,19 +48,25 @@ const cssPath = `${src}/css/style.css`;
   )
 }
 
-<p>
-  <code>{htmlPath}</code>
-  :
-</p>
+{
+  isShowHtml && (
+    <>
+      <p>
+        <code>{htmlPath}</code>:
+      </p>
 
-<CodePreview src={htmlPath} onlyBody={onlyBody} />
+      <CodePreview src={htmlPath} onlyBody={onlyBody} />
+    </>
+  )
+}
 
 {
-  existsFile(cssPath) && codeCss && (
+  existsFile(cssPath) && isShowCss && (
     <>
       <p>
         <code>{cssPath}</code>:
       </p>
+
       <CodePreview src={cssPath} />
     </>
   )

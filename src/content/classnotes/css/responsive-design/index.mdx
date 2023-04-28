@@ -2,11 +2,9 @@
 title: Responsive Design
 ---
 
-import CodeTree from '../../../../components/CodeTree.astro';
-import CodePreview from '../../../../components/CodePreview.astro';
-import HtmlPreview from '../../../../components/HtmlPreview.astro';
+import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
 
-# Responsive Design
+# {frontmatter.title}
 
 ## Viewport
 
@@ -38,34 +36,11 @@ import HtmlPreview from '../../../../components/HtmlPreview.astro';
 }
 ```
 
-[menu/index.html](/lm/codes/css/responsive-design/menu/index.html):
-
-```css
-ul {
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-}
-
-@media screen and (min-width: 700px) {
-  ul {
-    flex-direction: row;
-    justify-content: space-around;
-  }
-}
-
-@media screen and (min-width: 1000px) {
-  ul {
-    justify-content: flex-end;
-  }
-}
-```
+<CodeHtmlCssPreview src="/codes/css/responsive-design/menu" />
 
 ## Responsive Image
 
-[image-responsive/index.html](/lm/codes/css/responsive-design/image-responsive/index.html):
-
-<CodePreview src="/codes/css/responsive-design/image-responsive/index.html" lang="html" />
+<CodeHtmlCssPreview src="/codes/css/responsive-design/image-responsive" />
 
 ## Demo
 

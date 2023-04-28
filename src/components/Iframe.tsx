@@ -4,10 +4,11 @@ import { isDark } from '../stores/themeStore';
 
 export interface Props extends React.HTMLAttributes<HTMLIFrameElement> {
   src: string;
+  srcDoc?: string;
   height?: number;
 }
 
-export default function Iframe({ src, height }: Props) {
+export default function Iframe({ src, srcDoc, height }: Props) {
   const [iFrameHeight, setIFrameHeight] = useState(0);
 
   const iFrameRef = useRef<HTMLIFrameElement>(null);
@@ -79,6 +80,7 @@ export default function Iframe({ src, height }: Props) {
       ref={iFrameRef}
       onLoad={() => handleResize(iFrameRef)}
       src={src}
+      // srcDoc={srcDoc}
       style={{
         height: `${Number(iFrameHeight)}px`,
         width: '100%',

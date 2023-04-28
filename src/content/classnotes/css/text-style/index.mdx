@@ -2,10 +2,9 @@
 title: Estilo de Texto
 ---
 
-import CodePreview from '../../../../components/CodePreview.astro';
 import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
 
-# Estilo de Texto
+# {frontmatter.title}
 
 ## Text, Font
 
@@ -20,8 +19,8 @@ import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro'
 
 Exemplo:
 
-export const colorSyntax =
-`/* <named-color> value */
+```css
+/* <named-color> value */
 color: red;
 
 /* <hex-color> value */
@@ -31,9 +30,8 @@ color: #009900;
 color: rgb(34, 12, 64);
 
 /* <hsl-color> value */
-color: hsl(30, 100%, 50%);`
-
-<CodePreview content={colorSyntax} lang="css" />
+color: hsl(30, 100%, 50%);
+```
 
 | Style                       | Style           | Preview                                                         |
 | --------------------------- | --------------- | --------------------------------------------------------------- |

@@ -8,9 +8,14 @@ const { src, height, isShowIframe = true } = Astro.props;
 <div class="code-preview overflow-hidden">
   {
     src && isShowIframe ? (
-      <Iframe src={`/lm${src}`} height={height} client:load />
+      <Iframe
+        src={`/lm${src}`}
+        srcDoc={readFile(src)}
+        height={height}
+        client:load
+      />
     ) : src ? (
-      <Fragment set:html={readFile('./public' + src)} />
+      <Fragment set:html={readFile(src)} />
     ) : (
       <slot />
     )

@@ -1,8 +1,13 @@
 table {
-  border-collapse: collapse
+  border-collapse: collapse;
 }
 
-td, th {
+html.dark table :is(td, th) {
+  border-color: #fff;
+}
+
+td,
+th {
   border: 1px solid #000;
-  padding: .4em 1em;
+  padding: 0.4em 1em;
 }

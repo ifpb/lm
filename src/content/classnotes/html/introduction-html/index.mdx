@@ -3,37 +3,12 @@ title: Introdução ao HTML
 ---
 
 import CodePreview from '../../../../components/CodePreview.astro';
-import CodeTree from '../../../../components/CodeTree.astro';
 import HtmlPreview from '../../../../components/HtmlPreview.astro';
 import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
 
-export const tagSyntax =
-`openning              closing
-tag      content      tag
-┌┴┐┌────────────────┐┌─┴─┐
-<p>Lorem ipsum dolor.</p>
-└────────────────────────┘
-        Element`
+export const imageCodeTree = ``;
 
-export const linkSyntax =
-`hyperlink = content + url
-
-content = text, image...`
-
-export const attributeSyntax = `attribute (chaves="valor")
-   ┌─────┴────┐
-<p lang="pt-BR">Lorem ipsum dolor.</p>`;
-
-export const imageCodeTree = `/
-└── var
-    └── www
-        └── site
-            └── pages
-                ├── index.html
-                └── img
-                    └── image.png`;
-
-# Introdução ao HTML
+# {frontmatter.title}
 
 ## Sintase do HTML
 
@@ -41,7 +16,14 @@ export const imageCodeTree = `/
 
 Estrutura:
 
-<CodePreview content={tagSyntax} />
+```
+openning              closing
+tag      content      tag
+┌┴┐┌────────────────┐┌─┴─┐
+<p>Lorem ipsum dolor.</p>
+└────────────────────────┘
+        Element
+```
 
 Exemplos:
 
@@ -89,13 +71,17 @@ Referências:
 
 Estrutura:
 
-<CodePreview content={attributeSyntax} />
+```
+attribute (chaves="valor")
+   ┌─────┴────┐
+<p lang="pt-BR">Lorem ipsum dolor.</p>
+```
 
 Tags sem conteúdos:
 
-<CodePreview lang="html">
-  <meta name="description" content="A description of the page" />
-</CodePreview>
+```html
+<meta name="description" content="A description of the page" />
+```
 
 Exemplos:
 
@@ -277,13 +263,17 @@ Referências:
 
 Sintaxe:
 
-<CodePreview content={linkSyntax} />
+```
+hyperlink = content + url
+
+content = text, image...
+```
 
 HTML:
 
-<CodePreview lang="html">
-  <a href="url">content</a>
-</CodePreview>
+```html
+<a href="url">content</a>
+```
 
 <CodeHtmlCssPreview
   src="/codes/html/introduction-html/hyperlink"
@@ -301,9 +291,8 @@ Link interno - hyperlink-internal(#):
 
 <HtmlPreview>
   <nav>
-    <a href="#tags">Tags</a>
-    <br />
-    <a href="#atributo-de-tag">Atributo de tag</a>,<br />
+    <a href="#tags">Tags</a><br />
+    <a href="#atributo-de-tag">Atributo de tag</a><br />
     <a href="#entidade-do-html">Entidade do HTML</a>
   </nav>
 </HtmlPreview>
@@ -319,13 +308,22 @@ Link interno - hyperlink-internal(#):
 
 Sintaxe:
 
-<CodePreview lang="html">
-  <img src="url" alt="text alternative" />
-</CodePreview>
+```html
+<img src="url" alt="text alternative" />
+```
 
 Arquivos:
 
-<CodeTree content={imageCodeTree} />
+```
+/
+└── var
+    └── www
+        └── site
+            └── pages
+                ├── index.html
+                └── img
+                    └── image.png
+```
 
 Código (Abrir no Liver Server e localmente):
 

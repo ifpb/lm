@@ -2,11 +2,9 @@
 title: Animation
 ---
 
-import CodeTree from '../../../../components/CodeTree.astro';
-import CodePreview from '../../../../components/CodePreview.astro';
-import HtmlPreview from '../../../../components/HtmlPreview.astro';
+import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
 
-# Animation
+# {frontmatter.title}
 
 ## Sintaxe
 
@@ -30,63 +28,15 @@ animation: 3s slidein;
 
 ## Spinner
 
-```css
-.spinner {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  border: 5px solid #ccc;
-  border-right-color: #000;
-  animation: spinner 1s linear infinite;
-}
-
-@keyframes spinner {
-  to {
-    transform: rotate(360deg);
-  }
-}
-```
-
-[spinner/index.html](/lm/codes/css/animation/spinner/index.html):
-
-<HtmlPreview src="/codes/css/animation/spinner/index.html" height="200" />
+<CodeHtmlCssPreview src="/codes/css/animation/spinner" height={200} />
 
 ## Bounce
 
-```css
-@keyframes bounce {
-  from,
-  20%,
-  53%,
-  80%,
-  to {
-    transform: translateY(0);
-    animation-timing-function: ease-in;
-  }
-  40% {
-    transform: translateY(-100px);
-    animation-timing-function: ease-out;
-  }
-  70% {
-    transform: translateY(-50px);
-    animation-timing-function: ease-out;
-  }
-  90% {
-    transform: translateY(-50px);
-  }
-}
+<CodeHtmlCssPreview src="/codes/css/animation/bounce" height={200} />
 
-.bounce {
-  animation-name: bounce;
-  animation-duration: 2s;
-  animation-delay: 0.5s;
-  animation-iteration-count: infinite;
-}
-```
+## Animete CSS
 
-[bounce/index.html](/lm/codes/css/animation/bounce/index.html):
-
-<HtmlPreview src="/codes/css/animation/bounce/index.html" height="200" />
+<CodeHtmlCssPreview src="/codes/css/animation/animate-css" />
 
 ## Referências
 

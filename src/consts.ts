@@ -2,7 +2,7 @@ export const GITHUB_EDIT_URL = 'https://github.com/ifpb/lm/tree/main';
 
 export const CLASSNOTES = [
   // 'web-server/live-server',
-  'html/markup-language',
+  'markup/markup-language',
   'html/introduction-html',
   'css/introduction-css',
   // 'css/cascade-inheritance',

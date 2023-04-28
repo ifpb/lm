@@ -6,7 +6,7 @@ import CodePreview from '../../../../components/CodePreview.astro';
 import CodeTree from '../../../../components/CodeTree.astro';
 import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
 
-# Introdução ao CSS
+# {frontmatter.title}
 
 ## Dilema da Estilização
 
@@ -61,9 +61,9 @@ export const internalCodeTree =
 
 Tag Link:
 
-<CodePreview lang="html">
+```html
 <link rel="stylesheet" href="css/style.css" />
-</CodePreview>
+```
 
 <CodeHtmlCssPreview src="/codes/css/introduction-css/css-external" onlyBody={false} codeTree={true} />
 

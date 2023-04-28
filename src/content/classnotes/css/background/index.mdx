@@ -2,11 +2,10 @@
 title: Background
 ---
 
-import CodeTree from '../../../../components/CodeTree.astro';
-import CodePreview from '../../../../components/CodePreview.astro';
+import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
 import HtmlPreview from '../../../../components/HtmlPreview.astro';
 
-# Background
+# {frontmatter.title}
 
 ## Background color
 
@@ -35,23 +34,7 @@ background-color: currentcolor;
 background-color: transparent;
 ```
 
-Código:
-
-```css
-h1 {
-  background-color: #000;
-  color: #fff;
-  padding: 20px;
-}
-```
-
-Resultado:
-
-<HtmlPreview>
-  <h1 style={{ backgroundColor: '#000', color: '#fff', padding: '20px' }}>
-    Lorem ipsum dolor
-  </h1>
-</HtmlPreview>
+<CodeHtmlCssPreview src="/codes/css/background/bg-color" />
 
 ## Background Image
 
@@ -67,22 +50,11 @@ background-image: url(img/image.jpg);
 
 Código:
 
-[img/hexagonal-pattern.jpg](/lm/codes/css/background/bg-image/img/hexagonal-pattern.jpg) ([Source](https://www.freepik.com/free-vector/hexagonal-pattern_852781.htm#term=seamless%20pattern&page=1&position=2)):
+[img/hexagonal-pattern.jpg](/public/lm/codes/css/background/bg-image/img/hexagonal-pattern.jpg) ([Source](https://www.freepik.com/free-vector/hexagonal-pattern_852781.htm#term=seamless%20pattern&page=1&position=2)):
 
 ![](/lm/codes/css/background/bg-image/img/hexagonal-pattern.jpg)
 
-css:
-
-```css
-h1 {
-  background-image: url(img/hexagonal-pattern.jpg);
-  padding: 20px;
-}
-```
-
-Resultado:
-
-<HtmlPreview src="/codes/css/background/bg-image/index.html" />
+<CodeHtmlCssPreview src="/codes/css/background/bg-image" />
 
 Repositório de imagens:
 
@@ -98,88 +70,19 @@ Repositório de imagens:
 - [repeating-radial-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient)
 - [Radial Gradient Recipes](https://css-tricks.com/radial-gradient-recipes/)
 
-Linear Gradient
+Linear Gradient:
 
-```css
-.bwbg {
-  background-image: linear-gradient(#000, #fff);
-}
+<CodeHtmlCssPreview src="/codes/css/background/bg-image-linear-gradient" />
 
-.bwsidebg {
-  background-image: linear-gradient(to right top, #000, #fff);
-}
+Radial Gradient:
 
-.greytranspbg {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7), transparent);
-}
-
-.bluegreenbg {
-  background-image: linear-gradient(
-    45deg,
-    rgba(0, 145, 200, 0.6),
-    rgba(1, 193, 120, 0.6)
-  );
-}
-```
-
-Resultado:
-
-<HtmlPreview src="/codes/css/background/bg-image-linear-gradient/index.html" />
-
-Radial Gradient
-
-```css
-.bwbg {
-  background-image: radial-gradient(#000, #fff);
-}
-
-.bwsidebg {
-  background-image: radial-gradient(circle at center, #000, #fff);
-}
-
-.greytranspbg {
-  background-image: radial-gradient(
-    circle at 10px 10px,
-    rgba(0, 0, 0, 0.7),
-    transparent
-  );
-}
-
-.bluegreenbg {
-  background-image: radial-gradient(
-    farthest-corner at 40px 40px,
-    rgba(0, 145, 200, 0.6),
-    rgba(1, 193, 120, 0.6)
-  );
-}
-```
-
-Resultado:
-
-<HtmlPreview src="/codes/css/background/bg-image-radial-gradient/index.html" />
+<CodeHtmlCssPreview src="/codes/css/background/bg-image-radial-gradient" />
 
 ### Multiple backgrounds
 
 [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Backgrounds#Multiple_backgrounds)
 
-Código:
-
-```css
-.multiple {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 10%, transparent),
-    url(img/image.jpg);
-}
-
-.trendbg {
-  background-image: linear-gradient(
-      45deg,
-      rgba(0, 145, 200, 0.6),
-      rgba(1, 193, 120, 0.6)
-    ), url(img/image.jpg);
-}
-```
-
-<HtmlPreview src="/codes/css/background/bg-image-multiple/index.html" />
+<CodeHtmlCssPreview src="/codes/css/background/bg-image-multiple" />
 
 ## Background Repeat
 
@@ -199,37 +102,15 @@ background-repeat: repeat;
 background-repeat: no-repeat;
 ```
 
-Código:
-
-[img/pattern.png](bg-repeat/img/pattern.png) ([Source](https://www.freepik.com/free-vector/zig-zag-background-with-pastel-colors_1795073.htm)):
+[img/pattern.png](/lm/codes/css/background/bg-repeat/img/pattern.png) ([Source](https://www.freepik.com/free-vector/zig-zag-background-with-pastel-colors_1795073.htm)):
 
 ![](/lm/codes/css/background/bg-repeat/img/pattern.png)
 
-[repeat](/lm/codes/css/background/bg-repeat/index.html):
+<CodeHtmlCssPreview src="/codes/css/background/bg-repeat" height="150" isShowHtml={false} />
 
-```css
-body {
-  background-image: url(img/pattern.png);
-  background-color: #fff;
-  background-repeat: repeat;
-}
-```
+<CodeHtmlCssPreview src="/codes/css/background/bg-no-repeat" height="150" isShowHtml={false} />
 
-<HtmlPreview src="/codes/css/background/bg-repeat/index.html" height="150" />
-
-[no-repeat](/lm/codes/css/background/bg-no-repeat/index.html):
-
-```css
-body {
-  background-image: url(img/pattern.png);
-  background-color: #fff;
-  background-repeat: no-repeat;
-}
-```
-
-<HtmlPreview src="/codes/css/background/bg-no-repeat/index.html" height="150" />
-
-Referência
+Referências:
 
 - [Continuous Background Graphics](https://www.freepik.com/index.php?goto=2&k=continuous-background&isCat=1&isKeyword=1&type=1&vars=1)
 - [Continuos Background](https://www.shutterstock.com/search/continuous+background)
@@ -267,25 +148,11 @@ background-position: bottom 10px right 20px;
 background-position: right 3em bottom 10px;
 ```
 
-Código:
-
-[bg-position/](/lm/codes/css/background/bg-position/index.html) ([Source](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links#Including_icons_on_links)):
-
-```css
-a[href*='http'] {
-  background-image: url('img/external-link-16.png');
-  background-repeat: no-repeat;
-  background-position: 100% 5px;
-  padding-right: 19px;
-}
-```
-
-Resultado:
-
-<HtmlPreview src="/codes/css/background/bg-position/index.html" />
+<CodeHtmlCssPreview src="/codes/css/background/bg-position" />
 
 Referência
 
+- [Exemplo de Background Position | MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links#Including_icons_on_links)
 - [CSS Sprites](https://css-tricks.com/css-sprites/)
 
 ## Background Size
@@ -321,33 +188,12 @@ background-size: 50%, 25%, 25%;
 background-size: 6px, auto, contain;
 ```
 
-Código:
+
+[img/image.jpg](/lm/codes/css/background/bg-size/img/image.jpg):
 
 ![](/lm/codes/css/background/bg-size/img/image.jpg)
 
-css:
-
-```css
-.auto {
-  background-size: auto;
-}
-
-.size100 {
-  background-size: 100px;
-}
-
-.cover {
-  background-size: cover;
-}
-
-.contain {
-  background-size: contain;
-}
-```
-
-Resultado:
-
-<HtmlPreview src="/codes/css/background/bg-size/index.html" />
+<CodeHtmlCssPreview src="/codes/css/background/bg-size" />
 
 ## Background Attachment
 
@@ -364,23 +210,7 @@ background-attachment: fixed;
 background-attachment: local;
 ```
 
-Código:
-
-```css
-header {
-  background-color: tomato;
-  background-image: url(img/clock.jpg);
-  background-position: 0 -100px;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-blend-mode: multiply;
-}
-```
-
-[Resultado](/lm/codes/css/background/bg-attachment/index.html):
-
-<HtmlPreview src="/codes/css/background/bg-attachment/index.html" height="400" />
+<CodeHtmlCssPreview src="/codes/css/background/bg-attachment" height={400} />
 
 ## Background Blend Mode
 
@@ -400,45 +230,9 @@ background-blend-mode: normal;
 background-blend-mode: darken, luminosity;
 ```
 
-Código:
+<CodeHtmlCssPreview src="/codes/css/background/bg-blend-mode" />
 
-```css
-.bg {
-  background-image: url(img/computer.jpg);
-  background-size: cover;
-  background-color: rgba(1, 193, 120, 0.9);
-}
-
-.normal {
-  background-blend-mode: normal;
-}
-
-.multiply {
-  background-blend-mode: multiply;
-}
-
-.screen {
-  background-blend-mode: screen;
-}
-
-.overlay {
-  background-blend-mode: overlay;
-}
-
-.darken {
-  background-blend-mode: darken;
-}
-
-.lighten {
-  background-blend-mode: lighten;
-}
-```
-
-Resultado:
-
-<HtmlPreview src="/codes/css/background/bg-blend-mode/index.html" />
-
-Referências
+Referências:
 
 - [background-blend-mode \| CSS Tricks](https://css-tricks.com/almanac/properties/b/background-blend-mode/)
 
@@ -466,7 +260,7 @@ background: border-box red;
 background: no-repeat center/80% url('../img/image.png');
 ```
 
-Código:
+Código Anterior:
 
 ```css
 header {
@@ -487,21 +281,11 @@ header {
 }
 ```
 
-Sprite
+Sprite:
 
 ![](/lm/codes/css/background/sprite/img/google.png)
 
-Código:
-
-```css
-.google {
-  background: url(../img/google.png) no-repeat -24px 0;
-  width: 116px;
-  height: 37px;
-}
-```
-
-<HtmlPreview src="/codes/css/background/sprite/index.html" />
+<CodeHtmlCssPreview src="/codes/css/background/sprite" />
 
 Referências:
 
@@ -538,39 +322,7 @@ filter: sepia(60%);
 filter: contrast(175%) brightness(3%);
 ```
 
-Código:
-
-```css
-.bg {
-  background-image: url(img/computer.jpg);
-  background-size: cover;
-  background-color: rgba(1, 193, 120, 0.9);
-}
-
-.blur {
-  filter: blur(5px);
-}
-
-.brightness {
-  filter: brightness(0.4);
-}
-
-.contrast {
-  filter: contrast(200%);
-}
-
-.grayscale {
-  filter: grayscale(50%);
-}
-
-.sepia {
-  filter: sepia(60%);
-}
-```
-
-[Resultado](/lm/codes/css/background/image-filters/index.html):
-
-<HtmlPreview src="/codes/css/background/image-filters/index.html" />
+<CodeHtmlCssPreview src="/codes/css/background/image-filters" />
 
 ## Opacity
 
@@ -588,29 +340,15 @@ opacity: 0.33;
 opacity: 1;
 ```
 
-Código:
-
-```css
-img {
-  opacity: 0.5;
-}
-
-img:hover {
-  opacity: 1;
-}
-```
-
-[Resultado](/lm/codes/css/background/image-opacity/index.html):
-
-<HtmlPreview src="/codes/css/background/image-opacity/index.html" />
+<CodeHtmlCssPreview src="/codes/css/background/image-opacity" />
 
 ## Referências
 
-- [Changing background styles using CSS \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Backgrounds)
-- [Advanced box effects \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Advanced_box_effects)
 - `background-clip`
   - [`background-clip`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-clip)
   - [-webkit-background-clip:text CSS effect](https://codepen.io/Jintos/pen/crlxk)
+- [Changing background styles using CSS \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Backgrounds)
+- [Advanced box effects \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Advanced_box_effects)
 - [`background-origin`](https://developer.mozilla.org/en-US/docs/Web/CSS/background-origin)
 - [SVG Backgrounds](https://www.svgbackgrounds.com)
 - [Advanced effects with CSS background blend modes](https://blog.logrocket.com/advanced-effects-with-css-background-blend-modes-4b750198522a)
