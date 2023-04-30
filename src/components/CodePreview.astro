@@ -1,5 +1,10 @@
 ---
 import shiki from 'shiki';
+import {
+  createShikiHighlighter,
+  renderCodeToHTML,
+  runTwoSlash,
+} from 'shiki-twoslash';
 import { existsFile, readFile } from '../helpers/files';
 
 export interface Props {
@@ -8,6 +13,10 @@ export interface Props {
   onlyBody?: boolean;
   lang?: string;
 }
+
+const highlighter = await createShikiHighlighter({
+  themes: ['github-light', 'github-dark'],
+});
 
 const highlighterLight = await shiki.getHighlighter({ theme: 'github-light' });
 
@@ -19,7 +28,7 @@ const slotContent = await Astro.slots.render('default');
 
 let code = content ?? slotContent;
 
-let extension = lang;
+let extension = lang ?? 'plaintext';
 
 if (src && existsFile(src)) {
   code = readFile(src);
@@ -40,13 +49,48 @@ if (onlyBody && code?.includes('<body')) {
   code = body?.replace(new RegExp(`^${firstIndentation}`, 'gim'), '') ?? code;
 }
 
-const codeMarkdownLight = highlighterLight.codeToHtml(code, {
-  lang: extension,
-});
+const acceptedTwoslash = [
+  'js',
+  'javascript',
+  'ts',
+  'typescript',
+  'tsx',
+  'jsx',
+  'json',
+  'jsn',
+].includes(extension);
 
-const codeMarkdownDark = highlighterDark.codeToHtml(code, { lang: extension });
+let html = '';
+
+if (acceptedTwoslash) {
+  const twoslash = runTwoSlash(code, extension, {});
+
+  html = renderCodeToHTML(
+    twoslash.code,
+    extension,
+    { twoslash: true },
+    {},
+    highlighter,
+    twoslash
+  );
+}
 ---
 
-<Fragment set:html={codeMarkdownLight} />
-
-<Fragment set:html={codeMarkdownDark} />
+{
+  acceptedTwoslash ? (
+    <Fragment set:html={html} />
+  ) : (
+    <>
+      <Fragment
+        set:html={highlighterLight.codeToHtml(code, {
+          lang: extension,
+        })}
+      />
+      <Fragment
+        set:html={highlighterDark.codeToHtml(code, {
+          lang: extension,
+        })}
+      />
+    </>
+  )
+}
