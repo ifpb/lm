@@ -1,8 +1,9 @@
 ---
-import shiki from 'shiki';
 import tree from 'tree-node-cli';
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
+import { getHTML } from './CodePreview.astro';
+import { prettyCodeOptions } from '../../plugins/rehype-pretty-code-config';
 
 export interface Props {
   src?: string;
@@ -11,23 +12,15 @@ export interface Props {
 
 const { src, content } = Astro.props;
 
-const highlighterLight = await shiki.getHighlighter({ theme: 'github-light' });
-
-const highlighterDark = await shiki.getHighlighter({ theme: 'github-dark' });
-
 const codeTree = existsSync(resolve('./public' + src))
   ? tree(resolve('./public' + src))
   : 'Code not found';
 
-const codeMarkdownLight = highlighterLight.codeToHtml(content ?? codeTree, {
-  lang: 'plaintext',
-});
+const markdown = `\`\`\`plaintext title="Arquivos"\n${
+  codeTree ?? content
+}\n\`\`\``;
 
-const codeMarkdownDark = highlighterDark.codeToHtml(content ?? codeTree, {
-  lang: 'plaintext',
-});
+const html = await getHTML(markdown, prettyCodeOptions);
 ---
 
-<Fragment set:html={codeMarkdownLight} />
-
-<Fragment set:html={codeMarkdownDark} />
+<Fragment set:html={html} />

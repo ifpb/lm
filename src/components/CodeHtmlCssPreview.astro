@@ -39,35 +39,8 @@ const cssPath = `${src}/css/style.css`;
 
 <HtmlPreview src={htmlPath} height={height} isShowIframe={isShowIframe} />
 
-{
-  codeTree && (
-    <>
-      <p>Arquivos:</p>
-      <CodeTree src={src} />
-    </>
-  )
-}
+{codeTree && <CodeTree src={src} />}
 
-{
-  isShowHtml && (
-    <>
-      <p>
-        <code>{htmlPath}</code>:
-      </p>
+{isShowHtml && <CodePreview src={htmlPath} onlyBody={onlyBody} />}
 
-      <CodePreview src={htmlPath} onlyBody={onlyBody} />
-    </>
-  )
-}
-
-{
-  existsFile(cssPath) && isShowCss && (
-    <>
-      <p>
-        <code>{cssPath}</code>:
-      </p>
-
-      <CodePreview src={cssPath} />
-    </>
-  )
-}
+{existsFile(cssPath) && isShowCss && <CodePreview src={cssPath} />}

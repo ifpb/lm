@@ -1,30 +1,43 @@
 ---
-import shiki from 'shiki';
-import {
-  createShikiHighlighter,
-  renderCodeToHTML,
-  runTwoSlash,
-} from 'shiki-twoslash';
 import { existsFile, readFile } from '../helpers/files';
+import { toHast } from 'mdast-util-to-hast';
+import { toHtml } from 'hast-util-to-html';
+import { remark } from 'remark';
+import rehypePrettyCode from 'rehype-pretty-code';
+import { prettyCodeOptions } from '../../plugins/rehype-pretty-code-config';
 
 export interface Props {
   src?: string;
   content?: string;
+  title?: string;
   onlyBody?: boolean;
   lang?: string;
+  showLineNumbers?: boolean;
 }
 
-const highlighter = await createShikiHighlighter({
-  themes: ['github-light', 'github-dark'],
-});
+export const getHTML = async (code, settings) => {
+  const hAST = toHast(remark().parse(code), { allowDangerousHtml: true });
+  await rehypePrettyCode(settings)(hAST);
+  return toHtml(hAST, { allowDangerousHtml: true });
+};
 
-const highlighterLight = await shiki.getHighlighter({ theme: 'github-light' });
+const {
+  src,
+  content,
+  onlyBody,
+  lang,
+  showLineNumbers = true,
+  title,
+} = Astro.props;
 
-const highlighterDark = await shiki.getHighlighter({ theme: 'github-dark' });
+let slotContent = await Astro.slots.render('default');
 
-const { src, content, onlyBody, lang } = Astro.props;
+if (slotContent) {
+  const paragraphContentPattern =
+    /^[\s\S]*<p[^\>]*>\s*([\s\S]*)\s*<\/p>[\s\S]*$/gim;
 
-const slotContent = await Astro.slots.render('default');
+  slotContent = paragraphContentPattern.exec(slotContent)?.[1] ?? slotContent;
+}
 
 let code = content ?? slotContent;
 
@@ -49,48 +62,17 @@ if (onlyBody && code?.includes('<body')) {
   code = body?.replace(new RegExp(`^${firstIndentation}`, 'gim'), '') ?? code;
 }
 
-const acceptedTwoslash = [
-  'js',
-  'javascript',
-  'ts',
-  'typescript',
-  'tsx',
-  'jsx',
-  'json',
-  'jsn',
-].includes(extension);
+const metas = [];
 
-let html = '';
+if (src || title) metas.push(`title="${src || title}"`);
 
-if (acceptedTwoslash) {
-  const twoslash = runTwoSlash(code, extension, {});
+if (showLineNumbers) metas.push('showLineNumbers');
 
-  html = renderCodeToHTML(
-    twoslash.code,
-    extension,
-    { twoslash: true },
-    {},
-    highlighter,
-    twoslash
-  );
-}
+const metastring = metas.join(' ');
+
+const markdown = `\`\`\`${extension} ${metastring}\n${code}\n\`\`\``;
+
+const html = await getHTML(markdown, prettyCodeOptions);
 ---
 
-{
-  acceptedTwoslash ? (
-    <Fragment set:html={html} />
-  ) : (
-    <>
-      <Fragment
-        set:html={highlighterLight.codeToHtml(code, {
-          lang: extension,
-        })}
-      />
-      <Fragment
-        set:html={highlighterDark.codeToHtml(code, {
-          lang: extension,
-        })}
-      />
-    </>
-  )
-}
+<Fragment set:html={html} />

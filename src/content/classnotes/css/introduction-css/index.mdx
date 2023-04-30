@@ -2,7 +2,6 @@
 title: Introdução ao CSS
 ---
 
-import CodePreview from '../../../../components/CodePreview.astro';
 import CodeTree from '../../../../components/CodeTree.astro';
 import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
 
@@ -30,14 +29,13 @@ Referência: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fon
 
 Atributo Style:
 
-export const inlineCodeTree =
-`            declaration
+```plaintext
+            declaration
           ┌──────┴───────┐
 <p style="font-size: 20px;">Lorem ipsum dolor</p>
           └───┬───┘  └─┬─┘
-          property   value`
-
-<CodeTree content={inlineCodeTree} />
+          property   value
+```
 
 <CodeHtmlCssPreview src="/codes/css/introduction-css/css-inline" />
 
@@ -45,15 +43,14 @@ export const inlineCodeTree =
 
 Blocos de Estilo e Tag Style:
 
-export const internalCodeTree =
-`selector
+```plaintext
+selector
    ┌┴┐     declaration
     p { ┌──────┴───────┐
         font-size: 20px;
     }   └───┬───┘  └─┬─┘
-        property   value`
-
-<CodeTree content={internalCodeTree} />
+        property   value
+```
 
 <CodeHtmlCssPreview src="/codes/css/introduction-css/css-internal" onlyBody={false} />
 

@@ -1,0 +1,73 @@
+/* rehype-pretty-code */
+html.dark
+  :is(
+    [data-rehype-pretty-code-title][data-theme='dark'],
+    pre[data-theme='dark']
+  ) {
+  @apply !bg-[#0d1117];
+}
+
+html:not(.dark)
+  :is(
+    [data-rehype-pretty-code-title][data-theme='light'],
+    pre[data-theme='light']
+  ) {
+  @apply !bg-white;
+}
+
+html:not(.dark)
+  :is(
+    [data-rehype-pretty-code-title][data-theme='dark'],
+    pre[data-theme='dark']
+  ),
+html.dark
+  :is(
+    [data-rehype-pretty-code-title][data-theme='light'],
+    pre[data-theme='light']
+  ) {
+  @apply hidden;
+}
+
+div[data-rehype-pretty-code-fragment],
+.code-preview {
+  @apply mb-8;
+}
+
+div[data-rehype-pretty-code-fragment] [data-rehype-pretty-code-title] {
+  @apply px-6 py-2 rounded-t font-semibold border-b;
+}
+
+div[data-rehype-pretty-code-fragment] [data-rehype-pretty-code-title] + pre {
+  @apply !rounded-none !rounded-b;
+}
+
+div[data-rehype-pretty-code-fragment] pre {
+  @apply my-0 border-none px-0 overflow-x-auto;
+}
+
+div[data-rehype-pretty-code-fragment] pre:not(:has([data-line-numbers])) {
+  @apply px-6 py-4;
+}
+
+div[data-rehype-pretty-code-fragment] code[data-line-numbers] {
+  counter-reset: line;
+}
+
+div[data-rehype-pretty-code-fragment] code[data-line-numbers] > .line::before {
+  counter-increment: line;
+  content: counter(line);
+
+  @apply text-gray-400 text-right mr-4 w-5 inline-block;
+}
+
+div[data-rehype-pretty-code-fragment]
+  code[data-line-numbers-max-digits='2']
+  > .line::before {
+  @apply w-5;
+}
+
+div[data-rehype-pretty-code-fragment]
+  code[data-line-numbers-max-digits='3']
+  > .line::before {
+  @apply w-6;
+}

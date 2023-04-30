@@ -4,7 +4,7 @@ import NavBar from '../components/NavBar.astro';
 import Sidebar from '../components/Sidebar.astro';
 import { GITHUB_EDIT_URL } from '../consts';
 
-import '../styles/twoslash.css';
+import '../styles/code.css';
 
 export interface Props {
   frontmatter: {
@@ -75,6 +75,23 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
 </html>
 
 <style is:global>
+  /* rehype-autolink-headings */
+  article :is(h2, h3, h4, h5, h6) {
+    @apply flex items-center;
+  }
+
+  article :is(h2, h3, h4, h5, h6):hover > a {
+    @apply block;
+  }
+
+  article :is(h1, h2, h3, h4, h5, h6) > a {
+    @apply ml-1 hidden max-sm:block;
+  }
+
+  article .heading-link img {
+    @apply m-0 h-4 w-4;
+  }
+
   /* Table of Content */
   html,
   body {
@@ -86,12 +103,12 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
   }
 
   :is(h1, h2, h3, h4, h5, h6)[id] {
-    padding-top: 3rem;
+    @apply pt-12;
   }
 
   /* Copy to clipboard */
   pre {
-    position: relative;
+    @apply relative;
   }
 
   html.dark pre button {
