@@ -1,5 +1,5 @@
 ---
-import { Code } from 'astro/components';
+import shiki from 'shiki';
 import tree from 'tree-node-cli';
 import { existsSync } from 'node:fs';
 import { resolve } from 'node:path';
@@ -11,14 +11,23 @@ export interface Props {
 
 const { src, content } = Astro.props;
 
+const highlighterLight = await shiki.getHighlighter({ theme: 'github-light' });
+
+const highlighterDark = await shiki.getHighlighter({ theme: 'github-dark' });
+
 const codeTree = existsSync(resolve('./public' + src))
   ? tree(resolve('./public' + src))
   : 'Code not found';
+
+const codeMarkdownLight = highlighterLight.codeToHtml(content ?? codeTree, {
+  lang: 'plaintext',
+});
+
+const codeMarkdownDark = highlighterDark.codeToHtml(content ?? codeTree, {
+  lang: 'plaintext',
+});
 ---
 
-<div class="dark-code-theme">
-  <Code code={content ?? codeTree} theme="github-dark" />
-</div>
-<div class="light-code-theme">
-  <Code code={content ?? codeTree} theme="github-light" />
-</div>
+<Fragment set:html={codeMarkdownLight} />
+
+<Fragment set:html={codeMarkdownDark} />

@@ -1,3 +1,7 @@
+.shiki.github-dark {
+  background-color: #0d1117 !important;
+}
+
 html:not(.dark) .shiki.github-dark {
   display: none;
 }

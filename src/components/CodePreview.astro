@@ -1,5 +1,5 @@
 ---
-import { Code } from 'astro/components';
+import shiki from 'shiki';
 import { existsFile, readFile } from '../helpers/files';
 
 export interface Props {
@@ -9,13 +9,17 @@ export interface Props {
   lang?: string;
 }
 
+const highlighterLight = await shiki.getHighlighter({ theme: 'github-light' });
+
+const highlighterDark = await shiki.getHighlighter({ theme: 'github-dark' });
+
 const { src, content, onlyBody, lang } = Astro.props;
 
 const slotContent = await Astro.slots.render('default');
 
-let code;
+let code = content ?? slotContent;
 
-let extension;
+let extension = lang;
 
 if (src && existsFile(src)) {
   code = readFile(src);
@@ -35,29 +39,14 @@ if (onlyBody && code?.includes('<body')) {
 
   code = body?.replace(new RegExp(`^${firstIndentation}`, 'gim'), '') ?? code;
 }
+
+const codeMarkdownLight = highlighterLight.codeToHtml(code, {
+  lang: extension,
+});
+
+const codeMarkdownDark = highlighterDark.codeToHtml(code, { lang: extension });
 ---
 
-<div class="dark-code-theme">
-  <Code
-    code={content ?? slotContent ?? code}
-    lang={lang ?? extension}
-    theme="github-dark"
-  />
-</div>
-<div class="light-code-theme">
-  <Code
-    code={content ?? slotContent ?? code}
-    lang={lang ?? extension}
-    theme="github-light"
-  />
-</div>
+<Fragment set:html={codeMarkdownLight} />
 
-<style is:global>
-  html.dark .light-code-theme {
-    display: none;
-  }
-
-  html:not(.dark) .dark-code-theme {
-    display: none;
-  }
-</style>
+<Fragment set:html={codeMarkdownDark} />
