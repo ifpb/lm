@@ -42,11 +42,11 @@ div[data-rehype-pretty-code-fragment] [data-rehype-pretty-code-title] + pre {
 }
 
 div[data-rehype-pretty-code-fragment] pre {
-  @apply my-0 border-none px-0 overflow-x-auto;
+  @apply my-0 border-none overflow-x-auto px-6 py-4 [&:has([data-line-numbers])]:p-0;
 }
 
-div[data-rehype-pretty-code-fragment] pre:not(:has([data-line-numbers])) {
-  @apply px-6 py-4;
+div[data-rehype-pretty-code-fragment] pre:has([data-line-numbers]) {
+  @apply p-0;
 }
 
 div[data-rehype-pretty-code-fragment] code[data-line-numbers] {
