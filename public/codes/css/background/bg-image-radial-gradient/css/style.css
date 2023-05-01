@@ -22,7 +22,7 @@
 }
 
 .greytranspbg {
-  background-image: radial-gradient(circle at 10px 10px, rgba(0, 0, 0, .70), transparent);
+  background-image: radial-gradient(circle at 10px 10px, #6b7280, transparent);
 }
 
 .bluegreenbg {
