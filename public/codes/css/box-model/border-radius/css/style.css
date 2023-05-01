@@ -1,5 +1,16 @@
-.inline-block {
+* {
+  border-color: var(--color-primary) !important;
+}
+
+.card {
   display: inline-block;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .card {
+    display: block;
+  }
 }
 
 .m-05 {
@@ -29,4 +40,3 @@
 .rounded-full {
   border-radius: 99999px;
 }
-

@@ -1,6 +1,6 @@
 export const GITHUB_EDIT_URL = 'https://github.com/ifpb/lm/tree/main';
 
-export const CLASSNOTES = [
+export const CLASSNOTE_SLUGS = [
   // 'web-server/live-server',
   'markup/markup-language',
   'html/introduction-html',

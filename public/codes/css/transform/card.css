@@ -15,6 +15,13 @@ body {
   flex-flow: row wrap;
 }
 
+@media (max-width: 640px) {
+  .cards {
+    flex-flow: column wrap;
+    gap: 1rem;
+  }
+}
+
 .card {
   flex-basis: calc(100% / 3 - 3%);
   border-radius: 0.3rem;

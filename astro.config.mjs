@@ -6,29 +6,12 @@ import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
 import { prettyCodeOptions } from './plugins/rehype-pretty-code-config';
+import { rehypeAutolinkHeadingsOptions } from './plugins/rehype-autolink-headings-config';
 
 const markdownConfig = {
   rehypePlugins: [
     rehypeSlug,
-    [
-      rehypeAutolinkHeadings,
-      {
-        behavior: 'append',
-        content: {
-          type: 'element',
-          tagName: 'span',
-          properties: { className: ['heading-link'] },
-          children: [
-            {
-              type: 'element',
-              tagName: 'img',
-              properties: { src: '/lm/link.svg' },
-              children: [],
-            },
-          ],
-        },
-      },
-    ],
+    [rehypeAutolinkHeadings, rehypeAutolinkHeadingsOptions],
     [rehypePrettyCode, prettyCodeOptions],
   ],
   syntaxHighlight: false,

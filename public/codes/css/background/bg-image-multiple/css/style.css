@@ -4,12 +4,26 @@
   display: inline-block;
 }
 
+@media (max-width: 640px) {
+  .gradient {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}
+
 .multiple {
-  background-image: linear-gradient(45deg, rgba(0, 0, 0, .70) 10%, transparent), url(../img/image.jpg);
+  background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7) 10%, transparent),
+    url(../img/image.jpg);
   background-size: cover;
 }
 
 .trendbg {
-  background-image: linear-gradient(45deg, rgba(0, 145, 200, .6), rgba(1, 193, 120, .6)), url(../img/image.jpg);
+  background-image: linear-gradient(
+      45deg,
+      rgba(0, 145, 200, 0.6),
+      rgba(1, 193, 120, 0.6)
+    ),
+    url(../img/image.jpg);
   background-size: cover;
 }

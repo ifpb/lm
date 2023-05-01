@@ -5,15 +5,12 @@ body {
 }
 
 header {
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 800;
-  font-size: 3rem;
-  color: #fff;
   height: 25vh;
   min-height: 300px;
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
   /* background-color: tomato;
   background-image: url(../img/clock.jpg);
   background-position: 0 -100px;
@@ -25,6 +22,10 @@ header {
 }
 
 header h1 {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  color: #fff;
+  font-size: 3rem;
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 10px;
@@ -38,11 +39,23 @@ header h1 {
   text-shadow: 5px 7px 0 #0a0e27, 7px 9px 0 tomato;
 }
 
+@media (max-width: 640px) {
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
+
 main {
   width: 55%;
   margin: 50px auto;
   font-size: 1.1rem;
   line-height: 1.8rem;
+}
+
+@media (max-width: 640px) {
+  main {
+    width: 100%;
+  }
 }
 
 main p {

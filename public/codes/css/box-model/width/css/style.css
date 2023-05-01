@@ -1,9 +1,19 @@
+* {
+  border-color: var(--color-primary) !important;
+}
+
 p {
   border: 5px solid #000;
 }
 
 .w_400 {
   width: 400px;
+}
+
+@media (max-width: 640px) {
+  .w_400 {
+    width: 40%;
+  }
 }
 
 .m_auto {

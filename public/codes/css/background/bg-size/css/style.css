@@ -5,6 +5,14 @@
   background-image: url(../img/image.jpg);
 }
 
+@media (max-width: 640px) {
+  .bg {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
+}
+
 .auto {
   background-size: auto;
 }

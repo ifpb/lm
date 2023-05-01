@@ -59,6 +59,10 @@ export default function Iframe({ src, srcDoc, height }: Props) {
         * {
           border-color: var(--color-primary);
         }
+
+        /* * {
+           border-color: var(--color-primary) !important;
+         } */
       </style>`
     );
   }, [handleResize, iFrameRef]);

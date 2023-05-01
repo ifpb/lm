@@ -4,7 +4,15 @@
   display: inline-block;
   background-image: url(../img/computer.jpg);
   background-size: cover;
-  background-color: rgba(1, 193, 120, .9);
+  background-color: rgba(1, 193, 120, 0.9);
+}
+
+@media (max-width: 640px) {
+  .bg {
+    display: block;
+    margin: auto;
+    margin-bottom: 1rem;
+  }
 }
 
 .normal {

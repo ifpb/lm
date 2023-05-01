@@ -1,9 +1,9 @@
 ---
-import { existsFile, readFile } from '../helpers/files';
 import { toHast } from 'mdast-util-to-hast';
 import { toHtml } from 'hast-util-to-html';
 import { remark } from 'remark';
 import rehypePrettyCode from 'rehype-pretty-code';
+import { existsFile, readFile } from '../helpers/files';
 import { prettyCodeOptions } from '../../plugins/rehype-pretty-code-config';
 
 export interface Props {

@@ -1,3 +1,7 @@
+html.dark * {
+  border-color: #fff !important;
+}
+
 #first {
   border: 2px dotted #000;
 }

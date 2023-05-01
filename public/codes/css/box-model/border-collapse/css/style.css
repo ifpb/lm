@@ -1,6 +1,10 @@
+* {
+  border-color: var(--color-primary) !important;
+}
+
 .separate {
   border-collapse: separate;
-  border-spacing: .5rem;
+  border-spacing: 0.5rem;
 }
 
 .collapse {

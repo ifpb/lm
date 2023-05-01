@@ -1,3 +1,7 @@
+* {
+  border-color: var(--color-primary) !important;
+}
+
 p {
   border: 5px solid #000;
   padding: 3rem;

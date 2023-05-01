@@ -293,7 +293,7 @@ border-collapse: collapse;
 border-collapse: separate;
 ```
 
-<CodeHtmlCssPreview src="/codes/css/box-model/table" />
+<CodeHtmlCssPreview src="/codes/css/box-model/border-collapse" />
 
 ## Box Sizing
 
@@ -311,10 +311,10 @@ box-sizing: content-box;
 box-sizing: border-box;
 ```
 
-| Style                    | Preview                                                                                                                                       |
-| ------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| box-sizing: content-box; | <div style={{boxSizing: 'content-box', border: "1px solid #000", width: '200px', padding: '1rem'}}>Lorem ipsum dolor amet, consectetur.</div> |
-| box-sizing: border-box;  | <div style={{boxSizing: 'border-box', border: "1px solid #000", width: '200px', padding: '1rem'}}>Lorem ipsum dolor amet, consectetur.</div>  |
+| Style                                                    | Preview                                                                                                                             |
+| -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
+| box-sizing: content-box; <br />(222px: c-200, p-10, b-1) | <div class="!border-[1px] border-black dark:border-white box-content w-[200px] p-[10px]">Lorem ipsum dolor amet, consectetur.</div> |
+| box-sizing: border-box; <br /> (200px: c-178, p-10, b-1) | <div class="!border-[1px] border-black dark:border-white box-border w-[200px] p-[10px]">Lorem ipsum dolor amet, consectetur.</div>  |
 
 ## Overflow
 
@@ -334,12 +334,12 @@ overflow: auto;
 
 Exemplo:
 
-| Style              | Preview                                                                                                                                 |
-| ------------------ | --------------------------------------------------------------------------------------------------------------------------------------- |
-| overflow: visible; | <div style={{overflow: 'visible', border: "1px solid #000", width: '200px', height: '2rem'}}>Lorem ipsum dolor amet, consectetur.</div> |
-| overflow: hidden;  | <div style={{overflow: 'hidden', border: "1px solid #000", width: '200px', height: '2rem'}}>Lorem ipsum dolor amet, consectetur.</div>  |
-| overflow: scroll;  | <div style={{overflow: 'scroll', border: "1px solid #000", width: '200px', height: '2rem'}}>Lorem ipsum dolor amet, consectetur.</div>  |
-| overflow: auto;    | <div style={{overflow: 'auto', border: "1px solid #000", width: '200px', height: '2rem'}}>Lorem ipsum dolor amet, consectetur.</div>    |
+| Style              | Preview                                                                                                                           |
+| ------------------ | --------------------------------------------------------------------------------------------------------------------------------- |
+| overflow: visible; | <div class="border border-black dark:border-white w-[200px] h-[2rem] overflow-visible">Lorem ipsum dolor amet, consectetur.</div> |
+| overflow: hidden;  | <div class="border border-black dark:border-white w-[200px] h-[2rem] overflow-hidden">Lorem ipsum dolor amet, consectetur.</div>  |
+| overflow: scroll;  | <div class="border border-black dark:border-white w-[200px] h-[2rem] overflow-scroll">Lorem ipsum dolor amet, consectetur.</div>  |
+| overflow: auto;    | <div class="border border-black dark:border-white w-[200px] h-[2rem] overflow-auto">Lorem ipsum dolor amet, consectetur.</div>    |
 
 ## Outline
 

@@ -13,6 +13,8 @@ export interface Props {
   isShowIframe?: boolean;
   height?: number;
   htmlFile: string;
+  cssHighlightLines: string;
+  htmlHighlightLines: string;
 }
 
 const {
@@ -24,6 +26,8 @@ const {
   isShowCss = true,
   codeTree = false,
   htmlFile,
+  cssHighlightLines,
+  htmlHighlightLines,
 } = Astro.props;
 
 const codeName = src.split('/').pop();
@@ -41,6 +45,18 @@ const cssPath = `${src}/css/style.css`;
 
 {codeTree && <CodeTree src={src} />}
 
-{isShowHtml && <CodePreview src={htmlPath} onlyBody={onlyBody} />}
+{
+  isShowHtml && (
+    <CodePreview
+      src={htmlPath}
+      onlyBody={onlyBody}
+      highlightLines={htmlHighlightLines}
+    />
+  )
+}
 
-{existsFile(cssPath) && isShowCss && <CodePreview src={cssPath} />}
+{
+  existsFile(cssPath) && isShowCss && (
+    <CodePreview src={cssPath} highlightLines={cssHighlightLines} />
+  )
+}
