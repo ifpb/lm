@@ -6,7 +6,7 @@ body {
 
 .example {
   box-sizing: border-box;
-  width: calc(100%/3);
+  width: 300px;
   padding: 1rem;
 }
 
@@ -31,6 +31,12 @@ body {
   display: flex;
   transition: all .4s;
   border: 1px solid #000;
+}
+
+@media (max-width: 640px) {
+  html.dark .container {
+    border-color: #fff;
+  }
 }
 
 .item {

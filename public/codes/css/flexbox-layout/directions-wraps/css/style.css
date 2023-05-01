@@ -45,6 +45,12 @@ body {
   border: 1px solid #000;
 }
 
+@media (max-width: 640px) {
+  html.dark .container {
+    border-color: #fff;
+  }
+}
+
 .item {
   margin: 1%;
   padding: .4rem;

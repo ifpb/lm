@@ -51,7 +51,6 @@ body {
   color: black;
 }
 
-
 .container {
   display: flex;
   align-items: center;
@@ -59,9 +58,15 @@ body {
   height: 10rem;
 }
 
+@media (max-width: 640px) {
+  html.dark .container {
+    border-color: #fff;
+  }
+}
+
 .item {
   margin: 1%;
-  padding: .4rem;
+  padding: 0.4rem;
   width: 4rem;
   box-sizing: border-box;
   min-height: 2rem;

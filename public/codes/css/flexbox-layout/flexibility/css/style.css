@@ -22,6 +22,12 @@ body {
   flex-flow: row wrap;
 }
 
+@media (max-width: 640px) {
+  html.dark .container {
+    border-color: #fff;
+  }
+}
+
 .content {
   flex-basis: content;
 }

@@ -21,6 +21,12 @@ body {
   border: 1px solid #000;
 }
 
+@media (max-width: 640px) {
+  html.dark .container {
+    border-color: #fff;
+  }
+}
+
 .shrink-0 {
   flex-shrink: 0;
 }

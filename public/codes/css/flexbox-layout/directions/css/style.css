@@ -37,6 +37,12 @@ body {
   min-width: calc(4 * 2rem + 8 * .6rem + 3rem);
 }
 
+@media (max-width: 640px) {
+  html.dark .container {
+    border-color: #fff;
+  }
+}
+
 .item {
   margin: .2rem;
   padding: .4rem;
