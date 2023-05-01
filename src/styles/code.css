@@ -50,22 +50,23 @@ div[data-rehype-pretty-code-fragment] pre:not(:has([data-line-numbers])) {
 }
 
 div[data-rehype-pretty-code-fragment] code[data-line-numbers] {
-  counter-reset: line;
+  @apply [counter-reset:line];
 }
 
 div[data-rehype-pretty-code-fragment] code {
   @apply flex flex-col;
 }
 
-div[data-rehype-pretty-code-fragment] .highlighted {
-  @apply bg-gray-300 before:bg-gray-300;
+code[data-line-numbers] .line::before {
+  @apply text-gray-300 dark:text-gray-600 text-right mr-4 w-5 inline-block [counter-increment:line] content-[counters(line,'.')];
 }
 
-div[data-rehype-pretty-code-fragment] code[data-line-numbers] > .line::before {
-  counter-increment: line;
-  content: counter(line);
+div[data-rehype-pretty-code-fragment] .highlighted {
+  @apply bg-gray-200 dark:bg-gray-800;
+}
 
-  @apply text-gray-400 text-right mr-4 w-5 inline-block;
+div[data-rehype-pretty-code-fragment] .highlighted::before {
+  @apply text-gray-900 dark:text-gray-200 bg-gray-200 dark:bg-gray-800 border-l-gray-900 dark:border-l-white border-l-4;
 }
 
 div[data-rehype-pretty-code-fragment]
