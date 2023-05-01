@@ -13,6 +13,7 @@ export interface Props {
   onlyBody?: boolean;
   lang?: string;
   showLineNumbers?: boolean;
+  highlightLines?: string;
 }
 
 export const getHTML = async (code, settings) => {
@@ -28,6 +29,7 @@ const {
   lang,
   showLineNumbers = true,
   title,
+  highlightLines,
 } = Astro.props;
 
 let slotContent = await Astro.slots.render('default');
@@ -67,6 +69,8 @@ const metas = [];
 if (src || title) metas.push(`title="${src || title}"`);
 
 if (showLineNumbers) metas.push('showLineNumbers');
+
+if (!!highlightLines) metas.push(`{${highlightLines}}`);
 
 const metastring = metas.join(' ');
 

@@ -5,7 +5,7 @@ import mdx from '@astrojs/mdx';
 import rehypePrettyCode from 'rehype-pretty-code';
 import rehypeSlug from 'rehype-slug';
 import rehypeAutolinkHeadings from 'rehype-autolink-headings';
-import prettyCodeOptions from './plugins/rehype-pretty-code-config.ts';
+import { prettyCodeOptions } from './plugins/rehype-pretty-code-config';
 
 const markdownConfig = {
   rehypePlugins: [
@@ -38,6 +38,6 @@ const markdownConfig = {
 export default defineConfig({
   site: 'https://ifpb.github.io',
   base: '/lm',
-  // markdown: markdownConfig,
-  integrations: [react(), tailwind(), mdx(markdownConfig)],
+  markdown: markdownConfig,
+  integrations: [react(), tailwind(), mdx()],
 });

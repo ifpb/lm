@@ -53,6 +53,14 @@ div[data-rehype-pretty-code-fragment] code[data-line-numbers] {
   counter-reset: line;
 }
 
+div[data-rehype-pretty-code-fragment] code {
+  @apply flex flex-col;
+}
+
+div[data-rehype-pretty-code-fragment] .highlighted {
+  @apply bg-gray-300 before:bg-gray-300;
+}
+
 div[data-rehype-pretty-code-fragment] code[data-line-numbers] > .line::before {
   counter-increment: line;
   content: counter(line);
