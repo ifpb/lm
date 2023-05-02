@@ -54,7 +54,7 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
   <body class="bg-gray-100 dark:bg-slate-800 dark:text-white">
     <NavBar />
     <div
-      class="relative z-0 lg:pl-40 xl:pl-64 flex max-sm:flex-col justify-between items-stretch"
+      class="relative z-0 flex max-sm:flex-col justify-between items-stretch"
     >
       <Sidebar />
 
@@ -132,7 +132,7 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
       </article>
 
       <nav
-        class="toc sticky top-14 py-8 w-40 lg:w-64 self-start hidden lg:block"
+        class="toc fixed top-11 right-0 h-[calc(100vh-44px)] py-8 w-40 lg:w-64 self-start hidden lg:block overflow-y-scroll"
       >
         <ul class="flex flex-col gap-2">
           {
@@ -158,6 +158,35 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
 </html>
 
 <style is:global>
+  :root {
+    --scrollbar-bg-light: rebeccapurple;
+    --scrollbar-bg-dark: cornflowerblue;
+  }
+
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+
+  ::-webkit-scrollbar-button:start:decrement,
+  ::-webkit-scrollbar-button:end:increment {
+    display: none;
+  }
+
+  ::-webkit-scrollbar-track-piece {
+    @apply bg-transparent;
+    -webkit-border-radius: 6px;
+  }
+
+  ::-webkit-scrollbar-thumb:vertical {
+    @apply bg-gray-400;
+    -webkit-border-radius: 6px;
+  }
+
+  * {
+    scrollbar-color: #9ca3af transparent;
+  }
+
   /* rehype-autolink-headings */
   article :is(h2, h3, h4, h5, h6) {
     @apply flex items-center;
