@@ -26,9 +26,7 @@ Referência: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fon
 
 ### Inline stylesheet
 
-Atributo Style:
-
-```plaintext
+```plaintext title="Atributo Style"
             declaration
           ┌──────┴───────┐
 <p style="font-size: 20px;">Lorem ipsum dolor</p>
@@ -36,13 +34,14 @@ Atributo Style:
           property   value
 ```
 
+Atributo style="":
+
 <CodeHtmlCssPreview src="/codes/css/introduction-css/css-inline" htmlHighlightLines="2,8,14" />
 
 ### Internal stylesheet
 
-Blocos de Estilo e Tag Style:
 
-```plaintext
+```plaintext title="Blocos de Estilo"
 selector
    ┌┴┐     declaration
     p { ┌──────┴───────┐
@@ -51,15 +50,17 @@ selector
         property   value
 ```
 
+ Tag Style:
+
 <CodeHtmlCssPreview src="/codes/css/introduction-css/css-internal" onlyBody={false} htmlHighlightLines="6-15" />
 
 ### External stylesheet
 
-Tag Link:
-
-```html
+```html title="Tag Link"
 <link rel="stylesheet" href="css/style.css" />
 ```
+
+Exemplo:
 
 <CodeHtmlCssPreview src="/codes/css/introduction-css/css-external" onlyBody={false} codeTree={true} htmlHighlightLines="8" />
 
@@ -110,6 +111,8 @@ Tag Link:
 <CodeHtmlCssPreview src="/codes/css/introduction-css/css-variable" cssHighlightLines="3-4,9-10,14-15" />
 
 ### Unidades de Medida
+
+<CodeHtmlCssPreview src="/codes/css/introduction-css/css-unit" isShowCss={false} htmlHighlightLines="1-2" />
 
 - [`<lenght>`](https://developer.mozilla.org/en-US/docs/Web/CSS/lenght): px, em, rem, cm, mm, in, pt, pc, vh, vw, vmin, vmax, %
 - [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color): `<named-color>`, `<hex-color>`, rgb(), rgba(), hsl(), hsla()

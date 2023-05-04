@@ -1,0 +1,77 @@
+---
+export interface Props {
+  hasNavigation: boolean;
+  previousClassNoteLink: string;
+  nextClassNoteLink: string;
+  previousClassNoteTitle: string;
+  nextClassNoteTitle: string;
+}
+
+const {
+  hasNavigation,
+  previousClassNoteLink,
+  nextClassNoteLink,
+  previousClassNoteTitle,
+  nextClassNoteTitle,
+} = Astro.props;
+---
+
+{
+  hasNavigation && (
+    <footer class="my-24">
+      <div class="flex flex-col md:flex-row max-sm:gap-4 items-center justify-between">
+        {previousClassNoteLink && (
+          <div>
+            <a
+              class="text-lg font-medium p-4 -m-4 no-underline text-gray-500 dark:text-white hover:text-gray-700 flex items-center mr-2"
+              title="Disciplina"
+              href={`/lm/${previousClassNoteLink}`}
+            >
+              <svg
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="transform inline flex-shrink-0 rotate-180 mr-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+              {previousClassNoteTitle}
+            </a>
+          </div>
+        )}
+
+        {nextClassNoteLink && (
+          <div>
+            <a
+              class="text-lg font-medium p-4 -m-4 no-underline text-gray-500 dark:text-white hover:text-gray-700 flex items-center ml-2"
+              title="Conteúdo"
+              href={`/lm/${nextClassNoteLink}`}
+            >
+              {nextClassNoteTitle}
+              <svg
+                height="24"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                class="transform inline flex-shrink-0 ml-1"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </a>
+          </div>
+        )}
+      </div>
+    </footer>
+  )
+}

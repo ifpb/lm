@@ -14,9 +14,7 @@ export const imageCodeTree = ``;
 
 ### Tags
 
-Estrutura:
-
-```plaintext
+```plaintext title="Estrutura de uma tag"
 openning              closing
 tag      content      tag
 ┌┴┐┌────────────────┐┌─┴─┐
@@ -69,17 +67,13 @@ Referências:
 
 ### Atributo de tag
 
-Estrutura:
-
-```plaintext
+```plaintext title="Formato de atributo de tag"
 attribute (chaves="valor")
    ┌─────┴────┐
 <p lang="pt-BR">Lorem ipsum dolor.</p>
 ```
 
-Tags sem conteúdos:
-
-```html
+```html title="Tags sem conteúdos"
 <meta name="description" content="A description of the page" />
 ```
 
@@ -261,19 +255,17 @@ Referências:
 
 ### Hyperlink
 
-Sintaxe:
-
-```plaintext
+```plaintext title="Sintaxe"
 hyperlink = content + url
 
 content = text, image...
 ```
 
-HTML:
-
-```html
+```html title="Sintaxe Básica"
 <a href="url">content</a>
 ```
+
+Exemplo Básico:
 
 <CodeHtmlCssPreview
   src="/codes/html/introduction-html/hyperlink"
@@ -287,9 +279,9 @@ Atributo `target`:
   isShowIframe={false}
 />
 
-Link interno - hyperlink-internal(#):
+Link interno (#):
 
-<HtmlPreview>
+<HtmlPreview title ="hyperlink-internal">
   <nav>
     <a href="#tags">Tags</a><br />
     <a href="#atributo-de-tag">Atributo de tag</a><br />
@@ -297,24 +289,28 @@ Link interno - hyperlink-internal(#):
   </nav>
 </HtmlPreview>
 
-`/codes/html/introduction-html/hyperlink-internal/index.html` :
-
 <CodePreview
   src="/codes/html/introduction-html/hyperlink-internal/index.html"
   onlyBody={true}
 />
 
+Link entre páginas:
+
+<CodeHtmlCssPreview
+  src="/codes/html/introduction-html/hyperlink-pages"
+  codeTree={true}
+  isShowIframe={false}
+/>
+
 ### Imagem
 
-Sintaxe:
-
-```html
+```html title="Sintaxe"
 <img src="url" alt="text alternative" />
 ```
 
-Arquivos:
+Exemplo (Abrir no Liver Server e localmente):
 
-``` showLineNumbers
+```plaintext showLineNumbers title="Arquivos"
 /
 └── var
     └── www
@@ -325,8 +321,6 @@ Arquivos:
                     └── image.png
 ```
 
-Código (Abrir no Liver Server e localmente):
-
 <CodeHtmlCssPreview src="/codes/html/introduction-html/image" />
 
 Diretório (..):
@@ -335,16 +329,17 @@ Diretório (..):
   src="/codes/html/introduction-html/image-parent"
   codeTree={true}
   htmlFile="pages/index.html"
+  linkName="image-parent"
 />
 
 ### Lista
-
-Tags:
 
 | Tipos              | Tags                   |
 | ------------------ | ---------------------- |
 | Lista ordenada     | `<ol>`, `<li>`         |
 | Lista não ordenada | `<ul>`, `<li>`         |
 | Lista de descrição | `<dl>`, `<dt>`, `<dd>` |
+
+Exemplo:
 
 <CodeHtmlCssPreview src="/codes/html/introduction-html/list" />

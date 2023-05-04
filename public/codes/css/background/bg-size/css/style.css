@@ -1,16 +1,32 @@
-.bg {
-  width: 200px;
-  height: 200px;
-  display: inline-block;
-  background-image: url(../img/image.jpg);
+body {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
 }
 
-@media (max-width: 640px) {
-  .bg {
-    display: block;
-    margin: auto;
-    margin-bottom: 1rem;
+@media (max-width: 700px) {
+  body {
+    grid-template-columns: repeat(2, 1fr);
   }
+}
+
+@media (max-width: 500px) {
+  body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  width: 100%;
+}
+
+.bg {
+  height: 200px;
+
+  background-image: url(../img/image.jpg);
 }
 
 .auto {

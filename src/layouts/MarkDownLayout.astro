@@ -3,8 +3,11 @@ import { getCollection } from 'astro:content';
 import { Icon } from 'astro-icon';
 import NavBar from '../components/NavBar.astro';
 import Sidebar from '../components/Sidebar.astro';
+import TableOfContent from '../components/TableOfContent.astro';
+import NavigationContent from '../components/NavigationContent.astro';
 import { CLASSNOTE_SLUGS, GITHUB_EDIT_URL } from '../consts';
 
+import '../styles/global.css';
 import '../styles/code.css';
 
 export interface Props {
@@ -54,7 +57,7 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
   <body class="bg-gray-100 dark:bg-slate-800 dark:text-white">
     <NavBar />
     <div
-      class="relative z-0 flex max-sm:flex-col justify-between items-stretch"
+      class="relative z-0 flex max-sm:flex-col justify-between items-stretch min-h-screen"
     >
       <Sidebar />
 
@@ -70,123 +73,21 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
           </a>
         </p>
 
-        {
-          CLASSNOTE_SLUGS.includes(currentSlug) && (
-            <footer class="my-24">
-              <div class="flex flex-col md:flex-row max-sm:gap-4 items-center justify-between">
-                {previousClassNote && (
-                  <div>
-                    <a
-                      class="text-lg font-medium p-4 -m-4 no-underline text-gray-500 dark:text-white hover:text-gray-700 flex items-center mr-2"
-                      title="Disciplina"
-                      href={`/lm/${previousClassNote}`}
-                    >
-                      <svg
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        class="transform inline flex-shrink-0 rotate-180 mr-1"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                      {classNoteTitles[previousClassNote]}
-                    </a>
-                  </div>
-                )}
-
-                {nextClassNote && (
-                  <div>
-                    <a
-                      class="text-lg font-medium p-4 -m-4 no-underline text-gray-500 dark:text-white hover:text-gray-700 flex items-center ml-2"
-                      title="Conteúdo"
-                      href={`/lm/${nextClassNote}`}
-                    >
-                      {classNoteTitles[nextClassNote]}
-                      <svg
-                        height="24"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        class="transform inline flex-shrink-0 ml-1"
-                      >
-                        <path
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="M9 5l7 7-7 7"
-                        />
-                      </svg>
-                    </a>
-                  </div>
-                )}
-              </div>
-            </footer>
-          )
-        }
+        <NavigationContent
+          hasNavigation={CLASSNOTE_SLUGS.includes(currentSlug)}
+          previousClassNoteLink={previousClassNote}
+          nextClassNoteLink={nextClassNote}
+          previousClassNoteTitle={classNoteTitles[previousClassNote]}
+          nextClassNoteTitle={classNoteTitles[nextClassNote]}
+        />
       </article>
 
-      <nav
-        class="toc fixed top-11 right-0 h-[calc(100vh-44px)] py-8 w-40 lg:w-64 self-start hidden lg:block overflow-y-scroll"
-      >
-        <ul class="flex flex-col gap-2">
-          {
-            headings
-              .filter(({ depth }) => depth > 1)
-              .map(({ slug, text, depth }) => {
-                const padding = depth > 2 ? depth - 2 : '';
-
-                return (
-                  <li
-                    class="text-slate-400 hover:text-slate-700 dark:hover:text-white transition-all duration-300"
-                    style={`margin-left: ${padding}rem`}
-                  >
-                    <a href={`#${slug}`}>{text}</a>
-                  </li>
-                );
-              })
-          }
-        </ul>
-      </nav>
+      <TableOfContent headings={headings} />
     </div>
   </body>
 </html>
 
 <style is:global>
-  :root {
-    --scrollbar-bg-light: rebeccapurple;
-    --scrollbar-bg-dark: cornflowerblue;
-  }
-
-  ::-webkit-scrollbar {
-    width: 10px;
-    height: 10px;
-  }
-
-  ::-webkit-scrollbar-button:start:decrement,
-  ::-webkit-scrollbar-button:end:increment {
-    display: none;
-  }
-
-  ::-webkit-scrollbar-track-piece {
-    @apply bg-transparent;
-    -webkit-border-radius: 6px;
-  }
-
-  ::-webkit-scrollbar-thumb:vertical {
-    @apply bg-gray-400;
-    -webkit-border-radius: 6px;
-  }
-
-  * {
-    scrollbar-color: #9ca3af transparent;
-  }
-
   /* rehype-autolink-headings */
   article :is(h2, h3, h4, h5, h6) {
     @apply flex items-center;
@@ -208,99 +109,32 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
     @apply m-0 h-4 w-4;
   }
 
-  /* Table of Content */
-  html,
-  body {
-    @apply scroll-smooth;
-  }
-
-  nav.toc a.active {
-    @apply text-slate-700 dark:text-white font-bold;
-  }
-
-  :is(h1, h2, h3, h4, h5, h6)[id] {
-    @apply pt-12;
-  }
-
   /* Copy to clipboard */
-  pre {
+  [data-rehype-pretty-code-fragment] {
     @apply relative;
   }
 
-  html.dark pre button {
-    @apply bg-gray-400 text-gray-800;
-  }
-
-  html.dark pre button:hover {
-    @apply bg-gray-100;
-  }
-
-  pre button {
+  [data-rehype-pretty-code-fragment] pre button {
     @apply hidden;
   }
 
-  .copy-button-block {
-    @apply block bg-gray-400 text-white absolute top-2 right-2 rounded p-1;
+  [data-rehype-pretty-code-fragment]
+    pre:not([data-language='txt']):not([data-language='plaintext'])
+    button.copy-button-block,
+  [data-rehype-pretty-code-fragment]:hover
+    pre:not([data-language='txt']):not([data-language='plaintext'])
+    button {
+    @apply block bg-gray-400 text-white dark:text-gray-800 absolute top-2 right-2 rounded p-1;
   }
 
-  pre:hover button {
-    @apply block bg-gray-400 text-white absolute top-2 right-2 rounded p-1;
-  }
-
-  pre button:hover {
-    @apply bg-gray-700 cursor-pointer;
+  [data-rehype-pretty-code-fragment]
+    pre:not([data-language='txt']):not([data-language='plaintext'])
+    button:hover {
+    @apply bg-gray-700 dark:bg-gray-100 cursor-pointer;
   }
 </style>
 
 <script is:inline>
-  // Table of Content
-  const sections = document.querySelectorAll(':is(h2, h3, h4, h5, h6)[id]');
-
-  const navLinks = document.querySelectorAll('nav.toc li a');
-
-  navLinks[0].classList.add('active');
-
-  window.addEventListener('scroll', () => {
-    let current = '';
-
-    sections.forEach((section) => {
-      const documentTop = Math.ceil(document.documentElement.scrollTop);
-
-      const bodyHeight = document.body.clientHeight;
-
-      const firstSectionTop = sections[0].offsetTop;
-
-      const sectionTop = section.offsetTop;
-
-      // const sectionHeight = section.clientHeight;
-
-      // console.log(
-      //   section.id,
-      //   sectionTop,
-      //   documentTop,
-      //   documentTop < firstSectionTop,
-      //   documentTop >= sectionTop,
-      //   documentTop >= bodyHeight - window.innerHeight
-      // );
-
-      if (documentTop < firstSectionTop) {
-        current = sections[0].id;
-      } else if (documentTop >= sectionTop) {
-        current = section.id;
-      } else if (documentTop >= bodyHeight - window.innerHeight) {
-        current = sections[sections.length - 1].id;
-      }
-    });
-
-    navLinks.forEach((link) => {
-      link.classList.remove('active');
-
-      if (decodeURI(link.href.split('#').pop()) === current) {
-        link.classList.add('active');
-      }
-    });
-  });
-
   // Copy to clipboard
   // lucide:copy
   const copyButton =

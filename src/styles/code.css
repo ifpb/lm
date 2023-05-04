@@ -2,7 +2,8 @@
 html.dark
   :is(
     [data-rehype-pretty-code-title][data-theme='dark'],
-    pre[data-theme='dark']
+    pre[data-theme='dark'],
+    .html-preview
   ) {
   @apply !bg-[#0d1117];
 }
@@ -10,7 +11,8 @@ html.dark
 html:not(.dark)
   :is(
     [data-rehype-pretty-code-title][data-theme='light'],
-    pre[data-theme='light']
+    pre[data-theme='light'],
+    .html-preview
   ) {
   @apply !bg-white;
 }
@@ -34,7 +36,7 @@ div[data-rehype-pretty-code-fragment],
 }
 
 div[data-rehype-pretty-code-fragment] [data-rehype-pretty-code-title] {
-  @apply px-6 py-2 rounded-t font-semibold border-b;
+  @apply px-6 py-2 rounded-t border-b;
 }
 
 div[data-rehype-pretty-code-fragment] [data-rehype-pretty-code-title] + pre {
@@ -46,7 +48,7 @@ div[data-rehype-pretty-code-fragment] pre {
 }
 
 div[data-rehype-pretty-code-fragment] pre:has([data-line-numbers]) {
-  @apply p-0;
+  @apply px-0 py-4;
 }
 
 div[data-rehype-pretty-code-fragment] code[data-line-numbers] {

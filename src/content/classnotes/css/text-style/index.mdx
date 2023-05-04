@@ -17,9 +17,7 @@ import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro'
 
 > <b>Values:</b> [`<color>`](values.md#color)
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* <named-color> value */
 color: red;
 
@@ -49,9 +47,7 @@ Fonte: [Tomato Color](http://www.color-hex.com/color/ff6347) (Shades, Tints, Tri
 
 > <b>Values:</b> [[ [`<family-name>`](values.md#family-name) | [`<generic-family>`](values.md#generic-family) ] [, [ [`<family-name>`](values.md#family-name) | [`<generic-family>`](values.md#generic-family)] ]\* ] | `inherit`<br /><br />[`<family-name>`](values.md#family-name) = `<string>`<br />[`<generic-family>`](values.md#generic-family) = serif | sans-serif | cursive | fantasy | monospace<br />
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* A font family name and a generic family name */
 font-family: Gill Sans Extrabold, sans-serif;
 font-family: 'Goudy Bookletter 1911', sans-serif;
@@ -65,9 +61,7 @@ font-family: fantasy;
 font-family: system-ui;
 ```
 
-Font stacks / Fallback
-
-```css
+```css title="Font stacks / Fallbacksssss"
 body {
   font-family: Ubuntu, Arial, sans-serif;
 }
@@ -86,9 +80,7 @@ body {
 
 > <b>Values:</b> [ `<absolute-size>` | `<relative-size>` | [`<length>`](values.md#length) | `<percentage>` | inherit ]<br /><br />`<absolute-size>` = xx-small | x-small | small | medium | large | x-large | xx-large<br />`<relative-size>` = larger | smaller<br />
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* <absolute-size> values */
 font-size: xx-small;
 font-size: x-small;
@@ -126,9 +118,7 @@ font-size: 80%;
 
 > <b>Values:</b> normal \| italic \| oblique \| inherit
 
-Exemplo:
-
-```css
+```css title="Valores"
 font-style: normal;
 font-style: italic;
 font-style: oblique;
@@ -147,9 +137,7 @@ font-style: oblique;
 > <b>Values:</b> normal \| bold \| bolder \| lighter \| 100 \| 200 \| 300 \| 400
 > \| 500 \| 600 \| 700 \| 800 \| 900
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* Keyword values */
 font-weight: normal;
 font-weight: bold;
@@ -192,9 +180,7 @@ font-weight: 900;
 
 > <b>Values:</b> `<text-decoration-line>` || `<text-decoration-color>` || `<text-decoration-style>`<br /> <br /> `<text-decoration-line>` = none | [ underline || overline || line-through || blink ]<br /> `<text-decoration-color>` = `<color>`<br /> `<text-decoration-style>` = solid | double | dotted | dashed | wavy<br />
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* Keyword values */
 text-decoration: none; /* No text decoration */
 text-decoration: underline; /* Underlining */
@@ -217,9 +203,7 @@ text-decoration: underline wavy red; /* Red wavy underlining */
 
 > <b>Values:</b> none \| capitalize \| uppercase \| lowercase \| full-width
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* Keyword values */
 text-transform: capitalize;
 text-transform: uppercase;
@@ -241,9 +225,7 @@ text-transform: full-width;
 
 > <b>Value:</b> [ [ `<font-style>` || `<font-variant>` || `<font-weight>` || `<font-stretch>` ]? `<font-size>` [ / `<line-height>` ]? `<font-family>` ] | caption | icon | menu | message-box | small-caption | status-bar<br /> <br /> `<font-stretch>` = normal \| ultra-condensed \| extra-condensed \| condensed \| semi-condensed \| semi-expanded \| expanded \| extra-expanded \| ultra-expanded<br /> `<font-variant>` = nomral \| small-caps
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* `<font-size>` `<font-family>` */
 font: 80% sans-serif;
 
@@ -276,9 +258,7 @@ font: italic small-caps bold 1.5rem/1.5 sans-serif;
 - [CSS Text Effects From CodePen](https://freebiesupply.com/blog/css-text-effects-from-codepen/)
 - [CSS-Tricks text-shadow](https://css-tricks.com/almanac/properties/t/text-shadow/)
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* offset-x | offset-y | blur-radius | color */
 text-shadow: 1px 1px 2px black;
 
@@ -327,7 +307,7 @@ Fonte: [CSS Text Effects From CodePen](https://freebiesupply.com/blog/css-text-e
 
 > <b>Values:</b> start \| end \| left \| right \| center \| justify \| match-parent
 
-```css
+```css title="Valores"
 /* Keyword values */
 text-align: left;
 text-align: right;
@@ -352,9 +332,7 @@ text-align: match-parent;
 
 > <b>Values:</b> `<length-percentage>`<br /> <br /> `<length-percentage>` = `<length>` | `<percentage>`
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* <length> values */
 text-indent: 3mm;
 text-indent: 40px;
@@ -375,9 +353,7 @@ text-indent: 15%;
 
 > <b>Value:</b> normal \| `<number>` \| `<length>` \| `<percentage>`
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* Keyword value */
 line-height: normal;
 
@@ -404,9 +380,7 @@ line-height: 34%;
 
 > <b>Value:</b> normal \| `<length>`
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* Keyword value */
 letter-spacing: normal;
 
@@ -426,9 +400,7 @@ letter-spacing: 0.3em;
 
 > <b>Value:</b> normal \| `<length>` \| `<percentage>`
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* Keyword value */
 word-spacing: normal;
 

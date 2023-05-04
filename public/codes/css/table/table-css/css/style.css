@@ -1,0 +1,50 @@
+main {
+  width: 768px;
+  margin: auto;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+table,
+th,
+td {
+  padding: 0.2rem 0.5rem;
+}
+
+.table-border,
+.table-border :is(th, td) {
+  border: 1px solid #000;
+}
+
+.table-striped tr:nth-child(2n) {
+  background-color: #e2e8f0;
+}
+
+html.dark .table-striped tr:nth-child(2n) {
+  background-color: #1e293b;
+}
+
+.table-border-b tr {
+  border-bottom: 1px solid #000;
+}
+
+html.dark .table-border-b tr {
+  border-bottom-color: #fff;
+}
+
+.table-head-dark th {
+  background-color: #334155;
+  color: #e2e8f0;
+  text-align: left;
+}
+
+table {
+  min-width: 300px;
+  border-collapse: collapse;
+}
+
+.table-hover tr:hover {
+  background-color: #e2e8f0;
+}

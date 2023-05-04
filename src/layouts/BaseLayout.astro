@@ -2,6 +2,8 @@
 import NavBar from '../components/NavBar.astro';
 import Sidebar from '../components/Sidebar.astro';
 
+import '../styles/global.css';
+
 export interface Props {
   pageTitle: string;
 }
@@ -20,17 +22,20 @@ const { pageTitle } = Astro.props;
   <body class="bg-gray-100 dark:bg-slate-800 dark:text-white scroll-smooth">
     <NavBar />
     <div
-      class="mx-auto relative min-h-screen lg:pl-40 xl:pl-64 flex max-sm:flex-col justify-between items-stretch"
+      class="relative z-0 flex max-sm:flex-col justify-between items-stretch min-h-screen"
     >
       <Sidebar />
-      <slot />
+
+      <article class="md:mx-auto py-8 lg:pl-40 xl:pl-64 max-sm:px-4">
+        <slot />
+      </article>
     </div>
   </body>
-</html>
 
-<style is:global>
-  html,
-  body {
-    @apply scroll-smooth;
-  }
-</style>
+  <style is:global>
+    html,
+    body {
+      @apply scroll-smooth;
+    }
+  </style>
+</html>

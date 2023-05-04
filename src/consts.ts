@@ -24,3 +24,14 @@ export const CLASSNOTE_SLUGS = [
   'css/animation',
   'library/introduction-bootstrap',
 ];
+
+export const MENU = [
+  {
+    title: 'Disciplina',
+    url: '/lm/',
+  },
+  {
+    title: 'Conteúdos',
+    url: '/lm/classnotes/',
+  },
+];

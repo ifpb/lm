@@ -45,9 +45,7 @@ Referências: [Block-level elements | MDN](https://developer.mozilla.org/en-US/d
 
 > <b>Value:</b> `<br-width>` || `<br-style>` || `<color>`<br /><br />`<br-width>` = `<length>` \| thin \| medium \| thick<br />`<br-style>` = none \| hidden \| dotted \| dashed \| solid \| double \| groove \| ridge \| inset \| outset
 
-Sintaxe:
-
-```css
+```css title="Valores"
 /* style */
 border: solid;
 
@@ -74,7 +72,11 @@ Shorthand:
 | [`border-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-style)   | [`border-top-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-style)<br />[`border-right-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-style)<br />[`border-bottom-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-style)<br />[`border-left-style`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-style) |
 | [`border-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-color)   | [`border-top-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-color)<br />[`border-right-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-right-color)<br />[`border-bottom-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-color)<br />[`border-left-color`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-left-color) |
 
+Border:
+
 <CodeHtmlCssPreview src="/codes/css/box-model/border" />
+
+Estilo:
 
 <CodeHtmlCssPreview src="/codes/css/box-model/border-style" />
 
@@ -84,9 +86,7 @@ Shorthand:
 
 > <b>Value:</b> [ `<length>` \| `<percentage>` \| auto ]{1,4}
 
-Sintaxe:
-
-```css
+```css title="Valores"
 /* Apply to all four sides */
 margin: 1em;
 margin: -3px;
@@ -107,7 +107,11 @@ Shorthand:
 | ------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | [`margin`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin) | [`margin-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-bottom)<br />[`margin-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-left)<br />[`margin-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-right)<br />[`margin-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/margin-top) |
 
+margin-block:
+
 <CodeHtmlCssPreview src="/codes/css/box-model/margin-block" />
+
+margin-inline:
 
 <CodeHtmlCssPreview src="/codes/css/box-model/margin-inline" />
 
@@ -117,9 +121,7 @@ Shorthand:
 
 > <b>Value:</b> [ `<length>` \| `<percentage>` ]{1,4}
 
-Sintaxe:
-
-```css
+```css title="Valores"
 /* Apply to all four sides */
 padding: 1em;
 
@@ -139,7 +141,11 @@ Shorthand:
 | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`padding`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding) | [`padding-bottom`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-bottom)<br />[`padding-left`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-left)<br />[`padding-right`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-right)<br />[`padding-top`](https://developer.mozilla.org/en-US/docs/Web/CSS/padding-top) |
 
+padding-block:
+
 <CodeHtmlCssPreview src="/codes/css/box-model/padding-block" />
+
+padding-inline:
 
 <CodeHtmlCssPreview src="/codes/css/box-model/padding-inline" />
 
@@ -149,9 +155,7 @@ Shorthand:
 
 > <b>Value:</b> [ `<length>` \| `<percentage>` \| auto ]
 
-Sintaxe:
-
-```css
+```css title="Valores"
 /* <length> values */
 width: 300px;
 width: 25em;
@@ -159,6 +163,8 @@ width: 25em;
 /* <percentage> value */
 width: 75%;
 ```
+
+Exemplo:
 
 <CodeHtmlCssPreview src="/codes/css/box-model/width" />
 
@@ -173,9 +179,7 @@ width: 75%;
 
 > <b>Value:</b> [ `<length>` \| `<percentage>` \| auto ]
 
-Sintaxe:
-
-```css
+```css title="Valores"
 /* <length> values */
 height: 300px;
 height: 25em;
@@ -183,6 +187,8 @@ height: 25em;
 /* <percentage> value */
 height: 75%;
 ```
+
+Exemplo:
 
 <CodeHtmlCssPreview src="/codes/css/box-model/height" />
 
@@ -192,9 +198,7 @@ height: 75%;
 
 > <b>Value:</b> `<length-percentage>`{1,4} [ / `<length-percentage>`{1,4} ]?<br /> <br /> `<length-percentage>` = `<length>` | `<percentage>`
 
-Sintaxe:
-
-```css
+```css title="Valores"
 /* Radius is set for all 4 sides */
 border-radius: 10px;
 
@@ -220,17 +224,13 @@ border-radius: 10px 5px 2em / 20px 25px 30%;
 border-radius: 10px 5% / 20px 25em 30px 35em;
 ```
 
-<CodeHtmlCssPreview src="/codes/css/box-model/border-radius" />
-
 Shorthand:
 
 | Shorthand                                                                         | Longhand                                                                                                                                                                                                                                                                                                                                                                                                                                       |
 | --------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [`border-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius) | [`border-top-left-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius)<br />[`border-top-right-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius)<br />[`border-bottom-right-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius)<br />[`border-bottom-left-radius`](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius) |
 
-Código:
-
-```css
+```css title="Shorthand"
 border-radius: 1em/5em;
 
 /* ... is equivalent to: */
@@ -238,9 +238,7 @@ border-top-left-radius: 1em 5em;
 border-top-right-radius: 1em 5em;
 border-bottom-right-radius: 1em 5em;
 border-bottom-left-radius: 1em 5em;
-```
 
-```css
 border-radius: 4px 3px 6px / 2px 4px;
 
 /* ... is equivalent to: */
@@ -250,15 +248,17 @@ border-bottom-right-radius: 6px 2px;
 border-bottom-left-radius: 3px 4px;
 ```
 
+Exemplo:
+
+<CodeHtmlCssPreview src="/codes/css/box-model/border-radius" />
+
 ## Box Shadow
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow)
 
 > <b>Value:</b> none \| `<shadow>`<br /> <br /> `<shadow>` = inset? && `<length>`{2,4} && `<color>`?
 
-Sintaxe:
-
-```css
+```css title="Valores"
 /* offset-x | offset-y | color */
 box-shadow: 60px -16px teal;
 
@@ -275,9 +275,13 @@ box-shadow: inset 5em 1em gold;
 box-shadow: 3px 3px red, -1em 0 0.4em olive;
 ```
 
+Exemplo:
+
 <CodeHtmlCssPreview src="/codes/css/box-model/box-shadow" />
 
-Referências: [Gerador de Box Shadow](https://www.cssmatic.com/box-shadow)
+Referências:
+
+- [Gerador de Box Shadow](https://www.cssmatic.com/box-shadow)
 
 ## Border Collapse
 
@@ -285,13 +289,13 @@ Referências: [Gerador de Box Shadow](https://www.cssmatic.com/box-shadow)
 
 > <b>Value:</b> collapse \| separate
 
-Sintaxe:
-
-```css
+```css title="Valores"
 /* Keyword values */
 border-collapse: collapse;
 border-collapse: separate;
 ```
+
+Exemplo:
 
 <CodeHtmlCssPreview src="/codes/css/box-model/border-collapse" />
 
@@ -303,13 +307,13 @@ Fonte: [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Bo
 
 > <b>Value:</b> content-box \| border-box
 
-Sintaxe:
-
-```css
+```css title="Valores"
 /* Keyword values */
 box-sizing: content-box;
 box-sizing: border-box;
 ```
+
+Exemplos:
 
 | Style                                                    | Preview                                                                                                                             |
 | -------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------- |
@@ -322,9 +326,7 @@ box-sizing: border-box;
 
 > <b>Value:</b> visible \| hidden \| clip \| scroll \| auto
 
-Sintaxe:
-
-```css
+```css title="Valores"
 /* Keyword values */
 overflow: visible;
 overflow: hidden;
@@ -347,9 +349,7 @@ Exemplo:
 
 > <b>Value:</b> [ `<outline-color>` || `<outline-style>` || `<outline-width>` ] <br /> <br /> `<outline-color>` = `<color>`<br /> `<outline-style>` = none \| hidden \| dotted \| dashed \| solid \| double \| groove \| ridge \| inset \| outset<br /> `<outline-width>` = `<length>` \| thin \| medium \| thick<br />
 
-Sintaxe:
-
-```css
+```css title="Valores"
 /* style */
 outline: solid;
 

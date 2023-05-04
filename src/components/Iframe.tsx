@@ -63,6 +63,30 @@ export default function Iframe({ src, srcDoc, height }: Props) {
         /* * {
            border-color: var(--color-primary) !important;
          } */
+
+         ::-webkit-scrollbar {
+          width: 10px;
+          height: 10px;
+        }
+
+        ::-webkit-scrollbar-button:start:decrement,
+        ::-webkit-scrollbar-button:end:increment {
+          display: none;
+        }
+
+        *::-webkit-scrollbar-track-piece {
+          @apply bg-transparent;
+          -webkit-border-radius: 6px;
+        }
+
+        *::-webkit-scrollbar-thumb:vertical {
+          @apply bg-gray-400;
+          -webkit-border-radius: 6px;
+        }
+
+        * {
+          scrollbar-color: #9ca3af transparent;
+        }
       </style>`
     );
   }, [handleResize, iFrameRef]);

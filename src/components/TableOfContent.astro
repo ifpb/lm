@@ -1,0 +1,98 @@
+---
+export interface Props {
+  headings: {
+    depth: number;
+    slug: string;
+    text: string;
+  }[];
+}
+
+const { headings } = Astro.props;
+---
+
+<nav
+  class="toc fixed top-11 right-0 h-[calc(100vh-2.75rem)] py-8 lg:w-56 xl:w-64 self-start hidden lg:block overflow-y-scroll"
+>
+  <ul class="flex flex-col gap-2">
+    {
+      headings
+        .filter(({ depth }) => depth > 1)
+        .map(({ slug, text, depth }) => {
+          const padding = depth > 2 ? depth - 2 : '';
+
+          return (
+            <li
+              class="text-slate-400 hover:text-slate-700 dark:hover:text-white transition-all duration-300"
+              style={`margin-left: ${padding}rem`}
+            >
+              <a href={`#${slug}`}>{text}</a>
+            </li>
+          );
+        })
+    }
+  </ul>
+</nav>
+
+<style is:global>
+  html,
+  body {
+    @apply scroll-smooth;
+  }
+
+  nav.toc a.active {
+    @apply text-slate-700 dark:text-white font-bold;
+  }
+
+  :is(h1, h2, h3, h4, h5, h6)[id] {
+    @apply pt-12;
+  }
+</style>
+
+<script is:inline>
+  const sections = document.querySelectorAll(':is(h2, h3, h4, h5, h6)[id]');
+
+  const navLinks = document.querySelectorAll('nav.toc li a');
+
+  navLinks[0].classList.add('active');
+
+  window.addEventListener('scroll', () => {
+    let current = '';
+
+    sections.forEach((section) => {
+      const documentTop = Math.ceil(document.documentElement.scrollTop);
+
+      const bodyHeight = document.body.clientHeight;
+
+      const firstSectionTop = sections[0].offsetTop;
+
+      const sectionTop = section.offsetTop;
+
+      // const sectionHeight = section.clientHeight;
+
+      // console.log(
+      //   section.id,
+      //   sectionTop,
+      //   documentTop,
+      //   documentTop < firstSectionTop,
+      //   documentTop >= sectionTop,
+      //   documentTop >= bodyHeight - window.innerHeight
+      // );
+
+      if (documentTop < firstSectionTop) {
+        current = sections[0].id;
+      } else if (documentTop >= sectionTop) {
+        current = section.id;
+      } else if (documentTop >= bodyHeight - window.innerHeight) {
+        current = sections[sections.length - 1].id;
+      }
+    });
+
+    navLinks.forEach((link) => {
+      link.classList.remove('active');
+
+      if (decodeURI(link.href.split('#').pop()) === current) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>

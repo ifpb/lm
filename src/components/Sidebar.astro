@@ -1,3 +1,7 @@
+---
+import { MENU } from '../consts';
+---
+
 <aside
   id="default-sidebar"
   class="fixed z-50 left-0 top-11 md:h-screen w-full md:w-40 xl:w-64 self-start shadow-md bg-gray-100 dark:bg-slate-800 hidden dark:border-r-white/30 dark:border-r lg:block"
@@ -5,22 +9,18 @@
 >
   <div class="md:h-screen px-3 py-4 overflow-y-auto">
     <ul class="space-y-2 font-medium">
-      <li>
-        <a
-          href="/lm/"
-          class="flex items-center p-2 text-gray-500 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
-        >
-          Disciplina
-        </a>
-      </li>
-      <li>
-        <a
-          href="/lm/classnotes/"
-          class="flex items-center p-2 text-gray-500 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
-        >
-          Conteúdos
-        </a>
-      </li>
+      {
+        MENU.map((item) => (
+          <li>
+            <a
+              href={item.url}
+              class="flex items-center p-2 text-gray-500 rounded-lg dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700 transition-all duration-300"
+            >
+              {item.title}
+            </a>
+          </li>
+        ))
+      }
     </ul>
   </div>
 </aside>

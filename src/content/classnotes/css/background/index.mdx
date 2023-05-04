@@ -13,9 +13,7 @@ import HtmlPreview from '../../../../components/HtmlPreview.astro';
 
 > <b>Value:</b> `<color>`
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* Keyword values */
 background-color: red;
 background-color: indigo;
@@ -34,6 +32,8 @@ background-color: currentcolor;
 background-color: transparent;
 ```
 
+Exemplo:
+
 <CodeHtmlCssPreview src="/codes/css/background/bg-color" />
 
 ## Background Image
@@ -42,15 +42,13 @@ background-color: transparent;
 
 > <b>Value:</b> none \| `<image>`
 
-Exemplo:
-
-```css
+```css title="Valores"
 background-image: url(img/image.jpg);
 ```
 
-Código:
+Exemplo:
 
-[img/hexagonal-pattern.jpg](/public/lm/codes/css/background/bg-image/img/hexagonal-pattern.jpg) ([Source](https://www.freepik.com/free-vector/hexagonal-pattern_852781.htm#term=seamless%20pattern&page=1&position=2)):
+[img/hexagonal-pattern.jpg](/public/lm/codes/css/background/bg-image/img/hexagonal-pattern.jpg) ([Origem](https://www.freepik.com/free-vector/hexagonal-pattern_852781.htm#term=seamless%20pattern&page=1&position=2)):
 
 ![](/lm/codes/css/background/bg-image/img/hexagonal-pattern.jpg)
 
@@ -63,6 +61,16 @@ Repositório de imagens:
 
 ### Gradient
 
+Linear Gradient:
+
+<HtmlPreview src="/codes/css/background/bg-image-linear-gradient/index.html" />
+
+Radial Gradient:
+
+<HtmlPreview src="/codes/css/background/bg-image-radial-gradient/index.html" />
+
+Referências:
+
 - [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Backgrounds#Background_image_gradients)
 - [linear-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient)
 - [repeating-linear-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-linear-gradient)
@@ -70,17 +78,13 @@ Repositório de imagens:
 - [repeating-radial-gradient()](https://developer.mozilla.org/en-US/docs/Web/CSS/repeating-radial-gradient)
 - [Radial Gradient Recipes](https://css-tricks.com/radial-gradient-recipes/)
 
-Linear Gradient:
-
-<CodeHtmlCssPreview src="/codes/css/background/bg-image-linear-gradient" />
-
-Radial Gradient:
-
-<CodeHtmlCssPreview src="/codes/css/background/bg-image-radial-gradient" />
-
 ### Multiple backgrounds
 
 [MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_boxes/Backgrounds#Multiple_backgrounds)
+
+[img/image.jpg](/lm/codes/css/background/bg-image-multiple/img/image.jpg) ([Origem](https://unsplash.com/pt-br/fotografias/5i664o1oY4c))
+
+![img/image.jpg](/lm/codes/css/background/bg-image-multiple/img/image.jpg)
 
 <CodeHtmlCssPreview src="/codes/css/background/bg-image-multiple" />
 
@@ -92,9 +96,7 @@ Radial Gradient:
 >
 > `<repeat-style>`: repeat \| repeat-x \| repeat-y \| no-repeat
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* Keyword values */
 background-repeat: repeat-x;
 background-repeat: repeat-y;
@@ -102,11 +104,15 @@ background-repeat: repeat;
 background-repeat: no-repeat;
 ```
 
-[img/pattern.png](/lm/codes/css/background/bg-repeat/img/pattern.png) ([Source](https://www.freepik.com/free-vector/zig-zag-background-with-pastel-colors_1795073.htm)):
+Backaground repeat:
+
+[img/pattern.png](/lm/codes/css/background/bg-repeat/img/pattern.png) ([Origem](https://www.freepik.com/free-vector/zig-zag-background-with-pastel-colors_1795073.htm)):
 
 ![](/lm/codes/css/background/bg-repeat/img/pattern.png)
 
 <CodeHtmlCssPreview src="/codes/css/background/bg-repeat" height="150" isShowHtml={false} />
+
+Backaground no-repeat:
 
 <CodeHtmlCssPreview src="/codes/css/background/bg-no-repeat" height="150" isShowHtml={false} />
 
@@ -124,9 +130,7 @@ Referências:
 
 > <b>Value:</b> `<bg-position>`
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* Keyword values */
 background-position: top;
 background-position: bottom;
@@ -148,9 +152,11 @@ background-position: bottom 10px right 20px;
 background-position: right 3em bottom 10px;
 ```
 
+Exemplo:
+
 <CodeHtmlCssPreview src="/codes/css/background/bg-position" />
 
-Referência
+Referências:
 
 - [Exemplo de Background Position | MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Styling_text/Styling_links#Including_icons_on_links)
 - [CSS Sprites](https://css-tricks.com/css-sprites/)
@@ -161,9 +167,7 @@ Referência
 
 > <b>Value:</b> contain \| cover \| auto \| `<length>` \| `<percentage>`
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* Keyword values */
 background-size: cover;
 background-size: contain;
@@ -188,12 +192,24 @@ background-size: 50%, 25%, 25%;
 background-size: 6px, auto, contain;
 ```
 
+Exemplo:
 
 [img/image.jpg](/lm/codes/css/background/bg-size/img/image.jpg):
 
 ![](/lm/codes/css/background/bg-size/img/image.jpg)
 
-<CodeHtmlCssPreview src="/codes/css/background/bg-size" />
+<HtmlPreview src="/codes/css/background/bg-size/index.html" />
+
+Sprite:
+
+![](/lm/codes/css/background/sprite/img/google.png)
+
+<CodeHtmlCssPreview src="/codes/css/background/sprite" />
+
+Referências:
+
+- [Sprite Cow](http://www.spritecow.com)
+- [CSS Sprites](https://css-tricks.com/css-sprites/)
 
 ## Background Attachment
 
@@ -201,40 +217,16 @@ background-size: 6px, auto, contain;
 
 > <b>Value:</b> fixed \| scrool \| local
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* Keyword values */
 background-attachment: scroll;
 background-attachment: fixed;
 background-attachment: local;
 ```
 
-<CodeHtmlCssPreview src="/codes/css/background/bg-attachment" height={400} />
-
-## Background Blend Mode
-
-[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode)
-
-> <b>Value:</b> `<blend-mode>`
->
-> `<blend-mode>` = normal \| multiply \| screen \| overlay \| darken \| lighten \| color-dodge \| color-burn \| hard-light \| soft-light \| difference \| exclusion \| hue \| saturation \| color \| luminosity
-
 Exemplo:
 
-```css
-/* One value */
-background-blend-mode: normal;
-
-/* Two values, one per background */
-background-blend-mode: darken, luminosity;
-```
-
-<CodeHtmlCssPreview src="/codes/css/background/bg-blend-mode" />
-
-Referências:
-
-- [background-blend-mode \| CSS Tricks](https://css-tricks.com/almanac/properties/b/background-blend-mode/)
+<CodeHtmlCssPreview src="/codes/css/background/bg-attachment" height={400} />
 
 ## Background Shorthand
 
@@ -244,9 +236,7 @@ Referências:
 >
 > `<bg-layer>` = `<bg-image>` || `<bg-position>` [ / `<bg-size>` ]? || `<repeat-style>` || `<attachment>` || `<box>` || `<box>` > `<final-bg-layer>` = `<background-color>` || `<bg-image>` || `<bg-position>` [ / `<bg-size>` ]? || `<repeat-style>` || `<attachment>` || `<box>` || `<box>`
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* Using a <background-color> */
 background: green;
 
@@ -262,7 +252,7 @@ background: no-repeat center/80% url('../img/image.png');
 
 Código Anterior:
 
-```css
+```css title="Propriedades do Backaground"
 header {
   background-color: tomato;
   background-image: url(img/clock.jpg);
@@ -270,27 +260,38 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-blend-mode: multiply;
 }
 ```
 
-```css
+```css title="Backaground Shorthand"
 header {
   background: tomato url(../img/clock.jpg) 0 -100px / cover no-repeat fixed;
-  background-blend-mode: multiply;
 }
 ```
 
-Sprite:
+## Background Blend Mode
 
-![](/lm/codes/css/background/sprite/img/google.png)
+[MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/background-blend-mode)
 
-<CodeHtmlCssPreview src="/codes/css/background/sprite" />
+> <b>Value:</b> `<blend-mode>`
+>
+> `<blend-mode>` = normal \| multiply \| screen \| overlay \| darken \| lighten \| color-dodge \| color-burn \| hard-light \| soft-light \| difference \| exclusion \| hue \| saturation \| color \| luminosity
+
+```css title="Valores"
+/* One value */
+background-blend-mode: normal;
+
+/* Two values, one per background */
+background-blend-mode: darken, luminosity;
+```
+
+Exemplo:
+
+<HtmlPreview src="/codes/css/background/bg-blend-mode/index.html" />
 
 Referências:
 
-- [Sprite Cow](http://www.spritecow.com)
-- [CSS Sprites](https://css-tricks.com/css-sprites/)
+- [background-blend-mode \| CSS Tricks](https://css-tricks.com/almanac/properties/b/background-blend-mode/)
 
 ## Filter
 
@@ -300,9 +301,7 @@ Referências:
 >
 > `<filter-function>` = `<blur()`> \| `<brightness()`> \| `<contrast()`> \| `<drop-shadow()`> \| `<grayscale()`> \| `<hue-rotate()`> \| `<invert()`> \| `<opacity()`> \| `<saturate()`> \| `<sepia()`>
 
-Exemplo:
-
-```css
+```css title="Valores"
 /* URL to SVG filter */
 filter: url('filters.svg#filter-id');
 
@@ -322,7 +321,9 @@ filter: sepia(60%);
 filter: contrast(175%) brightness(3%);
 ```
 
-<CodeHtmlCssPreview src="/codes/css/background/image-filters" />
+Exemplo:
+
+<HtmlPreview src="/codes/css/background/image-filters/index.html"  />
 
 ## Opacity
 
@@ -332,13 +333,13 @@ filter: contrast(175%) brightness(3%);
 >
 > `<number>` (0..1)
 
-Exemplo:
-
-```css
+```css title="Valores"
 opacity: 0;
 opacity: 0.33;
 opacity: 1;
 ```
+
+Exemplo:
 
 <CodeHtmlCssPreview src="/codes/css/background/image-opacity" />
 

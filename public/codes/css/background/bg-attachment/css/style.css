@@ -11,14 +11,14 @@ header {
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  /* background-color: tomato;
+  background-color: tomato;
   background-image: url(../img/clock.jpg);
   background-position: 0 -100px;
   background-size: cover;
   background-repeat: no-repeat;
-  background-attachment: fixed; */
+  background-attachment: fixed;
+  /* background: tomato url(../img/clock.jpg) 0 -100px / cover no-repeat fixed; */
   background-blend-mode: multiply;
-  background: tomato url(../img/clock.jpg) 0 -100px / cover no-repeat fixed;
 }
 
 header h1 {

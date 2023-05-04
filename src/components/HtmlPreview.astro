@@ -2,24 +2,59 @@
 import { readFile } from '../helpers/files';
 import Iframe from './Iframe.jsx';
 
-const { src, height, isShowIframe = true } = Astro.props;
+export interface Pros {
+  src: string;
+  height?: string;
+  isShowIframe?: boolean;
+  title?: string;
+  linkName?: string;
+}
+
+const {
+  src,
+  height,
+  isShowIframe = true,
+  title = 'html',
+  linkName,
+} = Astro.props;
+
+const codeName = src?.split('/')?.at(-2);
 ---
 
-<div class="code-preview overflow-hidden">
-  {
-    src && isShowIframe ? (
-      <Iframe
-        src={`/lm${src}`}
-        srcDoc={readFile(src)}
-        height={height}
-        client:load
-      />
-    ) : src ? (
-      <Fragment set:html={readFile(src)} />
-    ) : (
-      <slot />
-    )
-  }
+<div class="html-preview rounded">
+  <div class="px-6 py-2 border-b flex items-center gap-2">
+    <div class="frame-button flex gap-1">
+      <div class="w-3 h-3 rounded-full bg-[#ed6b60] border-[#ce5347]"></div>
+      <div class="w-3 h-3 rounded-full bg-[#f5be4f] border-[#d6a243]"></div>
+      <div class="w-3 h-3 rounded-full bg-[#62c554] border-[#58a942]"></div>
+    </div>
+    {
+      codeName ? (
+        <a class="font-normal dark:text-[#d1d5db]" href={`/lm${src}`}>
+          {linkName ?? codeName}
+        </a>
+      ) : (
+        <span class="font-normal">{title}</span>
+      )
+    }
+  </div>
+
+  <div class="code-preview overflow-hidden">
+    {
+      src && isShowIframe ? (
+        <Iframe
+          src={`/lm${src}`}
+          srcDoc={readFile(src)}
+          height={height}
+          client:load
+        />
+      ) : src ? (
+        <Fragment set:html={readFile(src)} />
+      ) : (
+        <slot />
+      )
+    }
+  </div>
 </div>
 
 <style>

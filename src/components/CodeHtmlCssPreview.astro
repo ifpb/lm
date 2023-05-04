@@ -15,6 +15,7 @@ export interface Props {
   htmlFile: string;
   cssHighlightLines: string;
   htmlHighlightLines: string;
+  linkName?: string;
 }
 
 const {
@@ -28,20 +29,20 @@ const {
   htmlFile,
   cssHighlightLines,
   htmlHighlightLines,
+  linkName,
 } = Astro.props;
-
-const codeName = src.split('/').pop();
 
 const htmlPath = `${src}/${htmlFile ?? 'index.html'}`;
 
 const cssPath = `${src}/css/style.css`;
 ---
 
-<p>
-  <a href={`/lm${htmlPath}`}>{codeName}</a>:
-</p>
-
-<HtmlPreview src={htmlPath} height={height} isShowIframe={isShowIframe} />
+<HtmlPreview
+  src={htmlPath}
+  height={height}
+  isShowIframe={isShowIframe}
+  linkName={linkName}
+/>
 
 {codeTree && <CodeTree src={src} />}
 
