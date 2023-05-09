@@ -48,7 +48,6 @@ body {
 .item.item-stretch {
   align-self: stretch;
   background-color: aqua;
-  color: black;
 }
 
 .container {
@@ -59,8 +58,8 @@ body {
 }
 
 @media (max-width: 640px) {
-  html.dark .container {
-    border-color: #fff;
+  html.dark * {
+    border-color: #fff !important;
   }
 }
 
