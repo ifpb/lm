@@ -68,6 +68,16 @@ export default function Iframe({ src, srcDoc, height }: Props) {
     </style>`
   );
 
+  if ($isDark) {
+    iFrameRef?.current?.contentWindow?.document.documentElement.classList.add(
+      'dark'
+    );
+  } else {
+    iFrameRef?.current?.contentWindow?.document.documentElement.classList.remove(
+      'dark'
+    );
+  }
+
   const handleResize = useCallback(
     (iframe: React.RefObject<HTMLIFrameElement>) => {
       const { body, documentElement } =
@@ -87,11 +97,7 @@ export default function Iframe({ src, srcDoc, height }: Props) {
     []
   );
 
-  useEffect(() => {
-    handleResize(iFrameRef);
-  }, [handleResize, iFrameRef]);
-
-  useEffect(() => {
+  const handleDarkMode = () => {
     if ($isDark) {
       iFrameRef?.current?.contentWindow?.document.documentElement.classList.add(
         'dark'
@@ -101,6 +107,14 @@ export default function Iframe({ src, srcDoc, height }: Props) {
         'dark'
       );
     }
+  };
+
+  useEffect(() => {
+    handleResize(iFrameRef);
+  }, [handleResize, iFrameRef]);
+
+  useEffect(() => {
+    handleDarkMode();
   }, [$isDark]);
 
   return (
