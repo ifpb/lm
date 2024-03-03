@@ -23,6 +23,8 @@ export const CLASSNOTE_SLUGS = [
   'css/transition',
   'css/animation',
   'library/introduction-bootstrap',
+  'extra/exercises',
+  'extra/next-steps',
 ];
 
 export const MENU = [
