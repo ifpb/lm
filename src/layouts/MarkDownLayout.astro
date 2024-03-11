@@ -5,7 +5,7 @@ import NavBar from '../components/NavBar.astro';
 import Sidebar from '../components/Sidebar.astro';
 import TableOfContent from '../components/TableOfContent.astro';
 import NavigationContent from '../components/NavigationContent.astro';
-import { CLASSNOTE_SLUGS, GITHUB_EDIT_URL } from '../consts';
+import { CONTENT_SLUGS, GITHUB_EDIT_URL } from '../consts';
 
 import '../styles/global.css';
 import '../styles/code.css';
@@ -35,13 +35,11 @@ const classNoteTitles: Record<string, string> = classroomEntries.reduce(
   {}
 );
 
-const classNoteIndex = CLASSNOTE_SLUGS.findIndex(
-  (slug) => slug === currentSlug
-);
+const classNoteIndex = CONTENT_SLUGS.findIndex((slug) => slug === currentSlug);
 
-const previousClassNote = CLASSNOTE_SLUGS[classNoteIndex - 1];
+const previousClassNote = CONTENT_SLUGS[classNoteIndex - 1];
 
-const nextClassNote = CLASSNOTE_SLUGS[classNoteIndex + 1];
+const nextClassNote = CONTENT_SLUGS[classNoteIndex + 1];
 
 const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
 ---
@@ -74,7 +72,7 @@ const githubEditUrl = `${GITHUB_EDIT_URL}/src${file.split('/src').pop()}`;
         </p>
 
         <NavigationContent
-          hasNavigation={CLASSNOTE_SLUGS.includes(currentSlug)}
+          hasNavigation={CONTENT_SLUGS.includes(currentSlug)}
           previousClassNoteLink={previousClassNote}
           nextClassNoteLink={nextClassNote}
           previousClassNoteTitle={classNoteTitles[previousClassNote]}

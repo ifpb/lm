@@ -1,13 +1,13 @@
 ---
 import { getCollection } from 'astro:content';
 import BaseLayout from '../layouts/BaseLayout.astro';
-import { CLASSNOTE_SLUGS } from '../consts';
+import { CONTENT_SLUGS } from '../consts';
 
 const classnoteOrder = (classnote: string) =>
-  CLASSNOTE_SLUGS.indexOf(classnote) + 1;
+  CONTENT_SLUGS.indexOf(classnote) + 1;
 
 const classroomEntries = await getCollection('classnotes', ({ slug }) =>
-  CLASSNOTE_SLUGS.includes(slug)
+  CONTENT_SLUGS.includes(slug)
 );
 
 classroomEntries.sort(

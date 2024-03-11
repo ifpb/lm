@@ -3,6 +3,8 @@ layout: ../layouts/MarkDownLayout.astro
 title: Linguagem de Marcação
 ---
 
+import { SUBJECT } from '../consts.js'
+
 # {frontmatter.title}
 
 <img src="/lm/imgs/lm.png" alt="Banner da disciplina" class="hidden md:block" />
@@ -31,26 +33,46 @@ A disciplina apresenta o seguinte conteúdo, que será dividido conforme este [r
   - Animações
   - Extensões de CSS
 
+Sobre o código fonte gerados durante as aulas, ele estará disponível no repositório da disciplina ({Object.keys(SUBJECT.GITHUB_URLS).map((github) => (<a href={SUBJECT.GITHUB_URLS[github]} target="_blank">Turma {github}</a>)).reduce((prev, curr) => [prev, ', ', curr])}).
+
 ## Horário e ambiente
 
 As aulas da disciplina serão alocados nesse horário e ambiente:
 
-| Dia     | Horário     | Ambiente    |
-| ------- | ----------- | ----------- |
-| Segunda | 13:00-14:40 | Lab 03 e 58 |
-| Quarta  | 13:00-14:40 | Lab 03 e 57 |
+<table>
+  <thead>
+    <tr>
+      <th>Turm</th>
+      <th>Dia</th>
+      <th>Horário</th>
+      <th>Ambiente</th>
+    </tr>
+  </thead>
+  <tbody>
+    {SUBJECT.SCHEDULES.map(({ className, day, start, end, room }) => (
+      <tr>
+        <td>Turma {className}</td>
+        <td>{day}</td>
+        <td>{start}-{end}</td>
+        <td>{room}</td>
+      </tr>
+    ))}
+  </tbody>
+</table>
 
 ## Avaliações
 
 A nota final será computada através da média ponderada das três maiores avaliações:
 
 - Avaliação I: [Exercícios](https://ifpb.github.io/exercises/);
-- Avaliação II: [Projeto I](/lm/project);
+- Avaliação II: [Projeto I](/lm/project) (<a href={SUBJECT.PROJECTS_URL} target="_blank">padlet</a>);
 - Avaliação III: [Projeto II](/lm/project);
+
+Estas salas do Google Classroom ({Object.keys(SUBJECT.CLASSROOM_URLS).map((github) => (<a href={SUBJECT.GITHUB_URLS[github]} target="_blank">Turma {github}</a>)).reduce((prev, curr) => [prev, ', ', curr])}) serão utilizadas para enviar todas as avaliações.
 
 ## Comunicação
 
-Toda a comunicação será realizada usando o Google Chat.
+Toda a comunicação será realizada usando este <a href={SUBJECT.CHAT_URL} target="_blank">chat</a> do Google Chat.
 
 ## Bibliografia
 
