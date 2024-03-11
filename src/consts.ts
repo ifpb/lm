@@ -12,7 +12,7 @@ export const SUBJECT = {
   SCHEDULES: [
     {
       className: 'A',
-      room: 'Lab 58',
+      room: 'Lab 57',
       day: 'Segunda',
       start: '13:00',
       end: '14:40',
