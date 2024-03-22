@@ -2,4 +2,142 @@
 title: Herança e Cascata
 ---
 
-https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance
+import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
+import CodePreview from '../../../../components/CodePreview.astro';
+import HtmlPreview from '../../../../components/HtmlPreview.astro';
+
+## Herança
+
+Inheritance value
+
+<CodeHtmlCssPreview src="/codes/css/cascade-inheritance/inheritance" />
+
+Reset Inheritance
+
+<CodeHtmlCssPreview src="/codes/css/cascade-inheritance/reset-inheritance" />
+
+## Cascata
+
+[How CSS works \| MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS/How_CSS_works)
+
+<img src="https://developer.mozilla.org/en-US/docs/Learn/CSS/First_steps/How_CSS_works/rendering.svg" alt="" class="bg-white" />
+
+[Document Object Model (DOM)](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model#document_object_model_dom)
+
+<img src="https://web.dev/static/articles/critical-rendering-path/constructing-the-object-model/image/dom-construction-process-a36eb7cf24ea1_960.png?hl=pt-br" alt="" class="bg-white" />
+
+[CSS Object Model (CSSOM)](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/constructing-the-object-model#css_object_model_cssom)
+
+<img src="https://web.dev/static/articles/critical-rendering-path/constructing-the-object-model/image/cssom-tree-df023d3b800b8_960.png?hl=pt-br" alt="" class="bg-white" />
+
+[Render-tree](https://developers.google.com/web/fundamentals/performance/critical-rendering-path/render-tree-construction)
+
+<img src="https://web.dev/static/articles/critical-rendering-path/render-tree-construction/image/dom-cssom-are-combined-8de5805b2061e_960.png?hl=pt-br" alt="" class="bg-white" />
+
+### Importance
+
+> What is the color of `<h1>` Element?
+
+<CodePreview src="/codes/css/cascade-inheritance/declaration-important/index.html" />
+
+Normal Declaration
+
+<CodePreview src="/codes/css/cascade-inheritance/declaration-normal/css/style.css" />
+
+<HtmlPreview src="/codes/css/cascade-inheritance/declaration-normal/index.html" />
+
+Important Declaration
+
+<CodePreview src="/codes/css/cascade-inheritance/declaration-important/css/style.css" />
+
+<HtmlPreview src="/codes/css/cascade-inheritance/declaration-important/index.html" />
+
+![important css](https://scene-si.org/images/2015-09-18-css-resets-are-broken/important.jpg)
+
+Fonte: [CSS Resets are broken](https://scene-si.org/2015/09/18/css-resets-are-broken/)
+
+#### Style sheet (User Agent, Author, User)
+
+User Agent Style Sheet
+
+- [Firefox (Gecko)](https://dxr.mozilla.org/mozilla-central/source/layout/style/res/html.css)
+- [Safari (WebKit)](https://trac.webkit.org/browser/trunk/Source/WebCore/css/html.css)
+- [Chrome (Blink)](https://chromium.googlesource.com/chromium/blink/+/master/Source/core/css/html.css)
+- [Microsoft Edge (EdgeHTML)](https://gist.github.com/jonathantneal/abc52743caa0a019d359ec4ba2ce965b)
+- Reset CSS ([revert.css](https://github.com/sw4/revert.css), [normalize.css](https://necolas.github.io/normalize.css/))
+
+Author Style Sheet
+
+- `style=""`
+- `<style>`
+- `<link>`
+
+User Style Sheet
+
+- [Stylus Plugin](https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne?hl=en)
+- Gallery: [1](http://userstyles.org/), [2](https://userstyles.world/)
+  - [HIFPB Dark](https://userstyles.world/style/15330/hifpb-dark)
+
+#### Importance order
+
+| Declaration | Style sheets | Importance degree |
+| ----------- | ------------ | :---------------: |
+|             | User Agent   |         1         |
+| Normal      | User         |         2         |
+| Normal      | Author       |         3         |
+| Important   | Author       |         4         |
+| Important   | User         |         5         |
+
+### Specificity
+
+Specificity Value: **NNNN**
+
+| Number    | Selector                                         |
+| --------- | ------------------------------------------------ |
+| Thousands | style attribute                                  |
+| Hundreds  | ID selector                                      |
+| Tens      | class selector, attribute selector, pseudo-class |
+| Ones      | element selector, pseudo-element                 |
+
+Example
+
+<CodePreview src="/codes/css/cascade-inheritance/specificity/index.html" />
+
+<CodePreview src="/codes/css/cascade-inheritance/specificity/css/style.css" />
+
+Specificity
+
+| Style         | Selector | Thousands | Hundreds | Tens | Ones | Total        |
+| ------------- | -------- | --------- | -------- | ---- | ---- | ------------ |
+| color: green  | `style`  | 1         | 0        | 0    | 0    | (1, 0, 0, 0) |
+| color: orange | `#title` | 0         | 1        | 0    | 0    | (0, 1, 0, 0) |
+| color: blue   | `h1`     | 0         | 0        | 0    | 1    | (0, 0, 0, 1) |
+| color: red    | `h1`     | 0         | 0        | 0    | 1    | (0, 0, 0, 1) |
+
+CSS Question
+
+> What is the color of `<h1>` Element?
+>
+> Is it possible to inspect specificity?
+>
+> If you disable the color green and orange, what is the `<h1>` color?
+
+![](https://i.imgflip.com/2a3fmn.jpg)
+
+<a href="https://i.imgflip.com/2a3ggp.jpg" style="color: #fff">https://i.imgflip.com/2a3ggp.jpg</a>
+
+Preview
+
+<HtmlPreview src="/codes/css/cascade-inheritance/specificity/index.html" />
+
+### Source order
+
+> What is the color of `<h1>` Element?
+>
+> Does inheritance work?
+
+<CodeHtmlCssPreview src="/codes/css/cascade-inheritance/source-order" onlyBody={false} />
+
+## Referências
+
+- [Cascade, specificity, and inheritance | MDN](https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Cascade_and_inheritance)

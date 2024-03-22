@@ -35,7 +35,7 @@ export const CONTENT_SLUGS = [
   'markup/markup-language',
   'html/introduction-html',
   'css/introduction-css',
-  // 'css/cascade-inheritance',
+  'css/cascade-inheritance',
   'css/text-style',
   'css/web-fonts',
   'css/icons',

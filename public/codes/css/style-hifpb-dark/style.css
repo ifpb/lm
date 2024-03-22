@@ -1,0 +1,61 @@
+/* ==UserStyle==
+@name           ? - mar. de 2024
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Me
+==/UserStyle== */
+@-moz-document url-prefix("https://joaopessoa.ifpb.edu.br/horario/")
+{
+  body,
+  .content-wrapper,
+  .card,
+  .callout,
+  .nav-link.active,
+  .page-link,
+  [class*='bg-'],
+  [class*='alert-'] {
+    background-color: #000 !important;
+    color: #fff;
+  }
+
+  [class*='bg-'].color-palette.small-box {
+    border: 1px solid #fff !important;
+  }
+
+  .callout img {
+    object-fit: cover;
+    object-position: top left;
+    width: 5rem;
+    height: 6rem;
+  }
+
+  .callout.callout-success {
+    border: none;
+  }
+
+  .nav-tabs .nav-link {
+    border-bottom: none;
+  }
+
+  .callout .table td {
+    border-top: none;
+  }
+
+  .page-item.active .page-link {
+    border-color: #fff;
+  }
+
+  .table-hover tbody tr:hover {
+    background-color: #3a3a3a;
+    color: #fff;
+  }
+
+  a {
+    color: #fff !important;
+  }
+
+  a.active {
+    border-top-color: #fff !important;
+  }
+}
