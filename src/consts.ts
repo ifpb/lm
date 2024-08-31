@@ -5,7 +5,7 @@ export const SUBJECT = {
     B: 'https://classroom.google.com/c/NjY0NDQwNDk2MTcz',
   },
   CHAT_URL: 'https://mail.google.com/mail/u/0/#chat/space/AAAAujjJnC0',
-  PROJECTS_URL: 'https://padlet.com/lucachaves/projetolm20241',
+  PROJECTS_URL: 'https://padlet.com/luizchaves/projetolm20241',
   GITHUB_URLS: {
     A: 'https://github.com/luizchaves/lm-2024-1',
   },
