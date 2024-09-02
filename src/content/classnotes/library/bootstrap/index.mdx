@@ -1,0 +1,172 @@
+---
+title: Bootstrap
+---
+
+import CodeHtmlPreview from '../../../../components/CodeHtmlPreview.astro';
+import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
+import CodePreview from '../../../../components/CodePreview.astro';
+
+# {frontmatter.title}
+
+## CDN
+
+[Quick Start](https://getbootstrap.com/docs/5.3/getting-started/introduction/#quick-start)
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/cdn" onlyBody={false} />
+
+## Content
+
+[Reboot](https://getbootstrap.com/docs/5.3/content/reboot/) > Paragraphs
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/content-reboot-paragraphs" />
+
+[Reboot](https://getbootstrap.com/docs/5.3/content/reboot/) > Headings
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/content-reboot-headings" />
+
+[Reboot](https://getbootstrap.com/docs/5.3/content/reboot/) > Links
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/content-reboot-links" />
+
+[Tables](https://getbootstrap.com/docs/5.3/content/tables/) > default table
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/content-tables-default" />
+
+[Tables](https://getbootstrap.com/docs/5.3/content/tables/) > .table
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/content-tables-table" />
+
+[Tables](https://getbootstrap.com/docs/5.3/content/tables/) > .table-striped
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/content-tables-striped" class="border-8 border-sky-500" />
+
+## Helpers
+
+[Color & background](https://getbootstrap.com/docs/5.3/helpers/color-background/) > .text-\{color\}
+
+color: primary, secondary, success, danger, warning, info, light, dark
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/helpers-color-text" />
+
+[Color & background](https://getbootstrap.com/docs/5.3/helpers/color-background/) > .bg-\{color\}
+
+color: primary, secondary, success, danger, warning, info, light, dark
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/helpers-color-bg" />
+
+[Color & background](https://getbootstrap.com/docs/5.3/helpers/color-background/) > .text-bg-\{color\}
+
+color: primary, secondary, success, danger, warning, info, light, dark
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/helpers-color-text-bg" />
+
+## Utilities
+
+[Text](https://getbootstrap.com/docs/5.3/utilities/text/) > Text alignment: .text-start, .text-center, .text-end
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/utilities-text-alignment" />
+
+[Text](https://getbootstrap.com/docs/5.3/utilities/text/) > Text transform: .text-lowercase, .text-uppercase, .text-capitalize
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/utilities-text-transform" />
+
+[Text](https://getbootstrap.com/docs/5.3/utilities/text/) > Font weight and italics: .fw-bold, .fst-italic
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/utilities-font-weight-italic" />
+
+[Text](https://getbootstrap.com/docs/5.3/utilities/text/) > Font size: .fs-1, ..., .fs-6
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/utilities-font-size" />
+
+[Spacing](https://getbootstrap.com/docs/5.3/utilities/spacing/) > \{property\}\{sides\}-\{size\} & \{property\}\{sides\}-\{breakpoint\}-\{size\}
+
+property: m, p
+
+sides: t, b, s, e, x, y
+
+size: 0, 1, 2, 3, 4, 5, auto
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/utilities-spacing" />
+
+[Display](https://getbootstrap.com/docs/5.3/utilities/display/) > .d-\{value\}, .d-\{breakpoint\}-\{value\}
+
+value: none, inline, inline-block, block, grid, inline-grid, table, table-cell, table-row, flex, inline-flex
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/utilities-display" />
+
+[Visibility](https://getbootstrap.com/docs/5.3/utilities/visibility/) > .visible, .invisible
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/utilities-visibility" />
+
+## Components
+
+[Navbar](https://getbootstrap.com/docs/5.3/components-navbar)
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/components-navbar/" />
+
+[Card](https://getbootstrap.com/docs/5.3/components/card/) > Basic card
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/components-card-simple" />
+
+[Card](https://getbootstrap.com/docs/5.3/components/card/) > Header and Footer
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/components-card-header-footer" />
+
+[Card](https://getbootstrap.com/docs/5.3/components/card/) > Grid
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/components-card-grid" />
+
+## Layout
+
+[Breakpoints](https://getbootstrap.com/docs/5.3/layout/breakpoints/)
+
+| Breakpoint        | Class infix | Dimensions |
+| ----------------- | ----------- | ---------- |
+| Extra small       | None        | \<576px    |
+| Small             | sm          | ≥576px     |
+| Medium            | md          | ≥768px     |
+| Large             | lg          | ≥992px     |
+| Extra large       | xl          | ≥1200px    |
+| Extra extra large | xxl         | ≥1400px    |
+
+[Containers](https://getbootstrap.com/docs/5.3/layout/containers/)
+
+|                  | xs&lt;576px | sm≥576px | md≥768px | lg≥992px | xl≥1200px | xxl≥1400px |
+|------------------|-----------|----------|----------|----------|-----------|------------|
+| .container       | 100%      | 540px    | 720px    | 960px    | 1140px    | 1320px     |
+| .container-sm    | 100%      | 540px    | 720px    | 960px    | 1140px    | 1320px     |
+| .container-md    | 100%      | 100%     | 720px    | 960px    | 1140px    | 1320px     |
+| .container-lg    | 100%      | 100%     | 100%     | 960px    | 1140px    | 1320px     |
+| .container-xl    | 100%      | 100%     | 100%     | 100%     | 1140px    | 1320px     |
+| .container-xxl   | 100%      | 100%     | 100%     | 100%     | 100%      | 1320px     |
+| .container-fluid | 100%      | 100%     | 100%     | 100%     | 100%      | 100%       |
+
+
+
+[Grid system](https://getbootstrap.com/docs/5.3/layout/grid/) > Equal width
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/layout-grid-equal-width" />
+
+[Grid system](https://getbootstrap.com/docs/5.3/layout/grid/) > Column width - .col-\{width\}
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/layout-grid-column-width" />
+
+[Grid system](https://getbootstrap.com/docs/5.3/layout/grid/) > Responsive - .col-\{breakpoint\}-\{width\}, breakpoing: sm, md, lg, xl, xxl
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/layout-grid-responsive" />
+
+[Grid system](https://getbootstrap.com/docs/5.3/layout/grid/) > Row columns
+
+<CodeHtmlPreview src="/codes/package/bootstrap/docs/layout-grid-row-columns" />
+
+## Referências
+
+- [Documentação](https://getbootstrap.com/docs/)
+- Templates
+  - https://bootstrapmade.com/
+  - https://startbootstrap.com/themes
+- Inspirações de Componentes
+  - [Figma Design templates](https://www.figma.com/community/design-templates)
+  - [Dribbble](https://dribbble.com/)
+  - [UI Design Patterns](https://pageflows.com/)
+  - [One Page Love](https://onepagelove.com/inspiration)
