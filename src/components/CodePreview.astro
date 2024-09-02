@@ -9,6 +9,7 @@ import { prettyCodeOptions } from '../../plugins/rehype-pretty-code-config';
 export interface Props {
   src?: string;
   content?: string;
+  hideTitle?: boolean;
   title?: string;
   onlyBody?: boolean;
   lang?: string;
@@ -29,6 +30,7 @@ const {
   lang,
   showLineNumbers = true,
   title,
+  hideTitle,
   highlightLines,
 } = Astro.props;
 
@@ -66,7 +68,7 @@ if (onlyBody && code?.includes('<body')) {
 
 const metas = [];
 
-if (src || title || extension)
+if (!hideTitle && (src || title || extension))
   metas.push(`title="${src || title || extension}"`);
 
 if (showLineNumbers) metas.push('showLineNumbers');

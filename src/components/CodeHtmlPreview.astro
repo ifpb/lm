@@ -1,7 +1,5 @@
 ---
-import { existsFile } from '../helpers/files';
 import CodePreview from './CodePreview.astro';
-import CodeTree from './CodeTree.astro';
 import HtmlPreview from './HtmlPreview.astro';
 
 export interface Props {
@@ -23,43 +21,27 @@ const {
   height,
   onlyBody = true,
   isShowIframe = true,
-  isShowHtml = true,
-  isShowCss = true,
-  codeTree = false,
   htmlFile,
-  cssHighlightLines,
   htmlHighlightLines,
   linkName,
 } = Astro.props;
 
 const htmlPath = `${src}/${htmlFile ?? 'index.html'}`;
-
-const cssPath = `${src}/css/style.css`;
 ---
 
-<div class="flex flex-col space-y-4">
+<div class="flex flex-col space-y-0.5">
   <HtmlPreview
     src={htmlPath}
     height={height}
     isShowIframe={isShowIframe}
     linkName={linkName}
+    class="font-bold"
   />
 
-  {codeTree && <CodeTree src={src} />}
-
-  {
-    isShowHtml && (
-      <CodePreview
-        src={htmlPath}
-        onlyBody={onlyBody}
-        highlightLines={htmlHighlightLines}
-      />
-    )
-  }
-
-  {
-    existsFile(cssPath) && isShowCss && (
-      <CodePreview src={cssPath} highlightLines={cssHighlightLines} />
-    )
-  }
+  <CodePreview
+    src={htmlPath}
+    onlyBody={onlyBody}
+    highlightLines={htmlHighlightLines}
+    hideTitle={true}
+  />
 </div>
