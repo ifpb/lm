@@ -5,6 +5,7 @@ title: Formulários
 import CodePreview from '../../../../components/CodePreview.astro';
 import HtmlPreview from '../../../../components/HtmlPreview.astro';
 import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
+import CodeHtmlPreview from '../../../../components/CodeHtmlPreview.astro';
 
 # {frontmatter.title}
 
@@ -12,15 +13,21 @@ import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro'
 
 ### single-line text field
 
+<div class="flex flex-col space-y-0.5">
+
 <HtmlPreview>
   <input type="text" name="cpf" />
 </HtmlPreview>
 
-```html title="html"
+```html
 <input type="text" name="cpf" />
 ```
 
+</div>
+
 required:
+
+<div class="flex flex-col space-y-0.5">
 
 <HtmlPreview>
   <form>
@@ -28,110 +35,150 @@ required:
   </form>
 </HtmlPreview>
 
-```html title="html"
+```html
 <input type="text" name="cpf" required />*
 ```
 
+</div>
+
 placeholder:
+
+<div class="flex flex-col space-y-0.5">
 
 <HtmlPreview>
   <input type="text" name="cpf" placeholder="000.000.000-00" />
 </HtmlPreview>
 
-```html title="html"
+```html
 <input type="text" name="cpf" placeholder="000.000.000-00" />
 ```
 
+</div>
+
 value:
+
+<div class="flex flex-col space-y-0.5">
 
 <HtmlPreview>
   <input type="text" name="cpf" value="000.000.000-00" />
 </HtmlPreview>
 
-```html title="html"
+```html
 <input type="text" name="cpf" value="000.000.000-00" />
 ```
+
+</div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/text)
 
 ### label field
 
+<div class="flex flex-col space-y-0.5">
 <HtmlPreview src="/codes/css/form/elements/label.html" />
-<CodePreview src="/codes/css/form/elements/label.html" lang="html" />
+<CodePreview src="/codes/css/form/elements/label.html" lang="html" hideTitle={true} />
+</div>
+
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 
 ### password field
 
+<div class="flex flex-col space-y-0.5">
+
 <HtmlPreview>
   <input type="password" name="password" />
 </HtmlPreview>
 
-```html title="html"
+```html
 <input type="password" name="password" />
 ```
+
+</div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/password)
 
 ### radio button field
 
+<div class="flex flex-col space-y-0.5 mb-6">
 <HtmlPreview src="/codes/css/form/elements/radioButton.html" />
-<CodePreview src="/codes/css/form/elements/radioButton.html" lang="html" />
+<CodePreview src="/codes/css/form/elements/radioButton.html" lang="html" hideTitle={true} />
+</div>
 
+<div class="flex flex-col space-y-0.5">
 <HtmlPreview src="/codes/css/form/elements/radioButtonGroup.html" />
-<CodePreview src="/codes/css/form/elements/radioButtonGroup.html" lang="html" />
+<CodePreview src="/codes/css/form/elements/radioButtonGroup.html" lang="html" hideTitle={true} />
+</div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
 
 ### checkbox field
 
+<div class="flex flex-col space-y-0.5 mb-6">
 <HtmlPreview src="/codes/css/form/elements/checkbox.html" />
-<CodePreview src="/codes/css/form/elements/checkbox.html" lang="html" />
+<CodePreview src="/codes/css/form/elements/checkbox.html" lang="html" hideTitle={true} />
+</div>
 
+
+<div class="flex flex-col space-y-0.5">
 <HtmlPreview src="/codes/css/form/elements/checkboxGroup.html" />
-<CodePreview src="/codes/css/form/elements/checkboxGroup.html" lang="html" />
+<CodePreview src="/codes/css/form/elements/checkboxGroup.html" lang="html" hideTitle={true} />
+</div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
 
 ### button field
 
+<div class="flex flex-col space-y-0.5">
+
 <HtmlPreview>
   <button class="border border-slate-400 bg-gray-100 rounded px-2">Create</button>
 </HtmlPreview>
 
-```html title="html"
+```html
 <input type="button" name="submit" value="Create" />
 <input type="submit" name="submit" value="Create" />
 <button>Create</button>
 ```
 
+</div>
+
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/button)
 
 ### file field
+
+<div class="flex flex-col space-y-0.5">
 
 <HtmlPreview>
   <input type="file" name="file" />
 </HtmlPreview>
 
-```html title="html"
+```html
 <input type="file" name="file" />
 ```
+
+</div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
 
 ### [range field](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
+
+<div class="flex flex-col space-y-0.5">
 
 <HtmlPreview>
   <input type="range" name="number" min="1" max="99" step="1" onInput={(event) => document.querySelector('input[name=number-value]').value = event.target.value} />
   <input type="text" name="number-value" value="20" size="3" />
 </HtmlPreview>
 
-```html title="html"
+```html
 <input type="range" name="number" min="1" max="100" step="1" />
 <input type="text" name="number-value" value="20" size="3" />
 ```
 
+</div>
+
 ### number field
+
+<div class="flex flex-col space-y-0.5">
 
 <HtmlPreview>
   <form>
@@ -139,13 +186,17 @@ value:
   </form>
 </HtmlPreview>
 
-```html title="html"
+```html
 <input type="number" name="number" />
 ```
+
+</div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/number)
 
 ### date field
+
+<div class="flex flex-col space-y-0.5">
 
 <HtmlPreview>
   <form>
@@ -153,13 +204,17 @@ value:
   </form>
 </HtmlPreview>
 
-```html title="html"
+```html
 <input type="date" name="date" />
 ```
+
+</div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/date)
 
 ### email field
+
+<div class="flex flex-col space-y-0.5">
 
 <HtmlPreview>
   <form>
@@ -167,32 +222,40 @@ value:
   </form>
 </HtmlPreview>
 
-```html title="html"
+```html
 <input type="email" name="email" />
 ```
+
+</div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/email)
 
 ### multi-line text field
+
+<div class="flex flex-col space-y-0.5">
 
 <HtmlPreview>
   <label for="message">Mensagem:</label><br />
   <textarea name="message" id="message" rows="3" cols="60">digite uma mensagem</textarea>
 </HtmlPreview>
 
-```html title="html"
+```html
 <label for="message">Mensagem:</label><br />
 <textarea name="message" id="message" rows="3" cols="60">
 digite uma mensagem</textarea
 >
 ```
 
+</div>
+
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/textarea)
 
 ### combobox field
 
+<div class="flex flex-col space-y-0.5">
 <HtmlPreview src="/codes/css/form/elements/select.html" />
-<CodePreview src="/codes/css/form/elements/select.html" lang="html" />
+<CodePreview src="/codes/css/form/elements/select.html" lang="html" hideTitle={true} />
+</div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
 
@@ -201,10 +264,14 @@ digite uma mensagem</textarea
 ### Estrutura do Formulário
 
 
-<CodeHtmlCssPreview src="/codes/css/form/simple-form" />
+<CodeHtmlPreview src="/codes/css/form/simple-form" />
 
 ### Formulário com Boostrap
 
-<CodeHtmlCssPreview src="/codes/css/form/bootstrap-form" />
+<div class="flex flex-col space-y-6">
 
-<CodeHtmlCssPreview src="/codes/css/form/bootstrap-grid-form" />
+<CodeHtmlPreview src="/codes/css/form/bootstrap-form" />
+
+<CodeHtmlPreview src="/codes/css/form/bootstrap-grid-form" />
+
+</div>
