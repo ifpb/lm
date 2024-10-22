@@ -46,8 +46,8 @@ export const GITHUB_EDIT_URL = 'https://github.com/ifpb/lm/tree/main';
 export const CONTENT_SLUGS = [
   // 'web-server/live-server',
   'markup/markup-language',
-  'html/introduction-html',
-  'css/introduction-css',
+  'html/introduction',
+  'css/introduction',
   'css/cascade-inheritance',
   'css/text-style',
   'css/web-fonts',

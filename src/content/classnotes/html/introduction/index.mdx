@@ -2,9 +2,10 @@
 title: Introdução ao HTML
 ---
 
+import CodeTree from '../../../../components/CodeTree.astro';
 import CodePreview from '../../../../components/CodePreview.astro';
 import HtmlPreview from '../../../../components/HtmlPreview.astro';
-import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
+import CodeHtmlPreview from '../../../../components/CodeHtmlPreview.astro';
 
 export const imageCodeTree = ``;
 
@@ -229,15 +230,16 @@ Referência:
 - [HTML attribute reference | MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Attributes)
 - [Attributes | WHATWG](https://html.spec.whatwg.org/multipage/indices.html#attributes-3)
 
-### Entidades do HTML
+### Entidades do HTML (Símbolos)
 
-| Caracter | Descrição      | Nome   | Número |
-| -------- | -------------- | ------ | ------ |
-| \"       | quotation mark | &quot; | &#34;  |
-| \'       | apostrophe     | &apos; | &#39;  |
-| \&       | ampersand      | &amp;  | &#38;  |
-| \<       | less-than      | &lt;   | &#60;  |
-| \>       | greater-than   | &gt;   | &#62;  |
+| Caracter | Descrição      | Nome       | Número     |
+| -------- | -------------- | ---------- | ---------- |
+| \"       | quotation mark | &amp;quot; | &amp;#34;  |
+| \'       | apostrophe     | &amp;apos; | &amp;#39;  |
+| \&       | ampersand      | &amp;amp;  | &amp;#38;  |
+| \<       | less-than      | &amp;lt;   | &amp;#60;  |
+| \>       | greater-than   | &amp;gt;   | &amp;#62;  |
+| ©        | copyright      | &amp;copy; | &amp;#169; |
 
 Referências:
 
@@ -246,8 +248,8 @@ Referências:
 
 ### Estrutura básica
 
-<CodeHtmlCssPreview
-  src="/codes/html/introduction-html/basic-structure"
+<CodeHtmlPreview
+  src="/codes/html/introduction/basic-structure"
   onlyBody={false}
 />
 
@@ -255,52 +257,44 @@ Referências:
 
 ### Hyperlink
 
-```plaintext title="Sintaxe"
-hyperlink = content + url
-
-content = text, image...
-```
+hyperlink = url + content (text, image...):
 
 ```html title="Sintaxe Básica"
 <a href="url">content</a>
 ```
 
-Exemplo Básico:
+Link externo:
 
-<CodeHtmlCssPreview
-  src="/codes/html/introduction-html/hyperlink"
+<CodeHtmlPreview
+  src="/codes/html/introduction/hyperlink-external"
   isShowIframe={false}
 />
 
 Atributo `target`:
 
-<CodeHtmlCssPreview
-  src="/codes/html/introduction-html/hyperlink-target"
+<CodeHtmlPreview
+  src="/codes/html/introduction/hyperlink-target"
   isShowIframe={false}
 />
 
-Link interno (#):
+Link interno:
 
-<HtmlPreview title ="hyperlink-internal">
-  <nav>
-    <a href="#tags">Tags</a><br />
-    <a href="#atributo-de-tag">Atributo de tag</a><br />
-    <a href="#entidade-do-html">Entidade do HTML</a>
-  </nav>
-</HtmlPreview>
+```plaintext title="Estrutura da URL"
+                                                 query
+ schema      domain   port        path           string   fragment
+┌───┴──┐┌──────┴─────┐┌┴┐┌─────────┴──────────┐┌───┴────┐┌───┴────┐
+https://ifpb.github.io:80/dw/html/introduction/?name=ifpb#hyperlink
+```
 
-<CodePreview
-  src="/codes/html/introduction-html/hyperlink-internal/index.html"
-  onlyBody={true}
-/>
+<CodeHtmlPreview src="/codes/html/introduction/hyperlink-fragment" />
 
 Link entre páginas:
 
-<CodeHtmlCssPreview
-  src="/codes/html/introduction-html/hyperlink-pages"
-  codeTree={true}
-  isShowIframe={false}
-/>
+<CodeTree src="/codes/html/introduction/hyperlink-pages" />
+
+<CodeHtmlPreview src="/codes/html/introduction/hyperlink-pages" />
+
+<CodeHtmlPreview src="/codes/html/introduction/hyperlink-pages/pages" htmlFile="page.html" />
 
 ### Imagem
 
@@ -308,25 +302,16 @@ Link entre páginas:
 <img src="url" alt="text alternative" />
 ```
 
-Exemplo (Abrir no Liver Server e localmente):
+<CodeTree src="/codes/html/introduction/image" />
 
-```plaintext showLineNumbers title="Arquivos"
-/
-└── var
-    └── www
-        └── site
-            └── pages
-                ├── index.html
-                └── img
-                    └── image.png
-```
+<CodeHtmlPreview src="/codes/html/introduction/image" />
 
-<CodeHtmlCssPreview src="/codes/html/introduction-html/image" />
+Parent directory:
 
-Diretório (..):
+<CodeTree src="/codes/html/introduction/image-parent" />
 
-<CodeHtmlCssPreview
-  src="/codes/html/introduction-html/image-parent"
+<CodeHtmlPreview
+  src="/codes/html/introduction/image-parent"
   codeTree={true}
   htmlFile="pages/index.html"
   linkName="image-parent"
@@ -342,4 +327,17 @@ Diretório (..):
 
 Exemplo:
 
-<CodeHtmlCssPreview src="/codes/html/introduction-html/list" />
+<CodeHtmlPreview src="/codes/html/introduction/list" />
+
+### Tabela
+
+```plaintext title="Conteúdo Tabular"
+Linguagem Utilização
+Python    14.51%
+C         14.41%
+Java      13.23%
+C++       12.96%
+C#        8.21
+```
+
+<CodeHtmlPreview src="/codes/css/table/table-html" />
