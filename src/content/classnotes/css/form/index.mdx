@@ -74,10 +74,22 @@ value:
 ### label field
 
 <div class="flex flex-col space-y-0.5">
-<HtmlPreview src="/codes/css/form/elements/label.html" />
-<CodePreview src="/codes/css/form/elements/label.html" lang="html" hideTitle={true} />
-</div>
 
+<HtmlPreview>
+<div class="space-x-1">
+  <label for="cpf">CPF:</label>
+  <input type="text" name="cpf" id="cpf" />
+</div>
+</HtmlPreview>
+
+```html
+<div>
+  <label for="cpf">CPF:</label>
+  <input type="text" name="cpf" id="cpf" />
+</div>
+```
+
+</div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/label)
 
@@ -99,29 +111,104 @@ value:
 
 ### radio button field
 
-<div class="flex flex-col space-y-0.5 mb-6">
-<HtmlPreview src="/codes/css/form/elements/radioButton.html" />
-<CodePreview src="/codes/css/form/elements/radioButton.html" lang="html" hideTitle={true} />
+<div class="flex flex-col space-y-0.5">
+
+<HtmlPreview>
+<div class="space-x-1">
+  <input type="radio" name="sex" value="male" id="male" />
+  <label for="male">masculino</label>
+</div>
+</HtmlPreview>
+
+```html
+<div>
+  <input type="radio" name="sex" value="male" id="male" />
+  <label for="male">masculino</label>
+</div>
+```
+
 </div>
 
+radio group:
+
 <div class="flex flex-col space-y-0.5">
-<HtmlPreview src="/codes/css/form/elements/radioButtonGroup.html" />
-<CodePreview src="/codes/css/form/elements/radioButtonGroup.html" lang="html" hideTitle={true} />
+
+<HtmlPreview>
+<div class="space-x-1">
+  Sexo:
+  <input type="radio" name="sexo" value="masculino" id="masculino" checked />
+  <label for="masculino">masculino</label>
+  <input type="radio" name="sexo" value="feminino" id="feminino" />
+  <label for="feminino">feminino</label>
+</div>
+</HtmlPreview>
+
+```html
+<div>
+  Sexo:
+  <input type="radio" name="sexo" value="masculino" id="masculino" checked />
+  <label for="masculino">masculino</label>
+  <input type="radio" name="sexo" value="feminino" id="feminino" />
+  <label for="feminino">feminino</label>
+</div>
+```
+
 </div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/radio)
 
 ### checkbox field
 
-<div class="flex flex-col space-y-0.5 mb-6">
-<HtmlPreview src="/codes/css/form/elements/checkbox.html" />
-<CodePreview src="/codes/css/form/elements/checkbox.html" lang="html" hideTitle={true} />
+<div class="flex flex-col space-y-0.5">
+
+<HtmlPreview>
+<div class="space-x-1">
+  <input type="checkbox" name="aceitaCondicoes" value="ok" id="condicoes" />
+  <label for="condicoes">Você concorda com os termos...</label>
+</div>
+</HtmlPreview>
+
+```html
+<div>
+  <input type="checkbox" name="aceitaCondicoes" value="ok" id="condicoes" />
+  <label for="condicoes">Você concorda com os termos...</label>
+</div>
+```
+
 </div>
 
+radio group:
 
 <div class="flex flex-col space-y-0.5">
-<HtmlPreview src="/codes/css/form/elements/checkboxGroup.html" />
-<CodePreview src="/codes/css/form/elements/checkboxGroup.html" lang="html" hideTitle={true} />
+
+<HtmlPreview>
+<div class="space-x-1">
+  Linguagens:
+  <input type="checkbox" name="linguagens" value="javascript" id="javascript" />
+  <label for="javascript">Javascript</label>
+  <input type="checkbox" name="linguagens" value="c" id="c" />
+  <label for="c">C</label>
+  <input type="checkbox" name="linguagens" value="java" id="java" />
+  <label for="java">Java</label>
+  <input type="checkbox" name="linguagens" value="python" id="python" />
+  <label for="python">Python</label>
+</div>
+</HtmlPreview>
+
+```html
+<div>
+  Linguagens:
+  <input type="checkbox" name="linguagens" value="javascript" id="javascript" />
+  <label for="javascript">Javascript</label>
+  <input type="checkbox" name="linguagens" value="c" id="c" />
+  <label for="c">C</label>
+  <input type="checkbox" name="linguagens" value="java" id="java" />
+  <label for="java">Java</label>
+  <input type="checkbox" name="linguagens" value="python" id="python" />
+  <label for="python">Python</label>
+</div>
+```
+
 </div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/checkbox)
@@ -160,7 +247,7 @@ value:
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/file)
 
-### [range field](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
+### range field
 
 <div class="flex flex-col space-y-0.5">
 
@@ -175,6 +262,8 @@ value:
 ```
 
 </div>
+
+[MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/range)
 
 ### number field
 
@@ -242,8 +331,8 @@ value:
 ```html
 <label for="message">Mensagem:</label><br />
 <textarea name="message" id="message" rows="3" cols="60">
-digite uma mensagem</textarea
->
+  digite uma mensagem
+</textarea>
 ```
 
 </div>
@@ -253,25 +342,45 @@ digite uma mensagem</textarea
 ### combobox field
 
 <div class="flex flex-col space-y-0.5">
-<HtmlPreview src="/codes/css/form/elements/select.html" />
-<CodePreview src="/codes/css/form/elements/select.html" lang="html" hideTitle={true} />
+
+<HtmlPreview>
+<div>
+  <label for="place">Estado:</label>
+  <select name="place" id="place">
+    <option value="PB">Paraíba</option>
+    <option value="PE">Pernambuco</option>
+  </select>
+</div>
+</HtmlPreview>
+
+```html
+<div>
+  <label for="place">Estado:</label>
+  <select name="place" id="place">
+    <option value="PB">Paraíba</option>
+    <option value="PE">Pernambuco</option>
+  </select>
+</div>
+```
+
 </div>
 
 [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/select)
 
 ## Formulário
 
-### Estrutura do Formulário
-
+### Formulário sem estilo
 
 <CodeHtmlPreview src="/codes/css/form/simple-form" />
 
 ### Formulário com Boostrap
 
-<div class="flex flex-col space-y-6">
-
 <CodeHtmlPreview src="/codes/css/form/bootstrap-form" />
 
-<CodeHtmlPreview src="/codes/css/form/bootstrap-grid-form" />
+[Bootstrap | Sign-in](https://getbootstrap.com/docs/5.3/examples/sign-in/)
 
-</div>
+### Formulário com Tailwind
+
+<CodeHtmlPreview src="/codes/css/form/tailwind-form" />
+
+[Tailwind UI | Sign-in and Registration](https://tailwindui.com/components/application-ui/forms/sign-in-forms)
