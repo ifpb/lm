@@ -4,7 +4,10 @@ export const SUBJECT = {
     A: 'https://classroom.google.com/c/NzIzOTcwMzA4MTc4',
   },
   CHAT_URL: 'https://mail.google.com/mail/u/0/#chat/space/AAAAeLAQnUg',
-  PROJECTS_URL: 'https://padlet.com/luizchaves/projetolm20242',
+  PROJECTS_URL: {
+    padlet: 'https://padlet.com/lucachaves/projetolm20242',
+    github: 'https://ifpb.github.io/projects/codes/lm/1',
+  },
   GITHUB_URLS: {
     A: 'https://github.com/luizchaves/lm-2024-2',
   },

@@ -7,13 +7,13 @@ import { SUBJECT } from '../consts.js'
 
 # {frontmatter.title}
 
-<img src="/lm/imgs/lm.png" alt="Banner da disciplina" class="hidden md:block" />
+<img src="imgs/lm.png" alt="Banner da disciplina" class="hidden md:block" />
 
-A disciplina de [Linguagem de Marcação](/docs/plano-de-ensino.pdf) (LM) do Curso Superior de Tecnologia em Sistemas para Internet do IFPB tem como objetivo apresentar ao aluno conceitos sobre desenvolvimento Web Front-end. Sua carga horária apresenta um total de 67 horas aula e será ministrada pelo professor Francisco Dantas e Luiz Carlos Chaves. Para as aulas serão utilizadas exposições e atividades práticas, além de avaliações individuais e em grupo.
+A disciplina de [Linguagem de Marcação](docs/plano-de-ensino.pdf) (LM) do Curso Superior de Tecnologia em Sistemas para Internet do IFPB tem como objetivo apresentar ao aluno conceitos sobre desenvolvimento Web Front-end. Sua carga horária apresenta um total de 67 horas aula e será ministrada pelo professor Francisco Dantas e Luiz Carlos Chaves. Para as aulas serão utilizadas exposições e atividades práticas, além de avaliações individuais e em grupo.
 
 ## Conteúdo
 
-A disciplina apresenta o seguinte conteúdo, que será dividido conforme este [roteiro de aula](/lm/classnotes):
+A disciplina apresenta o seguinte conteúdo, que será dividido conforme este [roteiro de aula](classnotes):
 
 - Estrutura da Web
   - Função do cliente e servidor HTTP
@@ -27,7 +27,7 @@ A disciplina apresenta o seguinte conteúdo, que será dividido conforme este [r
   - Estrutura do HTML
 - CSS
   - Folha de estilo
-  - Herança e cascata
+  - Herança e cascataß
   - Seletores, propriedades, funções, media query, at-rules
   - Definição de layouts e estilos
   - Animações
@@ -64,9 +64,11 @@ As aulas da disciplina serão alocados nesse horário e ambiente:
 
 A nota final será computada através da média ponderada das três maiores avaliações:
 
-- Avaliação I: [Exercícios](https://ifpb.github.io/exercises/);
-- Avaliação II: [Projeto I](/lm/project) (<a href={SUBJECT.PROJECTS_URL} target="_blank">padlet</a>);
-- Avaliação III: [Projeto II](/lm/project);
+- [Exercícios](https://ifpb.github.io/exercises/):
+  - Avaliação I
+- [Projeto](project) (<a href={SUBJECT.PROJECTS_URL.padlet} target="_blank">padlet</a>, <a href={SUBJECT.PROJECTS_URL.github} target="_blank">ifpb/projects</a>):
+  - Avaliação II: Projeto - Etapa I;
+  - Avaliação III: Projeto - Etapa II.
 
 Estas salas do Google Classroom ({Object.keys(SUBJECT.CLASSROOM_URLS).map((github) => (<a href={SUBJECT.GITHUB_URLS[github]} target="_blank">Turma {github}</a>)).reduce((prev, curr) => [prev, ', ', curr])}) serão utilizadas para enviar todas as avaliações.
 
@@ -78,13 +80,29 @@ Toda a comunicação será realizada usando este <a href={SUBJECT.CHAT_URL} targ
 
 ### Bibliografia Básica
 
-<div class="flex gap-2 flex-col md:flex-row flex-wrap items-center">[![CSS e HTML](/lm/imgs/books/css-e-html.jpeg)](https://novatec.com.br/livros/csshtml/)  [![CSS3](/lm/imgs/books/css3.jpeg)](https://novatec.com.br/livros/css3/) [![android com html css](/lm/imgs/books/android-com-html-css.jpg)](https://novatec.com.br/livros/aplicativos-android-com-html-css/)</div>
+<div class="flex gap-2 flex-col md:flex-row flex-wrap items-center">
+[![CSS e HTML](imgs/books/css-e-html.jpeg)](https://novatec.com.br/livros/csshtml/)
+
+[![CSS3](imgs/books/css3.jpeg)](https://novatec.com.br/livros/css3/)
+
+[![android com html css](imgs/books/android-com-html-css.jpg)](https://novatec.com.br/livros/aplicativos-android-com-html-css/)
+</div>
 
 ### Bibliografia Complementar
 
-<div class="flex gap-2 flex-col md:flex-row flex-wrap items-center">[![Apostila Caelum](/lm/imgs/books/caelum.png)](https://www.caelum.com.br/apostila-html-css-javascript/) [![Learn code HTML CSS](/lm/imgs/books/learn-code-html-css.png)](https://learn.shayhowe.com/advanced-html-css/) [![HTML Reference](/lm/imgs/books/mdn.png)](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference) [![CSS Reference](/lm/imgs/books/mdn.png)](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference) [![Aprendendo XML](/lm/imgs/books/xml.jpg)](http://shop.oreilly.com/product/9780596004200.do)</div>
+<div class="flex gap-2 flex-col md:flex-row flex-wrap items-center">
+[![Apostila Caelum](imgs/books/caelum.png)](https://www.caelum.com.br/apostila-html-css-javascript/)
 
-E para completar ainda mais a listagem existe estes [exemplares](https://github.com/vhf/free-programming-books/blob/master/free-programming-books.md) como outros indicações.
+[![Learn code HTML CSS](imgs/books/learn-code-html-css.png)](https://learn.shayhowe.com/advanced-html-css/)
+
+[![HTML Reference](imgs/books/mdn.png)](https://developer.mozilla.org/en-US/docs/Web/HTML/Reference)
+
+[![CSS Reference](imgs/books/mdn.png)](https://developer.mozilla.org/en-US/docs/Web/CSS/Reference)
+
+[![Aprendendo XML](imgs/books/xml.jpg)](http://shop.oreilly.com/product/9780596004200.do)
+</div>
+
+E para completar ainda mais a listagem existe estes [exemplares](https://github.com/EbookFoundation/free-programming-books/blob/main/books/free-programming-books-subjects.md) como outros indicações.
 
 ## Ferramentas
 
@@ -93,7 +111,6 @@ E para completar ainda mais a listagem existe estes [exemplares](https://github.
 - Design
   - [Figma](https://www.figma.com/)
 - Navegador
-  - [Chrome](https://www.google.com/chrome/browser/index.html) ([Chrome status](https://www.chromestatus.com/features), [Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm))
-  - [Firefox](https://www.mozilla.org/en-US/firefox/new/)
+  - [Chrome](https://www.google.com/chrome/browser/index.html) ([Web Developer](https://chrome.google.com/webstore/detail/web-developer/bfbameneiokkgbdmiekhjnmfkcnldhhm))
 - Versionamento de código
   - [Git](https://git-scm.com/)
