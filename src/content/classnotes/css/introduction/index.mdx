@@ -3,6 +3,7 @@ title: Introdução ao CSS
 ---
 
 import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro';
+import CodeHtmlPreview from '../../../../components/CodeHtmlPreview.astro';
 
 # {frontmatter.title}
 
@@ -12,13 +13,13 @@ import CodeHtmlCssPreview from '../../../../components/CodeHtmlCssPreview.astro'
 
 ### `<center>`
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/deprecated-center" />
+<CodeHtmlPreview src="/codes/css/introduction/deprecated-center" />
 
 Referência: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/center)
 
 ### `<font>`
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/deprecated-font" />
+<CodeHtmlPreview src="/codes/css/introduction/deprecated-font" />
 
 Referência: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/font)
 
@@ -36,7 +37,7 @@ Referência: [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/fon
 
 Atributo style="":
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/css-inline" htmlHighlightLines="2,8,14" />
+<CodeHtmlPreview src="/codes/css/introduction/css-inline" htmlHighlightLines="2,8,14" />
 
 ### Internal stylesheet
 
@@ -52,7 +53,7 @@ selector
 
  Tag Style:
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/css-internal" onlyBody={false} htmlHighlightLines="6-15" />
+<CodeHtmlPreview src="/codes/css/introduction/css-internal" onlyBody={false} htmlHighlightLines="6-15" />
 
 ### External stylesheet
 
@@ -62,57 +63,57 @@ selector
 
 Exemplo:
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/css-external" onlyBody={false} codeTree={true} htmlHighlightLines="8" />
+<CodeHtmlCssPreview src="/codes/css/introduction/css-external" onlyBody={false} codeTree={true} htmlHighlightLines="8" />
 
 ## Sintaxe do CSS
 
 ### Propriedades
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/property-font" cssHighlightLines="2-5,10" />
+<CodeHtmlCssPreview src="/codes/css/introduction/property-font" cssHighlightLines="2-5,10" />
 
 ### Seletores
 
 #### Elemento
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/selector-element" cssHighlightLines="1,5,11" />
+<CodeHtmlCssPreview src="/codes/css/introduction/selector-element" cssHighlightLines="1,5,11" />
 
 #### `#id`
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/selector-id" cssHighlightLines="5" />
+<CodeHtmlCssPreview src="/codes/css/introduction/selector-id" cssHighlightLines="5" />
 
 #### `.class`
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/selector-class" cssHighlightLines="5" />
+<CodeHtmlCssPreview src="/codes/css/introduction/selector-class" cssHighlightLines="5" />
 
 #### Descendant combinator
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/selector-descendant-combinator" cssHighlightLines="1" />
+<CodeHtmlCssPreview src="/codes/css/introduction/selector-descendant-combinator" cssHighlightLines="1" />
 
 ### Função
 
 #### `rgb()` e `rgba()`
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/function-rgb" cssHighlightLines="2,6" />
+<CodeHtmlCssPreview src="/codes/css/introduction/function-rgb" cssHighlightLines="2,6" />
 
 #### `calc()`
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/function-calc" cssHighlightLines="2" />
+<CodeHtmlCssPreview src="/codes/css/introduction/function-calc" cssHighlightLines="2" />
 
 ### At-rules
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/at-rule-import" onlyBody={false} htmlHighlightLines="9" />
+<CodeHtmlCssPreview src="/codes/css/introduction/at-rule-import" onlyBody={false} htmlHighlightLines="9" />
 
 ### Media Query
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/media-print" cssHighlightLines="6" />
+<CodeHtmlCssPreview src="/codes/css/introduction/media-print" cssHighlightLines="6" />
 
 ### Variáveis
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/css-variable" cssHighlightLines="3-4,9-10,14-15" />
+<CodeHtmlCssPreview src="/codes/css/introduction/css-variable" cssHighlightLines="3-4,9-10,14-15" />
 
 ### Unidades de Medida
 
-<CodeHtmlCssPreview src="/codes/css/introduction-css/css-unit" isShowCss={false} htmlHighlightLines="1-2" />
+<CodeHtmlCssPreview src="/codes/css/introduction/css-unit" isShowCss={false} htmlHighlightLines="1-2" />
 
 - [`<lenght>`](https://developer.mozilla.org/en-US/docs/Web/CSS/lenght): px, em, rem, cm, mm, in, pt, pc, vh, vw, vmin, vmax, %
 - [`<color>`](https://developer.mozilla.org/en-US/docs/Web/CSS/color): `<named-color>`, `<hex-color>`, rgb(), rgba(), hsl(), hsla()
