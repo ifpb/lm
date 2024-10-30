@@ -2,6 +2,7 @@
 export const SUBJECT = {
   CLASSROOM_URLS: {
     A: 'https://classroom.google.com/c/NzIzOTcwMzA4MTc4',
+    B: 'https://classroom.google.com/c/NzI2MDQ2NDYzNjY5',
   },
   CHAT_URL: 'https://mail.google.com/mail/u/0/#chat/space/AAAAeLAQnUg',
   PROJECTS_URL: {
@@ -10,6 +11,7 @@ export const SUBJECT = {
   },
   GITHUB_URLS: {
     A: 'https://github.com/luizchaves/lm-2024-2',
+    B: 'https://github.com/franciscodnn/lm-2024-2',
   },
   SCHEDULES: [
     {
@@ -30,14 +32,14 @@ export const SUBJECT = {
       className: 'A',
       room: 'Lab Redes Convergentes',
       day: 'Quarta',
-      start: '14:40',
+      start: '16:40',
       end: '18:20',
     },
     {
       className: 'B',
       room: 'Lab 58',
       day: 'Quarta',
-      start: '14:40',
+      start: '16:40',
       end: '18:20',
     },
   ],
